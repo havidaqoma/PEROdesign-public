@@ -1,0 +1,1023 @@
+{
+ "schema": "perodesign.paperA_result/1",
+ "preregistration": "docs/PaperA_preregistration.md",
+ "claim_scope": "model predictions (G1 NO-GO, MASTER \u00a725); optimal = inside this model and these bounds",
+ "cases": {
+  "p-i-n/base": {
+   "ref_point": [
+    5.0,
+    1.8542398521443944
+   ],
+   "methods": {
+    "random": {
+     "hv_final": [
+      23.093686010756127,
+      22.671662336433233,
+      23.069041610191743,
+      22.836204785656776,
+      24.1683993431798
+     ],
+     "hv_mean": 23.167798817243536,
+     "hv_ci95_half": 0.7273420116682159,
+     "calls_to_95pct_best": [
+      241,
+      241,
+      241,
+      241,
+      167
+     ],
+     "calls_to_95pct_best_median": ">240",
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "nsga2": {
+     "hv_final": [
+      24.197175558942085,
+      24.4034939317523,
+      24.283985093139574,
+      24.273720663120567,
+      24.171316083501353
+     ],
+     "hv_mean": 24.265938266091176,
+     "hv_ci95_half": 0.11276175916430477,
+     "calls_to_95pct_best": [
+      200,
+      194,
+      194,
+      127,
+      194
+     ],
+     "calls_to_95pct_best_median": 194,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "qnehvi": {
+     "hv_final": [
+      25.031112016028818,
+      25.017498187015814,
+      25.031735628053685,
+      25.01626840933192,
+      25.015957630129453
+     ],
+     "hv_mean": 25.022514374111935,
+     "hv_ci95_half": 0.010127672408407298,
+     "calls_to_95pct_best": [
+      25,
+      25,
+      26,
+      26,
+      37
+     ],
+     "calls_to_95pct_best_median": 26,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    }
+   },
+   "q1": {
+    "random>nsga2": false,
+    "random>qnehvi": false,
+    "nsga2>random": true,
+    "nsga2>qnehvi": false,
+    "qnehvi>random": true,
+    "qnehvi>nsga2": true
+   },
+   "unreliable": false,
+   "best_hv_any_run": 25.031735628053685,
+   "q2": {
+    "front_size": 2,
+    "front": [
+     [
+      21.51917792253889,
+      0.33901421731733383
+     ],
+     [
+      21.5191692615127,
+      0.3389254176362351
+     ]
+    ],
+    "pce_optimal": {
+     "x": {
+      "NiOx_nm": 9.8,
+      "MAPbI3_nm": 382.5,
+      "C60_nm": 10.0,
+      "SnO2_nm": 5.0,
+      "stripe_mm": 5.19
+     },
+     "module_pce_pct": 21.51917792253889,
+     "cell_pce_pct": 23.47,
+     "usd_per_W": 0.33901421731733383,
+     "usd_per_W_high_prices": 0.33901421731733383,
+     "materials_usd_m2": 26.876799022556394,
+     "parts_usd_per_W": {
+      "materials": 0.24979391981703916,
+      "capital": 0.06408893199182668,
+      "other_opex": 0.025131365508468034
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 0.33901421731733383,
+      "CN": 0.33817314334114756,
+      "IN": 0.34580479752138316
+     },
+     "design_hash": "5e7d1eea076ad5cb36175fee10b10ac7f70c627f73881c3aa997b4c8d3775431"
+    },
+    "cost_optimal": {
+     "x": {
+      "NiOx_nm": 9.7,
+      "MAPbI3_nm": 380.2,
+      "C60_nm": 10.0,
+      "SnO2_nm": 5.0,
+      "stripe_mm": 5.16
+     },
+     "module_pce_pct": 21.5191692615127,
+     "cell_pce_pct": 23.47,
+     "usd_per_W": 0.3389254176362351,
+     "usd_per_W_high_prices": 0.3389254176362351,
+     "materials_usd_m2": 26.867229864661656,
+     "parts_usd_per_W": {
+      "materials": 0.2497050842265926,
+      "capital": 0.06408895778631306,
+      "other_opex": 0.025131375623329448
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 0.3389254176362351,
+      "CN": 0.3380843433215337,
+      "IN": 0.3457160005733542
+     },
+     "design_hash": "625d94fd0096dd5179aad62a52875b067855a014a852c5fa48fbd182be4c1a65"
+    },
+    "gap_pce_points": 8.66102618957143e-06,
+    "gap_cost_pct": 0.026200360456307692,
+    "gap_small": true,
+    "n_feasible_pooled": 3281
+   }
+  },
+  "p-i-n/worse": {
+   "ref_point": [
+    5.0,
+    1.8542398521443944
+   ],
+   "methods": {
+    "random": {
+     "hv_final": [
+      16.288252669577574,
+      17.289561274056144,
+      17.854796349258816,
+      16.401429118091883,
+      16.574284686784143
+     ],
+     "hv_mean": 16.881664819553713,
+     "hv_ci95_half": 0.8307584347964729,
+     "calls_to_95pct_best": [
+      241,
+      241,
+      241,
+      241,
+      241
+     ],
+     "calls_to_95pct_best_median": ">240",
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "nsga2": {
+     "hv_final": [
+      19.152854035615867,
+      19.181628898221792,
+      18.471704927969633,
+      20.056100291433516,
+      19.097865879779928
+     ],
+     "hv_mean": 19.192030806604148,
+     "hv_ci95_half": 0.7012916444235806,
+     "calls_to_95pct_best": [
+      241,
+      238,
+      241,
+      109,
+      241
+     ],
+     "calls_to_95pct_best_median": ">240",
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "qnehvi": {
+     "hv_final": [
+      20.17503575951494,
+      20.17343504547602,
+      20.083358426675566,
+      20.18698715403829,
+      20.172767574600858
+     ],
+     "hv_mean": 20.158316792061136,
+     "hv_ci95_half": 0.052524209858905234,
+     "calls_to_95pct_best": [
+      25,
+      47,
+      63,
+      46,
+      50
+     ],
+     "calls_to_95pct_best_median": 47,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     "max_infeasible_frac": 0.004166666666666667
+    }
+   },
+   "q1": {
+    "random>nsga2": false,
+    "random>qnehvi": false,
+    "nsga2>random": true,
+    "nsga2>qnehvi": false,
+    "qnehvi>random": true,
+    "qnehvi>nsga2": true
+   },
+   "unreliable": false,
+   "best_hv_any_run": 20.18698715403829,
+   "q2": {
+    "front_size": 1,
+    "front": [
+     [
+      18.719210116577386,
+      0.38280039006882843
+     ]
+    ],
+    "pce_optimal": {
+     "x": {
+      "NiOx_nm": 5.0,
+      "MAPbI3_nm": 211.8,
+      "C60_nm": 10.0,
+      "SnO2_nm": 5.0,
+      "stripe_mm": 5.52
+     },
+     "module_pce_pct": 18.719210116577386,
+     "cell_pce_pct": 20.380000000000003,
+     "usd_per_W": 0.38280039006882843,
+     "usd_per_W_high_prices": 0.38280039006882843,
+     "materials_usd_m2": 26.228867390977445,
+     "parts_usd_per_W": {
+      "materials": 0.2802347666128246,
+      "capital": 0.07367517762815597,
+      "other_opex": 0.028890445827847864
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 0.38280039006882843,
+      "CN": 0.3818335105676714,
+      "IN": 0.3906066865256858
+     },
+     "design_hash": "aca2d6da0e961e1d2a02e58ad9172315a61ea827890e09367097f6495b62745a"
+    },
+    "cost_optimal": {
+     "x": {
+      "NiOx_nm": 5.0,
+      "MAPbI3_nm": 211.8,
+      "C60_nm": 10.0,
+      "SnO2_nm": 5.0,
+      "stripe_mm": 5.52
+     },
+     "module_pce_pct": 18.719210116577386,
+     "cell_pce_pct": 20.380000000000003,
+     "usd_per_W": 0.38280039006882843,
+     "usd_per_W_high_prices": 0.38280039006882843,
+     "materials_usd_m2": 26.228867390977445,
+     "parts_usd_per_W": {
+      "materials": 0.2802347666128246,
+      "capital": 0.07367517762815597,
+      "other_opex": 0.028890445827847864
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 0.38280039006882843,
+      "CN": 0.3818335105676714,
+      "IN": 0.3906066865256858
+     },
+     "design_hash": "aca2d6da0e961e1d2a02e58ad9172315a61ea827890e09367097f6495b62745a"
+    },
+    "gap_pce_points": 0.0,
+    "gap_cost_pct": 0.0,
+    "gap_small": true,
+    "n_feasible_pooled": 3167
+   }
+  },
+  "p-i-n/better": {
+   "ref_point": [
+    5.0,
+    1.8542398521443944
+   ],
+   "methods": {
+    "random": {
+     "hv_final": [
+      26.562371793330932,
+      26.197393109755044,
+      25.64215550360408,
+      26.39033238406177,
+      26.18910858852228
+     ],
+     "hv_mean": 26.196272275854824,
+     "hv_ci95_half": 0.42958082207377046,
+     "calls_to_95pct_best": [
+      134,
+      241,
+      241,
+      31,
+      241
+     ],
+     "calls_to_95pct_best_median": ">240",
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "nsga2": {
+     "hv_final": [
+      27.101094983233974,
+      27.057901252330975,
+      27.357383038593113,
+      27.172593408014624,
+      27.27785374538345
+     ],
+     "hv_mean": 27.193365285511227,
+     "hv_ci95_half": 0.153755793661874,
+     "calls_to_95pct_best": [
+      103,
+      65,
+      67,
+      156,
+      75
+     ],
+     "calls_to_95pct_best_median": 75,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "qnehvi": {
+     "hv_final": [
+      27.55685329529517,
+      27.55545861505665,
+      27.573733068003595,
+      27.263511089289242,
+      27.5862911741666
+     ],
+     "hv_mean": 27.507169448362248,
+     "hv_ci95_half": 0.1698638636006167,
+     "calls_to_95pct_best": [
+      25,
+      27,
+      26,
+      27,
+      25
+     ],
+     "calls_to_95pct_best_median": 26,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    }
+   },
+   "q1": {
+    "random>nsga2": false,
+    "random>qnehvi": false,
+    "nsga2>random": true,
+    "nsga2>qnehvi": false,
+    "qnehvi>random": true,
+    "qnehvi>nsga2": false
+   },
+   "unreliable": false,
+   "best_hv_any_run": 27.5862911741666,
+   "q2": {
+    "front_size": 2,
+    "front": [
+     [
+      23.013658348307658,
+      0.3228549823878112
+     ],
+     [
+      23.01314615321422,
+      0.3228301488245852
+     ]
+    ],
+    "pce_optimal": {
+     "x": {
+      "NiOx_nm": 14.4,
+      "MAPbI3_nm": 563.0,
+      "C60_nm": 10.0,
+      "SnO2_nm": 5.0,
+      "stripe_mm": 5.18
+     },
+     "module_pce_pct": 23.013658348307658,
+     "cell_pce_pct": 25.119999999999997,
+     "usd_per_W": 0.3228549823878112,
+     "usd_per_W_high_prices": 0.3228549823878112,
+     "materials_usd_m2": 27.55063402255639,
+     "parts_usd_per_W": {
+      "materials": 0.2394285480872481,
+      "capital": 0.05992707067796678,
+      "other_opex": 0.023499363622596303
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 0.3228549823878112,
+      "CN": 0.3220685267854188,
+      "IN": 0.3292045901466728
+     },
+     "design_hash": "ee6ebda3d6a493534e5986a6341c2bed9b54992e2fb939349c6e3ef057f5931b"
+    },
+    "cost_optimal": {
+     "x": {
+      "NiOx_nm": 14.1,
+      "MAPbI3_nm": 564.1,
+      "C60_nm": 10.0,
+      "SnO2_nm": 5.0,
+      "stripe_mm": 4.98
+     },
+     "module_pce_pct": 23.01314615321422,
+     "cell_pce_pct": 25.119999999999997,
+     "usd_per_W": 0.3228301488245852,
+     "usd_per_W_high_prices": 0.3228301488245852,
+     "materials_usd_m2": 27.546949706766917,
+     "parts_usd_per_W": {
+      "materials": 0.2394018577326896,
+      "capital": 0.05992840445264326,
+      "other_opex": 0.02349988663925236
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 0.3228301488245852,
+      "CN": 0.32204367571834097,
+      "IN": 0.3291798979043214
+     },
+     "design_hash": "79266cf79095dcc8f4dd63c054967c8777f906523f9b8683b8acbab5d3cddb69"
+    },
+    "gap_pce_points": 0.0005121950934388053,
+    "gap_cost_pct": 0.00769245478353664,
+    "gap_small": true,
+    "n_feasible_pooled": 3313
+   }
+  },
+  "n-i-p/base": {
+   "ref_point": [
+    5.0,
+    49.575203132467415
+   ],
+   "methods": {
+    "random": {
+     "hv_final": [
+      598.3693138726755,
+      613.0160294008564,
+      593.2729122359888,
+      594.7836365841553,
+      578.2755028442659
+     ],
+     "hv_mean": 595.5434789875884,
+     "hv_ci95_half": 15.423536092380049,
+     "calls_to_95pct_best": [
+      62,
+      216,
+      93,
+      46,
+      241
+     ],
+     "calls_to_95pct_best_median": 93,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "nsga2": {
+     "hv_final": [
+      621.4393859705837,
+      620.1659269822437,
+      615.4674209859365,
+      619.2622329637323,
+      609.9493642418788
+     ],
+     "hv_mean": 617.256866228875,
+     "hv_ci95_half": 5.776717522700731,
+     "calls_to_95pct_best": [
+      56,
+      32,
+      99,
+      134,
+      78
+     ],
+     "calls_to_95pct_best_median": 78,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "qnehvi": {
+     "hv_final": [
+      622.8141645669115,
+      623.6942867930941,
+      623.69674981076,
+      623.6963930053511,
+      623.5417517512589
+     ],
+     "hv_mean": 623.4886691854751,
+     "hv_ci95_half": 0.47545338426111056,
+     "calls_to_95pct_best": [
+      27,
+      25,
+      26,
+      29,
+      37
+     ],
+     "calls_to_95pct_best_median": 27,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    }
+   },
+   "q1": {
+    "random>nsga2": false,
+    "random>qnehvi": false,
+    "nsga2>random": true,
+    "nsga2>qnehvi": false,
+    "qnehvi>random": true,
+    "qnehvi>nsga2": false
+   },
+   "unreliable": false,
+   "best_hv_any_run": 623.69674981076,
+   "q2": {
+    "front_size": 2,
+    "front": [
+     [
+      21.126792816736497,
+      10.900645140485885
+     ],
+     [
+      21.12674961398731,
+      10.900634859727694
+     ]
+    ],
+    "pce_optimal": {
+     "x": {
+      "C60_nm": 10.0,
+      "MAPbI3_nm": 398.0,
+      "PTAA_nm": 10.0,
+      "stripe_mm": 5.23
+     },
+     "module_pce_pct": 21.126792816736497,
+     "cell_pce_pct": 23.03,
+     "usd_per_W": 10.900645140485885,
+     "usd_per_W_high_prices": 10.994364997407633,
+     "materials_usd_m2": 1141.8786199780004,
+     "parts_usd_per_W": {
+      "materials": 10.809767766297327,
+      "capital": 0.06527924717967921,
+      "other_opex": 0.0255981270088784
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 10.900645140485885,
+      "CN": 10.899788445354893,
+      "IN": 10.907561841230564
+     },
+     "design_hash": "77a933953eb3e24690d86306bab1b52671da664c5991e16362c965e1e01bf1ea"
+    },
+    "cost_optimal": {
+     "x": {
+      "C60_nm": 10.0,
+      "MAPbI3_nm": 396.9,
+      "PTAA_nm": 10.0,
+      "stripe_mm": 5.26
+     },
+     "module_pce_pct": 21.12674961398731,
+     "cell_pce_pct": 23.03,
+     "usd_per_W": 10.900634859727694,
+     "usd_per_W_high_prices": 10.9943549083001,
+     "materials_usd_m2": 1141.8751792937899,
+     "parts_usd_per_W": {
+      "materials": 10.80975729970116,
+      "capital": 0.0652793806712477,
+      "other_opex": 0.025598179355286674
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 10.900634859727694,
+      "CN": 10.89977816284482,
+      "IN": 10.90755157461655
+     },
+     "design_hash": "565eed9d275da139f45aaefd01bd4320a185daa4bd6ebc051db552a78209d0b8"
+    },
+    "gap_pce_points": 4.320274918612199e-05,
+    "gap_cost_pct": 9.431338929832833e-05,
+    "gap_small": true,
+    "n_feasible_pooled": 3258
+   }
+  },
+  "n-i-p/worse": {
+   "ref_point": [
+    5.0,
+    49.575203132467415
+   ],
+   "methods": {
+    "random": {
+     "hv_final": [
+      488.2007773106204,
+      480.4107456431295,
+      476.5527561143987,
+      474.20515465553734,
+      465.63865529378427
+     ],
+     "hv_mean": 477.00161780349407,
+     "hv_ci95_half": 10.280009238681865,
+     "calls_to_95pct_best": [
+      241,
+      241,
+      241,
+      241,
+      241
+     ],
+     "calls_to_95pct_best_median": ">240",
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "nsga2": {
+     "hv_final": [
+      515.0467975498036,
+      507.98223584240867,
+      502.017337764598,
+      514.9454150109821,
+      505.4994579905441
+     ],
+     "hv_mean": 509.0982488316673,
+     "hv_ci95_half": 7.1842540045606365,
+     "calls_to_95pct_best": [
+      57,
+      112,
+      146,
+      36,
+      165
+     ],
+     "calls_to_95pct_best_median": 112,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "qnehvi": {
+     "hv_final": [
+      516.4564799993217,
+      516.4382234732769,
+      516.472438762013,
+      516.1955864559086,
+      516.0053571356084
+     ],
+     "hv_mean": 516.3136171652257,
+     "hv_ci95_half": 0.2560631459699319,
+     "calls_to_95pct_best": [
+      25,
+      25,
+      36,
+      34,
+      43
+     ],
+     "calls_to_95pct_best_median": 34,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    }
+   },
+   "q1": {
+    "random>nsga2": false,
+    "random>qnehvi": false,
+    "nsga2>random": true,
+    "nsga2>qnehvi": false,
+    "qnehvi>random": true,
+    "qnehvi>nsga2": false
+   },
+   "unreliable": false,
+   "best_hv_any_run": 516.472438762013,
+   "q2": {
+    "front_size": 1,
+    "front": [
+     [
+      18.82817535783529,
+      12.22591984692023
+     ]
+    ],
+    "pce_optimal": {
+     "x": {
+      "C60_nm": 10.0,
+      "MAPbI3_nm": 231.9,
+      "PTAA_nm": 10.0,
+      "stripe_mm": 5.42
+     },
+     "module_pce_pct": 18.82817535783529,
+     "cell_pce_pct": 20.5,
+     "usd_per_W": 12.22591984692023,
+     "usd_per_W_high_prices": 12.331081391380566,
+     "materials_usd_m2": 1141.3590766622108,
+     "parts_usd_per_W": {
+      "materials": 12.123947806628406,
+      "capital": 0.07324879358655897,
+      "other_opex": 0.028723246705264285
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 12.22591984692023,
+      "CN": 12.224958563089183,
+      "IN": 12.233680965607038
+     },
+     "design_hash": "c2e17c45243656f8b2d6903278e8edd380b992da4821a0381b14fa44866697f7"
+    },
+    "cost_optimal": {
+     "x": {
+      "C60_nm": 10.0,
+      "MAPbI3_nm": 231.9,
+      "PTAA_nm": 10.0,
+      "stripe_mm": 5.42
+     },
+     "module_pce_pct": 18.82817535783529,
+     "cell_pce_pct": 20.5,
+     "usd_per_W": 12.22591984692023,
+     "usd_per_W_high_prices": 12.331081391380566,
+     "materials_usd_m2": 1141.3590766622108,
+     "parts_usd_per_W": {
+      "materials": 12.123947806628406,
+      "capital": 0.07324879358655897,
+      "other_opex": 0.028723246705264285
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 12.22591984692023,
+      "CN": 12.224958563089183,
+      "IN": 12.233680965607038
+     },
+     "design_hash": "c2e17c45243656f8b2d6903278e8edd380b992da4821a0381b14fa44866697f7"
+    },
+    "gap_pce_points": 0.0,
+    "gap_cost_pct": 0.0,
+    "gap_small": true,
+    "n_feasible_pooled": 3273
+   }
+  },
+  "n-i-p/better": {
+   "ref_point": [
+    5.0,
+    49.575203132467415
+   ],
+   "methods": {
+    "random": {
+     "hv_final": [
+      665.7339457348522,
+      679.5707113642858,
+      667.5557102555416,
+      657.8761413860298,
+      679.800873162271
+     ],
+     "hv_mean": 670.107476380596,
+     "hv_ci95_half": 11.759147968708191,
+     "calls_to_95pct_best": [
+      3,
+      216,
+      4,
+      46,
+      78
+     ],
+     "calls_to_95pct_best_median": 46,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "nsga2": {
+     "hv_final": [
+      684.3467684503563,
+      686.7922902270209,
+      682.7549805700346,
+      683.5775048311208,
+      682.8548662810904
+     ],
+     "hv_mean": 684.0652820719246,
+     "hv_ci95_half": 2.053042807863924,
+     "calls_to_95pct_best": [
+      3,
+      48,
+      4,
+      81,
+      59
+     ],
+     "calls_to_95pct_best_median": 48,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    },
+    "qnehvi": {
+     "hv_final": [
+      688.2831300637596,
+      688.2254558246921,
+      688.2433338341159,
+      688.0224456326871,
+      688.4052845637624
+     ],
+     "hv_mean": 688.2359299838033,
+     "hv_ci95_half": 0.17188069365507133,
+     "calls_to_95pct_best": [
+      3,
+      25,
+      4,
+      25,
+      25
+     ],
+     "calls_to_95pct_best_median": 25,
+     "n_infeasible": [
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "max_infeasible_frac": 0.0
+    }
+   },
+   "q1": {
+    "random>nsga2": false,
+    "random>qnehvi": false,
+    "nsga2>random": true,
+    "nsga2>qnehvi": false,
+    "qnehvi>random": true,
+    "qnehvi>nsga2": true
+   },
+   "unreliable": false,
+   "best_hv_any_run": 688.4052845637624,
+   "q2": {
+    "front_size": 5,
+    "front": [
+     [
+      22.50451262449458,
+      10.267055239415564
+     ],
+     [
+      22.501422132567075,
+      10.259498429039734
+     ],
+     [
+      22.499932526169093,
+      10.256603284160004
+     ],
+     [
+      22.494747712368067,
+      10.247925923792916
+     ],
+     [
+      22.494747518413075,
+      10.247831458150085
+     ]
+    ],
+    "pce_optimal": {
+     "x": {
+      "C60_nm": 10.0,
+      "MAPbI3_nm": 764.2,
+      "PTAA_nm": 12.0,
+      "stripe_mm": 5.15
+     },
+     "module_pce_pct": 22.50451262449458,
+     "cell_pce_pct": 24.55,
+     "usd_per_W": 10.267055239415564,
+     "usd_per_W_high_prices": 10.372634064411484,
+     "materials_usd_m2": 1145.6756339780004,
+     "parts_usd_per_W": {
+      "materials": 10.18174135200789,
+      "capital": 0.06128287039180377,
+      "other_opex": 0.024031017015869564
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 10.267055239415564,
+      "CN": 10.266250990914761,
+      "IN": 10.273548501724616
+     },
+     "design_hash": "36c0b12a3ead44f912dd957df47d0712361a416924119dc95efdc3f43e6d7c3b"
+    },
+    "cost_optimal": {
+     "x": {
+      "C60_nm": 10.0,
+      "MAPbI3_nm": 760.4,
+      "PTAA_nm": 10.0,
+      "stripe_mm": 5.15
+     },
+     "module_pce_pct": 22.494747518413075,
+     "cell_pce_pct": 24.54,
+     "usd_per_W": 10.247831458150085,
+     "usd_per_W_high_prices": 10.335852005985943,
+     "materials_usd_m2": 1143.0121690306319,
+     "parts_usd_per_W": {
+      "materials": 10.162480535467395,
+      "capital": 0.06130947365684888,
+      "other_opex": 0.024041449025840527
+     },
+     "usd_per_W_by_rate_region": {
+      "MY": 10.247831458150085,
+      "CN": 10.247026860520139,
+      "IN": 10.254327539223615
+     },
+     "design_hash": "eefdf6586edf90a713b5d0da6d05403203e6371e9a5c05b398b96fc46f9d2caf"
+    },
+    "gap_pce_points": 0.009765106081506048,
+    "gap_cost_pct": 0.18758877274656083,
+    "gap_small": true,
+    "n_feasible_pooled": 3304
+   }
+  }
+ },
+ "q3": {
+  "p-i-n": {
+   "q1_same_in_all_scenarios": false,
+   "some_method_beats_random_in_all": true,
+   "q1_robust": false,
+   "absorber_move_frac_of_range": {
+    "pce_optimal": 0.439,
+    "cost_optimal": 0.440375
+   },
+   "designs_robust": false
+  },
+  "n-i-p": {
+   "q1_same_in_all_scenarios": false,
+   "some_method_beats_random_in_all": true,
+   "q1_robust": false,
+   "absorber_move_frac_of_range": {
+    "pce_optimal": 0.665375,
+    "cost_optimal": 0.660625
+   },
+   "designs_robust": false
+  }
+ }
+}

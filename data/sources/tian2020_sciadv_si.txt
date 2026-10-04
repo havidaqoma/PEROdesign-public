@@ -1,0 +1,13 @@
+# SOURCE tian2020_sciadv_si
+# Tian, Stranks, You, 'Life cycle energy use and environmental implications of high-performance perovskite tandem
+# solar cells', Science Advances 6 (2020) eabb0055, DOI 10.1126/sciadv.abb0055 (PMC7399695), SUPPLEMENTARY MATERIALS
+# Tables S2 and S4 only (calibrated energy inventories per 1 m2). Licence CC BY-NC 4.0 (non-commercial; research use).
+# Retrieved 2026-09-28 from Europe PMC supplementaryFiles; PDF text via PyMuPDF, whitespace collapsed.
+# CHECK (scripts in docs/implementation-notes.md): Table S2 listed kWh = Power x Time within 6% for every row;
+# Table S4 listed kWh = 3.6x to 80x Power x Time (internally inconsistent) -> S4 used only as a flagged range.
+
+## TABLE S2
+Table S2. Calibrated energy inventory of 1 m2 of the perovskite-silicon tandem solar cell (17). Power (W) Time (s) Electricity (kWh) SHJ cell fabrication (21) Texturing/cleaning - - 6.47E-01 PECVD of a-Si:H - - 6.59E+00 TCO sputter - - 6.30E+00 Screen printing - - 5.24E-01 Curing - - 3.10E-01 Gas abatement - - 4.50E-02 PSC fabrication MgF2 sputtering 8.04E+04 182 4.10E+00 Cu sputtering 6.13E+04 218 3.74E+00 IZO sputtering 6.33E+04 200 3.53E+00 SnO2 sputtering 6.80E+04 18 3.59E-01 C60 sputtering 6.63E+04 27 5.15E-01 LiF sputtering 6.04E+04 2 3.49E-02 Perovskite layer screen printing 6.42E+03 6 1.07E-02 Spiro-TTB screen printing 6.42E+03 6 1.07E-02 AZO sputtering 8.38E+04 91 2.15E+00 Encapsulation 1.50E+03 30 1.25E-02 Total 28.88 
+
+## TABLE S4
+Table S4. Calibrated energy inventory of 1 m2 of the perovskite-perovskite tandem solar cell on glass (14). Power (W) Time (s) Electricity (kWh) Low bandgap PSC fabrication AZO sputtering 8.38E+04 9 9.11E-01 NiO sputtering 9.83E+04 36 1.86E+01 Perovskite layer screen printing 6.42E+03 6 3.85E-02 Perovskite layer annealing 1.80E+04 600 1.08E+01 C60 sputtering 6.45E+04 55 1.85E+01 BCP sputtering 6.45E+04 11 1.57E+01 Cu sputtering 7.15E+04 182 2.80E+01 Wide bandgap PSC fabrication AZO sputtering 8.38E+04 364 4.55E+01 PTAA screen printing 6.42E+03 6 3.85E-02 PTAA annealing 1.80E+04 600 1.08E+01 Perovskite layer screen printing 6.42E+03 6 3.85E-02 Perovskite layer annealing 1.80E+04 600 1.08E+01 C60 sputtering 6.45E+04 55 1.85E+01 BCP sputtering 6.45E+04 11 1.57E+01 Cu sputtering 7.15E+04 182 2.80E+01 Encapsulation 1.50E+03 30 1.25E-02 Total 61.65 

@@ -1,0 +1,343 @@
+{
+ "cases": {
+  "p-i-n/base": {
+   "hv_gain_mixbo_vs_random_pct": 11.702658672563748,
+   "hv_gain_mixbo_vs_nsga2_pct": 3.811618231426639,
+   "calls95": {
+    "random": ">240",
+    "nsga2": 202,
+    "mixbo": 37
+   },
+   "igd": {
+    "random": 0.16146194534000582,
+    "nsga2": 0.061092881446440025,
+    "mixbo": 0.0008548385291528222
+   },
+   "mixbo_share_NiOx_CuAg": 0.8308333333333333,
+   "random_share_NiOx_CuAg": 0.33333333333333337,
+   "gap_pce": 0.11699205666840484,
+   "gap_cost_pct": 34.78151255086137,
+   "wording": "cost_differs_efficiency_practically_equal",
+   "rho": -0.702112789534152,
+   "front_size": 4,
+   "combos": [
+    "NiOx/Ag",
+    "NiOx/Cu"
+   ],
+   "pce_opt": [
+    "NiOx/Ag",
+    22.264609114239892,
+    0.4437991254564954
+   ],
+   "cost_opt": [
+    "NiOx/Cu",
+    22.147617057571487,
+    0.32927299676134936
+   ],
+   "best_au": 22.115370689646145,
+   "min_usd_au": 15.178248864613096,
+   "ptaa_adv": [
+    -0.5249228649461593,
+    -0.5511173686720916
+   ],
+   "n_infeasible": 5,
+   "paperA_pce_opt": [
+    21.51917792253889,
+    0.33901421731733383
+   ]
+  },
+  "p-i-n/worse": {
+   "hv_gain_mixbo_vs_random_pct": 16.78334964080912,
+   "hv_gain_mixbo_vs_nsga2_pct": 7.89564524930737,
+   "calls95": {
+    "random": ">240",
+    "nsga2": ">240",
+    "mixbo": 38
+   },
+   "igd": {
+    "random": 0.10906549856171058,
+    "nsga2": 0.059937339671031,
+    "mixbo": 0.0018977294558167896
+   },
+   "mixbo_share_NiOx_CuAg": 0.77,
+   "random_share_NiOx_CuAg": 0.33333333333333337,
+   "gap_pce": 0.289381451326868,
+   "gap_cost_pct": 34.035191926649965,
+   "wording": "material_trade_off_exists",
+   "rho": -0.7020257367464211,
+   "front_size": 5,
+   "combos": [
+    "NiOx/Ag",
+    "NiOx/Cu"
+   ],
+   "pce_opt": [
+    "NiOx/Ag",
+    19.664775736970377,
+    0.49573653899999115
+   ],
+   "cost_opt": [
+    "NiOx/Cu",
+    19.37539428564351,
+    0.3698555072546024
+   ],
+   "best_au": 19.362780370594205,
+   "min_usd_au": 17.354139194011736,
+   "ptaa_adv": [
+    -0.03041089434457689,
+    -0.070998162846589
+   ],
+   "n_infeasible": 3,
+   "paperA_pce_opt": [
+    18.719210116577386,
+    0.38280039006882843
+   ]
+  },
+  "p-i-n/better": {
+   "hv_gain_mixbo_vs_random_pct": 6.446810664749747,
+   "hv_gain_mixbo_vs_nsga2_pct": 3.9132893944886282,
+   "calls95": {
+    "random": ">240",
+    "nsga2": 135,
+    "mixbo": 27
+   },
+   "igd": {
+    "random": 0.12962347050371745,
+    "nsga2": 0.08013472007206143,
+    "mixbo": 0.0012475688636789436
+   },
+   "mixbo_share_NiOx_CuAg": 0.7866666666666666,
+   "random_share_NiOx_CuAg": 0.33333333333333337,
+   "gap_pce": 0.05483050420968638,
+   "gap_cost_pct": 34.46427387191431,
+   "wording": "cost_differs_efficiency_practically_equal",
+   "rho": -0.6113132925538751,
+   "front_size": 3,
+   "combos": [
+    "NiOx/Ag",
+    "NiOx/Cu"
+   ],
+   "pce_opt": [
+    "NiOx/Ag",
+    23.650143028686617,
+    0.4234193242594644
+   ],
+   "cost_opt": [
+    "NiOx/Cu",
+    23.59531252447693,
+    0.31489354909453343
+   ],
+   "best_au": 23.559066865306217,
+   "min_usd_au": 14.253836348530777,
+   "ptaa_adv": [
+    -0.525576849122988,
+    -0.5534803127677854
+   ],
+   "n_infeasible": 7,
+   "paperA_pce_opt": [
+    23.013658348307658,
+    0.3228549823878112
+   ]
+  },
+  "n-i-p/base": {
+   "hv_gain_mixbo_vs_random_pct": 7.962197716811126,
+   "hv_gain_mixbo_vs_nsga2_pct": 2.439999387044356,
+   "calls95": {
+    "random": ">240",
+    "nsga2": 125,
+    "mixbo": 36
+   },
+   "igd": {
+    "random": 0.11992946272948675,
+    "nsga2": 0.03261977382802006,
+    "mixbo": 4.560610260713321e-05
+   },
+   "mixbo_share_NiOx_CuAg": 0.8183333333333334,
+   "random_share_NiOx_CuAg": 0.33416666666666667,
+   "gap_pce": 0.09911366555680345,
+   "gap_cost_pct": 25.988021277272132,
+   "wording": "cost_differs_efficiency_practically_equal",
+   "rho": -0.6795831255506106,
+   "front_size": 6,
+   "combos": [
+    "NiOx/Ag",
+    "NiOx/Cu"
+   ],
+   "pce_opt": [
+    "NiOx/Ag",
+    22.373399583120964,
+    0.37094405075603615
+   ],
+   "cost_opt": [
+    "NiOx/Cu",
+    22.27428591756416,
+    0.294428031328208
+   ],
+   "best_au": 22.283249141530828,
+   "min_usd_au": 10.217312120888787,
+   "ptaa_adv": [
+    -0.888903982052188,
+    -0.7892406384630348
+   ],
+   "n_infeasible": 1,
+   "paperA_pce_opt": [
+    21.126792816736497,
+    10.900645140485885
+   ]
+  },
+  "n-i-p/worse": {
+   "hv_gain_mixbo_vs_random_pct": 10.77188510155709,
+   "hv_gain_mixbo_vs_nsga2_pct": 4.632075324130858,
+   "calls95": {
+    "random": ">240",
+    "nsga2": 229,
+    "mixbo": 47
+   },
+   "igd": {
+    "random": 0.10844514532385152,
+    "nsga2": 0.04627707476363145,
+    "mixbo": 0.0004339140316374387
+   },
+   "mixbo_share_NiOx_CuAg": 0.8208333333333333,
+   "random_share_NiOx_CuAg": 0.33416666666666667,
+   "gap_pce": 0.24370875030687245,
+   "gap_cost_pct": 25.379295322250805,
+   "wording": "material_trade_off_exists",
+   "rho": -0.6940138776092163,
+   "front_size": 3,
+   "combos": [
+    "NiOx/Ag",
+    "NiOx/Cu"
+   ],
+   "pce_opt": [
+    "NiOx/Ag",
+    19.7253577455101,
+    0.415369216749798
+   ],
+   "cost_opt": [
+    "NiOx/Cu",
+    19.481648995203226,
+    0.33129011906009914
+   ],
+   "best_au": 19.52573976721171,
+   "min_usd_au": 11.654721636624476,
+   "ptaa_adv": [
+    -0.5589366899533914,
+    -0.48346579227838404
+   ],
+   "n_infeasible": 0,
+   "paperA_pce_opt": [
+    18.82817535783529,
+    12.22591984692023
+   ]
+  },
+  "n-i-p/better": {
+   "hv_gain_mixbo_vs_random_pct": 5.001506881938611,
+   "hv_gain_mixbo_vs_nsga2_pct": 0.8786734223924952,
+   "calls95": {
+    "random": 235,
+    "nsga2": 100,
+    "mixbo": 25
+   },
+   "igd": {
+    "random": 0.0751641969189055,
+    "nsga2": 0.011803925709946964,
+    "mixbo": 0.0003664043458905745
+   },
+   "mixbo_share_NiOx_CuAg": 0.8216666666666667,
+   "random_share_NiOx_CuAg": 0.33416666666666667,
+   "gap_pce": 0.16261489255482076,
+   "gap_cost_pct": 28.01993875269404,
+   "wording": "cost_differs_efficiency_practically_equal",
+   "rho": -0.6169579706849571,
+   "front_size": 21,
+   "combos": [
+    "NiOx/Ag",
+    "NiOx/Cu"
+   ],
+   "pce_opt": [
+    "NiOx/Ag",
+    23.468549991917772,
+    0.3663411990596507
+   ],
+   "cost_opt": [
+    "NiOx/Cu",
+    23.30593509936295,
+    0.28615948627138477
+   ],
+   "best_au": 23.44070850755806,
+   "min_usd_au": 9.727179815287792,
+   "ptaa_adv": [
+    -0.5659248424882648,
+    -0.6091077255236605
+   ],
+   "n_infeasible": 0,
+   "paperA_pce_opt": [
+    22.50451262449458,
+    10.267055239415564
+   ]
+  }
+ },
+ "global": {
+  "hv_gain_vs_random_range": [
+   5.001506881938611,
+   16.78334964080912
+  ],
+  "hv_gain_vs_nsga2_range": [
+   0.8786734223924952,
+   7.89564524930737
+  ],
+  "gap_pce_range": [
+   0.05483050420968638,
+   0.289381451326868
+  ],
+  "gap_cost_range": [
+   25.379295322250805,
+   34.78151255086137
+  ],
+  "rho_range": [
+   -0.702112789534152,
+   -0.6113132925538751
+  ],
+  "ptaa_adv_range": [
+   -0.888903982052188,
+   -0.03041089434457689
+  ],
+  "mixbo_share_range": [
+   0.77,
+   0.8308333333333333
+  ],
+  "random_share_range": [
+   0.33333333333333337,
+   0.33416666666666667
+  ],
+  "n_infeasible_total": 16,
+  "swf_status": {
+   "base": {
+    "NiOx/Cu": "partial",
+    "NiOx/Ag": "partial",
+    "NiOx/Au": "partial",
+    "PTAA/Cu": "partial",
+    "PTAA/Ag": "partial",
+    "PTAA/Au": "complete"
+   },
+   "worse": {
+    "NiOx/Cu": "complete",
+    "NiOx/Ag": "complete",
+    "NiOx/Au": "complete",
+    "PTAA/Cu": "complete",
+    "PTAA/Ag": "partial",
+    "PTAA/Au": "complete"
+   },
+   "better": {
+    "NiOx/Cu": "partial",
+    "NiOx/Ag": "partial",
+    "NiOx/Au": "partial",
+    "PTAA/Cu": "partial",
+    "PTAA/Ag": "partial",
+    "PTAA/Au": "complete"
+   }
+  },
+  "swf_complete": 7,
+  "swf_total": 18
+ }
+}

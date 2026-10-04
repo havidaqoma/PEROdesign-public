@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper (preferred-citation) and SIMsalabim."
+title: "PEROdesign: code and data for cost-aware design of perovskite solar modules"
+abstract: >-
+  Drift-diffusion simulation (SIMsalabim), a module model and a bottom-up factory-gate cost model, optimised for
+  module efficiency and cost per watt with a Bayesian optimiser, NSGA-II and Sobol random search at two
+  pre-registered levels of design freedom. Includes all stored runs, result files, the source of every number in
+  the paper, and the Source Data workbooks.
+type: software
+authors:
+  - family-names: Aqoma
+    given-names: Havid
+    email: havidaqoma.khoiruddin@xmu.edu.my
+    affiliation: "School of Energy and Chemical Engineering, Xiamen University Malaysia"
+    orcid: "https://orcid.org/0000-0003-1264-1916"
+repository-code: "https://github.com/havidaqoma/PEROdesign-public"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-04"
+keywords:
+  - perovskite photovoltaics
+  - drift-diffusion simulation
+  - techno-economic analysis
+  - multi-objective Bayesian optimisation
+  - mixed-variable optimisation
+preferred-citation:
+  type: article
+  title: "Cost-aware design of perovskite solar modules with drift-diffusion simulation and multi-objective optimisation"
+  authors:
+    - family-names: Aqoma
+      given-names: Havid
+      orcid: "https://orcid.org/0000-0003-1264-1916"
+  year: 2026
+  notes: "Preprint in preparation; journal and DOI to be added."
+references:
+  - type: article
+    title: "SIMsalabim: An open-source drift-diffusion simulator for semiconductor devices"
+    authors:
+      - family-names: Koopmans
+        given-names: Marten
+      - family-names: Le Corre
+        given-names: Vincent M.
+      - family-names: Koster
+        given-names: L. Jan Anton
+    journal: "Journal of Open Source Software"
+    volume: 7
+    issue: 70
+    start: 3727
+    year: 2022
+    doi: 10.21105/joss.03727

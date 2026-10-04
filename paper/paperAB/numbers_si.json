@@ -1,0 +1,67 @@
+{
+ "si_abs_mult_pin_base": {
+  "value": "5",
+  "raw": 5,
+  "source": "phase0/paperA/si/si_result.json sensitivity.scans.absorber_price_mult first value where p-i-n base gap is not small"
+ },
+ "si_alpha_pin_base": {
+  "value": "0.75",
+  "raw": 0.75,
+  "source": "si_result.json sensitivity.scans.throughput_alpha first not-small value, p-i-n base"
+ },
+ "si_abs_mult_nip_first": {
+  "value": "100",
+  "raw": 100,
+  "source": "si_result.json scans.absorber_price_mult first not-small value over n-i-p scenarios"
+ },
+ "si_abs10_gpce": {
+  "value": "1.46",
+  "raw": 1.4619747782610126,
+  "source": "si_result.json scans.absorber_price_mult value 10 p-i-n base gap_pce_pt"
+ },
+ "si_abs10_gcost": {
+  "value": "6.3",
+  "raw": 6.307563450531456,
+  "source": "si_result.json scans.absorber_price_mult value 10 p-i-n base gap_cost_pct"
+ },
+ "si_abs10_tabs": {
+  "value": "200",
+  "raw": 200.0,
+  "source": "si_result.json scans.absorber_price_mult value 10 p-i-n base cost_opt_x[1] (MAPbI3 nm)"
+ },
+ "si_a1_gpce": {
+  "value": "1.46",
+  "raw": 1.4619747782610126,
+  "source": "si_result.json scans.throughput_alpha value 1 p-i-n base gap_pce_pt"
+ },
+ "si_a1_gcost": {
+  "value": "4.6",
+  "raw": 4.637432833476026,
+  "source": "si_result.json scans.throughput_alpha value 1 p-i-n base gap_cost_pct"
+ },
+ "si_mod_max_gpce": {
+  "value": "0.08",
+  "raw": 0.08161531675025913,
+  "source": "si_result.json sensitivity.rows max gap_pce_pt over module, line and proxy changes"
+ },
+ "si_mod_max_gcost": {
+  "value": "0.24",
+  "raw": 0.23601720151538683,
+  "source": "si_result.json sensitivity.rows max gap_cost_pct over module, line and proxy changes"
+ },
+ "si_n_changes": {
+  "value": "17",
+  "raw": 17,
+  "source": "si_result.json sensitivity.rows number of distinct module, line and design-independent proxy changes (the set behind si_mod_max_*)"
+ },
+ "si_qn_tight": {
+  "value": "6",
+  "raw": 6,
+  "source": "si_result.json q1_alternatives count of cases with Q>N under the tight reference point"
+ },
+ "si_rho_tight_min": {
+  "value": "0.98",
+  "raw": 0.976616209561986,
+  "source": "si_result.json q1_alternatives min rho_hv_tight_vs_best_pce"
+ }
+}

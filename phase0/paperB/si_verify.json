@@ -1,0 +1,394 @@
+{
+ "schema": "perodesign.paperB_si_verify/1",
+ "checks": {
+  "V1_cost_recompute": {
+   "n": 21584,
+   "fail": 0
+  },
+  "V2_log_cost": {
+   "n": 21584,
+   "fail": 0
+  },
+  "V3_hv_final": {
+   "n": 90,
+   "fail": 0
+  },
+  "V4_shared_start": {
+   "n": 30,
+   "fail": 0
+  },
+  "V5_design_mapping": {
+   "n": 21600,
+   "fail": 0
+  },
+  "V6_fresh_resim": {
+   "n": 60,
+   "fail": 0
+  }
+ },
+ "fresh_sample": [
+  {
+   "run": "n-i-p__better__mixbo__s1",
+   "call": 64,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__worse__random__s3",
+   "call": 149,
+   "combo": "NiOx/Au",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__nsga2__s3",
+   "call": 152,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__nsga2__s4",
+   "call": 217,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__random__s3",
+   "call": 102,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__base__random__s4",
+   "call": 4,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__worse__mixbo__s0",
+   "call": 117,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__nsga2__s2",
+   "call": 28,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__nsga2__s4",
+   "call": 219,
+   "combo": "PTAA/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__mixbo__s1",
+   "call": 10,
+   "combo": "PTAA/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__random__s2",
+   "call": 106,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__mixbo__s3",
+   "call": 54,
+   "combo": "PTAA/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__random__s4",
+   "call": 203,
+   "combo": "PTAA/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__nsga2__s2",
+   "call": 11,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__nsga2__s0",
+   "call": 32,
+   "combo": "PTAA/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__mixbo__s0",
+   "call": 59,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__worse__mixbo__s2",
+   "call": 183,
+   "combo": "NiOx/Au",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__base__mixbo__s0",
+   "call": 83,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__nsga2__s3",
+   "call": 220,
+   "combo": "PTAA/Au",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__base__random__s1",
+   "call": 5,
+   "combo": "NiOx/Au",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__better__mixbo__s0",
+   "call": 29,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__worse__nsga2__s4",
+   "call": 53,
+   "combo": "NiOx/Au",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__base__random__s3",
+   "call": 92,
+   "combo": "NiOx/Au",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__mixbo__s1",
+   "call": 100,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__base__mixbo__s1",
+   "call": 136,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__nsga2__s1",
+   "call": 231,
+   "combo": "PTAA/Cu",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__worse__random__s2",
+   "call": 217,
+   "combo": "PTAA/Ag",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__better__random__s3",
+   "call": 169,
+   "combo": "PTAA/Au",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__nsga2__s4",
+   "call": 57,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__worse__mixbo__s4",
+   "call": 82,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__mixbo__s2",
+   "call": 113,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__mixbo__s3",
+   "call": 167,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__nsga2__s1",
+   "call": 93,
+   "combo": "PTAA/Au",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__random__s0",
+   "call": 35,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__random__s2",
+   "call": 31,
+   "combo": "PTAA/Ag",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__base__random__s0",
+   "call": 100,
+   "combo": "PTAA/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__mixbo__s1",
+   "call": 115,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__base__random__s2",
+   "call": 58,
+   "combo": "PTAA/Au",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__mixbo__s1",
+   "call": 39,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__random__s3",
+   "call": 122,
+   "combo": "PTAA/Au",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__worse__nsga2__s4",
+   "call": 213,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__worse__nsga2__s4",
+   "call": 65,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__mixbo__s2",
+   "call": 115,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__better__mixbo__s4",
+   "call": 57,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__random__s3",
+   "call": 23,
+   "combo": "PTAA/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__mixbo__s3",
+   "call": 214,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__worse__random__s2",
+   "call": 46,
+   "combo": "PTAA/Cu",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__base__mixbo__s3",
+   "call": 90,
+   "combo": "PTAA/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__nsga2__s0",
+   "call": 87,
+   "combo": "PTAA/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__mixbo__s4",
+   "call": 153,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__mixbo__s2",
+   "call": 234,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__random__s2",
+   "call": 159,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__base__random__s2",
+   "call": 91,
+   "combo": "PTAA/Au",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__nsga2__s4",
+   "call": 108,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__nsga2__s0",
+   "call": 5,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__worse__mixbo__s0",
+   "call": 181,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__nsga2__s3",
+   "call": 19,
+   "combo": "PTAA/Cu",
+   "identical": true
+  },
+  {
+   "run": "n-i-p__better__mixbo__s0",
+   "call": 216,
+   "combo": "NiOx/Ag",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__base__random__s3",
+   "call": 25,
+   "combo": "NiOx/Cu",
+   "identical": true
+  },
+  {
+   "run": "p-i-n__better__nsga2__s4",
+   "call": 38,
+   "combo": "NiOx/Ag",
+   "identical": true
+  }
+ ],
+ "n_runs": 90,
+ "n_calls": 21600,
+ "n_feasible": 21584
+}

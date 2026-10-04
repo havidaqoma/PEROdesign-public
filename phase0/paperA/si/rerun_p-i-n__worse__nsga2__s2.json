@@ -1,0 +1,12 @@
+{
+ "run_id": "p-i-n__worse__nsga2__s2",
+ "code_commit_of_clone": "1bdbecc",
+ "n_calls": 240,
+ "identical_x": 240,
+ "identical_objectives": 240,
+ "max_abs_du": 0.0,
+ "first_differing_call": null,
+ "hv_final_rerun": 18.471704927969633,
+ "hv_final_stored": 18.471704927969633,
+ "seconds": 3.8
+}

@@ -1,0 +1,115 @@
+{
+ "schema": "perodesign.paperB_moox/1",
+ "label": "POST-HOC (citation review 2026-10-02), not pre-registered; no new simulations",
+ "assumes": "the interlayer gives the ohmic hole contact already assumed by rule B2 (efficiency unchanged); added to every n-i-p Cu/Ag design; p-i-n unchanged; deposition electricity and tool time excluded",
+ "recompute_max_rel_err": 0.0,
+ "linear_check_max_rel_err": 3.3306690738754696e-16,
+ "layer": {
+  "thickness_nm": 10.0,
+  "density_g_cm3": 4.69,
+  "utilisation": 0.25,
+  "g_per_m2": 0.18760000000000002
+ },
+ "cases": {
+  "n-i-p/base": {
+   "no_interlayer": {
+    "combos": [
+     "NiOx/Ag",
+     "NiOx/Cu"
+    ],
+    "gap_pce": 0.09911366555680345,
+    "gap_cost_pct": 25.988021277272132,
+    "small": false,
+    "wording": "cost_differs_efficiency_practically_equal",
+    "front_size": 6
+   },
+   "breakeven_usd_m2": 126.44052410824224,
+   "after_breakeven": {
+    "combos": [
+     "NiOx/Ag",
+     "NiOx/Cu"
+    ],
+    "gap_pce": 0.09911366555680345,
+    "gap_cost_pct": 4.999999999999116,
+    "small": true,
+    "wording": "near_identical_materials",
+    "front_size": 6
+   },
+   "breakeven_usd_per_g_moo3": 673.9900005769841,
+   "usd_per_W_per_usd_m2_cheapest_cu": 0.008978963489118726,
+   "cheapest_cu_usd_per_W": 0.294428031328208,
+   "illustrative_add_usd_per_W_cheapest_cu": 0.002423983015511978,
+   "illustrative_add_pct_cheapest_cu": 0.8232854068198043,
+   "breakeven_over_illustrative": 468.363368162112
+  },
+  "n-i-p/worse": {
+   "no_interlayer": {
+    "combos": [
+     "NiOx/Ag",
+     "NiOx/Cu"
+    ],
+    "gap_pce": 0.24370875030687245,
+    "gap_cost_pct": 25.379295322250805,
+    "small": false,
+    "wording": "material_trade_off_exists",
+    "front_size": 3
+   },
+   "breakeven_usd_m2": 105.48404614016181,
+   "after_breakeven": {
+    "combos": [
+     "NiOx/Ag",
+     "NiOx/Cu"
+    ],
+    "gap_pce": 0.24353113642064983,
+    "gap_cost_pct": 4.99999999999885,
+    "small": true,
+    "wording": "near_identical_materials",
+    "front_size": 2
+   },
+   "breakeven_usd_per_g_moo3": 562.28169584308,
+   "usd_per_W_per_usd_m2_cheapest_cu": 0.010266071421841345,
+   "cheapest_cu_usd_per_W": 0.33129011906009914,
+   "illustrative_add_usd_per_W_cheapest_cu": 0.002771453831250486,
+   "illustrative_add_pct_cheapest_cu": 0.8365639878162857,
+   "breakeven_over_illustrative": 390.7359882127638
+  },
+  "n-i-p/better": {
+   "no_interlayer": {
+    "combos": [
+     "NiOx/Ag",
+     "NiOx/Cu"
+    ],
+    "gap_pce": 0.16261489255482076,
+    "gap_cost_pct": 28.01993875269404,
+    "small": false,
+    "wording": "cost_differs_efficiency_practically_equal",
+    "front_size": 21
+   },
+   "breakeven_usd_m2": 139.90778746432625,
+   "after_breakeven": {
+    "combos": [
+     "NiOx/Ag",
+     "NiOx/Cu"
+    ],
+    "gap_pce": 0.04597803971473269,
+    "gap_cost_pct": 4.999999999999605,
+    "small": true,
+    "wording": "near_identical_materials",
+    "front_size": 14
+   },
+   "breakeven_usd_per_g_moo3": 745.7771186797773,
+   "usd_per_W_per_usd_m2_cheapest_cu": 0.008581505060720212,
+   "cheapest_cu_usd_per_W": 0.28615948627138477,
+   "illustrative_add_usd_per_W_cheapest_cu": 0.00231668416292419,
+   "illustrative_add_pct_cheapest_cu": 0.8095779710504228,
+   "breakeven_over_illustrative": 518.2490584490484
+  }
+ },
+ "illustrative": {
+  "moo3_usd_per_g_usgs_2025e": 0.051,
+  "k_material_usd_m2": 0.0095676,
+  "k_step_electricity_usd_m2": 0.2603948537341658,
+  "k_total_usd_m2": 0.26996245373416583,
+  "excluded": "evaporator capital and tool time; evaporation-grade powder premium"
+ }
+}

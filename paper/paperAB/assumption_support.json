@@ -1,0 +1,838 @@
+{
+ "sources": {
+  "digiacomo2020": {
+   "cite": "digiacomo2020scribe",
+   "doi": "10.3390/mi11121127",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7767295/fullTextXML",
+   "quotes": [
+    "we calculated the interconnection width as w P2 plus 150 µm for the P1 and P3",
+    "limiting the sheet resistance to values in the order of 7 to 60",
+    "the geometrical losses due to the dead area of the P1-P2-P3 interconnection",
+    "the resistive losses due to the TCO"
+   ]
+  },
+  "castriotta2025": {
+   "cite": "nikbakht2025panels",
+   "doi": "10.1002/advs.202416316",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12165116/fullTextXML",
+   "quotes": [
+    "The P1‐P3 interconnection distance was maintained at 180 µm"
+   ]
+  },
+  "gff2025": {
+   "cite": "soto2025gff",
+   "doi": "10.1038/s44172-025-00512-4",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12638776/fullTextXML",
+   "quotes": [
+    "Fluorine-doped Tin Oxide (FTO) glass substrates (TEC 7"
+   ]
+  },
+  "lcoe2023": {
+   "cite": "debastiani2023lcoe",
+   "doi": "10.1039/d2ee03136a",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9932852/fullTextXML",
+   "quotes": [
+    "the area required for the edge sealing (roughly 1 cm, running around the glass edge)"
+   ]
+  },
+  "intaniwet2012": {
+   "cite": "intaniwet2012ptaa",
+   "doi": "10.1088/0957-4484/23/23/235502",
+   "fulltext_url": "https://openresearch.surrey.ac.uk/view/pdfCoverPage?download=true&filePid=13140478800002346&instCode=44SUR_INST",
+   "quotes": [
+    "1 gcm -3 for PTAA"
+   ]
+  },
+  "connell2018": {
+   "cite": "connell2018htm",
+   "doi": "10.1039/c8tc04231d",
+   "fulltext_url": "https://eprints.gla.ac.uk/173162/7/173162.pdf",
+   "quotes": [
+    "PTAA is more than twice the cost of spiro-OMeTAD"
+   ]
+  },
+  "mathews2020": {
+   "cite": "mathews2020growth",
+   "doi": "10.1016/j.joule.2020.01.006",
+   "fulltext_url": "https://cora.ucc.ie/server/api/core/bitstreams/1a6a2c66-ba83-4a01-8cdb-4296a20bc925/content",
+   "quotes": [
+    "order-of-magnitude price increases observed for many materials"
+   ],
+   "note": "accepted manuscript in the UCC repository (OpenAlex location, submittedVersion)"
+  },
+  "chang2017pip": {
+   "cite": "chang2017uncert",
+   "doi": "10.1002/pip.2871",
+   "fulltext_url": "https://unsworks.unsw.edu.au/bitstreams/a78d60f4-fa61-4fb3-8f5b-c47b9b7e53e8/download",
+   "quotes": [
+    "with 40 % material utilization in the evaporator"
+   ]
+  },
+  "chang2017solmat": {
+   "cite": "chang2017r2r",
+   "doi": "10.1016/j.solmat.2017.08.038",
+   "fulltext_url": "https://unsworks.unsw.edu.au/bitstreams/39450074-f874-49d2-9497-593da5ceb680/download",
+   "quotes": [
+    "Building and Facility maintenance rate 4% of capex per year"
+   ]
+  },
+  "liu2025": {
+   "cite": "liu2025cost",
+   "doi": "10.1007/s40820-025-01744-x",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12000492/fullTextXML",
+   "quotes": [
+    "Deposition of Cu by thermal evaporating",
+    "modules with a size of 0.6 × 1.2 m 2 and an output of 110 W"
+   ]
+  },
+  "cai2017": {
+   "cite": "cai2017cost",
+   "doi": "10.1002/advs.201600269",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5238749/fullTextXML",
+   "quotes": [
+    "After adding 1% of the capital costs for maintenance fees",
+    "The overhead costs consisted of labor costs, the cost of renting facilities, and the cost of utilities."
+   ],
+   "note": "staffing (76 employees) is quoted from the Cai 2017 SI by the cost-library provenance gate: 'the number of employee is 76 in total'"
+  },
+  "ono2020": {
+   "cite": "ono2020defects",
+   "doi": "10.1002/anie.201905521",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7187320/fullTextXML",
+   "quotes": [
+    "it is likely that a defect density on the order of 1014 cm−3 or lower in the polycrystalline thin films is the upper bound threshold"
+   ]
+  },
+  "css2024": {
+   "cite": "rodkey2024css",
+   "doi": "10.1021/acsenergylett.3c02794",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10928705/fullTextXML",
+   "quotes": [
+    "the simulated bulk trap densities were 2.0 × 1021, 2.7 × 1020, and <1.1 × 1019 m–3"
+   ]
+  },
+  "mobility2022": {
+   "cite": "lim2022mobility",
+   "doi": "10.1038/s41467-022-31569-w",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9300620/fullTextXML",
+   "quotes": [
+    "We determine the mobilities to be in the range from 0.3 to 6.7 cm2 V−1 s−1",
+    "is approximately double the value of the average of electron and hole mobilities"
+   ]
+  },
+  "ionmonger2019": {
+   "cite": "courtier2019ionmonger",
+   "doi": "10.1007/s10825-019-01396-2",
+   "fulltext_url": "https://link.springer.com/article/10.1007/s10825-019-01396-2",
+   "quotes": [
+    "On the external boundary with the metal contact, we impose Ohmic boundary conditions"
+   ]
+  },
+  "simss_L2": {
+   "cite": "simsalabim536",
+   "url": "https://github.com/kostergroup/SIMsalabim/releases/tag/v5.36",
+   "fulltext_url": "https://raw.githubusercontent.com/kostergroup/SIMsalabim/v5.36/SimSS/L2_parameters.txt",
+   "quotes": [
+    "N_t_bulk = 1E20",
+    "mu_n = 1E-4"
+   ]
+  },
+  "simss_setup": {
+   "cite": "simsalabim536",
+   "url": "https://github.com/kostergroup/SIMsalabim/releases/tag/v5.36",
+   "fulltext_url": "https://raw.githubusercontent.com/kostergroup/SIMsalabim/v5.36/SimSS/simulation_setup.txt",
+   "quotes": [
+    "Use negative value for infinite R_shunt",
+    "R_series = 0",
+    "nb: use negative values if Sn/pR/L should be infinite"
+   ]
+  },
+  "islam2021": {
+   "cite": "islam2021snx3",
+   "doi": "10.3390/nano11051218",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8147994/fullTextXML",
+   "quotes": [
+    "Metal work function (eV) 5.1 4.7 4.8 4.6 5.0",
+    "AM1.5 G illumination spectrum (1000 Watt/m 2"
+   ]
+  },
+  "nist811": {
+   "cite": "thompson2008sp811",
+   "doi": "10.6028/NIST.SP.811e2008",
+   "fulltext_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf",
+   "quotes": [
+    "ounce (troy or apothecary) (oz) ........................... gram (g) ............................................... 3.110 348 E+01"
+   ]
+  },
+  "nlr_am15": {
+   "cite": "nlr_am15",
+   "url": "https://www.nlr.gov/grid/solar-resource/spectra-am1.5",
+   "fulltext_url": "https://www.nlr.gov/grid/solar-resource/spectra-am1.5",
+   "quotes": [
+    "An absolute air mass of 1.5"
+   ]
+  },
+  "dipta2022": {
+   "cite": "dipta2022light",
+   "doi": "10.1016/j.heliyon.2022.e11380",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9663869/fullTextXML",
+   "quotes": [
+    "Bandgap (eV) 3.5 3.2 1.55 2.91 2.3 1.41 1.59 3.2 3.5 3.5 1.85 2.17 Affinity (eV) 4 4 3.9 2.2 3.9 3.52 4.09 4 4 2.2 3.1 3"
+   ]
+  },
+  "simss_L1": {
+   "cite": "simsalabim536",
+   "url": "https://github.com/kostergroup/SIMsalabim/releases/tag/v5.36",
+   "fulltext_url": "https://raw.githubusercontent.com/kostergroup/SIMsalabim/v5.36/SimSS/L1_parameters.txt",
+   "quotes": [
+    "E_c = 4"
+   ]
+  },
+  "simss_L3": {
+   "cite": "simsalabim536",
+   "url": "https://github.com/kostergroup/SIMsalabim/releases/tag/v5.36",
+   "fulltext_url": "https://raw.githubusercontent.com/kostergroup/SIMsalabim/v5.36/SimSS/L3_parameters.txt",
+   "quotes": [
+    "E_v = 5.4"
+   ]
+  },
+  "kajal2021": {
+   "cite": "kajal2021carbon",
+   "doi": "10.1002/gch2.202100070"
+  },
+  "wb_pink": {
+   "cite": "wb_pink2026",
+   "note": "value copied by the cost-library provenance gate from the saved copy under data/sources/"
+  },
+  "wb_wdi": {
+   "cite": "wb_wdi2026",
+   "note": "value copied by the cost-library provenance gate from the saved copy under data/sources/"
+  },
+  "tnb": {
+   "cite": "tnb_tariff2025",
+   "note": "value copied by the cost-library provenance gate from the saved copy under data/sources/"
+  },
+  "dosm": {
+   "cite": "dosm_wages2025",
+   "note": "value copied by the cost-library provenance gate from the saved copy under data/sources/"
+  },
+  "irena2023": {
+   "cite": "irena2023finance",
+   "url": "https://www.irena.org/Publications/2023/May/The-cost-of-financing-for-renewable-power",
+   "fulltext_url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2023/May/IRENA_The_cost_of_financing_renewable_power_2023.pdf",
+   "quotes": [
+    "with the cost of equity generally being higher than the cost of debt to compensate for the greater exposure to risk. The cost of debt is the cost to finance a loan on the renewable energy asset – typically provided by a bank."
+   ]
+  },
+  "steffen2020": {
+   "cite": "steffen2020coc",
+   "doi": "10.1016/j.eneco.2020.104783"
+  },
+  "iea2022": {
+   "cite": "iea2022pvsupply",
+   "url": "https://www.iea.org/reports/solar-pv-global-supply-chains",
+   "fulltext_url": "https://iea.blob.core.windows.net/assets/d2ee601d-6b1a-4cd2-a0e8-db02dc64332c/SpecialReportonSolarPVGlobalSupplyChains.pdf",
+   "quotes": [
+    "China is the most cost-competitive location to manufacture all components of the solar PV supply chain. Costs in China are 10% lower than in India, 20% lower than in the United States, and 35% lower than in Europe.",
+    "In the ASEAN region, total module-manufacturing costs can be around 5% more than in China, mainly due to slightly higher overhead and labour costs.",
+    "Large variations in energy, labour, investment and overhead costs explain these differences."
+   ]
+  },
+  "kwsp": {
+   "cite": "kwsp2025epf",
+   "url": "https://www.kwsp.gov.my/en/employer/responsibilities/mandatory-contribution",
+   "local_file": "data/sources/kwsp_epf_rates_2026_10.txt",
+   "quotes": [
+    "RM5,000 and below Employees share: 11% Employer’s share: 13%",
+    "More than RM5,000 Employees share: 11% Employer’s share: 12%"
+   ]
+  },
+  "perkeso": {
+   "cite": "perkeso2026",
+   "url": "https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html",
+   "fulltext_url": "https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html",
+   "quotes": [
+    "The rate of contribution under this category comprises 1.75% of employer’s share",
+    "0.2% will be paid by the employer"
+   ]
+  },
+  "sst": {
+   "cite": "customs2024sst",
+   "url": "https://mysst.customs.gov.my/faq-business/",
+   "fulltext_url": "https://mysst.customs.gov.my/faq-business/",
+   "quotes": [
+    "The provision of electricity to the commercial consumer is not subject to service tax.",
+    "The provision of electricity to the domestic consumer which exceeds 600kWh for a minimum period of twenty-eight days per billing cycle is subject to service tax."
+   ]
+  },
+  "geiser2013": {
+   "cite": "geiser2013au",
+   "doi": "10.1186/1743-8977-10-19",
+   "note": "value copied by the cost-library provenance gate (data/sources/au_density_pmc3660288.txt)"
+  },
+  "thomas2018": {
+   "cite": "thomas2018ag",
+   "doi": "10.1186/s12989-018-0243-7",
+   "note": "value copied by the cost-library provenance gate (data/sources/ag_density_pmc5784555.txt)"
+  },
+  "shahinuzzaman2022": {
+   "cite": "shahinuzzaman2022htm",
+   "doi": "10.3390/nano12173003",
+   "note": "value copied by the cost-library provenance gate"
+  },
+  "vivo2017": {
+   "cite": "vivo2017htm",
+   "doi": "10.3390/ma10091087",
+   "note": "value copied by the cost-library provenance gate"
+  },
+  "mof2024sst": {
+   "cite": "mof2024sst",
+   "url": "https://www.mof.gov.my/portal/en/news/press-citations/service-tax-increase-only-affects-discretionary-services-b2b-activities-mof",
+   "fulltext_url": "https://www.mof.gov.my/portal/en/news/press-citations/service-tax-increase-only-affects-discretionary-services-b2b-activities-mof",
+   "quotes": [
+    "As for electricity services, the Service Tax is only imposed on usage exceeding 600 kilowatt hour (kWh)",
+    "The increase in the Service Tax rate from 6.0 per cent to 8.0 per cent, effective from March 1, 2024"
+   ]
+  },
+  "tian2020": {
+   "cite": "tian2020lca",
+   "doi": "10.1126/sciadv.abb0055",
+   "note": "values copied by the cost-library provenance gate (Tian 2020 SI)"
+  },
+  "li2026": {
+   "cite": "li2026blade",
+   "doi": "10.1038/s41467-026-72581-8",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13407865/fullTextXML",
+   "quotes": [
+    "The hole-only device structure is FTO/NiOx (20 nm)/SAM/Perovskite layer/Passivation layer/MoO 3 (10 nm)/Cu(80 nm)."
+   ]
+  },
+  "xu2025": {
+   "cite": "xu2025strain",
+   "doi": "10.1038/s41467-025-67027-6",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12789107/fullTextXML",
+   "quotes": [
+    "Finally, MoO 3 (10 nm) and Ag (100 nm) were successively thermally evaporated on the hole-transporting layer."
+   ]
+  },
+  "usgs_mo": {
+   "cite": "usgs2026mo",
+   "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-molybdenum.pdf",
+   "fulltext_url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-molybdenum.pdf",
+   "quotes": [
+    "Price, average, dollars per kilogram4 35.62 41.72 54.32 47.72 51",
+    "4U.S. molybdic oxide (MoO3) price, 57% molybdenum content."
+   ]
+  },
+  "pubchem_moo3": {
+   "cite": "pubchem_moo3",
+   "url": "https://pubchem.ncbi.nlm.nih.gov/compound/14802",
+   "fulltext_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/14802/JSON?heading=Density",
+   "quotes": [
+    "4.69 @ 26 °C/4 °C"
+   ]
+  }
+ },
+ "rows": [
+  {
+   "id": "dead_mm",
+   "group": "Module geometry",
+   "item": "Interconnection (P1 to P3) dead width",
+   "token": "dead_mm",
+   "unit": "mm",
+   "status": "assumed",
+   "support": [
+    "digiacomo2020",
+    "castriotta2025"
+   ],
+   "how": "Inside the published range: 150 µm plus the P2 width in a laser-scribed perovskite mini-module, 180 µm in 156 cm² modules."
+  },
+  {
+   "id": "tco_ohm",
+   "group": "Module geometry",
+   "item": "Front TCO sheet resistance",
+   "token": "tco_ohm",
+   "unit": "Ω/sq",
+   "status": "assumed",
+   "support": [
+    "digiacomo2020",
+    "gff2025"
+   ],
+   "how": "Module TCOs are limited to about 7 to 60 Ω per square; a commercial FTO glass is sold at 7 Ω per square."
+  },
+  {
+   "id": "edge_pct",
+   "group": "Module geometry",
+   "item": "Inactive edge area",
+   "token": "edge_pct",
+   "unit": "%",
+   "status": "assumed",
+   "support": [
+    "lcoe2023",
+    "liu2025"
+   ],
+   "how": "A cost study allows about 1 cm of edge seal around the glass. On the 0.6 × 1.2 m module of the reference line that is 4.9% of the area, so 3% is optimistic; Note S9 tests 0% and 6%."
+  },
+  {
+   "id": "ptco",
+   "group": "Module geometry",
+   "item": "First-order TCO loss and stripe-width trade-off",
+   "unit": "",
+   "status": "sourced",
+   "support": [
+    "digiacomo2020"
+   ],
+   "how": "Same loss split (geometric loss of the P1-P2-P3 dead area, resistive loss in the TCO) and the same R·J·w²/(3V) form."
+  },
+  {
+   "id": "max_ptco",
+   "group": "Module geometry",
+   "item": "Refusal above the TCO-loss limit",
+   "token": "max_ptco_pct",
+   "unit": "%",
+   "status": "design choice",
+   "support": [],
+   "how": "A validity limit of the first-order model chosen in the pre-registration, not a physical value."
+  },
+  {
+   "id": "stripe",
+   "group": "Module geometry",
+   "item": "Stripe-width range",
+   "value": "2 to 10",
+   "unit": "mm",
+   "status": "design choice",
+   "support": [
+    "digiacomo2020",
+    "castriotta2025"
+   ],
+   "how": "Fixed in the pre-registration; it brackets the 5 mm cells of the cited modules."
+  },
+  {
+   "id": "bounds",
+   "group": "Design space",
+   "item": "Layer thickness bounds (Table 1)",
+   "value": "see Table 1",
+   "status": "design choice",
+   "support": [],
+   "how": "Fixed in the pre-registration as the library range of each material; not a physical limit."
+  },
+  {
+   "id": "nt",
+   "group": "Device model",
+   "item": "MAPbI₃ bulk trap density (base)",
+   "token": "nt_lib",
+   "unit": "m⁻³",
+   "status": "assumed",
+   "support": [
+    "simss_L2",
+    "ono2020"
+   ],
+   "how": "SIMsalabim default (1E20 m⁻³ = 10¹⁴ cm⁻³); a review gives about 10¹⁴ cm⁻³ or lower as the threshold for high-performance films."
+  },
+  {
+   "id": "nt_range",
+   "group": "Device model",
+   "item": "Trap density scenarios (base times or divided by √10)",
+   "value": "3.2E19 to 3.2E20",
+   "unit": "m⁻³",
+   "status": "convention",
+   "support": [
+    "css2024",
+    "ono2020"
+   ],
+   "how": "The span 3.2E19 to 3.2E20 m⁻³ lies inside values fitted to working perovskite cells (below 1.1E19 up to 2.0E21 m⁻³)."
+  },
+  {
+   "id": "mu",
+   "group": "Device model",
+   "item": "MAPbI₃ electron mobility (base)",
+   "token": "mu_lib",
+   "unit": "m² V⁻¹ s⁻¹",
+   "status": "assumed",
+   "support": [
+    "simss_L2",
+    "mobility2022"
+   ],
+   "how": "SIMsalabim default (1E-4 m² V⁻¹ s⁻¹ = 1 cm² V⁻¹ s⁻¹). Long-range mobilities measured in MAPbI₃ and mixed perovskite films are 0.3 to 6.7 cm² V⁻¹ s⁻¹, but as a sum of electron and hole mobilities, so a single carrier has about half (0.15 to 3.4 cm² V⁻¹ s⁻¹)."
+  },
+  {
+   "id": "mu_range",
+   "group": "Device model",
+   "item": "Mobility scenarios (base times or divided by √10)",
+   "value": "0.32 to 3.2",
+   "unit": "cm² V⁻¹ s⁻¹",
+   "status": "convention",
+   "support": [
+    "mobility2022"
+   ],
+   "how": "0.32 to 3.2 cm² V⁻¹ s⁻¹ for the electron mobility, inside the single-carrier range of about 0.15 to 3.4 cm² V⁻¹ s⁻¹ implied by the measured sum of mobilities."
+  },
+  {
+   "id": "contacts",
+   "group": "Device model",
+   "item": "Ideal contacts: infinite surface recombination, no series resistance, infinite shunt",
+   "unit": "",
+   "status": "design choice",
+   "support": [
+    "simss_setup",
+    "ionmonger2019"
+   ],
+   "how": "SIMsalabim default contact setting; another open perovskite drift-diffusion code also uses Ohmic contacts. With no contact or resistive losses, efficiencies are upper bounds."
+  },
+  {
+   "id": "band_edges",
+   "group": "Device model",
+   "item": "Band edges: C₆₀ E_c 4.0, PTAA E_v 5.4, SnO₂ E_c 4.0, NiOx E_v 5.7 eV",
+   "unit": "",
+   "status": "sourced",
+   "support": [
+    "simss_L1",
+    "simss_L3",
+    "dipta2022"
+   ],
+   "how": "C₆₀ and PTAA are SIMsalabim default layers; SnO₂ and NiOx come from the electron affinity and band gap in a published device table."
+  },
+  {
+   "id": "wf",
+   "group": "Device model",
+   "item": "Bare metal work functions (S-WF only): Au, Ag, Cu",
+   "value": "5.1, 4.7, 4.6",
+   "unit": "eV",
+   "status": "sourced",
+   "support": [
+    "islam2021"
+   ],
+   "how": "Back-contact work function table of one simulation study."
+  },
+  {
+   "id": "am15",
+   "group": "Device model",
+   "item": "Illumination: AM1.5G, 1000 W m⁻²",
+   "token": "incident_w",
+   "unit": "W m⁻²",
+   "status": "convention",
+   "support": [
+    "nlr_am15",
+    "islam2021"
+   ],
+   "how": "ASTM G173-03 global tilt spectrum; its tabulated values integrate to 1000.4 W m⁻² (computed here from the NLR file)."
+  },
+  {
+   "id": "ag_price",
+   "group": "Materials cost",
+   "item": "Silver price",
+   "token": "b_ag_price",
+   "unit": "USD/toz",
+   "status": "sourced",
+   "support": [
+    "wb_pink"
+   ],
+   "how": "World Bank Pink Sheet monthly average."
+  },
+  {
+   "id": "au_price",
+   "group": "Materials cost",
+   "item": "Gold price",
+   "token": "b_au_price",
+   "unit": "USD/toz",
+   "status": "sourced",
+   "support": [
+    "wb_pink"
+   ],
+   "how": "World Bank Pink Sheet monthly average."
+  },
+  {
+   "id": "troy",
+   "group": "Materials cost",
+   "item": "Troy ounce",
+   "value": "31.1034768",
+   "unit": "g",
+   "status": "convention",
+   "support": [
+    "nist811"
+   ],
+   "how": "1 troy ounce = 31.10348 g (exact definition)."
+  },
+  {
+   "id": "au_dens",
+   "group": "Materials cost",
+   "item": "Gold density",
+   "lib": "au_density",
+   "unit": "g cm⁻³",
+   "status": "sourced",
+   "support": [
+    "geiser2013"
+   ],
+   "how": "Stated density, converts thickness to mass."
+  },
+  {
+   "id": "ag_dens",
+   "group": "Materials cost",
+   "item": "Silver density",
+   "token": "b_ag_density",
+   "unit": "g cm⁻³",
+   "status": "sourced",
+   "support": [
+    "thomas2018"
+   ],
+   "how": "Stated density, converts thickness to mass."
+  },
+  {
+   "id": "util",
+   "group": "Materials cost",
+   "item": "Evaporation utilisation of Cu, used for Ag and Au (proxy)",
+   "lib": "liu_cu_util",
+   "unit": "fraction",
+   "status": "proxy",
+   "support": [
+    "liu2025",
+    "chang2017pip"
+   ],
+   "how": "0.25 for thermally evaporated Cu on the reference line. A gold cost study uses 40%, so the proxy overstates the gold and silver cost."
+  },
+  {
+   "id": "ptaa_price",
+   "group": "Materials cost",
+   "item": "PTAA price (catalogue scale)",
+   "token": "b_ptaa_price",
+   "unit": "USD/g",
+   "status": "sourced",
+   "support": [
+    "shahinuzzaman2022",
+    "vivo2017",
+    "connell2018",
+    "mathews2020"
+   ],
+   "how": "1145 USD/g (review table, which calls the prices arbitrary), 2000 USD/g as the high case; PTAA is sold at more than twice the price of spiro-OMeTAD. For other perovskite module materials, prices fall by an order of magnitude from 1 MW to 1 GW per year, so a bulk PTAA price is probably far lower; Q4 reports the break-even price instead."
+  },
+  {
+   "id": "ptaa_dens",
+   "group": "Materials cost",
+   "item": "PTAA density",
+   "token": "ptaa_density",
+   "unit": "g cm⁻³",
+   "status": "assumed",
+   "support": [
+    "intaniwet2012"
+   ],
+   "how": "A published estimate of 1 g cm⁻³ for PTAA; 1.1 is used. The 10% difference scales only the PTAA layer cost."
+  },
+  {
+   "id": "parts",
+   "group": "Materials cost",
+   "item": "Module parts: front FTO glass, back glass, POE encapsulant, frame, junction box (prices, masses, utilisation)",
+   "value": "",
+   "status": "sourced",
+   "support": [
+    "liu2025"
+   ],
+   "how": "Bill of materials of the reference line study, read through the cost-library provenance gate (Note S4)."
+  },
+  {
+   "id": "fto_proxy",
+   "group": "Materials cost",
+   "item": "FTO glass price used for the ITO front electrode",
+   "value": "10.0 USD/m²",
+   "status": "proxy",
+   "support": [
+    "liu2025"
+   ],
+   "how": "The reference line uses FTO glass; the simulated stack has ITO. Tagged as a proxy in the cost output."
+  },
+  {
+   "id": "pvk_proxy",
+   "group": "Materials cost",
+   "item": "Absorber price (unspecified production perovskite, used for MAPbI₃)",
+   "value": "0.63 USD/g",
+   "status": "proxy",
+   "support": [
+    "liu2025"
+   ],
+   "how": "Price of the absorber of the reference line; MAPbI₃ itself has no price there."
+  },
+  {
+   "id": "rear_ito",
+   "group": "Materials cost",
+   "item": "Rear ITO layer in the p-i-n bill (costed, not simulated)",
+   "value": "300 nm, 9.0 USD/cm³",
+   "status": "sourced",
+   "support": [
+    "liu2025"
+   ],
+   "how": "Layer and price of the reference line."
+  },
+  {
+   "id": "capex",
+   "group": "Line and operating cost",
+   "item": "Line capital, throughput, depreciation and yield (100 MW per year line in China)",
+   "token": "line_capex_usd",
+   "unit": "USD",
+   "status": "sourced",
+   "support": [
+    "liu2025"
+   ],
+   "how": "Stated by the reference line study."
+  },
+  {
+   "id": "regional",
+   "group": "Line and operating cost",
+   "item": "No regional adjustment of the Chinese capital cost",
+   "unit": "",
+   "status": "assumed",
+   "support": [
+    "iea2022"
+   ],
+   "how": "PV manufacturing in China is 10% cheaper than in India, 20% than in the United States and 35% than in Europe, with investment cost among the drivers; module making in ASEAN costs about 5% more than in China, mainly through overhead and labour. The Chinese figure therefore probably understates cost in Malaysia."
+  },
+  {
+   "id": "rate",
+   "group": "Line and operating cost",
+   "item": "Capital rate = Malaysian bank lending rate (lower bound)",
+   "token": "rate_MY",
+   "unit": "%",
+   "status": "sourced",
+   "support": [
+    "wb_wdi",
+    "irena2023",
+    "steffen2020"
+   ],
+   "how": "World Bank lending rate. The cost of equity is generally above the cost of debt (a bank loan), so the true cost of capital is higher."
+  },
+  {
+   "id": "rate_cn_in",
+   "group": "Line and operating cost",
+   "item": "Chinese and Indian lending rates (companion rows)",
+   "value": "4.35, 8.57",
+   "unit": "%",
+   "status": "sourced",
+   "support": [
+    "wb_wdi"
+   ],
+   "how": "World Bank lending rate, latest year available."
+  },
+  {
+   "id": "wage",
+   "group": "Line and operating cost",
+   "item": "Malaysian manufacturing wage",
+   "lib": "dosm_mfg_mean_wage_2025",
+   "unit": "MYR/month",
+   "status": "sourced",
+   "support": [
+    "dosm"
+   ],
+   "how": "DOSM mean monthly wage in manufacturing, 2025."
+  },
+  {
+   "id": "fx",
+   "group": "Line and operating cost",
+   "item": "MYR per USD",
+   "lib": "wdi_fx_my_2025",
+   "unit": "MYR/USD",
+   "status": "sourced",
+   "support": [
+    "wb_wdi"
+   ],
+   "how": "World Bank official exchange rate, 2025."
+  },
+  {
+   "id": "staff",
+   "group": "Line and operating cost",
+   "item": "Staffing",
+   "token": "cai_staff",
+   "unit": "people",
+   "status": "sourced",
+   "support": [
+    "cai2017"
+   ],
+   "how": "Staffing of a modelled 100 MW printable perovskite line (stated in the SI of the study)."
+  },
+  {
+   "id": "tariff",
+   "group": "Line and operating cost",
+   "item": "Electricity tariff (medium-voltage general)",
+   "lib": "tnb_mv_energy",
+   "unit": "MYR/kWh",
+   "status": "sourced",
+   "support": [
+    "tnb"
+   ],
+   "how": "TNB RP4 tariff from 1 July 2025, with demand charges."
+  },
+  {
+   "id": "elec_inv",
+   "group": "Line and operating cost",
+   "item": "Process electricity per step (sputtering, printing, annealing)",
+   "value": "",
+   "status": "proxy",
+   "support": [
+    "tian2020"
+   ],
+   "how": "Step inventory of a perovskite/silicon tandem life-cycle study, priced at the Malaysian tariff."
+  },
+  {
+   "id": "maint",
+   "group": "Line and operating cost",
+   "item": "Maintenance, share of capital per year",
+   "token": "maint_pct",
+   "unit": "%",
+   "status": "sourced",
+   "support": [
+    "kajal2021",
+    "cai2017",
+    "chang2017solmat"
+   ],
+   "how": "1% is used by two perovskite cost studies; a roll-to-roll study uses 4% for building and facility maintenance, so 1% is probably low. Note S9 tests 3% and 7%."
+  },
+  {
+   "id": "omitted",
+   "group": "Line and operating cost",
+   "item": "Omitted overheads: land, rent, facilities, cleanroom and HVAC base load",
+   "unit": "",
+   "status": "assumed",
+   "support": [
+    "cai2017"
+   ],
+   "how": "Bottom-up perovskite module models count facility rent and utilities as overhead, so leaving them out makes O a lower bound."
+  },
+  {
+   "id": "statutory",
+   "group": "Line and operating cost",
+   "item": "Omitted employer contributions (EPF 13%, SOCSO 1.75%, EIS 0.2% of wages)",
+   "unit": "",
+   "status": "assumed",
+   "support": [
+    "kwsp",
+    "perkeso"
+   ],
+   "how": "Official Malaysian rates for wages of RM5,000 and below. The effect on O is computed in this note."
+  },
+  {
+   "id": "sst",
+   "group": "Line and operating cost",
+   "item": "Service tax on factory electricity",
+   "unit": "",
+   "status": "assumed",
+   "support": [
+    "sst",
+    "mof2024sst"
+   ],
+   "how": "Assumed zero at current rules: the 8% service tax (from 1 March 2024) applies only to domestic use above 600 kWh, and commercial supply is exempt. Taxes and tariffs may change."
+  },
+  {
+   "id": "moox",
+   "group": "Line and operating cost",
+   "item": "Hole-side interlayer for n-i-p Cu/Ag (post-hoc bound, Note S16): 10 nm MoO₃",
+   "unit": "USD/m²",
+   "status": "assumed",
+   "support": [
+    "li2026",
+    "xu2025",
+    "usgs_mo",
+    "pubchem_moo3",
+    "tian2020"
+   ],
+   "how": "10 nm evaporated MoO₃ under Cu or Ag is used in published perovskite cells. Bulk molybdic oxide costs 51 USD/kg (2025e); density 4.69 g/cm³; step electricity proxied by the Cu evaporation step. A lower estimate: evaporation-grade powder, tool capital and time are excluded.",
+   "token": "b_mx_k"
+  }
+ ]
+}

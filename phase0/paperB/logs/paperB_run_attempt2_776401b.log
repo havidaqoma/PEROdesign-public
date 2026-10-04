@@ -1,0 +1,755 @@
+runs 90 todo 90 workers 12
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/acquisition/multi_objective/logei.py:602: UserWarning: Failed to compile fused qLogEHVI C++ extension: Ninja is required to load C++ extensions (pip install ninja to get it). Falling back to the pure-Python implementation. To get ~3x speedup, ensure a C++ compiler and the `ninja` package are installed.
+  _try_load_fused_kernel()
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), NumericalWarning('A not p.d., added jitter of 1.0e-08 to the diagonal')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .'), OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed in `gen_candidates_scipy` with the following warning(s):
+[OptimizationWarning('Optimization failed within `scipy.optimize.minimize` with status 2 and message ABNORMAL: .')]
+Trying again with a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/botorch/optim/optimize.py:844: RuntimeWarning: Optimization failed on the second try, after generating a new set of initial conditions.
+  return _optimize_acqf_batch(opt_inputs=opt_inputs)
+/home/havidaqoma/venvs/perodesign-dev/lib/python3.11/site-packages/linear_operator/utils/cholesky.py:41: NumericalWarning: A not p.d., added jitter of 1.0e-08 to the diagonal
+  warnings.warn(
+1/90 ERROR p-i-n__base__mixbo__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+2/90 ERROR p-i-n__base__mixbo__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+3/90 ERROR p-i-n__base__mixbo__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+4/90 ERROR p-i-n__base__mixbo__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+5/90 ERROR p-i-n__base__mixbo__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+6/90 ERROR p-i-n__worse__mixbo__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+7/90 ERROR p-i-n__worse__mixbo__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+8/90 ERROR p-i-n__worse__mixbo__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+9/90 ERROR p-i-n__worse__mixbo__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+10/90 ERROR p-i-n__worse__mixbo__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+11/90 ERROR p-i-n__better__mixbo__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+12/90 ERROR p-i-n__better__mixbo__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+13/90 ERROR p-i-n__better__mixbo__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+14/90 ERROR p-i-n__better__mixbo__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+15/90 ERROR p-i-n__better__mixbo__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+16/90 ERROR n-i-p__base__mixbo__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+17/90 ERROR n-i-p__base__mixbo__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+18/90 ERROR n-i-p__base__mixbo__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+19/90 ERROR n-i-p__base__mixbo__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+20/90 ERROR n-i-p__base__mixbo__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+21/90 ERROR n-i-p__worse__mixbo__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+22/90 ERROR n-i-p__worse__mixbo__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+23/90 ERROR n-i-p__worse__mixbo__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+24/90 ERROR n-i-p__worse__mixbo__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+25/90 ERROR n-i-p__worse__mixbo__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+26/90 ERROR n-i-p__better__mixbo__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+27/90 ERROR n-i-p__better__mixbo__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+28/90 ERROR n-i-p__better__mixbo__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+29/90 ERROR n-i-p__better__mixbo__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+30/90 ERROR n-i-p__better__mixbo__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+31/90 ERROR p-i-n__base__nsga2__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+32/90 ERROR p-i-n__base__nsga2__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+33/90 ERROR p-i-n__base__nsga2__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+34/90 ERROR p-i-n__base__nsga2__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+35/90 ERROR p-i-n__base__nsga2__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+36/90 ERROR p-i-n__worse__nsga2__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+37/90 ERROR p-i-n__worse__nsga2__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+38/90 ERROR p-i-n__worse__nsga2__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+39/90 ERROR p-i-n__worse__nsga2__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+40/90 ERROR p-i-n__worse__nsga2__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+41/90 ERROR p-i-n__better__nsga2__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+42/90 ERROR p-i-n__better__nsga2__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+43/90 ERROR p-i-n__better__nsga2__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+44/90 ERROR p-i-n__better__nsga2__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+45/90 ERROR p-i-n__better__nsga2__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+46/90 ERROR n-i-p__base__nsga2__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+47/90 ERROR n-i-p__base__nsga2__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+48/90 ERROR n-i-p__base__nsga2__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+49/90 ERROR n-i-p__base__nsga2__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+50/90 ERROR n-i-p__base__nsga2__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+51/90 ERROR n-i-p__worse__nsga2__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+52/90 ERROR n-i-p__worse__nsga2__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+53/90 ERROR n-i-p__worse__nsga2__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+54/90 ERROR n-i-p__worse__nsga2__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+55/90 ERROR n-i-p__worse__nsga2__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+56/90 ERROR n-i-p__better__nsga2__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+57/90 ERROR n-i-p__better__nsga2__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+58/90 ERROR n-i-p__better__nsga2__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+59/90 ERROR n-i-p__better__nsga2__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+60/90 ERROR n-i-p__better__nsga2__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+61/90 ERROR p-i-n__base__random__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+62/90 ERROR p-i-n__base__random__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+63/90 ERROR p-i-n__base__random__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+64/90 ERROR p-i-n__base__random__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+65/90 ERROR p-i-n__base__random__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+66/90 ERROR p-i-n__worse__random__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+67/90 ERROR p-i-n__worse__random__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+68/90 ERROR p-i-n__worse__random__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+69/90 ERROR p-i-n__worse__random__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+70/90 ERROR p-i-n__worse__random__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+71/90 ERROR p-i-n__better__random__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+72/90 ERROR p-i-n__better__random__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+73/90 ERROR p-i-n__better__random__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+74/90 ERROR p-i-n__better__random__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+75/90 ERROR p-i-n__better__random__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+76/90 ERROR n-i-p__base__random__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+77/90 ERROR n-i-p__base__random__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+78/90 ERROR n-i-p__base__random__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+79/90 ERROR n-i-p__base__random__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+80/90 ERROR n-i-p__base__random__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+81/90 ERROR n-i-p__worse__random__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+82/90 ERROR n-i-p__worse__random__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+83/90 ERROR n-i-p__worse__random__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+84/90 ERROR n-i-p__worse__random__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+85/90 ERROR n-i-p__worse__random__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+86/90 ERROR n-i-p__better__random__s0: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+87/90 ERROR n-i-p__better__random__s1: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+88/90 ERROR n-i-p__better__random__s2: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+89/90 ERROR n-i-p__better__random__s3: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+90/90 ERROR n-i-p__better__random__s4: BrokenProcessPool: A process in the process pool was terminated abruptly while the future was running or pending.
+DONE missing 90 ['p-i-n__base__random__s0', 'p-i-n__base__random__s1', 'p-i-n__base__random__s2', 'p-i-n__base__random__s3', 'p-i-n__base__random__s4', 'p-i-n__base__nsga2__s0', 'p-i-n__base__nsga2__s1', 'p-i-n__base__nsga2__s2', 'p-i-n__base__nsga2__s3', 'p-i-n__base__nsga2__s4', 'p-i-n__base__mixbo__s0', 'p-i-n__base__mixbo__s1', 'p-i-n__base__mixbo__s2', 'p-i-n__base__mixbo__s3', 'p-i-n__base__mixbo__s4', 'p-i-n__worse__random__s0', 'p-i-n__worse__random__s1', 'p-i-n__worse__random__s2', 'p-i-n__worse__random__s3', 'p-i-n__worse__random__s4', 'p-i-n__worse__nsga2__s0', 'p-i-n__worse__nsga2__s1', 'p-i-n__worse__nsga2__s2', 'p-i-n__worse__nsga2__s3', 'p-i-n__worse__nsga2__s4', 'p-i-n__worse__mixbo__s0', 'p-i-n__worse__mixbo__s1', 'p-i-n__worse__mixbo__s2', 'p-i-n__worse__mixbo__s3', 'p-i-n__worse__mixbo__s4', 'p-i-n__better__random__s0', 'p-i-n__better__random__s1', 'p-i-n__better__random__s2', 'p-i-n__better__random__s3', 'p-i-n__better__random__s4', 'p-i-n__better__nsga2__s0', 'p-i-n__better__nsga2__s1', 'p-i-n__better__nsga2__s2', 'p-i-n__better__nsga2__s3', 'p-i-n__better__nsga2__s4', 'p-i-n__better__mixbo__s0', 'p-i-n__better__mixbo__s1', 'p-i-n__better__mixbo__s2', 'p-i-n__better__mixbo__s3', 'p-i-n__better__mixbo__s4', 'n-i-p__base__random__s0', 'n-i-p__base__random__s1', 'n-i-p__base__random__s2', 'n-i-p__base__random__s3', 'n-i-p__base__random__s4', 'n-i-p__base__nsga2__s0', 'n-i-p__base__nsga2__s1', 'n-i-p__base__nsga2__s2', 'n-i-p__base__nsga2__s3', 'n-i-p__base__nsga2__s4', 'n-i-p__base__mixbo__s0', 'n-i-p__base__mixbo__s1', 'n-i-p__base__mixbo__s2', 'n-i-p__base__mixbo__s3', 'n-i-p__base__mixbo__s4', 'n-i-p__worse__random__s0', 'n-i-p__worse__random__s1', 'n-i-p__worse__random__s2', 'n-i-p__worse__random__s3', 'n-i-p__worse__random__s4', 'n-i-p__worse__nsga2__s0', 'n-i-p__worse__nsga2__s1', 'n-i-p__worse__nsga2__s2', 'n-i-p__worse__nsga2__s3', 'n-i-p__worse__nsga2__s4', 'n-i-p__worse__mixbo__s0', 'n-i-p__worse__mixbo__s1', 'n-i-p__worse__mixbo__s2', 'n-i-p__worse__mixbo__s3', 'n-i-p__worse__mixbo__s4', 'n-i-p__better__random__s0', 'n-i-p__better__random__s1', 'n-i-p__better__random__s2', 'n-i-p__better__random__s3', 'n-i-p__better__random__s4', 'n-i-p__better__nsga2__s0', 'n-i-p__better__nsga2__s1', 'n-i-p__better__nsga2__s2', 'n-i-p__better__nsga2__s3', 'n-i-p__better__nsga2__s4', 'n-i-p__better__mixbo__s0', 'n-i-p__better__mixbo__s1', 'n-i-p__better__mixbo__s2', 'n-i-p__better__mixbo__s3', 'n-i-p__better__mixbo__s4']
+EXIT=0

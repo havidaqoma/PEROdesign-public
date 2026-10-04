@@ -1,0 +1,15 @@
+round 1: runs 12 todo 12 workers 6 bo_max 6
+done n-i-p__worse__mixbo__s1 10823s infeasible 0
+done n-i-p__base__mixbo__s3 10987s infeasible 0
+done n-i-p__worse__mixbo__s3 11173s infeasible 0
+done n-i-p__worse__mixbo__s2 11315s infeasible 0
+done n-i-p__base__mixbo__s4 11517s infeasible 0
+done n-i-p__worse__mixbo__s0 11572s infeasible 0
+done n-i-p__worse__mixbo__s4 7610s infeasible 0
+done n-i-p__better__mixbo__s1 10490s infeasible 0
+done n-i-p__better__mixbo__s3 10222s infeasible 0
+done n-i-p__better__mixbo__s0 11025s infeasible 0
+done n-i-p__better__mixbo__s2 10719s infeasible 0
+done n-i-p__better__mixbo__s4 12049s infeasible 0
+DONE missing 0 []
+EXIT=0

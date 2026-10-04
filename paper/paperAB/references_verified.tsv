@@ -1,0 +1,81 @@
+key	doi	year	openalex_title
+koopmans2022simsalabim	10.21105/joss.03727	2022	SIMsalabim: An open-source drift-diffusion simulator for semiconductor devices
+balandat2020botorch	10.48550/arxiv.1910.06403	2019	BoTorch: A Framework for Efficient Monte-Carlo Bayesian Optimization
+daulton2021qnehvi	10.48550/arxiv.2105.08195	2021	Parallel Bayesian Optimization of Multiple Noisy Objectives with Expected Hypervolume Improvement
+ament2023logei	10.48550/arxiv.2310.20708	2023	Unexpected Improvements to Expected Improvement for Bayesian Optimization
+deb2002nsga2	10.1109/4235.996017	2002	A fast and elitist multiobjective genetic algorithm: NSGA-II
+blank2020pymoo	10.1109/access.2020.2990567	2020	Pymoo: Multi-Objective Optimization in Python
+zitzler1999hv	10.1109/4235.797969	1999	Multiobjective evolutionary algorithms: a comparative case study and the strength Pareto approach
+borgonovo2007delta	10.1016/j.ress.2006.04.015	2006	A new uncertainty importance measure
+herman2017salib	10.21105/joss.00097	2017	SALib: An open-source Python library for Sensitivity Analysis
+sobol1967	10.1016/0041-5553(67)90144-9	1967	On the distribution of points in a cube and the approximate evaluation of integrals
+song2017tea	10.1039/c7ee00757d	2017	A technoeconomic analysis of perovskite solar module manufacturing with low-cost materials and techniques
+cai2017cost	10.1002/advs.201600269	2016	Cost‐Performance Analysis of Perovskite Solar Modules
+chang2017r2r	10.1016/j.solmat.2017.08.038	2017	Manufacturing cost and market potential analysis of demonstrated roll-to-roll perovskite photovoltaic cell processes
+li2018tandemcost	10.1016/j.joule.2018.05.001	2018	Cost Analysis of Perovskite Tandem Photovoltaics
+li2018scalable	10.1038/natrevmats.2018.17	2018	Scalable fabrication of perovskite solar cells
+yang2018module	10.1021/acsenergylett.7b01221	2018	Highly Efficient Perovskite Solar Modules by Scalable Fabrication and Interconnection Optimization
+courtier2018transport	10.1039/c8ee01576g	2018	How transport layer properties affect perovskite solar cell performance: insights from a coupled charge transport/ion migration model
+eames2015ionic	10.1038/ncomms8497	2015	Ionic transport in hybrid lead iodide perovskite solar cells
+sherkar2017recomb	10.1021/acsenergylett.7b00236	2017	Recombination in Perovskite Solar Cells: Significance of Grain Boundaries, Interface Traps, and Defect Ions
+khenkin2020isos	10.1038/s41560-019-0529-5	2020	Consensus statement for stability assessment and reporting for perovskite photovoltaics based on ISOS procedures
+macleod2020sdl	10.1126/sciadv.aaz8867	2020	Self-driving laboratory for accelerated discovery of thin-film materials
+shields2021bo	10.1038/s41586-021-03213-y	2021	Bayesian reaction optimization as a tool for chemical synthesis
+liang2021benchmark	10.1038/s41524-021-00656-9	2021	Benchmarking the performance of Bayesian optimization across multiple experimental materials science domains
+felton2021summit	10.1002/cmtd.202000051	2021	Summit: Benchmarking Machine Learning Methods for Reaction Optimisation
+hase2021olympus	10.1088/2632-2153/abedc8	2021	Olympus: a benchmarking framework for noisy optimization and experiment planning
+rohr2020bench	10.1039/c9sc05999g	2020	Benchmarking the acceleration of materials discovery by sequential learning
+low2024ebo	10.1038/s41524-024-01274-x	2024	Evolution-guided Bayesian optimization for constrained multi-objective optimization in self-driving labs
+sun2021fusion	10.1016/j.matt.2021.01.008	2021	A data fusion approach to optimize compositional stability of halide perovskites
+perovskiter1_2026	10.1038/s43246-026-01099-9	2026	Perovskite-R1: a domain-specialized large language model for intelligent discovery of precursor additives and experimental design
+pvkllm2026	10.48550/arxiv.2602.04914	2026	From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM
+leap2026	10.48550/arxiv.2605.20242	2026	LEAP: A closed-loop framework for perovskite precursor additive discovery
+liu2025cost	10.1007/s40820-025-01744-x	2025	Cost Effectivities Analysis of Perovskite Solar Cells: Will it Outperform Crystalline Silicon Ones?
+tian2020lca	10.1126/sciadv.abb0055	2020	Life cycle energy use and environmental implications of high-performance perovskite tandem solar cells
+kajal2021carbon	10.1002/gch2.202100070	2021	Costing Analysis of Scalable Carbon‐Based Perovskite Modules Using Bottom Up Technique
+mcpeak2015optics	10.1021/ph5004237	2015	Plasmonic Films Can Easily Be Better: Rules and Recipes
+ishibuchi2015igd	10.1007/978-3-319-15892-1_8	2015	Modified Distance Calculation in Generational Distance and Inverted Generational Distance
+kato2015agi	10.1002/admi.201500195	2015	Silver Iodide Formation in Methyl Ammonium Lead Iodide Perovskite Solar Cells with Silver Top Electrodes
+domanski2016au	10.1021/acsnano.6b02613	2016	Not All That Glitters Is Gold: Metal-Migration-Induced Degradation in Perovskite Solar Cells
+celik2020lca	10.1088/2516-1083/ab7e84	2020	Life-cycle environmental impacts of single-junction and tandem perovskite PVs: a critical review and future perspectives
+ru2019cocabo	10.48550/arxiv.1906.08878	2019	Bayesian Optimisation over Multiple Continuous and Categorical Inputs
+dreczkowski2023mcbo	10.52202/075280-3042	2023	Framework and Benchmarks for Combinatorial and Mixed-variable Bayesian Optimization
+oh2021fmkernel	10.48550/arxiv.2102.12792	2021	Mixed Variable Bayesian Optimization with Frequency Modulated Kernels
+islam2021snx3	10.3390/nano11051218	2021	Defect Study and Modelling of SnX3-Based Perovskite Solar Cells with SCAPS-1D
+geiser2013au	10.1186/1743-8977-10-19	2013	Cellular uptake and localization of inhaled gold nanoparticles in lungs of mice with chronic obstructive pulmonary disease
+thomas2018ag	10.1186/s12989-018-0243-7	2018	ISD3: a particokinetic model for predicting the combined effects of particle sedimentation, diffusion and dissolution on cellular dosimetry for in vitro systems
+shahinuzzaman2022htm	10.3390/nano12173003	2022	Roles of Inorganic Oxide Based HTMs towards Highly Efficient and Long-Term Stable PSC—A Review
+vivo2017htm	10.3390/ma10091087	2017	Hole-Transporting Materials for Printable Perovskite Solar Cells
+dipta2022light	10.1016/j.heliyon.2022.e11380	2022	Enhanced light management and optimization of perovskite solar cells incorporating wavelength dependent reflectance modeling
+thompson2008sp811	10.6028/NIST.SP.811e2008	2008	Guide for the use of the International System of Units (SI)
+digiacomo2020scribe	10.3390/mi11121127	2020	Upscaling Inverted Perovskite Solar Cells: Optimization of Laser Scribing for Highly Efficient Mini-Modules
+nikbakht2025panels	10.1002/advs.202416316	2025	Upscaling Perovskite Photovoltaics: from 156 cm 2 Modules to 0.73 M 2 Panels
+soto2025gff	10.1038/s44172-025-00512-4	2025	Inverted perovskite solar modules with 99.3% geometrical fill factor via nanosecond single laser patterning
+debastiani2023lcoe	10.1039/d2ee03136a	2022	The levelized cost of electricity from perovskite photovoltaics
+intaniwet2012ptaa	10.1088/0957-4484/23/23/235502	2012	Heavy metallic oxide nanoparticles for enhanced sensitivity in semiconducting polymer x-ray detectors
+connell2018htm	10.1039/c8tc04231d	2018	Low cost triazatruxene hole transporting material for >20% efficiency perovskite solar cells
+mathews2020growth	10.1016/j.joule.2020.01.006	2020	Economically Sustainable Growth of Perovskite Photovoltaics Manufacturing
+chang2017uncert	10.1002/pip.2871	2017	A manufacturing cost estimation method with uncertainty analysis and its application to perovskite on glass photovoltaic modules
+ono2020defects	10.1002/anie.201905521	2019	Reducing Detrimental Defects for High‐Performance Metal Halide Perovskite Solar Cells
+rodkey2024css	10.1021/acsenergylett.3c02794	2024	Close-Space Sublimation as a Scalable Method for Perovskite Solar Cells
+lim2022mobility	10.1038/s41467-022-31569-w	2022	Long-range charge carrier mobility in metal halide perovskite thin-films and single crystals via transient photo-conductivity
+courtier2019ionmonger	10.1007/s10825-019-01396-2	2019	IonMonger: a free and fast planar perovskite solar cell simulator with coupled ion vacancy and charge carrier dynamics
+steffen2020coc	10.1016/j.eneco.2020.104783	2020	Estimating the cost of capital for renewable energy projects
+li2026blade	10.1038/s41467-026-72581-8	2026	Low-hygroscopic solvents enable ambient blade coating of efficient perovskite solar cells
+xu2025strain	10.1038/s41467-025-67027-6	2025	Tensile strain regulation via grain boundary buffering for flexible perovskite solar cells
+singh2025ddreview	10.1039/d5el00040h	2025	Drift-diffusion modeling of perovskite solar cells: past and future possibilities
+bennett2026materials	10.1039/d6el00088f	2026	A multi-metric framework for material selection in perovskite modules: implications for sustainability, scalability, and net zero deployment
+wb_pink2026	url:https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-September-2026.pdf	2026	World Bank Commodity Price Data (The Pink Sheet), September 2026 [HTTP 200, checked 2026-10-01]
+wb_wdi2026	url:https://data.worldbank.org/indicator/FR.INR.LEND	2026	World Development Indicators: lending interest rate (FR.INR.LEND) and official exchange rate (PA.NUS.FCRF), database updated 13 July 2026 [HTTP 200, checked 2026-10-01]
+tnb_tariff2025	url:https://www.mytnb.com.my/tariff	2025	Electricity tariff (RP4, from 1 July 2025), medium-voltage general tariff [HTTP 200, checked 2026-10-01]
+dosm_wages2025	url:https://open.dosm.gov.my/publications/salaries_wages_2025	2026	Salaries & Wages Survey Report: 2025, Table A13 (mean monthly salaries and wages by industry) [HTTP 200, checked 2026-10-01]
+nlr_am15	url:https://www.nlr.gov/grid/solar-resource/spectra-am1.5	2026	Reference Air Mass 1.5 Spectra (ASTM G173-03 tables) [HTTP 200, checked 2026-10-01]
+simsalabim536	url:https://github.com/kostergroup/SIMsalabim/releases/tag/v5.36	2026	SIMsalabim release v5.36, SimSS default parameter files (L1, L2, L3 parameters and simulation setup) [HTTP 200, checked 2026-10-01]
+irena2023finance	url:https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2023/May/IRENA_The_cost_of_financing_renewable_power_2023.pdf	2023	The cost of financing for renewable power [HTTP 200, checked 2026-10-01]
+iea2022pvsupply	url:https://iea.blob.core.windows.net/assets/d2ee601d-6b1a-4cd2-a0e8-db02dc64332c/SpecialReportonSolarPVGlobalSupplyChains.pdf	2022	Special Report on Solar PV Global Supply Chains [HTTP 200, checked 2026-10-01]
+kwsp2025epf	url:https://www.kwsp.gov.my/en/employer/responsibilities/mandatory-contribution	2025	Employer mandatory contribution: contribution rates, Third Schedule of the EPF Act 1991 (effective for October 2025 wages) [saved copy data/sources/kwsp_epf_rates_2026_10.txt, checked 2026-10-01]
+perkeso2026	url:https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html	2026	Contributions: Employment Injury and Invalidity Scheme and Employment Insurance System rates [HTTP 200, checked 2026-10-01]
+customs2024sst	url:https://mysst.customs.gov.my/faq-business/	2024	MySST frequently asked questions, business: electricity [HTTP 200, checked 2026-10-01]
+mof2024sst	url:https://www.mof.gov.my/portal/en/news/press-citations/service-tax-increase-only-affects-discretionary-services-b2b-activities-mof	2024	Service tax increase only affects discretionary services, B2B activities (press citation, Bernama) [HTTP 200, checked 2026-10-02]
+usgs2026mo	url:https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-molybdenum.pdf	2026	Mineral Commodity Summaries 2026: Molybdenum [HTTP 200, checked 2026-10-02]
+pubchem_moo3	url:https://pubchem.ncbi.nlm.nih.gov/compound/14802	2026	PubChem Compound Summary for CID 14802, Molybdenum trioxide (density) [HTTP 200, checked 2026-10-02]

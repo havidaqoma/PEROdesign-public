@@ -1,2 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Keep every file byte for byte as committed. Two vendored files are sha256-pinned in the code, and the
+# stored runs and verification records carry sha256 digests of file content; line-ending conversion on
+# checkout would change those bytes.
+* -text

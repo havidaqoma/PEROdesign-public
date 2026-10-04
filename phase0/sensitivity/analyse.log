@@ -1,0 +1,51 @@
+=== ANALYSE 2026-09-30T12:22:11+08:00 clone /home/havidaqoma/p2run commit 5f35a2d
+delta cell_pce_pct P1 MAPbI3 N_t_bulk 0.2542
+delta cell_pce_pct P2 MAPbI3 mu_n 0.2511
+delta cell_pce_pct P3 MAPbI3 mu_p 0.1229
+delta cell_pce_pct P4 MAPbI3 E_c 0.088
+delta cell_pce_pct P5 MAPbI3 E_v 0.1203
+delta cell_pce_pct P6 MAPbI3 k_direct 0.1039
+delta cell_pce_pct P7 MAPbI3 N_ion 0.1457
+delta cell_pce_pct P8 NiOx|MAPbI3 N_t_int 0.0921
+delta cell_pce_pct P9 MAPbI3|C60 N_t_int 0.1535
+delta cell_pce_pct P10 NiOx N_A 0.1255
+delta cell_pce_pct P11 NiOx mu_p 0.1126
+delta cell_pce_pct P12 NiOx E_v 0.1199
+delta cell_pce_pct P13 C60 mu_n 0.105
+delta cell_pce_pct P14 C60 E_c 0.1411
+delta cell_pce_pct P15 SnO2 N_D 0.1158
+delta cell_pce_pct C1 capital rate 0.1074
+delta cell_pce_pct C2 line capex 0.1027
+delta cell_pce_pct C3 yield 0.109
+delta cell_pce_pct C4 depreciation years 0.1016
+delta cell_pce_pct C5 FTO-glass price factor 0.1123
+delta cell_pce_pct C6 other opex factor 0.0948
+delta cell_pce_pct C7 dead width mm 0.1166
+delta cell_pce_pct C8 TCO sheet res 0.123
+delta usd_per_W P1 MAPbI3 N_t_bulk 0.2837
+delta usd_per_W P2 MAPbI3 mu_n 0.2537
+delta usd_per_W P3 MAPbI3 mu_p 0.1336
+delta usd_per_W P4 MAPbI3 E_c 0.1313
+delta usd_per_W P5 MAPbI3 E_v 0.1228
+delta usd_per_W P6 MAPbI3 k_direct 0.1274
+delta usd_per_W P7 MAPbI3 N_ion 0.1949
+delta usd_per_W P8 NiOx|MAPbI3 N_t_int 0.1267
+delta usd_per_W P9 MAPbI3|C60 N_t_int 0.1292
+delta usd_per_W P10 NiOx N_A 0.1244
+delta usd_per_W P11 NiOx mu_p 0.1319
+delta usd_per_W P12 NiOx E_v 0.1554
+delta usd_per_W P13 C60 mu_n 0.13
+delta usd_per_W P14 C60 E_c 0.1285
+delta usd_per_W P15 SnO2 N_D 0.1229
+delta usd_per_W C1 capital rate 0.1228
+delta usd_per_W C2 line capex 0.1347
+delta usd_per_W C3 yield 0.2026
+delta usd_per_W C4 depreciation years 0.1172
+delta usd_per_W C5 FTO-glass price factor 0.1324
+delta usd_per_W C6 other opex factor 0.1348
+delta usd_per_W C7 dead width mm 0.1515
+delta usd_per_W C8 TCO sheet res 0.1349
+cell_pce_pct [5.3100000000000005, 19.069999999999997, 25.3925] top5 ['P1 MAPbI3 N_t_bulk', 'P2 MAPbI3 mu_n', 'P9 MAPbI3|C60 N_t_int', 'P7 MAPbI3 N_ion', 'P14 C60 E_c'] resolved True
+usd_per_W [0.22843562624040992, 0.4006462818034475, 1.365445448332097] top5 ['P1 MAPbI3 N_t_bulk', 'P2 MAPbI3 mu_n', 'C3 yield', 'P7 MAPbI3 N_ion', 'P12 NiOx E_v'] resolved False
+method borgonovo_delta status {'complete': 8624, 'failed': 71, 'partial': 9} usable rows 12696 / 12800
+EXIT=0

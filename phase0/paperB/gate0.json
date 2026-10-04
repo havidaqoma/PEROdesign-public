@@ -1,0 +1,327 @@
+{
+ "schema": "perodesign.paperB_gate0/1",
+ "g0_checks": [
+  {
+   "arch": "p-i-n",
+   "scenario": "base",
+   "what": "reference",
+   "x": [
+    15,
+    600,
+    30,
+    10,
+    6.0
+   ],
+   "A": [
+    18.189336543476127,
+    0.42739665975133573
+   ],
+   "B": [
+    18.189336543476127,
+    0.42739665975133573
+   ],
+   "same_design_hash": true,
+   "same_library_sha": true,
+   "pass": true
+  },
+  {
+   "arch": "n-i-p",
+   "scenario": "base",
+   "what": "reference",
+   "x": [
+    10,
+    500,
+    10,
+    6.0
+   ],
+   "A": [
+    20.6318194688929,
+    11.165252819886339
+   ],
+   "B": [
+    20.6318194688929,
+    11.165252819886339
+   ],
+   "same_design_hash": true,
+   "same_library_sha": true,
+   "pass": true
+  },
+  {
+   "arch": "p-i-n",
+   "scenario": "base",
+   "what": "paperA_pce_optimal",
+   "x": [
+    9.8,
+    382.5,
+    10.0,
+    5.0,
+    5.19
+   ],
+   "A": [
+    21.51917792253889,
+    0.33901421731733383
+   ],
+   "B": [
+    21.51917792253889,
+    0.33901421731733383
+   ],
+   "same_design_hash": true,
+   "same_library_sha": true,
+   "stored": [
+    21.51917792253889,
+    0.33901421731733383
+   ],
+   "pass": true
+  },
+  {
+   "arch": "p-i-n",
+   "scenario": "worse",
+   "what": "paperA_pce_optimal",
+   "x": [
+    5.0,
+    211.8,
+    10.0,
+    5.0,
+    5.52
+   ],
+   "A": [
+    18.719210116577386,
+    0.38280039006882843
+   ],
+   "B": [
+    18.719210116577386,
+    0.38280039006882843
+   ],
+   "same_design_hash": true,
+   "same_library_sha": true,
+   "stored": [
+    18.719210116577386,
+    0.38280039006882843
+   ],
+   "pass": true
+  },
+  {
+   "arch": "p-i-n",
+   "scenario": "better",
+   "what": "paperA_pce_optimal",
+   "x": [
+    14.4,
+    563.0,
+    10.0,
+    5.0,
+    5.18
+   ],
+   "A": [
+    23.013658348307658,
+    0.3228549823878112
+   ],
+   "B": [
+    23.013658348307658,
+    0.3228549823878112
+   ],
+   "same_design_hash": true,
+   "same_library_sha": true,
+   "stored": [
+    23.013658348307658,
+    0.3228549823878112
+   ],
+   "pass": true
+  },
+  {
+   "arch": "n-i-p",
+   "scenario": "base",
+   "what": "paperA_pce_optimal",
+   "x": [
+    10.0,
+    398.0,
+    10.0,
+    5.23
+   ],
+   "A": [
+    21.126792816736497,
+    10.900645140485885
+   ],
+   "B": [
+    21.126792816736497,
+    10.900645140485885
+   ],
+   "same_design_hash": true,
+   "same_library_sha": true,
+   "stored": [
+    21.126792816736497,
+    10.900645140485885
+   ],
+   "pass": true
+  },
+  {
+   "arch": "n-i-p",
+   "scenario": "worse",
+   "what": "paperA_pce_optimal",
+   "x": [
+    10.0,
+    231.9,
+    10.0,
+    5.42
+   ],
+   "A": [
+    18.82817535783529,
+    12.22591984692023
+   ],
+   "B": [
+    18.82817535783529,
+    12.22591984692023
+   ],
+   "same_design_hash": true,
+   "same_library_sha": true,
+   "stored": [
+    18.82817535783529,
+    12.22591984692023
+   ],
+   "pass": true
+  },
+  {
+   "arch": "n-i-p",
+   "scenario": "better",
+   "what": "paperA_pce_optimal",
+   "x": [
+    10.0,
+    764.2,
+    12.0,
+    5.15
+   ],
+   "A": [
+    22.50451262449458,
+    10.267055239415564
+   ],
+   "B": [
+    22.50451262449458,
+    10.267055239415564
+   ],
+   "same_design_hash": true,
+   "same_library_sha": true,
+   "stored": [
+    22.50451262449458,
+    10.267055239415564
+   ],
+   "pass": true
+  }
+ ],
+ "deltas": [
+  {
+   "arch": "p-i-n",
+   "x": [
+    15,
+    600,
+    30,
+    10,
+    6.0
+   ],
+   "production": {
+    "sim_status": "complete",
+    "cell_pce_pct": 19.84,
+    "voc_V": 1.1897,
+    "ff": 0.697,
+    "jsc_mA_cm2": 23.913829999999997,
+    "module_pce_pct": 18.189336543476127,
+    "usd_per_W": 0.42739665975133573,
+    "back_electrode_usd_m2": 0.32,
+    "setup": {
+     "W_L_eV": "sfb",
+     "W_R_eV": "sfb",
+     "nkBE_file": "nk_Cu_McPeak2015.txt",
+     "L_BE_m": 1.5e-07
+    }
+   },
+   "step1_mcpeak_optics": {
+    "sim_status": "complete",
+    "cell_pce_pct": 19.84,
+    "voc_V": 1.1897,
+    "ff": 0.697,
+    "jsc_mA_cm2": 23.913829999999997,
+    "module_pce_pct": 18.189336543476127,
+    "usd_per_W": 0.42739665975133573,
+    "back_electrode_usd_m2": 0.32,
+    "setup": {
+     "W_L_eV": "sfb",
+     "W_R_eV": "sfb",
+     "nkBE_file": "nk_Cu_McPeak2015.txt",
+     "L_BE_m": 1.5e-07
+    }
+   },
+   "step2_b2_contacts": {
+    "sim_status": "complete",
+    "cell_pce_pct": 20.150000000000002,
+    "voc_V": 1.1909,
+    "ff": 0.707,
+    "jsc_mA_cm2": 23.925710000000002,
+    "module_pce_pct": 18.47539532871972,
+    "usd_per_W": 0.42077917919785685,
+    "back_electrode_usd_m2": 0.32,
+    "setup": {
+     "W_L_eV": 5.7,
+     "W_R_eV": 4.0,
+     "nkBE_file": "nk_Cu_McPeak2015.txt",
+     "L_BE_m": 1.5e-07
+    }
+   }
+  },
+  {
+   "arch": "n-i-p",
+   "x": [
+    10,
+    500,
+    10,
+    6.0
+   ],
+   "production": {
+    "sim_status": "complete",
+    "cell_pce_pct": 22.509999999999998,
+    "voc_V": 1.2235,
+    "ff": 0.806,
+    "jsc_mA_cm2": 22.82527,
+    "module_pce_pct": 20.6318194688929,
+    "usd_per_W": 11.165252819886339,
+    "back_electrode_usd_m2": 1105.7750688501808,
+    "setup": {
+     "W_L_eV": 4.05,
+     "W_R_eV": 5.2,
+     "nkBE_file": "nk_Au.txt",
+     "L_BE_m": 1.01e-07
+    }
+   },
+   "step1_mcpeak_optics": {
+    "sim_status": "complete",
+    "cell_pce_pct": 22.55,
+    "voc_V": 1.2236,
+    "ff": 0.806,
+    "jsc_mA_cm2": 22.872300000000003,
+    "module_pce_pct": 20.66759449902654,
+    "usd_per_W": 11.145926078397387,
+    "back_electrode_usd_m2": 1105.7750688501808,
+    "setup": {
+     "W_L_eV": 4.05,
+     "W_R_eV": 5.2,
+     "nkBE_file": "nk_Au_McPeak2015.txt",
+     "L_BE_m": 1.01e-07
+    }
+   },
+   "step2_b2_contacts": {
+    "sim_status": "complete",
+    "cell_pce_pct": 22.919999999999998,
+    "voc_V": 1.226,
+    "ff": 0.817,
+    "jsc_mA_cm2": 22.87968,
+    "module_pce_pct": 21.006007221064802,
+    "usd_per_W": 10.966362054443078,
+    "back_electrode_usd_m2": 1105.7750688501808,
+    "setup": {
+     "W_L_eV": 4.0,
+     "W_R_eV": 5.4,
+     "nkBE_file": "nk_Au_McPeak2015.txt",
+     "L_BE_m": 1.01e-07
+    }
+   }
+  }
+ ],
+ "g0_pass": true
+}

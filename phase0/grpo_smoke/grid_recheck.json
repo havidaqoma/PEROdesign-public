@@ -1,0 +1,58 @@
+[
+ {
+  "design": {
+   "absorber_nm": 500,
+   "etl_nm": 10,
+   "htl_nm": 10
+  },
+  "sim": {
+   "PCE_pct": 22.509999999999998,
+   "Jsc_mA_cm2": 22.82527,
+   "Voc_V": 1.2235,
+   "FF": 0.806,
+   "all_params": true
+  }
+ },
+ {
+  "design": {
+   "absorber_nm": 500,
+   "etl_nm": 20,
+   "htl_nm": 15
+  },
+  "sim": {
+   "PCE_pct": 21.4,
+   "Jsc_mA_cm2": 22.19589,
+   "Voc_V": 1.208,
+   "FF": 0.798,
+   "all_params": true
+  }
+ },
+ {
+  "design": {
+   "absorber_nm": 500,
+   "etl_nm": 20,
+   "htl_nm": 30
+  },
+  "sim": {
+   "PCE_pct": 21.31,
+   "Jsc_mA_cm2": 22.237540000000003,
+   "Voc_V": 1.2083,
+   "FF": 0.793,
+   "all_params": true
+  }
+ },
+ {
+  "design": {
+   "absorber_nm": 400,
+   "etl_nm": 20,
+   "htl_nm": 30
+  },
+  "sim": {
+   "PCE_pct": 21.43,
+   "Jsc_mA_cm2": 21.94383,
+   "Voc_V": 1.2099,
+   "FF": 0.807,
+   "all_params": true
+  }
+ }
+]

@@ -1,0 +1,424 @@
+# PeroDesign material + interface library, version 1 (P1).
+#
+# Units are part of every key name (SI, as SIMsalabim uses): _m, _nm, _eV, _m3 (= m^-3),
+# _m2 (= m^-2), _m2_Vs, _m3_s, _m_s. Integers without a unit are SimSS switches.
+#
+# PROVENANCE (read before using any number in a paper):
+#   status "simss_default"  = copied from the SIMsalabim v5.36 default parameter files
+#                              (F:/SIMsalabim/src/SimSS/L{1,2,3}_parameters.txt, commit d48e0e7,
+#                              dumped to phase0/sim_bench/simss_default_params.json on 2026-09-28).
+#                              These are the simulator authors' example values, NOT literature-verified
+#                              material data. They reproduce the Phase 0 grid (22.51% at 500/10/10 nm).
+#   status "phase0_bound"   = design bound chosen in Phase 0 from convergence / toy-task scope,
+#                              not from literature.
+#   status "literature"     = copied from a published parameter table; `literature:` names the source file in
+#                              data/sources/, the table column and the verbatim cell text for every value that
+#                              was taken from it. tests/test_library_v2.py re-reads the table and checks each cell.
+#   status "simss_default_transferred" = a SimSS default value reused for a NEW material/interface where no
+#                              source value exists. This is an ASSUMPTION and is listed in every result.
+# v2 (2026-09-28) adds the industrial p-i-n stack of Liu et al. 2025: NiOx / MAPbI3 / C60 / SnO2, Cu back contact.
+# Replacing the simss_default values with literature-sourced values (DOI per value) is a P2 task (gate G1).
+
+library_version: 2
+simss_version: "5.36"
+
+materials:
+  C60:
+    roles: [ETL]
+    provenance: {status: simss_default, file: L1_parameters.txt}
+    thickness_nm: {min: 10, max: 100, provenance: phase0_bound}
+    params:
+      eps_r: 5
+      E_c_eV: 4.0
+      E_v_eV: 5.9
+      N_c_m3: 5.0e+26
+      N_D_m3: 0
+      N_A_m3: 0
+      mu_n_m2_Vs: 1.0e-6
+      mu_p_m2_Vs: 1.0e-9
+      N_anion_m3: 0
+      N_cation_m3: 0
+      mu_anion_m2_Vs: 1.0e-11
+      mu_cation_m2_Vs: 1.0e-11
+      ionsMayEnter: 0
+      layerGen: 0
+      k_direct_m3_s: 1.0e-17
+      N_t_bulk_m3: 0
+      C_n_bulk_m3_s: 2.0e-14
+      C_p_bulk_m3_s: 2.0e-14
+      E_t_bulk_eV: 4.7
+      bulkTrapType: -1
+      nk_file: nk_C60_1.txt
+      # --- previously inherited silently from the template (agy review 2026-09-28); now explicit
+      mobnDep: 0
+      mobpDep: 0
+      gamma_n_sqrt_m_V: 0
+      gamma_p_sqrt_m_V: 0
+      G_ehp_per_m3_s: 0
+      fieldDepG: 0
+      P0: 0
+      a_m: 1.0e-9
+      thermLengDist: 2
+      k_f_per_s: 1.0e+6
+      preLangevin: 1
+      useLangevin: 0
+      bulkTrapFile: none
+    overridable: {}
+
+  MAPbI3:
+    roles: [absorber]
+    provenance: {status: simss_default, file: L2_parameters.txt}
+    thickness_nm: {min: 200, max: 1000, provenance: phase0_bound}
+    params:
+      eps_r: 24
+      E_c_eV: 3.9
+      E_v_eV: 5.53
+      N_c_m3: 2.2e+24
+      N_D_m3: 0
+      N_A_m3: 0
+      mu_n_m2_Vs: 1.0e-4
+      mu_p_m2_Vs: 1.0e-4
+      N_anion_m3: 5.0e+21
+      N_cation_m3: 3.0e+21
+      mu_anion_m2_Vs: 5.0e-11
+      mu_cation_m2_Vs: 1.0e-30
+      ionsMayEnter: 1
+      layerGen: 1
+      k_direct_m3_s: 1.0e-17
+      N_t_bulk_m3: 1.0e+20
+      C_n_bulk_m3_s: 5.0e-14
+      C_p_bulk_m3_s: 2.0e-14
+      E_t_bulk_eV: 4.7
+      bulkTrapType: -1
+      nk_file: nk_MAPI.txt
+      # --- previously inherited silently from the template (agy review 2026-09-28); now explicit
+      mobnDep: 0
+      mobpDep: 0
+      gamma_n_sqrt_m_V: 0
+      gamma_p_sqrt_m_V: 0
+      G_ehp_per_m3_s: 0
+      fieldDepG: 0
+      P0: 0
+      a_m: 1.0e-9
+      thermLengDist: 2
+      k_f_per_s: 1.0e+6
+      preLangevin: 1
+      useLangevin: 0
+      bulkTrapFile: none
+    # Ranges used in the Phase 0 simulator benchmark (phase0/scripts/simss_bench.py RANGES);
+    # convergence-tested, not literature-sourced.
+    overridable:
+      N_t_bulk_m3: {min: 1.0e+19, max: 1.0e+22, provenance: phase0_bound}
+      mu_n_m2_Vs: {min: 1.0e-5, max: 1.0e-3, provenance: phase0_bound}
+      mu_p_m2_Vs: {min: 1.0e-5, max: 1.0e-3, provenance: phase0_bound}
+
+  PTAA:
+    roles: [HTL]
+    provenance: {status: simss_default, file: L3_parameters.txt}
+    thickness_nm: {min: 10, max: 70, provenance: phase0_bound}
+    params:
+      eps_r: 3
+      E_c_eV: 2.25
+      E_v_eV: 5.4
+      N_c_m3: 1.0e+26
+      N_D_m3: 0
+      N_A_m3: 0
+      mu_n_m2_Vs: 1.0e-9
+      mu_p_m2_Vs: 1.0e-7
+      N_anion_m3: 0
+      N_cation_m3: 0
+      mu_anion_m2_Vs: 1.0e-11
+      mu_cation_m2_Vs: 1.0e-11
+      ionsMayEnter: 0
+      layerGen: 0
+      k_direct_m3_s: 1.0e-17
+      N_t_bulk_m3: 0
+      C_n_bulk_m3_s: 2.0e-14
+      C_p_bulk_m3_s: 2.0e-14
+      E_t_bulk_eV: 4.7
+      bulkTrapType: -1
+      nk_file: nk_PTAA.txt
+      # --- previously inherited silently from the template (agy review 2026-09-28); now explicit
+      mobnDep: 0
+      mobpDep: 0
+      gamma_n_sqrt_m_V: 0
+      gamma_p_sqrt_m_V: 0
+      G_ehp_per_m3_s: 0
+      fieldDepG: 0
+      P0: 0
+      a_m: 1.0e-9
+      thermLengDist: 2
+      k_f_per_s: 1.0e+6
+      preLangevin: 1
+      useLangevin: 0
+      bulkTrapFile: none
+    overridable: {}
+
+  NiOx:
+    roles: [HTL]
+    provenance: {status: literature, file: dipta2022_heliyon.txt}
+    literature:
+      source: dipta2022_heliyon
+      column: "NiO x [ 10 ]"
+      cells: {"Bandgap (eV)": "3.5", "Affinity (eV)": "2.2", "Permittivity": "9", "N C (cm −3 )": "2.2E18",
+              "N V (cm −3 )": "1.8E19", "Electron Mobility (cm 2 /V-s)": "4.7", "Hole Mobility (cm 2 /V-s)": "4.7",
+              "N A (cm −3 )": "1E16", "Nt (cm −3 )": "1E14", "Energy level above Ev (eV)": "0.4",
+              "Capture cross-section (Electron and hole)": "1E-15", "Electron Thermal Velocity (cm/s)": "1E7"}
+      mapping: "E_c = affinity; E_v = affinity + Eg; N_c = sqrt(Nc*Nv) (SimSS has one DOS; keeps n_i); cm->m;
+                C = sigma x v_th; E_t = E_v - 0.4. k_direct, ions, switches: simss_default_transferred."
+    thickness_nm: {min: 5, max: 40, provenance: phase0_bound}
+    params:
+      eps_r: 9
+      E_c_eV: 2.2
+      E_v_eV: 5.7
+      N_c_m3: 6.292853e+24
+      N_D_m3: 0
+      N_A_m3: 1.0e+22
+      mu_n_m2_Vs: 4.7e-4
+      mu_p_m2_Vs: 4.7e-4
+      N_anion_m3: 0
+      N_cation_m3: 0
+      mu_anion_m2_Vs: 1.0e-11
+      mu_cation_m2_Vs: 1.0e-11
+      ionsMayEnter: 0
+      layerGen: 0
+      k_direct_m3_s: 1.0e-17
+      N_t_bulk_m3: 1.0e+20
+      C_n_bulk_m3_s: 1.0e-14
+      C_p_bulk_m3_s: 1.0e-14
+      E_t_bulk_eV: 5.3
+      bulkTrapType: 0
+      nk_file: nk_NiOx_const_n2p3.txt
+      mobnDep: 0
+      mobpDep: 0
+      gamma_n_sqrt_m_V: 0
+      gamma_p_sqrt_m_V: 0
+      G_ehp_per_m3_s: 0
+      fieldDepG: 0
+      P0: 0
+      a_m: 1.0e-9
+      thermLengDist: 2
+      k_f_per_s: 1.0e+6
+      preLangevin: 1
+      useLangevin: 0
+      bulkTrapFile: none
+    overridable: {}
+
+  SnO2:
+    roles: [buffer]
+    provenance: {status: literature, file: dipta2022_heliyon.txt}
+    literature:
+      source: dipta2022_heliyon
+      column: "SnO 2 [ 22 ]"
+      cells: {"Bandgap (eV)": "3.5", "Affinity (eV)": "4", "Permittivity": "9", "N C (cm −3 )": "2E18",
+              "N V (cm −3 )": "1.8E19", "Electron Mobility (cm 2 /V-s)": "20", "Hole Mobility (cm 2 /V-s)": "10",
+              "N D (cm −3 )": "1E16", "Nt (cm −3 )": "1E14", "Energy level above Ev (eV)": "0.6",
+              "Capture cross-section (Electron and hole)": "1E-14", "Electron Thermal Velocity (cm/s)": "1E7"}
+      mapping: "as NiOx; E_t = E_v - 0.6."
+    thickness_nm: {min: 5, max: 30, provenance: phase0_bound}
+    params:
+      eps_r: 9
+      E_c_eV: 4.0
+      E_v_eV: 7.5
+      N_c_m3: 6.000000e+24
+      N_D_m3: 1.0e+22
+      N_A_m3: 0
+      mu_n_m2_Vs: 2.0e-3
+      mu_p_m2_Vs: 1.0e-3
+      N_anion_m3: 0
+      N_cation_m3: 0
+      mu_anion_m2_Vs: 1.0e-11
+      mu_cation_m2_Vs: 1.0e-11
+      ionsMayEnter: 0
+      layerGen: 0
+      k_direct_m3_s: 1.0e-17
+      N_t_bulk_m3: 1.0e+20
+      C_n_bulk_m3_s: 1.0e-13
+      C_p_bulk_m3_s: 1.0e-13
+      E_t_bulk_eV: 6.9
+      bulkTrapType: 0
+      nk_file: nk_SnO2_const_n2p3.txt
+      mobnDep: 0
+      mobpDep: 0
+      gamma_n_sqrt_m_V: 0
+      gamma_p_sqrt_m_V: 0
+      G_ehp_per_m3_s: 0
+      fieldDepG: 0
+      P0: 0
+      a_m: 1.0e-9
+      thermLengDist: 2
+      k_f_per_s: 1.0e+6
+      preLangevin: 1
+      useLangevin: 0
+      bulkTrapFile: none
+    overridable: {}
+
+# Interface parameters belong to a PAIR of materials, left|right in stack order.
+# (SimSS stores them in the left layer's file as "interface with the layer to the right".)
+interfaces:
+  "C60|MAPbI3":
+    provenance: {status: simss_default, file: L1_parameters.txt}
+    params:
+      nu_int_n_m_s: 1.0e+3
+      nu_int_p_m_s: 1.0e+3
+      N_t_int_m2: 4.0e+12
+      E_t_int_eV: 4.7
+      intTrapType: -1
+      C_n_int_m3_s: 2.0e-14
+      C_p_int_m3_s: 2.0e-14
+      intTrapFile: none
+    overridable:
+      N_t_int_m2: {min: 1.0e+10, max: 1.0e+14, provenance: phase0_bound}
+  "MAPbI3|PTAA":
+    provenance: {status: simss_default, file: L2_parameters.txt}
+    params:
+      nu_int_n_m_s: 1.0e+3
+      nu_int_p_m_s: 1.0e+3
+      N_t_int_m2: 1.0e+12
+      E_t_int_eV: 4.7
+      intTrapType: 1
+      C_n_int_m3_s: 2.0e-14
+      C_p_int_m3_s: 2.0e-14
+      intTrapFile: none
+    overridable:
+      N_t_int_m2: {min: 1.0e+10, max: 1.0e+14, provenance: phase0_bound}
+
+  # --- p-i-n (v2): no source values exist for these pairs -> SimSS default interfaces transferred (ASSUMPTION)
+  "NiOx|MAPbI3":
+    provenance: {status: simss_default_transferred, from: "MAPbI3|PTAA (hole-side interface)"}
+    params:
+      nu_int_n_m_s: 1.0e+3
+      nu_int_p_m_s: 1.0e+3
+      N_t_int_m2: 1.0e+12
+      E_t_int_eV: 4.7
+      intTrapType: 1
+      C_n_int_m3_s: 2.0e-14
+      C_p_int_m3_s: 2.0e-14
+      intTrapFile: none
+    overridable:
+      N_t_int_m2: {min: 1.0e+10, max: 1.0e+14, provenance: phase0_bound}
+  "MAPbI3|C60":
+    provenance: {status: simss_default_transferred, from: "C60|MAPbI3 (electron-side interface)"}
+    params:
+      nu_int_n_m_s: 1.0e+3
+      nu_int_p_m_s: 1.0e+3
+      N_t_int_m2: 4.0e+12
+      E_t_int_eV: 4.7
+      intTrapType: -1
+      C_n_int_m3_s: 2.0e-14
+      C_p_int_m3_s: 2.0e-14
+      intTrapFile: none
+    overridable:
+      N_t_int_m2: {min: 1.0e+10, max: 1.0e+14, provenance: phase0_bound}
+  "C60|SnO2":
+    provenance: {status: simss_default_transferred, from: "SimSS default transfer velocity; no interface traps (assumed)"}
+    params:
+      nu_int_n_m_s: 1.0e+3
+      nu_int_p_m_s: 1.0e+3
+      N_t_int_m2: 0
+      E_t_int_eV: 4.7
+      intTrapType: 0
+      C_n_int_m3_s: 2.0e-14
+      C_p_int_m3_s: 2.0e-14
+      intTrapFile: none
+    overridable: {}
+
+# Device-level and solver settings. ALL of these used to be inherited silently from the SimSS
+# template simulation_setup.txt; they are now passed explicitly on every run (agy review 2026-09-28).
+# Values = SimSS v5.36 defaults (status simss_default) except where marked phase0.
+# The three solver-policy flags -Vmax 1.4 -varFile none -untilVoc 1 are fixed in code (SOLVER_ARGS).
+device_setup:
+  provenance: {status: simss_default, file: simulation_setup.txt}
+  params:
+    T_K: 295
+    leftElec: -1
+    W_L_eV: 4.05
+    W_R_eV: 5.2
+    S_n_L_m_s: -1.0e-7          # negative = infinite surface recombination (ideal ohmic contact)
+    S_p_L_m_s: -1.0e-7
+    S_n_R_m_s: -1.0e-7
+    S_p_R_m_s: -1.0e-7
+    R_shunt_Ohm_m2: -5.0e+3     # negative = infinite
+    R_series_Ohm_m2: 0
+    G_frac: 1
+    genProfile: calc            # transfer-matrix optics
+    L_TCO_m: 5.0e-8
+    L_BE_m: 1.01e-7
+    nkSubstrate_file: nk_SiO2.txt
+    nkTCO_file: nk_ITO.txt
+    nkBE_file: nk_Au.txt
+    spectrum_file: AM15G.txt
+    lambda_min_m: 3.5e-7
+    lambda_max_m: 8.0e-7
+    NP: 250
+    tolPois_V: 1.0e-5
+    maxDelV: 10
+    maxItPois: 2000
+    maxItSS: 2000
+    currDiffInt: 2
+    tolCurr: 1.0e-3
+    tolDens: 1.0e-5
+    couplePC: 4
+    minAcc: 0.5
+    maxAcc: 0.95
+    ignoreNegDens: 1
+    convVar: 1
+    failureMode: 2
+    grad: 4
+    Vdist: 1
+    preCond: 0
+    Vpre_V: 0
+    fixIons: 0
+    Vscan: 1
+    Vmin_V: -0.04
+    Vstep_V: 0.02
+    Vacc_V: 0
+    NJV: 100
+    timeout_s: 300
+    pauseAtEnd: 0
+    useExpData: 0
+    limitDigits: 1
+
+# Architectures: layer roles in order from the illuminated (left, TCO) side.
+# Only n-i-p is supported in v1: SimSS default contacts (left = cathode, W_L 4.05 eV, W_R 5.2 eV,
+# infinite surface recombination S = -1, i.e. ideal non-selective contacts; see
+# docs/implementation-notes.md item 14 on why selective contacts are not modelled yet).
+architectures:
+  n-i-p: [ETL, absorber, HTL]
+  p-i-n: [HTL, absorber, ETL, buffer]      # v2: Liu 2025 industrial stack, light enters through the HTL side
+
+# Contact scenarios (P1, 2026-09-28). 'ideal' = architecture_setup as below (p-i-n: 'sfb' work functions = no
+# contact barrier; an idealised UPPER bound). 'scaps_input_wf' = BARE-ELECTRODE work functions as CHOSEN BY AUTHORS
+# of published SCAPS studies: simulation inputs, NOT measurements (agy review: "simulation inbreeding"; spread between
+# papers is large, e.g. Au 4.98-5.9 eV). With SimSS (thermionic contacts, no tunnelling) a bare FTO on NiOx gives a
+# blocked J-V; that run is a FAILED simulation, not a lower bound. The defensible next scenario is an EFFECTIVE
+# FTO/NiOx work function from UPS/KPFM measurements (NOT yet sourced). Each value is re-read from the saved source by
+# tests/test_library_v2.py::test_contact_scenario_values_are_in_their_sources.
+contact_scenarios:
+  ideal: {}
+  scaps_input_wf:
+    p-i-n:
+      W_L_eV: 4.4     # FTO front anode (Liu stack: FTO/NiOx/...)
+      W_R_eV: 4.0     # ITO rear electrode under Cu, contacting SnO2
+    n-i-p:
+      W_L_eV: 4.0     # ITO front cathode
+      W_R_eV: 5.1     # Au back anode
+    provenance:
+      FTO_4.4: {source: wf_fto_au_mi2021.txt, doi: 10.3390/mi12121508, quote: "Metal work function ϕ (eV) 5.1 4.4", note: "table columns Au | FTO"}
+      ITO_4.0: {source: wf_ito_au_srep2023.txt, doi: 10.1038/s41598-023-28506-2, quote: "indium dioxide with a WF of 4.0 eV acts as the front contact"}
+      Au_5.1: {source: wf_ito_au_srep2023.txt, doi: 10.1038/s41598-023-28506-2, quote: "the gold was considered as the rear contact with a work function (WF) of 5.1 eV"}
+      Cu_4.6: {source: wf_metals_nano2021.txt, doi: 10.3390/nano11051218, quote: "Metal work function (eV) 5.1 4.7 4.8 4.6 5.0", note: "Cu = 4th column; not used (ITO is the contact to SnO2)"}
+
+# Per-architecture overrides of device_setup (v2). p-i-n: the left (illuminated) contact is the anode;
+# work functions 'sfb' = semi-flat band to the adjacent layer (no invented work functions); back contact
+# Cu 150 nm (thickness from Liu 2025 Fig. 1 caption; optics McPeak 2015, CC0; see data/nk/README.md).
+# SIMPLIFICATION: Liu's 300 nm ITO under the Cu is costed but not simulated optically.
+architecture_setup:
+  n-i-p: {}
+  p-i-n:
+    leftElec: 1
+    Vscan: -1                  # SimSS rule (exit 91): with untilVoc = 1, leftElec x Vscan must be negative
+    W_L_eV: sfb
+    W_R_eV: sfb
+    nkBE_file: nk_Cu_McPeak2015.txt
+    L_BE_m: 1.5e-7

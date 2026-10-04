@@ -1,0 +1,696 @@
+{
+ "schema": "perodesign.paperB_posthoc/1",
+ "label": "POST-HOC (external review 2026-10-01), not pre-registered",
+ "p1": [
+  {
+   "arch": "p-i-n",
+   "scenario": "base",
+   "metal": "Cu",
+   "x": [
+    8.9,
+    390.4,
+    10.0,
+    5.0,
+    5.54
+   ],
+   "status": "complete",
+   "contact_key": "W_L_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 21.86339872760405,
+   "niox_b2": 22.151523976886452,
+   "ptaa_best_b2": 21.626601111940293,
+   "lead_b2": 0.5249228649461593,
+   "lead_same_contact": 0.23679761566375745,
+   "contact_part": 0.2881252492824018,
+   "contact_share": 0.5488906437938352
+  },
+  {
+   "arch": "p-i-n",
+   "scenario": "base",
+   "metal": "Ag",
+   "x": [
+    9.3,
+    390.9,
+    10.0,
+    5.0,
+    5.21
+   ],
+   "status": "complete",
+   "contact_key": "W_L_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 21.975843541871104,
+   "niox_b2": 22.264609114239892,
+   "ptaa_best_b2": 21.7134917455678,
+   "lead_b2": 0.5511173686720916,
+   "lead_same_contact": 0.2623517963033031,
+   "contact_part": 0.2887655723687885,
+   "contact_share": 0.5239638392536321
+  },
+  {
+   "arch": "p-i-n",
+   "scenario": "worse",
+   "metal": "Cu",
+   "x": [
+    5.0,
+    213.9,
+    10.0,
+    5.0,
+    5.4
+   ],
+   "status": "complete",
+   "contact_key": "W_L_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 18.810234613700292,
+   "niox_b2": 19.375447416680824,
+   "ptaa_best_b2": 19.345036522336247,
+   "lead_b2": 0.03041089434457689,
+   "lead_same_contact": -0.5348019086359557,
+   "contact_part": 0.5652128029805326,
+   "contact_share": 18.585865860315476
+  },
+  {
+   "arch": "p-i-n",
+   "scenario": "worse",
+   "metal": "Ag",
+   "x": [
+    5.0,
+    211.8,
+    10.0,
+    5.0,
+    5.37
+   ],
+   "status": "complete",
+   "contact_key": "W_L_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 19.105422486948836,
+   "niox_b2": 19.664775736970377,
+   "ptaa_best_b2": 19.593777574123788,
+   "lead_b2": 0.070998162846589,
+   "lead_same_contact": -0.488355087174952,
+   "contact_part": 0.559353250021541,
+   "contact_share": 7.878418646270849
+  },
+  {
+   "arch": "p-i-n",
+   "scenario": "better",
+   "metal": "Cu",
+   "x": [
+    14.1,
+    567.4,
+    10.0,
+    5.0,
+    5.22
+   ],
+   "status": "complete",
+   "contact_key": "W_L_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 23.598360031660473,
+   "niox_b2": 23.59670556284221,
+   "ptaa_best_b2": 23.071128713719222,
+   "lead_b2": 0.525576849122988,
+   "lead_same_contact": 0.5272313179412507,
+   "contact_part": -0.0016544688182626999,
+   "contact_share": -0.0031479103788978817
+  },
+  {
+   "arch": "p-i-n",
+   "scenario": "better",
+   "metal": "Ag",
+   "x": [
+    14.3,
+    565.4,
+    10.0,
+    5.0,
+    4.99
+   ],
+   "status": "complete",
+   "contact_key": "W_L_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 23.65241449612814,
+   "niox_b2": 23.650143028686617,
+   "ptaa_best_b2": 23.096662715918832,
+   "lead_b2": 0.5534803127677854,
+   "lead_same_contact": 0.5557517802093095,
+   "contact_part": -0.0022714674415240665,
+   "contact_share": -0.004103971521886938
+  },
+  {
+   "arch": "n-i-p",
+   "scenario": "base",
+   "metal": "Cu",
+   "x": [
+    10.0,
+    402.0,
+    8.0,
+    5.2
+   ],
+   "status": "complete",
+   "contact_key": "W_R_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 22.084405634933027,
+   "niox_b2": 22.275036342446857,
+   "ptaa_best_b2": 21.38613236039467,
+   "lead_b2": 0.888903982052188,
+   "lead_same_contact": 0.6982732745383586,
+   "contact_part": 0.19063070751382938,
+   "contact_share": 0.21445590453282204
+  },
+  {
+   "arch": "n-i-p",
+   "scenario": "base",
+   "metal": "Ag",
+   "x": [
+    10.0,
+    405.3,
+    5.0,
+    5.23
+   ],
+   "status": "complete",
+   "contact_key": "W_R_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 22.192562993957512,
+   "niox_b2": 22.373399583120964,
+   "ptaa_best_b2": 21.58415894465793,
+   "lead_b2": 0.7892406384630348,
+   "lead_same_contact": 0.6084040492995832,
+   "contact_part": 0.18083658916345158,
+   "contact_share": 0.22912731599276526
+  },
+  {
+   "arch": "n-i-p",
+   "scenario": "worse",
+   "metal": "Cu",
+   "x": [
+    10.0,
+    235.3,
+    5.0,
+    5.41
+   ],
+   "status": "complete",
+   "contact_key": "W_R_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 19.012598221837468,
+   "niox_b2": 19.48182660908945,
+   "ptaa_best_b2": 18.922889919136058,
+   "lead_b2": 0.5589366899533914,
+   "lead_same_contact": 0.0897083027014105,
+   "contact_part": 0.4692283872519809,
+   "contact_share": 0.8395018535840059
+  },
+  {
+   "arch": "n-i-p",
+   "scenario": "worse",
+   "metal": "Ag",
+   "x": [
+    10.0,
+    235.4,
+    5.0,
+    5.32
+   ],
+   "status": "complete",
+   "contact_key": "W_R_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 19.238086643302186,
+   "niox_b2": 19.7253577455101,
+   "ptaa_best_b2": 19.241891953231715,
+   "lead_b2": 0.48346579227838404,
+   "lead_same_contact": -0.0038053099295289883,
+   "contact_part": 0.48727110220791303,
+   "contact_share": 1.0078708979834872
+  },
+  {
+   "arch": "n-i-p",
+   "scenario": "better",
+   "metal": "Cu",
+   "x": [
+    10.0,
+    935.9,
+    22.2,
+    5.17
+   ],
+   "status": "complete",
+   "contact_key": "W_R_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 23.33946122556578,
+   "niox_b2": 23.44077403164519,
+   "ptaa_best_b2": 22.874849189156926,
+   "lead_b2": 0.5659248424882648,
+   "lead_same_contact": 0.4646120364088553,
+   "contact_part": 0.10131280607940951,
+   "contact_share": 0.17902166237120146
+  },
+  {
+   "arch": "n-i-p",
+   "scenario": "better",
+   "metal": "Ag",
+   "x": [
+    10.0,
+    758.5,
+    21.2,
+    5.16
+   ],
+   "status": "complete",
+   "contact_key": "W_R_eV",
+   "contact_eV": 5.4,
+   "module_pce_pct": 23.395010052545164,
+   "niox_b2": 23.468549991917772,
+   "ptaa_best_b2": 22.85944226639411,
+   "lead_b2": 0.6091077255236605,
+   "lead_same_contact": 0.5355677861510522,
+   "contact_part": 0.07353993937260839,
+   "contact_share": 0.12073388054532525
+  }
+ ],
+ "p1_summary": {
+  "n": 12,
+  "n_complete": 12,
+  "lead_b2_min": 0.03041089434457689,
+  "lead_b2_max": 0.888903982052188,
+  "contact_part_min": -0.0022714674415240665,
+  "contact_part_max": 0.5652128029805326,
+  "lead_same_min": -0.5348019086359557,
+  "lead_same_max": 0.6982732745383586,
+  "n_niox_still_ahead": 9
+ },
+ "p2_prices": {
+  "Ag": {
+   "values": [
+    23.4,
+    28.3,
+    39.8,
+    33.7,
+    39.6,
+    54.1,
+    84.0,
+    73.5,
+    66.7,
+    58.8,
+    65.4
+   ],
+   "base": 65.4,
+   "min": 23.4,
+   "max": 84.0,
+   "header": "2023, 2024, 2025 annual; Q2-Q4 2025; Q1-Q2 2026; Jun, Jul, Aug 2026"
+  },
+  "Au": {
+   "values": [
+    1943.0,
+    2388.0,
+    3442.0,
+    3293.0,
+    3459.0,
+    4152.0,
+    4876.0,
+    4512.0,
+    4228.0,
+    4073.0,
+    4411.0
+   ],
+   "base": 4411,
+   "min": 1943.0,
+   "max": 4876.0,
+   "header": "2023, 2024, 2025 annual; Q2-Q4 2025; Q1-Q2 2026; Jun, Jul, Aug 2026"
+  }
+ },
+ "p2_recompute_max_rel_err": 0.0,
+ "p2_linear_check_max_rel_err": 2.220446049250313e-16,
+ "p2_corners": {
+  "silver_min": {
+   "f_ag": 0.35779816513761464,
+   "f_au": 1.0,
+   "cases": {
+    "p-i-n/base": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.11699205666840484,
+     "gap_cost_pct": 11.595509132589221,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 4
+    },
+    "p-i-n/worse": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.289381451326868,
+     "gap_cost_pct": 10.664261696064003,
+     "small": false,
+     "wording": "material_trade_off_exists",
+     "front_size": 5
+    },
+    "p-i-n/better": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.05483050420968638,
+     "gap_cost_pct": 11.639864327426853,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 3
+    },
+    "n-i-p/base": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.09911366555680345,
+     "gap_cost_pct": 8.613371178724805,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 6
+    },
+    "n-i-p/worse": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.24370875030687245,
+     "gap_cost_pct": 7.86495315445106,
+     "small": false,
+     "wording": "material_trade_off_exists",
+     "front_size": 3
+    },
+    "n-i-p/better": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.16261489255482076,
+     "gap_cost_pct": 10.977458615879465,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 21
+    }
+   }
+  },
+  "silver_max": {
+   "f_ag": 1.2844036697247705,
+   "f_au": 1.0,
+   "cases": {
+    "p-i-n/base": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.11699205666840484,
+     "gap_cost_pct": 45.04959977895331,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 4
+    },
+    "p-i-n/worse": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.289381451326868,
+     "gap_cost_pct": 44.3851753144809,
+     "small": false,
+     "wording": "material_trade_off_exists",
+     "front_size": 5
+    },
+    "p-i-n/better": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.05483050420968638,
+     "gap_cost_pct": 44.57222667018732,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 3
+    },
+    "n-i-p/base": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.09911366555680345,
+     "gap_cost_pct": 33.68250917805737,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 6
+    },
+    "n-i-p/worse": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.24370875030687245,
+     "gap_cost_pct": 33.135646853704955,
+     "small": false,
+     "wording": "material_trade_off_exists",
+     "front_size": 3
+    },
+    "n-i-p/better": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.16261489255482076,
+     "gap_cost_pct": 35.56732281328334,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 21
+    }
+   }
+  },
+  "gold_min": {
+   "f_ag": 1.0,
+   "f_au": 0.4404896848787123,
+   "cases": {
+    "p-i-n/base": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.11699205666840484,
+     "gap_cost_pct": 34.78151255086137,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 4
+    },
+    "p-i-n/worse": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.289381451326868,
+     "gap_cost_pct": 34.035191926649965,
+     "small": false,
+     "wording": "material_trade_off_exists",
+     "front_size": 5
+    },
+    "p-i-n/better": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.05483050420968638,
+     "gap_cost_pct": 34.46427387191431,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 3
+    },
+    "n-i-p/base": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.09911366555680345,
+     "gap_cost_pct": 25.988021277272132,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 6
+    },
+    "n-i-p/worse": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.24370875030687245,
+     "gap_cost_pct": 25.379295322250805,
+     "small": false,
+     "wording": "material_trade_off_exists",
+     "front_size": 3
+    },
+    "n-i-p/better": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.16261489255482076,
+     "gap_cost_pct": 28.01993875269404,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 21
+    }
+   }
+  },
+  "gold_max": {
+   "f_ag": 1.0,
+   "f_au": 1.1054182725005668,
+   "cases": {
+    "p-i-n/base": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.11699205666840484,
+     "gap_cost_pct": 34.78151255086137,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 4
+    },
+    "p-i-n/worse": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.289381451326868,
+     "gap_cost_pct": 34.035191926649965,
+     "small": false,
+     "wording": "material_trade_off_exists",
+     "front_size": 5
+    },
+    "p-i-n/better": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.05483050420968638,
+     "gap_cost_pct": 34.46427387191431,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 3
+    },
+    "n-i-p/base": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.09911366555680345,
+     "gap_cost_pct": 25.988021277272132,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 6
+    },
+    "n-i-p/worse": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.24370875030687245,
+     "gap_cost_pct": 25.379295322250805,
+     "small": false,
+     "wording": "material_trade_off_exists",
+     "front_size": 3
+    },
+    "n-i-p/better": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.16261489255482076,
+     "gap_cost_pct": 28.01993875269404,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 21
+    }
+   }
+  }
+ },
+ "p2_scan": {
+  "what": "silver back-electrode cost factor (price x utilisation, relative to base) above which the pooled gap is no longer 'small' (< 1 point and < 5%)",
+  "cases": {
+   "p-i-n/base": {
+    "factor_gap_becomes_not_small": 0.17511691624764358,
+    "at_factor": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.11699205666840484,
+     "gap_cost_pct": 5.000000008694028,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 4
+    }
+   },
+   "p-i-n/worse": {
+    "factor_gap_becomes_not_small": 0.20215184658020735,
+    "at_factor": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.289381451326868,
+     "gap_cost_pct": 5.000000004204752,
+     "small": false,
+     "wording": "material_trade_off_exists",
+     "front_size": 5
+    }
+   },
+   "p-i-n/better": {
+    "factor_gap_becomes_not_small": 0.17097479764651508,
+    "at_factor": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.05483050420968638,
+     "gap_cost_pct": 5.000000003447025,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 3
+    }
+   },
+   "n-i-p/base": {
+    "factor_gap_becomes_not_small": 0.224240736072883,
+    "at_factor": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.09911366555680345,
+     "gap_cost_pct": 5.000000004600835,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 6
+    }
+   },
+   "n-i-p/worse": {
+    "factor_gap_becomes_not_small": 0.2527483641104772,
+    "at_factor": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.24370875030687245,
+     "gap_cost_pct": 5.000000019829698,
+     "small": false,
+     "wording": "material_trade_off_exists",
+     "front_size": 3
+    }
+   },
+   "n-i-p/better": {
+    "factor_gap_becomes_not_small": 0.1325530804544687,
+    "at_factor": {
+     "combos": [
+      "NiOx/Ag",
+      "NiOx/Cu"
+     ],
+     "gap_pce": 0.16261489255482076,
+     "gap_cost_pct": 5.000000014487882,
+     "small": false,
+     "wording": "cost_differs_efficiency_practically_equal",
+     "front_size": 21
+    }
+   }
+  }
+ }
+}

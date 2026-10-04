@@ -1,0 +1,1337 @@
+{
+ "schema": "perodesign.paperB_diag/1",
+ "d1_records": [
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 0,
+   "absorber_nm": 600.0,
+   "x_used": [
+    15.0,
+    600.0,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.47539532871972,
+   "cell_pce_pct": 20.150000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 1,
+   "absorber_nm": 600.1,
+   "x_used": [
+    15.0,
+    600.1,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.47539532871972,
+   "cell_pce_pct": 20.150000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 2,
+   "absorber_nm": 600.2,
+   "x_used": [
+    15.0,
+    600.2,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.47539532871972,
+   "cell_pce_pct": 20.150000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 3,
+   "absorber_nm": 600.3,
+   "x_used": [
+    15.0,
+    600.3,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.47539532871972,
+   "cell_pce_pct": 20.150000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 4,
+   "absorber_nm": 600.4,
+   "x_used": [
+    15.0,
+    600.4,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.47539532871972,
+   "cell_pce_pct": 20.150000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 5,
+   "absorber_nm": 600.5,
+   "x_used": [
+    15.0,
+    600.5,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.466444455854447,
+   "cell_pce_pct": 20.14,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 6,
+   "absorber_nm": 600.6,
+   "x_used": [
+    15.0,
+    600.6,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.466444455854447,
+   "cell_pce_pct": 20.14,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 7,
+   "absorber_nm": 600.7,
+   "x_used": [
+    15.0,
+    600.7,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.466444455854447,
+   "cell_pce_pct": 20.14,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 8,
+   "absorber_nm": 600.8,
+   "x_used": [
+    15.0,
+    600.8,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.466444455854447,
+   "cell_pce_pct": 20.14,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 9,
+   "absorber_nm": 600.9,
+   "x_used": [
+    15.0,
+    600.9,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.466444455854447,
+   "cell_pce_pct": 20.14,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 10,
+   "absorber_nm": 601.0,
+   "x_used": [
+    15.0,
+    601.0,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.466444455854447,
+   "cell_pce_pct": 20.14,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 11,
+   "absorber_nm": 601.1,
+   "x_used": [
+    15.0,
+    601.1,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.457493366447146,
+   "cell_pce_pct": 20.13,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 12,
+   "absorber_nm": 601.2,
+   "x_used": [
+    15.0,
+    601.2,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.457493366447146,
+   "cell_pce_pct": 20.13,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 13,
+   "absorber_nm": 601.3,
+   "x_used": [
+    15.0,
+    601.3,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.457493366447146,
+   "cell_pce_pct": 20.13,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 14,
+   "absorber_nm": 601.4,
+   "x_used": [
+    15.0,
+    601.4,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.457493366447146,
+   "cell_pce_pct": 20.13,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 15,
+   "absorber_nm": 601.5,
+   "x_used": [
+    15.0,
+    601.5,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.457493366447146,
+   "cell_pce_pct": 20.13,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 16,
+   "absorber_nm": 601.6,
+   "x_used": [
+    15.0,
+    601.6,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.457493366447146,
+   "cell_pce_pct": 20.13,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 17,
+   "absorber_nm": 601.7,
+   "x_used": [
+    15.0,
+    601.7,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.457493366447146,
+   "cell_pce_pct": 20.13,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 18,
+   "absorber_nm": 601.8,
+   "x_used": [
+    15.0,
+    601.8,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.44854206049782,
+   "cell_pce_pct": 20.119999999999997,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Cu",
+   "k": 19,
+   "absorber_nm": 601.9,
+   "x_used": [
+    15.0,
+    601.9,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.44854206049782,
+   "cell_pce_pct": 20.119999999999997,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 0,
+   "absorber_nm": 600.0,
+   "x_used": [
+    15.0,
+    600.0,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.529096018528854,
+   "cell_pce_pct": 20.21,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 1,
+   "absorber_nm": 600.1,
+   "x_used": [
+    15.0,
+    600.1,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.520146444915728,
+   "cell_pce_pct": 20.200000000000003,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 2,
+   "absorber_nm": 600.2,
+   "x_used": [
+    15.0,
+    600.2,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.520146444915728,
+   "cell_pce_pct": 20.200000000000003,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 3,
+   "absorber_nm": 600.3,
+   "x_used": [
+    15.0,
+    600.3,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.520146444915728,
+   "cell_pce_pct": 20.200000000000003,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 4,
+   "absorber_nm": 600.4,
+   "x_used": [
+    15.0,
+    600.4,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.520146444915728,
+   "cell_pce_pct": 20.200000000000003,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 5,
+   "absorber_nm": 600.5,
+   "x_used": [
+    15.0,
+    600.5,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.520146444915728,
+   "cell_pce_pct": 20.200000000000003,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 6,
+   "absorber_nm": 600.6,
+   "x_used": [
+    15.0,
+    600.6,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.520146444915728,
+   "cell_pce_pct": 20.200000000000003,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 7,
+   "absorber_nm": 600.7,
+   "x_used": [
+    15.0,
+    600.7,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.511196654760575,
+   "cell_pce_pct": 20.19,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 8,
+   "absorber_nm": 600.8,
+   "x_used": [
+    15.0,
+    600.8,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.511196654760575,
+   "cell_pce_pct": 20.19,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 9,
+   "absorber_nm": 600.9,
+   "x_used": [
+    15.0,
+    600.9,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.511196654760575,
+   "cell_pce_pct": 20.19,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 10,
+   "absorber_nm": 601.0,
+   "x_used": [
+    15.0,
+    601.0,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.511196654760575,
+   "cell_pce_pct": 20.19,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 11,
+   "absorber_nm": 601.1,
+   "x_used": [
+    15.0,
+    601.1,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.511196654760575,
+   "cell_pce_pct": 20.19,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 12,
+   "absorber_nm": 601.2,
+   "x_used": [
+    15.0,
+    601.2,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.511196654760575,
+   "cell_pce_pct": 20.19,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 13,
+   "absorber_nm": 601.3,
+   "x_used": [
+    15.0,
+    601.3,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.502246648063398,
+   "cell_pce_pct": 20.18,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 14,
+   "absorber_nm": 601.4,
+   "x_used": [
+    15.0,
+    601.4,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.502246648063398,
+   "cell_pce_pct": 20.18,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 15,
+   "absorber_nm": 601.5,
+   "x_used": [
+    15.0,
+    601.5,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.502246648063398,
+   "cell_pce_pct": 20.18,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 16,
+   "absorber_nm": 601.6,
+   "x_used": [
+    15.0,
+    601.6,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.502246648063398,
+   "cell_pce_pct": 20.18,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 17,
+   "absorber_nm": 601.7,
+   "x_used": [
+    15.0,
+    601.7,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.502246648063398,
+   "cell_pce_pct": 20.18,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 18,
+   "absorber_nm": 601.8,
+   "x_used": [
+    15.0,
+    601.8,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.502246648063398,
+   "cell_pce_pct": 20.18,
+   "status": "complete"
+  },
+  {
+   "arch": "p-i-n",
+   "metal": "Ag",
+   "k": 19,
+   "absorber_nm": 601.9,
+   "x_used": [
+    15.0,
+    601.9,
+    30.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 18.502246648063398,
+   "cell_pce_pct": 20.18,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 0,
+   "absorber_nm": 500.0,
+   "x_used": [
+    10.0,
+    500.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.825772905886826,
+   "cell_pce_pct": 23.810000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 1,
+   "absorber_nm": 500.1,
+   "x_used": [
+    10.0,
+    500.1,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.825772905886826,
+   "cell_pce_pct": 23.810000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 2,
+   "absorber_nm": 500.2,
+   "x_used": [
+    10.0,
+    500.2,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.825772905886826,
+   "cell_pce_pct": 23.810000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 3,
+   "absorber_nm": 500.3,
+   "x_used": [
+    10.0,
+    500.3,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.825772905886826,
+   "cell_pce_pct": 23.810000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 4,
+   "absorber_nm": 500.4,
+   "x_used": [
+    10.0,
+    500.4,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.825772905886826,
+   "cell_pce_pct": 23.810000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 5,
+   "absorber_nm": 500.5,
+   "x_used": [
+    10.0,
+    500.5,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.825772905886826,
+   "cell_pce_pct": 23.810000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 6,
+   "absorber_nm": 500.6,
+   "x_used": [
+    10.0,
+    500.6,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.825772905886826,
+   "cell_pce_pct": 23.810000000000002,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 7,
+   "absorber_nm": 500.7,
+   "x_used": [
+    10.0,
+    500.7,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 8,
+   "absorber_nm": 500.8,
+   "x_used": [
+    10.0,
+    500.8,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 9,
+   "absorber_nm": 500.9,
+   "x_used": [
+    10.0,
+    500.9,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 10,
+   "absorber_nm": 501.0,
+   "x_used": [
+    10.0,
+    501.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 11,
+   "absorber_nm": 501.1,
+   "x_used": [
+    10.0,
+    501.1,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 12,
+   "absorber_nm": 501.2,
+   "x_used": [
+    10.0,
+    501.2,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 13,
+   "absorber_nm": 501.3,
+   "x_used": [
+    10.0,
+    501.3,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 14,
+   "absorber_nm": 501.4,
+   "x_used": [
+    10.0,
+    501.4,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 15,
+   "absorber_nm": 501.5,
+   "x_used": [
+    10.0,
+    501.5,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 16,
+   "absorber_nm": 501.6,
+   "x_used": [
+    10.0,
+    501.6,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 17,
+   "absorber_nm": 501.7,
+   "x_used": [
+    10.0,
+    501.7,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 18,
+   "absorber_nm": 501.8,
+   "x_used": [
+    10.0,
+    501.8,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Cu",
+   "k": 19,
+   "absorber_nm": 501.9,
+   "x_used": [
+    10.0,
+    501.9,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.83471899909847,
+   "cell_pce_pct": 23.82,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 0,
+   "absorber_nm": 500.0,
+   "x_used": [
+    10.0,
+    500.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 1,
+   "absorber_nm": 500.1,
+   "x_used": [
+    10.0,
+    500.1,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 2,
+   "absorber_nm": 500.2,
+   "x_used": [
+    10.0,
+    500.2,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 3,
+   "absorber_nm": 500.3,
+   "x_used": [
+    10.0,
+    500.3,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 4,
+   "absorber_nm": 500.4,
+   "x_used": [
+    10.0,
+    500.4,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 5,
+   "absorber_nm": 500.5,
+   "x_used": [
+    10.0,
+    500.5,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 6,
+   "absorber_nm": 500.6,
+   "x_used": [
+    10.0,
+    500.6,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 7,
+   "absorber_nm": 500.7,
+   "x_used": [
+    10.0,
+    500.7,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 8,
+   "absorber_nm": 500.8,
+   "x_used": [
+    10.0,
+    500.8,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 9,
+   "absorber_nm": 500.9,
+   "x_used": [
+    10.0,
+    500.9,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 10,
+   "absorber_nm": 501.0,
+   "x_used": [
+    10.0,
+    501.0,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 11,
+   "absorber_nm": 501.1,
+   "x_used": [
+    10.0,
+    501.1,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 12,
+   "absorber_nm": 501.2,
+   "x_used": [
+    10.0,
+    501.2,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 13,
+   "absorber_nm": 501.3,
+   "x_used": [
+    10.0,
+    501.3,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 14,
+   "absorber_nm": 501.4,
+   "x_used": [
+    10.0,
+    501.4,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 15,
+   "absorber_nm": 501.5,
+   "x_used": [
+    10.0,
+    501.5,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 16,
+   "absorber_nm": 501.6,
+   "x_used": [
+    10.0,
+    501.6,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 17,
+   "absorber_nm": 501.7,
+   "x_used": [
+    10.0,
+    501.7,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.870501520156004,
+   "cell_pce_pct": 23.86,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 18,
+   "absorber_nm": 501.8,
+   "x_used": [
+    10.0,
+    501.8,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.87944668747313,
+   "cell_pce_pct": 23.87,
+   "status": "complete"
+  },
+  {
+   "arch": "n-i-p",
+   "metal": "Ag",
+   "k": 19,
+   "absorber_nm": 501.9,
+   "x_used": [
+    10.0,
+    501.9,
+    10.0,
+    6.0
+   ],
+   "module_pce_pct": 21.87944668747313,
+   "cell_pce_pct": 23.87,
+   "status": "complete"
+  }
+ ],
+ "d2": [
+  {
+   "HTL": "NiOx",
+   "W_L_eV": 4.0,
+   "W_R_eV": 5.7,
+   "status": "complete",
+   "cell_pce_pct": 23.810000000000002,
+   "voc_V": 1.23,
+   "ff": 0.846,
+   "jsc_mA_cm2": 22.89321,
+   "module_pce_pct": 21.825772905886826
+  },
+  {
+   "HTL": "NiOx",
+   "W_L_eV": 4.0,
+   "W_R_eV": 5.4,
+   "status": "complete",
+   "cell_pce_pct": 23.549999999999997,
+   "voc_V": 1.229,
+   "ff": 0.837,
+   "jsc_mA_cm2": 22.88921,
+   "module_pce_pct": 21.590304737403354
+  },
+  {
+   "HTL": "PTAA",
+   "W_L_eV": 4.0,
+   "W_R_eV": 5.4,
+   "status": "complete",
+   "cell_pce_pct": 22.919999999999998,
+   "voc_V": 1.226,
+   "ff": 0.817,
+   "jsc_mA_cm2": 22.87875,
+   "module_pce_pct": 21.006007221064802
+  },
+  {
+   "HTL": "PTAA",
+   "W_L_eV": 4.0,
+   "W_R_eV": 5.7,
+   "status": "failed",
+   "cell_pce_pct": null,
+   "voc_V": null,
+   "ff": null,
+   "jsc_mA_cm2": null,
+   "module_pce_pct": null
+  }
+ ],
+ "d1": {
+  "p-i-n": {
+   "Cu": {
+    "n": 20,
+    "resid_sd_points": 0.0026861982643688583,
+    "resid_max_abs": 0.00433423987976056,
+    "slope_points_per_nm": -0.014133235566873303,
+    "range_points": 0.02685326822189893
+   },
+   "Ag": {
+    "n": 20,
+    "resid_sd_points": 0.002799862358223413,
+    "resid_max_abs": 0.004663400608617252,
+    "slope_points_per_nm": -0.01352573994144106,
+    "range_points": 0.02684937046545599
+   },
+   "ag_minus_cu": {
+    "mean": 0.04788500440897536,
+    "sd": 0.004380087176705636,
+    "min": 0.044751116196007246,
+    "max": 0.05370458756557639
+   }
+  },
+  "n-i-p": {
+   "Cu": {
+    "n": 20,
+    "resid_sd_points": 0.002527561254638017,
+    "resid_max_abs": 0.004661385410280161,
+    "slope_points_per_nm": 0.006121011144811471,
+    "range_points": 0.008946093211644524
+   },
+   "Ag": {
+    "n": 20,
+    "resid_sd_points": 0.0024157306804382206,
+    "resid_max_abs": 0.005992589533502013,
+    "slope_points_per_nm": 0.002421248296365337,
+    "range_points": 0.008945167317126135
+   },
+   "ag_minus_cu": {
+    "mean": 0.03980817041332241,
+    "sd": 0.0045661400732810034,
+    "min": 0.03578252105753421,
+    "max": 0.044728614269178735
+   }
+  }
+ }
+}

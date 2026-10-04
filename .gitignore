@@ -1,0 +1,15 @@
+# Python and tool caches
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.cache/
+.venv/
+venv/
+
+# Local settings and keys (none are needed to reproduce the paper)
+.env
+
+# Outputs written when the analysis scripts are re-run (the shipped copies are in source_data/)
+paper/paperAB/build/
+paper/paperA/build/

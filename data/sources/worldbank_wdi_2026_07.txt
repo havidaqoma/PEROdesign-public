@@ -1,0 +1,70 @@
+# SOURCE worldbank_wdi_2026_07
+# World Bank, World Development Indicators (WDI), API v2, database last updated 2026-07-13.
+# URL https://api.worldbank.org/v2/country/MYS;CHN;IND/indicator/<ID>?format=json&date=2019:2025
+# Licence: CC BY 4.0 (https://datacatalog.worldbank.org/search/dataset/0037712, checked 2026-09-28).
+# FR.INR.LEND original source: IMF International Financial Statistics (as stated in the WDI indicator metadata).
+# One row per observation: country | indicator | indicator name | year | value (exact API value, None = missing).
+
+CHN | FR.INR.LEND | Lending interest rate (%) | 2019 | 4.35
+CHN | FR.INR.LEND | Lending interest rate (%) | 2020 | 4.35
+CHN | FR.INR.LEND | Lending interest rate (%) | 2021 | 4.35
+CHN | FR.INR.LEND | Lending interest rate (%) | 2022 | 4.35
+CHN | FR.INR.LEND | Lending interest rate (%) | 2023 | 4.35
+CHN | FR.INR.LEND | Lending interest rate (%) | 2024 | 4.35
+CHN | FR.INR.LEND | Lending interest rate (%) | 2025 | None
+IND | FR.INR.LEND | Lending interest rate (%) | 2019 | 9.46625
+IND | FR.INR.LEND | Lending interest rate (%) | 2020 | 9.15
+IND | FR.INR.LEND | Lending interest rate (%) | 2021 | 8.69833333333333
+IND | FR.INR.LEND | Lending interest rate (%) | 2022 | 8.56714285714286
+IND | FR.INR.LEND | Lending interest rate (%) | 2023 | None
+IND | FR.INR.LEND | Lending interest rate (%) | 2024 | None
+IND | FR.INR.LEND | Lending interest rate (%) | 2025 | None
+MYS | FR.INR.LEND | Lending interest rate (%) | 2019 | 4.87689294871795
+MYS | FR.INR.LEND | Lending interest rate (%) | 2020 | 3.94420769234615
+MYS | FR.INR.LEND | Lending interest rate (%) | 2021 | 3.44410640384615
+MYS | FR.INR.LEND | Lending interest rate (%) | 2022 | 3.90802666666667
+MYS | FR.INR.LEND | Lending interest rate (%) | 2023 | 5.31737500641025
+MYS | FR.INR.LEND | Lending interest rate (%) | 2024 | 5.282681
+MYS | FR.INR.LEND | Lending interest rate (%) | 2025 | 4.82472886111111
+CHN | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2019 | 6.90838500992901
+CHN | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2020 | 6.90076726944925
+CHN | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2021 | 6.44897518024316
+CHN | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2022 | 6.73715811237119
+CHN | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2023 | 7.08399842343631
+CHN | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2024 | 7.19749110789917
+CHN | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2025 | 7.18984737402171
+IND | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2019 | 70.4203405359551
+IND | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2020 | 74.0995668836052
+IND | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2021 | 73.9180128154351
+IND | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2022 | 78.6044905829916
+IND | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2023 | 82.5992764460784
+IND | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2024 | 83.669281580941
+IND | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2025 | 87.1584483507393
+MYS | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2019 | 4.14246973569731
+MYS | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2020 | 4.20348194851884
+MYS | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2021 | 4.14329759817721
+MYS | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2022 | 4.40107634540072
+MYS | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2023 | 4.56062343240897
+MYS | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2024 | 4.5764279106858
+MYS | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2025 | 4.28442415048243
+CHN | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2019 | 2.89923416358227
+CHN | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2020 | 2.41942189457782
+CHN | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2021 | 0.981015135544882
+CHN | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2022 | 1.97357555739051
+CHN | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2023 | 0.234836828893051
+CHN | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2024 | 0.218128938439177
+CHN | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2025 | 0.0595646916565403
+IND | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2019 | 3.72950573539123
+IND | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2020 | 6.6234367762853
+IND | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2021 | 5.13140747176364
+IND | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2022 | 6.69903414079858
+IND | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2023 | 5.64914318907925
+IND | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2024 | 4.95303550973661
+IND | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2025 | 2.39884954182294
+MYS | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2019 | 0.662891865764326
+MYS | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2020 | -1.1387021539305
+MYS | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2021 | 2.47710241465447
+MYS | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2022 | 3.37869862549928
+MYS | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2023 | 2.48886560125754
+MYS | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2024 | 1.834100204499
+MYS | FP.CPI.TOTL.ZG | Inflation, consumer prices (annual %) | 2025 | 1.38060872293692

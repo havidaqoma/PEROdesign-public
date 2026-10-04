@@ -1,0 +1,774 @@
+{
+ "simulation_setup.txt": {
+  "T": {
+   "value": "295",
+   "note": "K, absolute temperature"
+  },
+  "l1": {
+   "value": "L1_parameters.txt",
+   "note": "parameter file for layer 1, mandatory"
+  },
+  "l2": {
+   "value": "L2_parameters.txt",
+   "note": "parameter file for layer 2"
+  },
+  "l3": {
+   "value": "L3_parameters.txt",
+   "note": "parameter file for layer 3"
+  },
+  "leftElec": {
+   "value": "-1",
+   "note": "left electrode is the cathode (-1) or the anode (1)"
+  },
+  "W_L": {
+   "value": "4.05",
+   "note": "eV, work function left electrode (= cathode), or 'sfb'"
+  },
+  "W_R": {
+   "value": "5.2",
+   "note": "eV, work function right electrode (= cathode), or 'sfb'"
+  },
+  "S_n_L": {
+   "value": "-1E-7",
+   "note": "m/s, surface recombination of electrons at the left electrode"
+  },
+  "S_p_L": {
+   "value": "-1E-7",
+   "note": "m/s, surface recombination of holes at the left electrode"
+  },
+  "S_n_R": {
+   "value": "-1E-7",
+   "note": "m/s, surface recombination of electrons at the right electrode"
+  },
+  "S_p_R": {
+   "value": "-1E-7",
+   "note": "m/s, surface recombination of holes at the right electrode"
+  },
+  "R_shunt": {
+   "value": "-5E3",
+   "note": "Ohms m2, shunt resistance. Use negative value for infinite R_shunt"
+  },
+  "R_series": {
+   "value": "0",
+   "note": "Ohms m2, series resistance."
+  },
+  "G_frac": {
+   "value": "1",
+   "note": "fraction of Gmax used in solar cell"
+  },
+  "genProfile": {
+   "value": "calc",
+   "note": "name of file generation profile (or 'none' or 'calc')"
+  },
+  "L_TCO": {
+   "value": "50E-9",
+   "note": "m, thickness of the TCO. Set to 0 if layer is not used"
+  },
+  "L_BE": {
+   "value": "101E-9",
+   "note": "m, thickness of back electrode, must be >0"
+  },
+  "nkSubstrate": {
+   "value": "/home/havidaqoma/simss/Data/nk_SiO2.txt",
+   "note": "name of file with n,k values of substrate"
+  },
+  "nkTCO": {
+   "value": "/home/havidaqoma/simss/Data/nk_ITO.txt",
+   "note": "name of file with n,k values of TCO"
+  },
+  "nkBE": {
+   "value": "/home/havidaqoma/simss/Data/nk_Au.txt",
+   "note": "name of file with n,k values of back electrode"
+  },
+  "spectrum": {
+   "value": "/home/havidaqoma/simss/Data/AM15G.txt",
+   "note": "name of file that contains the spectrum"
+  },
+  "lambda_min": {
+   "value": "3.5E-7",
+   "note": "m, lower bound wavelength"
+  },
+  "lambda_max": {
+   "value": "8E-7",
+   "note": "m, upper bound wavelength"
+  },
+  "NP": {
+   "value": "250",
+   "note": "integer, number of grid points, must be at least 5 per layer."
+  },
+  "tolPois": {
+   "value": "1E-5",
+   "note": "V, abs. tolerance of iterative Poisson solver"
+  },
+  "maxDelV": {
+   "value": "10",
+   "note": "maximum change (in Vt) of the potential per loop"
+  },
+  "maxItPois": {
+   "value": "2000",
+   "note": "max. number it. Poisson loop"
+  },
+  "maxItSS": {
+   "value": "2000",
+   "note": "max. number it. main loop"
+  },
+  "currDiffInt": {
+   "value": "2",
+   "note": "Calc. current from differential (1) or integral (2) expression"
+  },
+  "tolCurr": {
+   "value": "1E-3",
+   "note": "relative tolerance on current density"
+  },
+  "tolDens": {
+   "value": "1E-5",
+   "note": "relative tolerance of density solver"
+  },
+  "couplePC": {
+   "value": "4",
+   "note": ">= 0, coupling between Poisson equation and continuity equations"
+  },
+  "minAcc": {
+   "value": "0.5",
+   "note": ">0, min. acceleration parameter"
+  },
+  "maxAcc": {
+   "value": "0.95",
+   "note": "<2, max. acceleration parameter"
+  },
+  "ignoreNegDens": {
+   "value": "1",
+   "note": "whether(1) or not(<>1) to ignore negative densities"
+  },
+  "convVar": {
+   "value": "1",
+   "note": "integer 1-4, selects which variable to monitor for convergence"
+  },
+  "failureMode": {
+   "value": "2",
+   "note": "how treat failed (t,V,G) points: 0: stop, 1: ignore, 2: skip"
+  },
+  "grad": {
+   "value": "4",
+   "note": "determines shape of exp. grid, increase grad for smaller h[1]"
+  },
+  "Vdist": {
+   "value": "1",
+   "note": "1 for uniform (specified by Vstep), 2 for logarithmic (specified by Vacc and NJV)"
+  },
+  "preCond": {
+   "value": "0",
+   "note": "pre-conditioning, yes(1)/no(0)"
+  },
+  "Vpre": {
+   "value": "0",
+   "note": "V, pre-conditioned voltage"
+  },
+  "fixIons": {
+   "value": "0",
+   "note": "fix ions at first applied voltage? yes(1) or no (0)."
+  },
+  "Vscan": {
+   "value": "1",
+   "note": "integer, 1 for forward sweep direction, -1 for reverse sweep"
+  },
+  "Vmin": {
+   "value": "-0.04",
+   "note": "V"
+  },
+  "Vmax": {
+   "value": "1.24",
+   "note": "V"
+  },
+  "Vstep": {
+   "value": "0.02",
+   "note": "V"
+  },
+  "Vacc": {
+   "value": "0",
+   "note": "V, point of accumulation of row of V's, note: Vacc should be"
+  },
+  "NJV": {
+   "value": "100",
+   "note": "number of JV points in logarithmic distribution"
+  },
+  "untilVoc": {
+   "value": "0",
+   "note": "if 1 then SimSS will stop at Voc"
+  },
+  "timeout": {
+   "value": "300",
+   "note": "s, max run time, use negative value for unlimited run time."
+  },
+  "pauseAtEnd": {
+   "value": "0",
+   "note": "pause at the end of the simulation yes(1) or no (0)"
+  },
+  "autoTidy": {
+   "value": "1",
+   "note": "if 1, then the program will always tidy up this file"
+  },
+  "useExpData": {
+   "value": "0",
+   "note": "if 1, SimSS will try to read JV_Exp and use it"
+  },
+  "expJV": {
+   "value": "expJV.csv",
+   "note": "name of file with experimental JV characteristics"
+  },
+  "fitMode": {
+   "value": "lin",
+   "note": "lin or log: use J or log(J) in calc. of fit error"
+  },
+  "fitThreshold": {
+   "value": "0.8",
+   "note": "threshold of fraction converged points in calc. fit error"
+  },
+  "JVFile": {
+   "value": "JV.dat",
+   "note": "name of the file with simulated JV characteristics"
+  },
+  "varFile": {
+   "value": "Var.dat",
+   "note": "name of the file with (x,V,n,p,Jn,etc) or none for no file."
+  },
+  "limitDigits": {
+   "value": "1",
+   "note": "if 1, then number of digits in output is limited"
+  },
+  "outputRatio": {
+   "value": "1",
+   "note": "Output to varFile every outputRatio voltages"
+  },
+  "scParsFile": {
+   "value": "scPars.txt",
+   "note": "name of file with solar cell parameters"
+  },
+  "logFile": {
+   "value": "log.txt",
+   "note": "name of log file"
+  }
+ },
+ "L1_parameters.txt": {
+  "L": {
+   "value": "25E-9",
+   "note": "m, device length/thickness"
+  },
+  "eps_r": {
+   "value": "5",
+   "note": "relative dielectric constant"
+  },
+  "E_c": {
+   "value": "4",
+   "note": "eV, conduction band edge"
+  },
+  "E_v": {
+   "value": "5.9",
+   "note": "eV, valence band edge"
+  },
+  "N_c": {
+   "value": "5E26",
+   "note": "m^-3, DOS of conduction and valence bands"
+  },
+  "N_D": {
+   "value": "0",
+   "note": "m^-3, ionised n-doping"
+  },
+  "N_A": {
+   "value": "0",
+   "note": "m^-3, ionised p-doping"
+  },
+  "mu_n": {
+   "value": "1E-6",
+   "note": "m^2/Vs, zero field mobility"
+  },
+  "mu_p": {
+   "value": "1E-9",
+   "note": "m^2/Vs, zero field mobility"
+  },
+  "mobnDep": {
+   "value": "0",
+   "note": "0 : const. mob, 1 : field-dependent"
+  },
+  "mobpDep": {
+   "value": "0",
+   "note": "0 : const. mob, 1 : field-dependent"
+  },
+  "gamma_n": {
+   "value": "0",
+   "note": "(m/V)^0.5, field dependence of mob, Poole-Frenkel form"
+  },
+  "gamma_p": {
+   "value": "0",
+   "note": "(m/V)^0.5, field dependence of mob, Poole-Frenkel form"
+  },
+  "nu_int_n": {
+   "value": "1E3",
+   "note": "m/s, interface transfer velocity, to layer to the right"
+  },
+  "nu_int_p": {
+   "value": "1E3",
+   "note": "m/s, interface transfer velocity, to layer to the right"
+  },
+  "N_t_int": {
+   "value": "4E12",
+   "note": "m^-2, trap density at interface with layer to the right"
+  },
+  "E_t_int": {
+   "value": "4.7",
+   "note": "eV, energy level of traps at interface"
+  },
+  "intTrapFile": {
+   "value": "none",
+   "note": "name of file with interface trap energy profile (or 'none'). If specified, overrides E_t_int"
+  },
+  "intTrapType": {
+   "value": "-1",
+   "note": "Trap type for the right interface: -1: acceptor, 0: neutral, 1: donor"
+  },
+  "C_n_int": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for electrons (put to 0 to exclude capture from and emission to the conduction band)"
+  },
+  "C_p_int": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for holes (put to 0 to exclude capture from and emission to the valence band)"
+  },
+  "N_anion": {
+   "value": "0E21",
+   "note": "m^-3, concentration of negative ions"
+  },
+  "N_cation": {
+   "value": "0E21",
+   "note": "m^-3, concentration of positive ions"
+  },
+  "mu_anion": {
+   "value": "1E-11",
+   "note": "m^2/Vs, mobility of negative ions (take 0 if they don't move)"
+  },
+  "mu_cation": {
+   "value": "1E-11",
+   "note": "m^2/Vs, mobility of positive ions (take 0 if they don't move)"
+  },
+  "ionsMayEnter": {
+   "value": "0",
+   "note": "may ions enter from other layers? yes(1) or no(<>1)"
+  },
+  "G_ehp": {
+   "value": "0",
+   "note": "m^-3 s^-1, generation rate of electron-hole pairs in this layer"
+  },
+  "layerGen": {
+   "value": "0",
+   "note": "does this layer generate electron/hole pairs? yes(1) or no (0)"
+  },
+  "nkLayer": {
+   "value": "/home/havidaqoma/simss/Data/nk_C60_1.txt",
+   "note": "name of file with n,k values of this layer"
+  },
+  "fieldDepG": {
+   "value": "0",
+   "note": "field dependent generation yes (1) or no (0)"
+  },
+  "P0": {
+   "value": "0",
+   "note": "0<=P0<1, fraction of quenched excitons that direcltly yield free carriers"
+  },
+  "a": {
+   "value": "1E-9",
+   "note": "m, charge separation distance, Braun model used"
+  },
+  "thermLengDist": {
+   "value": "2",
+   "note": "distribution of a, 1 for delta function, 2 for Gaussian"
+  },
+  "k_f": {
+   "value": "1E6",
+   "note": "1/s, decay rate"
+  },
+  "k_direct": {
+   "value": "1E-17",
+   "note": "m3/s, direct (band-to-band, bimolecular) recombination rate"
+  },
+  "preLangevin": {
+   "value": "1",
+   "note": "Langevin recombination prefactor"
+  },
+  "useLangevin": {
+   "value": "0",
+   "note": "(1) use Langevin to calc. recombination or not (<>1, kdirect is used)"
+  },
+  "N_t_bulk": {
+   "value": "0E20",
+   "note": "m^-3, trap density (in bulk)"
+  },
+  "C_n_bulk": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for electrons (put to 0 to exclude capture from and emission to the conduction band)"
+  },
+  "C_p_bulk": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for holes (put to 0 to exclude capture from and emission to the valence band)"
+  },
+  "E_t_bulk": {
+   "value": "4.7",
+   "note": "eV, energy level of all traps"
+  },
+  "bulkTrapFile": {
+   "value": "none",
+   "note": "name of file with bulk trap energy profile (or 'none'). If specified, overrides E_t_bulk"
+  },
+  "bulkTrapType": {
+   "value": "-1",
+   "note": "Trap type of bulk traps: -1: acceptor, 0: neutral, 1: donor"
+  }
+ },
+ "L2_parameters.txt": {
+  "L": {
+   "value": "500E-9",
+   "note": "m, device length/thickness"
+  },
+  "eps_r": {
+   "value": "24",
+   "note": "relative dielectric constant"
+  },
+  "E_c": {
+   "value": "3.9",
+   "note": "eV, conduction band edge"
+  },
+  "E_v": {
+   "value": "5.53",
+   "note": "eV, valence band edge"
+  },
+  "N_c": {
+   "value": "2.2E24",
+   "note": "m^-3, DOS of conduction and valence bands"
+  },
+  "N_D": {
+   "value": "0",
+   "note": "m^-3, ionised n-doping"
+  },
+  "N_A": {
+   "value": "0",
+   "note": "m^-3, ionised p-doping"
+  },
+  "mu_n": {
+   "value": "1E-4",
+   "note": "m^2/Vs, zero field mobility"
+  },
+  "mu_p": {
+   "value": "1E-4",
+   "note": "m^2/Vs, zero field mobility"
+  },
+  "mobnDep": {
+   "value": "0",
+   "note": "0 : const. mob, 1 : field-dependent"
+  },
+  "mobpDep": {
+   "value": "0",
+   "note": "0 : const. mob, 1 : field-dependent"
+  },
+  "gamma_n": {
+   "value": "0",
+   "note": "(m/V)^0.5, field dependence of mob, Poole-Frenkel form"
+  },
+  "gamma_p": {
+   "value": "0",
+   "note": "(m/V)^0.5, field dependence of mob, Poole-Frenkel form"
+  },
+  "nu_int_n": {
+   "value": "1E3",
+   "note": "m/s, interface transfer velocity, to layer to the right"
+  },
+  "nu_int_p": {
+   "value": "1E3",
+   "note": "m/s, interface transfer velocity, to layer to the right"
+  },
+  "N_t_int": {
+   "value": "1E12",
+   "note": "m^-2, trap density at interface with layer to the right"
+  },
+  "E_t_int": {
+   "value": "4.7",
+   "note": "eV, energy level of traps at interface"
+  },
+  "intTrapFile": {
+   "value": "none",
+   "note": "name of file with interface trap energy profile (or 'none'). If specified, overrides E_t_int"
+  },
+  "intTrapType": {
+   "value": "1",
+   "note": "Trap type for the right interface: -1: acceptor, 0: neutral, 1: donor"
+  },
+  "C_n_int": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for electrons (put to 0 to exclude capture from and emission to the conduction band)"
+  },
+  "C_p_int": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for holes (put to 0 to exclude capture from and emission to the valence band)"
+  },
+  "N_anion": {
+   "value": "5E21",
+   "note": "m^-3, concentration of negative ions"
+  },
+  "N_cation": {
+   "value": "3E21",
+   "note": "m^-3, concentration of positive ions"
+  },
+  "mu_anion": {
+   "value": "5E-11",
+   "note": "m^2/Vs, mobility of negative ions (take 0 if they don't move)"
+  },
+  "mu_cation": {
+   "value": "1E-30",
+   "note": "m^2/Vs, mobility of positive ions (take 0 if they don't move)"
+  },
+  "ionsMayEnter": {
+   "value": "1",
+   "note": "may ions enter from other layers? yes(1) or no(<>1)"
+  },
+  "G_ehp": {
+   "value": "0",
+   "note": "m^-3 s^-1, generation rate of electron-hole pairs in this layer"
+  },
+  "layerGen": {
+   "value": "1",
+   "note": "does this layer generate electron/hole pairs? yes(1) or no (0)"
+  },
+  "nkLayer": {
+   "value": "/home/havidaqoma/simss/Data/nk_MAPI.txt",
+   "note": "name of file with n,k values of this layer"
+  },
+  "fieldDepG": {
+   "value": "0",
+   "note": "field dependent generation yes (1) or no (0)"
+  },
+  "P0": {
+   "value": "0",
+   "note": "0<=P0<1, fraction of quenched excitons that direcltly yield free carriers"
+  },
+  "a": {
+   "value": "1E-9",
+   "note": "m, charge separation distance, Braun model used"
+  },
+  "thermLengDist": {
+   "value": "2",
+   "note": "distribution of a, 1 for delta function, 2 for Gaussian"
+  },
+  "k_f": {
+   "value": "1E6",
+   "note": "1/s, decay rate"
+  },
+  "k_direct": {
+   "value": "1E-17",
+   "note": "m3/s, direct (band-to-band, bimolecular) recombination rate"
+  },
+  "preLangevin": {
+   "value": "1",
+   "note": "Langevin recombination prefactor"
+  },
+  "useLangevin": {
+   "value": "0",
+   "note": "(1) use Langevin to calc. recombination or not (<>1, kdirect is used)"
+  },
+  "N_t_bulk": {
+   "value": "1E20",
+   "note": "m^-3, trap density (in bulk)"
+  },
+  "C_n_bulk": {
+   "value": "5E-14",
+   "note": "m^3/s, capture coefficient for electrons (put to 0 to exclude capture from and emission to the conduction band)"
+  },
+  "C_p_bulk": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for holes (put to 0 to exclude capture from and emission to the valence band)"
+  },
+  "E_t_bulk": {
+   "value": "4.7",
+   "note": "eV, energy level of all traps"
+  },
+  "bulkTrapFile": {
+   "value": "none",
+   "note": "name of file with bulk trap energy profile (or 'none'). If specified, overrides E_t_bulk"
+  },
+  "bulkTrapType": {
+   "value": "-1",
+   "note": "Trap type of bulk traps: -1: acceptor, 0: neutral, 1: donor"
+  }
+ },
+ "L3_parameters.txt": {
+  "L": {
+   "value": "10E-9",
+   "note": "m, device length/thickness"
+  },
+  "eps_r": {
+   "value": "3",
+   "note": "relative dielectric constant"
+  },
+  "E_c": {
+   "value": "2.25",
+   "note": "eV, conduction band edge"
+  },
+  "E_v": {
+   "value": "5.4",
+   "note": "eV, valence band edge"
+  },
+  "N_c": {
+   "value": "1E26",
+   "note": "m^-3, DOS of conduction and valence bands"
+  },
+  "N_D": {
+   "value": "0",
+   "note": "m^-3, ionised n-doping"
+  },
+  "N_A": {
+   "value": "0",
+   "note": "m^-3, ionised p-doping"
+  },
+  "mu_n": {
+   "value": "1E-9",
+   "note": "m^2/Vs, zero field mobility"
+  },
+  "mu_p": {
+   "value": "1E-7",
+   "note": "m^2/Vs, zero field mobility"
+  },
+  "mobnDep": {
+   "value": "0",
+   "note": "0 : const. mob, 1 : field-dependent"
+  },
+  "mobpDep": {
+   "value": "0",
+   "note": "0 : const. mob, 1 : field-dependent"
+  },
+  "gamma_n": {
+   "value": "0",
+   "note": "(m/V)^0.5, field dependence of mob, Poole-Frenkel form"
+  },
+  "gamma_p": {
+   "value": "0",
+   "note": "(m/V)^0.5, field dependence of mob, Poole-Frenkel form"
+  },
+  "nu_int_n": {
+   "value": "1E3",
+   "note": "m/s, interface transfer velocity, to layer to the right"
+  },
+  "nu_int_p": {
+   "value": "1E3",
+   "note": "m/s, interface transfer velocity, to layer to the right"
+  },
+  "N_t_int": {
+   "value": "4E12",
+   "note": "m^-2, trap density at interface with layer to the right"
+  },
+  "E_t_int": {
+   "value": "4.7",
+   "note": "eV, energy level of traps at interface"
+  },
+  "intTrapFile": {
+   "value": "none",
+   "note": "name of file with interface trap energy profile (or 'none'). If specified, overrides E_t_int"
+  },
+  "intTrapType": {
+   "value": "-1",
+   "note": "Trap type for the right interface: -1: acceptor, 0: neutral, 1: donor"
+  },
+  "C_n_int": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for electrons (put to 0 to exclude capture from and emission to the conduction band)"
+  },
+  "C_p_int": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for holes (put to 0 to exclude capture from and emission to the valence band)"
+  },
+  "N_anion": {
+   "value": "0E21",
+   "note": "m^-3, concentration of negative ions"
+  },
+  "N_cation": {
+   "value": "0E21",
+   "note": "m^-3, concentration of positive ions"
+  },
+  "mu_anion": {
+   "value": "1E-11",
+   "note": "m^2/Vs, mobility of negative ions (take 0 if they don't move)"
+  },
+  "mu_cation": {
+   "value": "1E-11",
+   "note": "m^2/Vs, mobility of positive ions (take 0 if they don't move)"
+  },
+  "ionsMayEnter": {
+   "value": "0",
+   "note": "may ions enter from other layers? yes(1) or no(<>1)"
+  },
+  "G_ehp": {
+   "value": "0",
+   "note": "m^-3 s^-1, generation rate of electron-hole pairs in this layer"
+  },
+  "layerGen": {
+   "value": "0",
+   "note": "does this layer generate electron/hole pairs? yes(1) or no (0)"
+  },
+  "nkLayer": {
+   "value": "/home/havidaqoma/simss/Data/nk_PTAA.txt",
+   "note": "name of file with n,k values of this layer"
+  },
+  "fieldDepG": {
+   "value": "0",
+   "note": "field dependent generation yes (1) or no (0)"
+  },
+  "P0": {
+   "value": "0",
+   "note": "0<=P0<1, fraction of quenched excitons that direcltly yield free carriers"
+  },
+  "a": {
+   "value": "1E-9",
+   "note": "m, charge separation distance, Braun model used"
+  },
+  "thermLengDist": {
+   "value": "2",
+   "note": "distribution of a, 1 for delta function, 2 for Gaussian"
+  },
+  "k_f": {
+   "value": "1E6",
+   "note": "1/s, decay rate"
+  },
+  "k_direct": {
+   "value": "1E-17",
+   "note": "m3/s, direct (band-to-band, bimolecular) recombination rate"
+  },
+  "preLangevin": {
+   "value": "1",
+   "note": "Langevin recombination prefactor"
+  },
+  "useLangevin": {
+   "value": "0",
+   "note": "(1) use Langevin to calc. recombination or not (<>1, kdirect is used)"
+  },
+  "N_t_bulk": {
+   "value": "0E18",
+   "note": "m^-3, trap density (in bulk)"
+  },
+  "C_n_bulk": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for electrons (put to 0 to exclude capture from and emission to the conduction band)"
+  },
+  "C_p_bulk": {
+   "value": "2E-14",
+   "note": "m^3/s, capture coefficient for holes (put to 0 to exclude capture from and emission to the valence band)"
+  },
+  "E_t_bulk": {
+   "value": "4.7",
+   "note": "eV, energy level of all traps"
+  },
+  "bulkTrapFile": {
+   "value": "none",
+   "note": "name of file with bulk trap energy profile (or 'none'). If specified, overrides E_t_bulk"
+  },
+  "bulkTrapType": {
+   "value": "-1",
+   "note": "Trap type of bulk traps: -1: acceptor, 0: neutral, 1: donor"
+  }
+ }
+}

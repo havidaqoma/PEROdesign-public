@@ -1,0 +1,2337 @@
+{
+ "budget": {
+  "value": "240",
+  "raw": 240,
+  "source": "perodesign/optim/search.py BUDGET"
+ },
+ "ninit": {
+  "value": "24",
+  "raw": 24,
+  "source": "perodesign/optim/search.py N_INIT"
+ },
+ "q": {
+  "value": "12",
+  "raw": 12,
+  "source": "perodesign/optim/search.py Q"
+ },
+ "pop": {
+  "value": "24",
+  "raw": 24,
+  "source": "perodesign/optim/search.py POP"
+ },
+ "ngen": {
+  "value": "10",
+  "raw": 10,
+  "source": "BUDGET / POP"
+ },
+ "nbatch": {
+  "value": "18",
+  "raw": 18,
+  "source": "(BUDGET - N_INIT) / Q"
+ },
+ "nseeds": {
+  "value": "5",
+  "raw": 5,
+  "source": "scripts/paperA_run.py SEEDS"
+ },
+ "nruns": {
+  "value": "90",
+  "raw": 90,
+  "source": "phase0/paperA/runs/*.json count"
+ },
+ "ncalls": {
+  "value": "21,600",
+  "raw": 21600,
+  "source": "sum of calls over runs/*.json"
+ },
+ "stripe_lo": {
+  "value": "2",
+  "raw": 2.0,
+  "source": "objective.STRIPE_MM"
+ },
+ "ci_level": {
+  "value": "95",
+  "raw": 95,
+  "source": "prereg \u00a77 (95% t CI)"
+ },
+ "t_df": {
+  "value": "4",
+  "raw": 4,
+  "source": "prereg \u00a77 (5 seeds -> 4 d.o.f.)"
+ },
+ "hv_frac": {
+  "value": "95",
+  "raw": 95,
+  "source": "prereg \u00a77 calls-to-95%"
+ },
+ "small_pce": {
+  "value": "1",
+  "raw": 1,
+  "source": "prereg \u00a77 small-gap line (points)"
+ },
+ "small_cost": {
+  "value": "5",
+  "raw": 5,
+  "source": "prereg \u00a77 small-gap line (%)"
+ },
+ "unrel_calls": {
+  "value": "12",
+  "raw": 12,
+  "source": "prereg \u00a77 unreliable rule (calls)"
+ },
+ "unrel_pct": {
+  "value": "5",
+  "raw": 5,
+  "source": "prereg \u00a77 unreliable rule (%)"
+ },
+ "robust_move": {
+  "value": "20",
+  "raw": 20,
+  "source": "prereg \u00a77 design robustness (% of absorber range)"
+ },
+ "max_ptco_pct": {
+  "value": "15",
+  "raw": 15,
+  "source": "perodesign/module MAX_P_TCO = 0.15"
+ },
+ "nt_worse": {
+  "value": "$3.16\\times10^{20}$",
+  "raw": 3.1622776601683794e+20,
+  "source": "objective.SCENARIOS"
+ },
+ "bo_restarts": {
+  "value": "4",
+  "raw": 4,
+  "source": "search.run_qnehvi restarts"
+ },
+ "bo_raw": {
+  "value": "256",
+  "raw": 256,
+  "source": "search.run_qnehvi raw"
+ },
+ "bo_mc": {
+  "value": "64",
+  "raw": 64,
+  "source": "search.run_qnehvi mc"
+ },
+ "incident_w": {
+  "value": "1000",
+  "raw": 1000.0,
+  "source": "perodesign/tea INCIDENT_W_M2"
+ },
+ "round_nm": {
+  "value": "0.1",
+  "raw": 0.1,
+  "source": "objective.design round(t, 1)"
+ },
+ "round_mm": {
+  "value": "0.01",
+  "raw": 0.01,
+  "source": "objective.design round(stripe, 2)"
+ },
+ "nworkers": {
+  "value": "12",
+  "raw": 12,
+  "source": "scripts/paperA_run.py run 12 (launch log)"
+ },
+ "stripe_hi": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "objective.STRIPE_MM"
+ },
+ "dead_mm": {
+  "value": "0.2",
+  "raw": 0.2,
+  "source": "objective.DEAD_MM"
+ },
+ "tco_ohm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "objective.TCO_OHM_SQ"
+ },
+ "edge_pct": {
+  "value": "3",
+  "raw": 3.0,
+  "source": "objective.EDGE"
+ },
+ "pce_floor": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "objective.PCE_FLOOR"
+ },
+ "ptaa_density": {
+  "value": "1.1",
+  "raw": 1.1,
+  "source": "objective.ASM"
+ },
+ "nt_lib": {
+  "value": "$10^{20}$",
+  "raw": 1e+20,
+  "source": "materials_v2.yaml MAPbI3 N_t_bulk_m3"
+ },
+ "mu_lib": {
+  "value": "$10^{-4}$",
+  "raw": 0.0001,
+  "source": "materials_v2.yaml MAPbI3 mu_n_m2_Vs"
+ },
+ "dim_pin": {
+  "value": "5",
+  "raw": 5,
+  "source": "objective.space(arch).dim"
+ },
+ "refcost_pin": {
+  "value": "1.854",
+  "raw": 1.8542398521443944,
+  "source": "objective.reference_point"
+ },
+ "lo_pin_NiOx_nm": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "hi_pin_NiOx_nm": {
+  "value": "40",
+  "raw": 40.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "lo_pin_MAPbI3_nm": {
+  "value": "200",
+  "raw": 200.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "hi_pin_MAPbI3_nm": {
+  "value": "1000",
+  "raw": 1000.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "lo_pin_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "hi_pin_C60_nm": {
+  "value": "100",
+  "raw": 100.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "lo_pin_SnO2_nm": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "hi_pin_SnO2_nm": {
+  "value": "30",
+  "raw": 30.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "lo_pin_stripe_mm": {
+  "value": "2",
+  "raw": 2.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "hi_pin_stripe_mm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "dim_nip": {
+  "value": "4",
+  "raw": 4,
+  "source": "objective.space(arch).dim"
+ },
+ "refcost_nip": {
+  "value": "49.6",
+  "raw": 49.575203132467415,
+  "source": "objective.reference_point"
+ },
+ "lo_nip_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "hi_nip_C60_nm": {
+  "value": "100",
+  "raw": 100.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "lo_nip_MAPbI3_nm": {
+  "value": "200",
+  "raw": 200.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "hi_nip_MAPbI3_nm": {
+  "value": "1000",
+  "raw": 1000.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "lo_nip_PTAA_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "hi_nip_PTAA_nm": {
+  "value": "70",
+  "raw": 70.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "lo_nip_stripe_mm": {
+  "value": "2",
+  "raw": 2.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "hi_nip_stripe_mm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "materials_v2.yaml thickness_nm / STRIPE_MM"
+ },
+ "ver_botorch": {
+  "value": "0.18.1",
+  "raw": "0.18.1",
+  "source": "importlib.metadata.version('botorch') in the run venv"
+ },
+ "ver_pymoo": {
+  "value": "0.6.2",
+  "raw": "0.6.2",
+  "source": "importlib.metadata.version('pymoo') in the run venv"
+ },
+ "ver_torch": {
+  "value": "2.14.0",
+  "raw": "2.14.0",
+  "source": "importlib.metadata.version('torch') in the run venv"
+ },
+ "ver_scipy": {
+  "value": "1.17.1",
+  "raw": "1.17.1",
+  "source": "importlib.metadata.version('scipy') in the run venv"
+ },
+ "ver_numpy": {
+  "value": "2.4.6",
+  "raw": "2.4.6",
+  "source": "importlib.metadata.version('numpy') in the run venv"
+ },
+ "ver_salib": {
+  "value": "1.6.0",
+  "raw": "1.6.0",
+  "source": "importlib.metadata.version('SALib') in the run venv"
+ },
+ "ver_simss": {
+  "value": "5.36",
+  "raw": "5.36",
+  "source": "perodesign/physics/simss.py SIMSS_VERSION"
+ },
+ "line_capex_usd": {
+  "value": "20,000,000",
+  "raw": 20000000.0,
+  "source": "objective.cost_line('MY').capex_usd (sourced:liu_capex_line)"
+ },
+ "line_throughput_m2_per_yr": {
+  "value": "666,667",
+  "raw": 666666.6666666666,
+  "source": "objective.cost_line('MY').throughput_m2_per_yr (derived:liu_capacity*1e6/(liu_module_eff/100*1000))"
+ },
+ "line_depreciation_years": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "objective.cost_line('MY').depreciation_years (sourced:liu_depreciation)"
+ },
+ "line_yield_fraction": {
+  "value": "0.50",
+  "raw": 0.5,
+  "source": "objective.cost_line('MY').yield_fraction (sourced:liu_yield (/100))"
+ },
+ "line_other_opex_usd_per_m2": {
+  "value": "2.70",
+  "raw": 2.7040316290654034,
+  "source": "objective.cost_line('MY').other_opex_usd_per_m2 (derived:labour + electricity_energy + maintenance + tnb_dema)"
+ },
+ "rate_MY": {
+  "value": "4.82",
+  "raw": 4.82472886111111,
+  "source": "objective.cost_line('MY').rate (x100)"
+ },
+ "rate_CN": {
+  "value": "4.35",
+  "raw": 4.35,
+  "source": "objective.cost_line('CN').rate (x100)"
+ },
+ "rate_IN": {
+  "value": "8.57",
+  "raw": 8.56714285714286,
+  "source": "objective.cost_line('IN').rate (x100)"
+ },
+ "p1_ref_usd": {
+  "value": "0.427",
+  "raw": 0.42739665975133573,
+  "source": "objective.usd_per_W(reference p-i-n, 18.189 %) = phase0/sim_bench/p1_my_bottom_up.json"
+ },
+ "p2_nsims": {
+  "value": "8,704",
+  "raw": 8704,
+  "source": "phase0/sensitivity/result.json n_unique_sims"
+ },
+ "p2_pce_d1": {
+  "value": "0.254",
+  "raw": 0.25421146390872607,
+  "source": "phase0/sensitivity/result.json outputs.cell_pce_pct.ranking[0]"
+ },
+ "p2_pce_d2": {
+  "value": "0.251",
+  "raw": 0.2511072864314945,
+  "source": "phase0/sensitivity/result.json outputs.cell_pce_pct.ranking[1]"
+ },
+ "p2_usd_d1": {
+  "value": "0.284",
+  "raw": 0.28373895272506094,
+  "source": "phase0/sensitivity/result.json outputs.usd_per_W.ranking[0]"
+ },
+ "p2_usd_d2": {
+  "value": "0.254",
+  "raw": 0.2536648470239388,
+  "source": "phase0/sensitivity/result.json outputs.usd_per_W.ranking[1]"
+ },
+ "sim_median_s": {
+  "value": "2.2",
+  "raw": 2.191,
+  "source": "median calls[].seconds (non-cached calls)"
+ },
+ "n_nocache": {
+  "value": "21,600",
+  "raw": 21600,
+  "source": "calls with seconds > 0"
+ },
+ "ninf_total": {
+  "value": "1",
+  "raw": 1,
+  "source": "sum runs/*.json n_infeasible"
+ },
+ "ninf_pct": {
+  "value": "0.00",
+  "raw": 0.004629629629629629,
+  "source": "ninf_total / ncalls"
+ },
+ "matlo_pin_base": {
+  "value": "26.19",
+  "raw": 26.19195823308271,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__base__*.json min materials_usd_m2"
+ },
+ "mathi_pin_base": {
+  "value": "36.18",
+  "raw": 36.18491220676692,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__base__*.json max materials_usd_m2"
+ },
+ "matspan_pin_base": {
+  "value": "38.2",
+  "raw": 38.15275621912928,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__base__*.json 100*(max/min-1) materials_usd_m2"
+ },
+ "pcelo_pin_base": {
+  "value": "12.2",
+  "raw": 12.163660071951083,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__base__*.json min module_pce_pct"
+ },
+ "pcehi_pin_base": {
+  "value": "21.52",
+  "raw": 21.51917792253889,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__base__*.json max module_pce_pct"
+ },
+ "totspan_pin_base": {
+  "value": "27.9",
+  "raw": 27.919755770545795,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__base__*.json 100*(max/min-1) of usd_per_W*module_pce_pct (total cost per m2)"
+ },
+ "pcefac_pin_base": {
+  "value": "1.77",
+  "raw": 1.7691367397023252,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__base__*.json max/min module_pce_pct"
+ },
+ "rho_pin_base": {
+  "value": "-0.990",
+  "raw": -0.9901072742281052,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__base__*.json Spearman rho(module_pce_pct, usd_per_W)"
+ },
+ "matlo_pin_worse": {
+  "value": "26.19",
+  "raw": 26.19195823308271,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__worse__*.json min materials_usd_m2"
+ },
+ "mathi_pin_worse": {
+  "value": "36.18",
+  "raw": 36.18491220676692,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__worse__*.json max materials_usd_m2"
+ },
+ "matspan_pin_worse": {
+  "value": "38.2",
+  "raw": 38.15275621912928,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__worse__*.json 100*(max/min-1) materials_usd_m2"
+ },
+ "pcelo_pin_worse": {
+  "value": "1.7",
+  "raw": 1.6573435182282188,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__worse__*.json min module_pce_pct"
+ },
+ "pcehi_pin_worse": {
+  "value": "18.72",
+  "raw": 18.719210116577386,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__worse__*.json max module_pce_pct"
+ },
+ "totspan_pin_worse": {
+  "value": "27.9",
+  "raw": 27.919755770545795,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__worse__*.json 100*(max/min-1) of usd_per_W*module_pce_pct (total cost per m2)"
+ },
+ "pcefac_pin_worse": {
+  "value": "11.29",
+  "raw": 11.294707410198905,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__worse__*.json max/min module_pce_pct"
+ },
+ "rho_pin_worse": {
+  "value": "-0.999",
+  "raw": -0.9989395668329732,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__worse__*.json Spearman rho(module_pce_pct, usd_per_W)"
+ },
+ "matlo_pin_better": {
+  "value": "26.19",
+  "raw": 26.19195823308271,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__better__*.json min materials_usd_m2"
+ },
+ "mathi_pin_better": {
+  "value": "36.52",
+  "raw": 36.52072854887218,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__better__*.json max materials_usd_m2"
+ },
+ "matspan_pin_better": {
+  "value": "39.4",
+  "raw": 39.43489151850945,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__better__*.json 100*(max/min-1) materials_usd_m2"
+ },
+ "pcelo_pin_better": {
+  "value": "16.5",
+  "raw": 16.54126378058369,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__better__*.json min module_pce_pct"
+ },
+ "pcehi_pin_better": {
+  "value": "23.01",
+  "raw": 23.013658348307658,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__better__*.json max module_pce_pct"
+ },
+ "totspan_pin_better": {
+  "value": "28.9",
+  "raw": 28.85800789099262,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__better__*.json 100*(max/min-1) of usd_per_W*module_pce_pct (total cost per m2)"
+ },
+ "pcefac_pin_better": {
+  "value": "1.39",
+  "raw": 1.391287791161479,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__better__*.json max/min module_pce_pct"
+ },
+ "rho_pin_better": {
+  "value": "-0.964",
+  "raw": -0.9636010650131772,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/p-i-n__better__*.json Spearman rho(module_pce_pct, usd_per_W)"
+ },
+ "matlo_nip_base": {
+  "value": "1141.26",
+  "raw": 1141.2592968201056,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__base__*.json min materials_usd_m2"
+ },
+ "mathi_nip_base": {
+  "value": "1228.10",
+  "raw": 1228.1020644411583,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__base__*.json max materials_usd_m2"
+ },
+ "matspan_nip_base": {
+  "value": "7.6",
+  "raw": 7.609380958650047,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__base__*.json 100*(max/min-1) materials_usd_m2"
+ },
+ "pcelo_nip_base": {
+  "value": "13.3",
+  "raw": 13.3152493280858,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__base__*.json min module_pce_pct"
+ },
+ "pcehi_nip_base": {
+  "value": "21.13",
+  "raw": 21.126792816736497,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__base__*.json max module_pce_pct"
+ },
+ "totspan_nip_base": {
+  "value": "7.5",
+  "raw": 7.545908321333106,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__base__*.json 100*(max/min-1) of usd_per_W*module_pce_pct (total cost per m2)"
+ },
+ "pcefac_nip_base": {
+  "value": "1.59",
+  "raw": 1.586661450805419,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__base__*.json max/min module_pce_pct"
+ },
+ "rho_nip_base": {
+  "value": "-0.991",
+  "raw": -0.9906258796811752,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__base__*.json Spearman rho(module_pce_pct, usd_per_W)"
+ },
+ "matlo_nip_worse": {
+  "value": "1141.26",
+  "raw": 1141.2592968201056,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__worse__*.json min materials_usd_m2"
+ },
+ "mathi_nip_worse": {
+  "value": "1228.10",
+  "raw": 1228.1020644411583,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__worse__*.json max materials_usd_m2"
+ },
+ "matspan_nip_worse": {
+  "value": "7.6",
+  "raw": 7.609380958650047,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__worse__*.json 100*(max/min-1) materials_usd_m2"
+ },
+ "pcelo_nip_worse": {
+  "value": "9.1",
+  "raw": 9.096421446433979,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__worse__*.json min module_pce_pct"
+ },
+ "pcehi_nip_worse": {
+  "value": "18.83",
+  "raw": 18.82817535783529,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__worse__*.json max module_pce_pct"
+ },
+ "totspan_nip_worse": {
+  "value": "7.5",
+  "raw": 7.5459083213330835,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__worse__*.json 100*(max/min-1) of usd_per_W*module_pce_pct (total cost per m2)"
+ },
+ "pcefac_nip_worse": {
+  "value": "2.07",
+  "raw": 2.0698442204672034,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__worse__*.json max/min module_pce_pct"
+ },
+ "rho_nip_worse": {
+  "value": "-0.997",
+  "raw": -0.9965622238597642,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__worse__*.json Spearman rho(module_pce_pct, usd_per_W)"
+ },
+ "matlo_nip_better": {
+  "value": "1141.26",
+  "raw": 1141.2592968201056,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__better__*.json min materials_usd_m2"
+ },
+ "mathi_nip_better": {
+  "value": "1228.10",
+  "raw": 1228.1020644411583,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__better__*.json max materials_usd_m2"
+ },
+ "matspan_nip_better": {
+  "value": "7.6",
+  "raw": 7.609380958650047,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__better__*.json 100*(max/min-1) materials_usd_m2"
+ },
+ "pcelo_nip_better": {
+  "value": "13.6",
+  "raw": 13.591254029305087,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__better__*.json min module_pce_pct"
+ },
+ "pcehi_nip_better": {
+  "value": "22.50",
+  "raw": 22.50451262449458,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__better__*.json max module_pce_pct"
+ },
+ "totspan_nip_better": {
+  "value": "7.5",
+  "raw": 7.5459083213330835,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__better__*.json 100*(max/min-1) of usd_per_W*module_pce_pct (total cost per m2)"
+ },
+ "pcefac_nip_better": {
+  "value": "1.66",
+  "raw": 1.6558084026662272,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__better__*.json max/min module_pce_pct"
+ },
+ "rho_nip_better": {
+  "value": "-0.992",
+  "raw": -0.9918731133357366,
+  "source": "POST-HOC over feasible calls of phase0/paperA/runs/n-i-p__better__*.json Spearman rho(module_pce_pct, usd_per_W)"
+ },
+ "p1_ref_pce": {
+  "value": "18.19",
+  "raw": 18.189336543476127,
+  "source": "phase0/sim_bench/p1_my_bottom_up.json module_pce_pct"
+ },
+ "hvpce_rho_min": {
+  "value": "0.99",
+  "raw": 0.9892857142857142,
+  "source": "POST-HOC min over 6 cases of Spearman(best feasible module PCE of run, hv_final), 15 runs each"
+ },
+ "hvpce_rho_max": {
+  "value": "1.00",
+  "raw": 1.0,
+  "source": "POST-HOC max over 6 cases of the same Spearman"
+ },
+ "liu_capacity_mw": {
+  "value": "100",
+  "raw": 100.0,
+  "source": "cost_library_v1.yaml liu_capacity"
+ },
+ "liu_module_eff": {
+  "value": "15",
+  "raw": 15.0,
+  "source": "cost_library_v1.yaml liu_module_eff"
+ },
+ "maint_pct": {
+  "value": "1",
+  "raw": 1.0,
+  "source": "cost_library_v1.yaml kajal_maintenance_frac"
+ },
+ "rear_ito_nm": {
+  "value": "300",
+  "raw": 300,
+  "source": "cost_library_v1.yaml liu_ito_vol 0.3 cm3/m2 = 300 nm (Liu stack ITO 300 nm; tea bom ITO_rear_electrode)"
+ },
+ "pce_domain_hi": {
+  "value": "40",
+  "raw": 40,
+  "source": "objective.evaluate: module PCE must lie in (0, 40) (tea.cost_per_watt domain)"
+ },
+ "runs_per_case": {
+  "value": "15",
+  "raw": 15,
+  "source": "3 methods x 5 seeds per stack and scenario"
+ },
+ "cai_staff": {
+  "value": "76",
+  "raw": 76.0,
+  "source": "cost_library_v1.yaml cai_line_employees"
+ },
+ "ref_pin_NiOx_nm": {
+  "value": "15",
+  "raw": 15,
+  "source": "objective.REFERENCE['p-i-n'] (P1 reference design)"
+ },
+ "ref_pin_MAPbI3_nm": {
+  "value": "600",
+  "raw": 600,
+  "source": "objective.REFERENCE['p-i-n'] (P1 reference design)"
+ },
+ "ref_pin_C60_nm": {
+  "value": "30",
+  "raw": 30,
+  "source": "objective.REFERENCE['p-i-n'] (P1 reference design)"
+ },
+ "ref_pin_SnO2_nm": {
+  "value": "10",
+  "raw": 10,
+  "source": "objective.REFERENCE['p-i-n'] (P1 reference design)"
+ },
+ "ref_pin_stripe_mm": {
+  "value": "6",
+  "raw": 6.0,
+  "source": "objective.REFERENCE['p-i-n'] (P1 reference design)"
+ },
+ "materials_pin_base_P": {
+  "value": "26.88",
+  "raw": 26.876799022556394,
+  "source": "result.json cases.p-i-n/base.q2.pce_optimal.materials_usd_m2"
+ },
+ "ratio_nip_pin": {
+  "value": "32",
+  "raw": 32.15394689563225,
+  "source": "result.json n-i-p/base pce_optimal usd_per_W / p-i-n/base pce_optimal usd_per_W"
+ },
+ "gain_pin_pce": {
+  "value": "3.33",
+  "raw": 3.3298413790627635,
+  "source": "result p-i-n/base pce_optimal - p1 reference module PCE"
+ },
+ "gain_pin_usd": {
+  "value": "21",
+  "raw": 20.679254368862832,
+  "source": "100*(1 - p-i-n/base optimum USD/W / reference-design USD/W)"
+ },
+ "hv_pin_base_random": {
+  "value": "23.168",
+  "raw": 23.167798817243536,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.random.hv_mean"
+ },
+ "hvci_pin_base_random": {
+  "value": "0.73",
+  "raw": 0.7273420116682159,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.random.hv_ci95_half"
+ },
+ "n95_pin_base_random": {
+  "value": ">240",
+  "raw": ">240",
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.random.calls_to_95pct_best_median"
+ },
+ "inf_pin_base_random": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.random.n_infeasible (sum of 5)"
+ },
+ "hv_pin_base_nsga2": {
+  "value": "24.266",
+  "raw": 24.265938266091176,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.nsga2.hv_mean"
+ },
+ "hvci_pin_base_nsga2": {
+  "value": "0.11",
+  "raw": 0.11276175916430477,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.nsga2.hv_ci95_half"
+ },
+ "n95_pin_base_nsga2": {
+  "value": "194",
+  "raw": "194",
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.nsga2.calls_to_95pct_best_median"
+ },
+ "inf_pin_base_nsga2": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.nsga2.n_infeasible (sum of 5)"
+ },
+ "hv_pin_base_qnehvi": {
+  "value": "25.023",
+  "raw": 25.022514374111935,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.qnehvi.hv_mean"
+ },
+ "hvci_pin_base_qnehvi": {
+  "value": "0.010",
+  "raw": 0.010127672408407298,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.qnehvi.hv_ci95_half"
+ },
+ "n95_pin_base_qnehvi": {
+  "value": "26",
+  "raw": "26",
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.qnehvi.calls_to_95pct_best_median"
+ },
+ "inf_pin_base_qnehvi": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].methods.qnehvi.n_infeasible (sum of 5)"
+ },
+ "q1v_pin_base": {
+  "value": "N>R, Q>R, Q>N",
+  "raw": "N>R, Q>R, Q>N",
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q1"
+ },
+ "unrel_pin_base": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].unreliable"
+ },
+ "small_pin_base": {
+  "value": "yes",
+  "raw": "yes",
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.gap_small"
+ },
+ "best_pin_base": {
+  "value": "qNEHVI",
+  "raw": "qNEHVI",
+  "source": "phase0/paperA/result.json cases['p-i-n/base'] argmax hv_mean"
+ },
+ "dhv_pin_base_nsga2": {
+  "value": "4.74",
+  "raw": 4.7399386428990775,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'] 100*(hv_mean[nsga2]/hv_mean[random]-1)"
+ },
+ "dhv_pin_base_qnehvi": {
+  "value": "8.01",
+  "raw": 8.005575201593839,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'] 100*(hv_mean[qnehvi]/hv_mean[random]-1)"
+ },
+ "front_pin_base": {
+  "value": "2",
+  "raw": 2,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.front_size"
+ },
+ "nfeas_pin_base": {
+  "value": "3,281",
+  "raw": 3281,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.n_feasible_pooled"
+ },
+ "gpce_pin_base": {
+  "value": "0.000",
+  "raw": 8.66102618957143e-06,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.gap_pce_points"
+ },
+ "gcost_pin_base": {
+  "value": "0.026",
+  "raw": 0.026200360456307692,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.gap_cost_pct"
+ },
+ "mpce_pin_base_P": {
+  "value": "21.52",
+  "raw": 21.51917792253889,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.module_pce_pct"
+ },
+ "cpce_pin_base_P": {
+  "value": "23.47",
+  "raw": 23.47,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.cell_pce_pct"
+ },
+ "usd_pin_base_P": {
+  "value": "0.339",
+  "raw": 0.33901421731733383,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.usd_per_W"
+ },
+ "usd4_pin_base_P": {
+  "value": "0.3390",
+  "raw": 0.33901421731733383,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.usd_per_W (table precision)"
+ },
+ "x_pin_base_P_NiOx_nm": {
+  "value": "9.8",
+  "raw": 9.8,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.x.NiOx_nm"
+ },
+ "x_pin_base_P_MAPbI3_nm": {
+  "value": "382.5",
+  "raw": 382.5,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.x.MAPbI3_nm"
+ },
+ "x_pin_base_P_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.x.C60_nm"
+ },
+ "x_pin_base_P_SnO2_nm": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.x.SnO2_nm"
+ },
+ "x_pin_base_P_stripe_mm": {
+  "value": "5.19",
+  "raw": 5.19,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.x.stripe_mm"
+ },
+ "part_pin_base_P_materials": {
+  "value": "0.250",
+  "raw": 0.24979391981703916,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.parts_usd_per_W.materials"
+ },
+ "part_pin_base_P_capital": {
+  "value": "0.064",
+  "raw": 0.06408893199182668,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.parts_usd_per_W.capital"
+ },
+ "part_pin_base_P_other_opex": {
+  "value": "0.025",
+  "raw": 0.025131365508468034,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_pin_base_P_MY": {
+  "value": "0.339",
+  "raw": 0.33901421731733383,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_pin_base_P_CN": {
+  "value": "0.338",
+  "raw": 0.33817314334114756,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_pin_base_P_IN": {
+  "value": "0.346",
+  "raw": 0.34580479752138316,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.pce_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "mpce_pin_base_C": {
+  "value": "21.52",
+  "raw": 21.5191692615127,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.module_pce_pct"
+ },
+ "cpce_pin_base_C": {
+  "value": "23.47",
+  "raw": 23.47,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.cell_pce_pct"
+ },
+ "usd_pin_base_C": {
+  "value": "0.339",
+  "raw": 0.3389254176362351,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.usd_per_W"
+ },
+ "usd4_pin_base_C": {
+  "value": "0.3389",
+  "raw": 0.3389254176362351,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.usd_per_W (table precision)"
+ },
+ "x_pin_base_C_NiOx_nm": {
+  "value": "9.7",
+  "raw": 9.7,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.x.NiOx_nm"
+ },
+ "x_pin_base_C_MAPbI3_nm": {
+  "value": "380.2",
+  "raw": 380.2,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.x.MAPbI3_nm"
+ },
+ "x_pin_base_C_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.x.C60_nm"
+ },
+ "x_pin_base_C_SnO2_nm": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.x.SnO2_nm"
+ },
+ "x_pin_base_C_stripe_mm": {
+  "value": "5.16",
+  "raw": 5.16,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.x.stripe_mm"
+ },
+ "part_pin_base_C_materials": {
+  "value": "0.250",
+  "raw": 0.2497050842265926,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.parts_usd_per_W.materials"
+ },
+ "part_pin_base_C_capital": {
+  "value": "0.064",
+  "raw": 0.06408895778631306,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.parts_usd_per_W.capital"
+ },
+ "part_pin_base_C_other_opex": {
+  "value": "0.025",
+  "raw": 0.025131375623329448,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_pin_base_C_MY": {
+  "value": "0.339",
+  "raw": 0.3389254176362351,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_pin_base_C_CN": {
+  "value": "0.338",
+  "raw": 0.3380843433215337,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_pin_base_C_IN": {
+  "value": "0.346",
+  "raw": 0.3457160005733542,
+  "source": "phase0/paperA/result.json cases['p-i-n/base'].q2.cost_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "hv_pin_worse_random": {
+  "value": "16.882",
+  "raw": 16.881664819553713,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.random.hv_mean"
+ },
+ "hvci_pin_worse_random": {
+  "value": "0.83",
+  "raw": 0.8307584347964729,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.random.hv_ci95_half"
+ },
+ "n95_pin_worse_random": {
+  "value": ">240",
+  "raw": ">240",
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.random.calls_to_95pct_best_median"
+ },
+ "inf_pin_worse_random": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.random.n_infeasible (sum of 5)"
+ },
+ "hv_pin_worse_nsga2": {
+  "value": "19.192",
+  "raw": 19.192030806604148,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.nsga2.hv_mean"
+ },
+ "hvci_pin_worse_nsga2": {
+  "value": "0.70",
+  "raw": 0.7012916444235806,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.nsga2.hv_ci95_half"
+ },
+ "n95_pin_worse_nsga2": {
+  "value": ">240",
+  "raw": ">240",
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.nsga2.calls_to_95pct_best_median"
+ },
+ "inf_pin_worse_nsga2": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.nsga2.n_infeasible (sum of 5)"
+ },
+ "hv_pin_worse_qnehvi": {
+  "value": "20.158",
+  "raw": 20.158316792061136,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.qnehvi.hv_mean"
+ },
+ "hvci_pin_worse_qnehvi": {
+  "value": "0.053",
+  "raw": 0.052524209858905234,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.qnehvi.hv_ci95_half"
+ },
+ "n95_pin_worse_qnehvi": {
+  "value": "47",
+  "raw": "47",
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.qnehvi.calls_to_95pct_best_median"
+ },
+ "inf_pin_worse_qnehvi": {
+  "value": "1",
+  "raw": 1,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].methods.qnehvi.n_infeasible (sum of 5)"
+ },
+ "q1v_pin_worse": {
+  "value": "N>R, Q>R, Q>N",
+  "raw": "N>R, Q>R, Q>N",
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q1"
+ },
+ "unrel_pin_worse": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].unreliable"
+ },
+ "small_pin_worse": {
+  "value": "yes",
+  "raw": "yes",
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.gap_small"
+ },
+ "best_pin_worse": {
+  "value": "qNEHVI",
+  "raw": "qNEHVI",
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'] argmax hv_mean"
+ },
+ "dhv_pin_worse_nsga2": {
+  "value": "13.69",
+  "raw": 13.685652521511882,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'] 100*(hv_mean[nsga2]/hv_mean[random]-1)"
+ },
+ "dhv_pin_worse_qnehvi": {
+  "value": "19.41",
+  "raw": 19.40953103577876,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'] 100*(hv_mean[qnehvi]/hv_mean[random]-1)"
+ },
+ "front_pin_worse": {
+  "value": "1",
+  "raw": 1,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.front_size"
+ },
+ "nfeas_pin_worse": {
+  "value": "3,167",
+  "raw": 3167,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.n_feasible_pooled"
+ },
+ "gpce_pin_worse": {
+  "value": "0.000",
+  "raw": 0.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.gap_pce_points"
+ },
+ "gcost_pin_worse": {
+  "value": "0.000",
+  "raw": 0.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.gap_cost_pct"
+ },
+ "mpce_pin_worse_P": {
+  "value": "18.72",
+  "raw": 18.719210116577386,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.module_pce_pct"
+ },
+ "cpce_pin_worse_P": {
+  "value": "20.38",
+  "raw": 20.380000000000003,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.cell_pce_pct"
+ },
+ "usd_pin_worse_P": {
+  "value": "0.383",
+  "raw": 0.38280039006882843,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.usd_per_W"
+ },
+ "usd4_pin_worse_P": {
+  "value": "0.3828",
+  "raw": 0.38280039006882843,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.usd_per_W (table precision)"
+ },
+ "x_pin_worse_P_NiOx_nm": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.x.NiOx_nm"
+ },
+ "x_pin_worse_P_MAPbI3_nm": {
+  "value": "211.8",
+  "raw": 211.8,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.x.MAPbI3_nm"
+ },
+ "x_pin_worse_P_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.x.C60_nm"
+ },
+ "x_pin_worse_P_SnO2_nm": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.x.SnO2_nm"
+ },
+ "x_pin_worse_P_stripe_mm": {
+  "value": "5.52",
+  "raw": 5.52,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.x.stripe_mm"
+ },
+ "part_pin_worse_P_materials": {
+  "value": "0.280",
+  "raw": 0.2802347666128246,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.parts_usd_per_W.materials"
+ },
+ "part_pin_worse_P_capital": {
+  "value": "0.074",
+  "raw": 0.07367517762815597,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.parts_usd_per_W.capital"
+ },
+ "part_pin_worse_P_other_opex": {
+  "value": "0.029",
+  "raw": 0.028890445827847864,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_pin_worse_P_MY": {
+  "value": "0.383",
+  "raw": 0.38280039006882843,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_pin_worse_P_CN": {
+  "value": "0.382",
+  "raw": 0.3818335105676714,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_pin_worse_P_IN": {
+  "value": "0.391",
+  "raw": 0.3906066865256858,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.pce_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "mpce_pin_worse_C": {
+  "value": "18.72",
+  "raw": 18.719210116577386,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.module_pce_pct"
+ },
+ "cpce_pin_worse_C": {
+  "value": "20.38",
+  "raw": 20.380000000000003,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.cell_pce_pct"
+ },
+ "usd_pin_worse_C": {
+  "value": "0.383",
+  "raw": 0.38280039006882843,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.usd_per_W"
+ },
+ "usd4_pin_worse_C": {
+  "value": "0.3828",
+  "raw": 0.38280039006882843,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.usd_per_W (table precision)"
+ },
+ "x_pin_worse_C_NiOx_nm": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.x.NiOx_nm"
+ },
+ "x_pin_worse_C_MAPbI3_nm": {
+  "value": "211.8",
+  "raw": 211.8,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.x.MAPbI3_nm"
+ },
+ "x_pin_worse_C_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.x.C60_nm"
+ },
+ "x_pin_worse_C_SnO2_nm": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.x.SnO2_nm"
+ },
+ "x_pin_worse_C_stripe_mm": {
+  "value": "5.52",
+  "raw": 5.52,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.x.stripe_mm"
+ },
+ "part_pin_worse_C_materials": {
+  "value": "0.280",
+  "raw": 0.2802347666128246,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.parts_usd_per_W.materials"
+ },
+ "part_pin_worse_C_capital": {
+  "value": "0.074",
+  "raw": 0.07367517762815597,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.parts_usd_per_W.capital"
+ },
+ "part_pin_worse_C_other_opex": {
+  "value": "0.029",
+  "raw": 0.028890445827847864,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_pin_worse_C_MY": {
+  "value": "0.383",
+  "raw": 0.38280039006882843,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_pin_worse_C_CN": {
+  "value": "0.382",
+  "raw": 0.3818335105676714,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_pin_worse_C_IN": {
+  "value": "0.391",
+  "raw": 0.3906066865256858,
+  "source": "phase0/paperA/result.json cases['p-i-n/worse'].q2.cost_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "hv_pin_better_random": {
+  "value": "26.196",
+  "raw": 26.196272275854824,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.random.hv_mean"
+ },
+ "hvci_pin_better_random": {
+  "value": "0.43",
+  "raw": 0.42958082207377046,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.random.hv_ci95_half"
+ },
+ "n95_pin_better_random": {
+  "value": ">240",
+  "raw": ">240",
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.random.calls_to_95pct_best_median"
+ },
+ "inf_pin_better_random": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.random.n_infeasible (sum of 5)"
+ },
+ "hv_pin_better_nsga2": {
+  "value": "27.193",
+  "raw": 27.193365285511227,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.nsga2.hv_mean"
+ },
+ "hvci_pin_better_nsga2": {
+  "value": "0.15",
+  "raw": 0.153755793661874,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.nsga2.hv_ci95_half"
+ },
+ "n95_pin_better_nsga2": {
+  "value": "75",
+  "raw": "75",
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.nsga2.calls_to_95pct_best_median"
+ },
+ "inf_pin_better_nsga2": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.nsga2.n_infeasible (sum of 5)"
+ },
+ "hv_pin_better_qnehvi": {
+  "value": "27.507",
+  "raw": 27.507169448362248,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.qnehvi.hv_mean"
+ },
+ "hvci_pin_better_qnehvi": {
+  "value": "0.17",
+  "raw": 0.1698638636006167,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.qnehvi.hv_ci95_half"
+ },
+ "n95_pin_better_qnehvi": {
+  "value": "26",
+  "raw": "26",
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.qnehvi.calls_to_95pct_best_median"
+ },
+ "inf_pin_better_qnehvi": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].methods.qnehvi.n_infeasible (sum of 5)"
+ },
+ "q1v_pin_better": {
+  "value": "N>R, Q>R",
+  "raw": "N>R, Q>R",
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q1"
+ },
+ "unrel_pin_better": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].unreliable"
+ },
+ "small_pin_better": {
+  "value": "yes",
+  "raw": "yes",
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.gap_small"
+ },
+ "best_pin_better": {
+  "value": "qNEHVI",
+  "raw": "qNEHVI",
+  "source": "phase0/paperA/result.json cases['p-i-n/better'] argmax hv_mean"
+ },
+ "dhv_pin_better_nsga2": {
+  "value": "3.81",
+  "raw": 3.806240060252497,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'] 100*(hv_mean[nsga2]/hv_mean[random]-1)"
+ },
+ "dhv_pin_better_qnehvi": {
+  "value": "5.00",
+  "raw": 5.004136308797191,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'] 100*(hv_mean[qnehvi]/hv_mean[random]-1)"
+ },
+ "front_pin_better": {
+  "value": "2",
+  "raw": 2,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.front_size"
+ },
+ "nfeas_pin_better": {
+  "value": "3,313",
+  "raw": 3313,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.n_feasible_pooled"
+ },
+ "gpce_pin_better": {
+  "value": "0.001",
+  "raw": 0.0005121950934388053,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.gap_pce_points"
+ },
+ "gcost_pin_better": {
+  "value": "0.008",
+  "raw": 0.00769245478353664,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.gap_cost_pct"
+ },
+ "mpce_pin_better_P": {
+  "value": "23.01",
+  "raw": 23.013658348307658,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.module_pce_pct"
+ },
+ "cpce_pin_better_P": {
+  "value": "25.12",
+  "raw": 25.119999999999997,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.cell_pce_pct"
+ },
+ "usd_pin_better_P": {
+  "value": "0.323",
+  "raw": 0.3228549823878112,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.usd_per_W"
+ },
+ "usd4_pin_better_P": {
+  "value": "0.3229",
+  "raw": 0.3228549823878112,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.usd_per_W (table precision)"
+ },
+ "x_pin_better_P_NiOx_nm": {
+  "value": "14.4",
+  "raw": 14.4,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.x.NiOx_nm"
+ },
+ "x_pin_better_P_MAPbI3_nm": {
+  "value": "563",
+  "raw": 563.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.x.MAPbI3_nm"
+ },
+ "x_pin_better_P_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.x.C60_nm"
+ },
+ "x_pin_better_P_SnO2_nm": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.x.SnO2_nm"
+ },
+ "x_pin_better_P_stripe_mm": {
+  "value": "5.18",
+  "raw": 5.18,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.x.stripe_mm"
+ },
+ "part_pin_better_P_materials": {
+  "value": "0.239",
+  "raw": 0.2394285480872481,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.parts_usd_per_W.materials"
+ },
+ "part_pin_better_P_capital": {
+  "value": "0.060",
+  "raw": 0.05992707067796678,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.parts_usd_per_W.capital"
+ },
+ "part_pin_better_P_other_opex": {
+  "value": "0.023",
+  "raw": 0.023499363622596303,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_pin_better_P_MY": {
+  "value": "0.323",
+  "raw": 0.3228549823878112,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_pin_better_P_CN": {
+  "value": "0.322",
+  "raw": 0.3220685267854188,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_pin_better_P_IN": {
+  "value": "0.329",
+  "raw": 0.3292045901466728,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.pce_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "mpce_pin_better_C": {
+  "value": "23.01",
+  "raw": 23.01314615321422,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.module_pce_pct"
+ },
+ "cpce_pin_better_C": {
+  "value": "25.12",
+  "raw": 25.119999999999997,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.cell_pce_pct"
+ },
+ "usd_pin_better_C": {
+  "value": "0.323",
+  "raw": 0.3228301488245852,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.usd_per_W"
+ },
+ "usd4_pin_better_C": {
+  "value": "0.3228",
+  "raw": 0.3228301488245852,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.usd_per_W (table precision)"
+ },
+ "x_pin_better_C_NiOx_nm": {
+  "value": "14.1",
+  "raw": 14.1,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.x.NiOx_nm"
+ },
+ "x_pin_better_C_MAPbI3_nm": {
+  "value": "564.1",
+  "raw": 564.1,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.x.MAPbI3_nm"
+ },
+ "x_pin_better_C_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.x.C60_nm"
+ },
+ "x_pin_better_C_SnO2_nm": {
+  "value": "5",
+  "raw": 5.0,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.x.SnO2_nm"
+ },
+ "x_pin_better_C_stripe_mm": {
+  "value": "4.98",
+  "raw": 4.98,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.x.stripe_mm"
+ },
+ "part_pin_better_C_materials": {
+  "value": "0.239",
+  "raw": 0.2394018577326896,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.parts_usd_per_W.materials"
+ },
+ "part_pin_better_C_capital": {
+  "value": "0.060",
+  "raw": 0.05992840445264326,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.parts_usd_per_W.capital"
+ },
+ "part_pin_better_C_other_opex": {
+  "value": "0.023",
+  "raw": 0.02349988663925236,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_pin_better_C_MY": {
+  "value": "0.323",
+  "raw": 0.3228301488245852,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_pin_better_C_CN": {
+  "value": "0.322",
+  "raw": 0.32204367571834097,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_pin_better_C_IN": {
+  "value": "0.329",
+  "raw": 0.3291798979043214,
+  "source": "phase0/paperA/result.json cases['p-i-n/better'].q2.cost_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "hv_nip_base_random": {
+  "value": "595.5",
+  "raw": 595.5434789875884,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.random.hv_mean"
+ },
+ "hvci_nip_base_random": {
+  "value": "15",
+  "raw": 15.423536092380049,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.random.hv_ci95_half"
+ },
+ "n95_nip_base_random": {
+  "value": "93",
+  "raw": "93",
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.random.calls_to_95pct_best_median"
+ },
+ "inf_nip_base_random": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.random.n_infeasible (sum of 5)"
+ },
+ "hv_nip_base_nsga2": {
+  "value": "617.3",
+  "raw": 617.256866228875,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.nsga2.hv_mean"
+ },
+ "hvci_nip_base_nsga2": {
+  "value": "5.8",
+  "raw": 5.776717522700731,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.nsga2.hv_ci95_half"
+ },
+ "n95_nip_base_nsga2": {
+  "value": "78",
+  "raw": "78",
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.nsga2.calls_to_95pct_best_median"
+ },
+ "inf_nip_base_nsga2": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.nsga2.n_infeasible (sum of 5)"
+ },
+ "hv_nip_base_qnehvi": {
+  "value": "623.5",
+  "raw": 623.4886691854751,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.qnehvi.hv_mean"
+ },
+ "hvci_nip_base_qnehvi": {
+  "value": "0.48",
+  "raw": 0.47545338426111056,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.qnehvi.hv_ci95_half"
+ },
+ "n95_nip_base_qnehvi": {
+  "value": "27",
+  "raw": "27",
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.qnehvi.calls_to_95pct_best_median"
+ },
+ "inf_nip_base_qnehvi": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].methods.qnehvi.n_infeasible (sum of 5)"
+ },
+ "q1v_nip_base": {
+  "value": "N>R, Q>R",
+  "raw": "N>R, Q>R",
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q1"
+ },
+ "unrel_nip_base": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].unreliable"
+ },
+ "small_nip_base": {
+  "value": "yes",
+  "raw": "yes",
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.gap_small"
+ },
+ "best_nip_base": {
+  "value": "qNEHVI",
+  "raw": "qNEHVI",
+  "source": "phase0/paperA/result.json cases['n-i-p/base'] argmax hv_mean"
+ },
+ "dhv_nip_base_nsga2": {
+  "value": "3.65",
+  "raw": 3.6459785065901196,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'] 100*(hv_mean[nsga2]/hv_mean[random]-1)"
+ },
+ "dhv_nip_base_qnehvi": {
+  "value": "4.69",
+  "raw": 4.692384550225115,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'] 100*(hv_mean[qnehvi]/hv_mean[random]-1)"
+ },
+ "front_nip_base": {
+  "value": "2",
+  "raw": 2,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.front_size"
+ },
+ "nfeas_nip_base": {
+  "value": "3,258",
+  "raw": 3258,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.n_feasible_pooled"
+ },
+ "gpce_nip_base": {
+  "value": "0.000",
+  "raw": 4.320274918612199e-05,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.gap_pce_points"
+ },
+ "gcost_nip_base": {
+  "value": "0.000",
+  "raw": 9.431338929832833e-05,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.gap_cost_pct"
+ },
+ "mpce_nip_base_P": {
+  "value": "21.13",
+  "raw": 21.126792816736497,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.module_pce_pct"
+ },
+ "cpce_nip_base_P": {
+  "value": "23.03",
+  "raw": 23.03,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.cell_pce_pct"
+ },
+ "usd_nip_base_P": {
+  "value": "10.90",
+  "raw": 10.900645140485885,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.usd_per_W"
+ },
+ "usd4_nip_base_P": {
+  "value": "10.901",
+  "raw": 10.900645140485885,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.usd_per_W (table precision)"
+ },
+ "x_nip_base_P_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.x.C60_nm"
+ },
+ "x_nip_base_P_MAPbI3_nm": {
+  "value": "398",
+  "raw": 398.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.x.MAPbI3_nm"
+ },
+ "x_nip_base_P_PTAA_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.x.PTAA_nm"
+ },
+ "x_nip_base_P_stripe_mm": {
+  "value": "5.23",
+  "raw": 5.23,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.x.stripe_mm"
+ },
+ "part_nip_base_P_materials": {
+  "value": "10.810",
+  "raw": 10.809767766297327,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.parts_usd_per_W.materials"
+ },
+ "part_nip_base_P_capital": {
+  "value": "0.065",
+  "raw": 0.06527924717967921,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.parts_usd_per_W.capital"
+ },
+ "part_nip_base_P_other_opex": {
+  "value": "0.026",
+  "raw": 0.0255981270088784,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_nip_base_P_MY": {
+  "value": "10.90",
+  "raw": 10.900645140485885,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_nip_base_P_CN": {
+  "value": "10.90",
+  "raw": 10.899788445354893,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_nip_base_P_IN": {
+  "value": "10.91",
+  "raw": 10.907561841230564,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.pce_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "mpce_nip_base_C": {
+  "value": "21.13",
+  "raw": 21.12674961398731,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.module_pce_pct"
+ },
+ "cpce_nip_base_C": {
+  "value": "23.03",
+  "raw": 23.03,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.cell_pce_pct"
+ },
+ "usd_nip_base_C": {
+  "value": "10.90",
+  "raw": 10.900634859727694,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.usd_per_W"
+ },
+ "usd4_nip_base_C": {
+  "value": "10.901",
+  "raw": 10.900634859727694,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.usd_per_W (table precision)"
+ },
+ "x_nip_base_C_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.x.C60_nm"
+ },
+ "x_nip_base_C_MAPbI3_nm": {
+  "value": "396.9",
+  "raw": 396.9,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.x.MAPbI3_nm"
+ },
+ "x_nip_base_C_PTAA_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.x.PTAA_nm"
+ },
+ "x_nip_base_C_stripe_mm": {
+  "value": "5.26",
+  "raw": 5.26,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.x.stripe_mm"
+ },
+ "part_nip_base_C_materials": {
+  "value": "10.810",
+  "raw": 10.80975729970116,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.parts_usd_per_W.materials"
+ },
+ "part_nip_base_C_capital": {
+  "value": "0.065",
+  "raw": 0.0652793806712477,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.parts_usd_per_W.capital"
+ },
+ "part_nip_base_C_other_opex": {
+  "value": "0.026",
+  "raw": 0.025598179355286674,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_nip_base_C_MY": {
+  "value": "10.90",
+  "raw": 10.900634859727694,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_nip_base_C_CN": {
+  "value": "10.90",
+  "raw": 10.89977816284482,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_nip_base_C_IN": {
+  "value": "10.91",
+  "raw": 10.90755157461655,
+  "source": "phase0/paperA/result.json cases['n-i-p/base'].q2.cost_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "hv_nip_worse_random": {
+  "value": "477.0",
+  "raw": 477.00161780349407,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.random.hv_mean"
+ },
+ "hvci_nip_worse_random": {
+  "value": "10",
+  "raw": 10.280009238681865,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.random.hv_ci95_half"
+ },
+ "n95_nip_worse_random": {
+  "value": ">240",
+  "raw": ">240",
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.random.calls_to_95pct_best_median"
+ },
+ "inf_nip_worse_random": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.random.n_infeasible (sum of 5)"
+ },
+ "hv_nip_worse_nsga2": {
+  "value": "509.1",
+  "raw": 509.0982488316673,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.nsga2.hv_mean"
+ },
+ "hvci_nip_worse_nsga2": {
+  "value": "7.2",
+  "raw": 7.1842540045606365,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.nsga2.hv_ci95_half"
+ },
+ "n95_nip_worse_nsga2": {
+  "value": "112",
+  "raw": "112",
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.nsga2.calls_to_95pct_best_median"
+ },
+ "inf_nip_worse_nsga2": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.nsga2.n_infeasible (sum of 5)"
+ },
+ "hv_nip_worse_qnehvi": {
+  "value": "516.3",
+  "raw": 516.3136171652257,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.qnehvi.hv_mean"
+ },
+ "hvci_nip_worse_qnehvi": {
+  "value": "0.26",
+  "raw": 0.2560631459699319,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.qnehvi.hv_ci95_half"
+ },
+ "n95_nip_worse_qnehvi": {
+  "value": "34",
+  "raw": "34",
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.qnehvi.calls_to_95pct_best_median"
+ },
+ "inf_nip_worse_qnehvi": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].methods.qnehvi.n_infeasible (sum of 5)"
+ },
+ "q1v_nip_worse": {
+  "value": "N>R, Q>R",
+  "raw": "N>R, Q>R",
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q1"
+ },
+ "unrel_nip_worse": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].unreliable"
+ },
+ "small_nip_worse": {
+  "value": "yes",
+  "raw": "yes",
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.gap_small"
+ },
+ "best_nip_worse": {
+  "value": "qNEHVI",
+  "raw": "qNEHVI",
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'] argmax hv_mean"
+ },
+ "dhv_nip_worse_nsga2": {
+  "value": "6.73",
+  "raw": 6.728830643378614,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'] 100*(hv_mean[nsga2]/hv_mean[random]-1)"
+ },
+ "dhv_nip_worse_qnehvi": {
+  "value": "8.24",
+  "raw": 8.24148134816738,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'] 100*(hv_mean[qnehvi]/hv_mean[random]-1)"
+ },
+ "front_nip_worse": {
+  "value": "1",
+  "raw": 1,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.front_size"
+ },
+ "nfeas_nip_worse": {
+  "value": "3,273",
+  "raw": 3273,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.n_feasible_pooled"
+ },
+ "gpce_nip_worse": {
+  "value": "0.000",
+  "raw": 0.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.gap_pce_points"
+ },
+ "gcost_nip_worse": {
+  "value": "0.000",
+  "raw": 0.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.gap_cost_pct"
+ },
+ "mpce_nip_worse_P": {
+  "value": "18.83",
+  "raw": 18.82817535783529,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.module_pce_pct"
+ },
+ "cpce_nip_worse_P": {
+  "value": "20.50",
+  "raw": 20.5,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.cell_pce_pct"
+ },
+ "usd_nip_worse_P": {
+  "value": "12.23",
+  "raw": 12.22591984692023,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.usd_per_W"
+ },
+ "usd4_nip_worse_P": {
+  "value": "12.226",
+  "raw": 12.22591984692023,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.usd_per_W (table precision)"
+ },
+ "x_nip_worse_P_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.x.C60_nm"
+ },
+ "x_nip_worse_P_MAPbI3_nm": {
+  "value": "231.9",
+  "raw": 231.9,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.x.MAPbI3_nm"
+ },
+ "x_nip_worse_P_PTAA_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.x.PTAA_nm"
+ },
+ "x_nip_worse_P_stripe_mm": {
+  "value": "5.42",
+  "raw": 5.42,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.x.stripe_mm"
+ },
+ "part_nip_worse_P_materials": {
+  "value": "12.124",
+  "raw": 12.123947806628406,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.parts_usd_per_W.materials"
+ },
+ "part_nip_worse_P_capital": {
+  "value": "0.073",
+  "raw": 0.07324879358655897,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.parts_usd_per_W.capital"
+ },
+ "part_nip_worse_P_other_opex": {
+  "value": "0.029",
+  "raw": 0.028723246705264285,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_nip_worse_P_MY": {
+  "value": "12.23",
+  "raw": 12.22591984692023,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_nip_worse_P_CN": {
+  "value": "12.22",
+  "raw": 12.224958563089183,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_nip_worse_P_IN": {
+  "value": "12.23",
+  "raw": 12.233680965607038,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.pce_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "mpce_nip_worse_C": {
+  "value": "18.83",
+  "raw": 18.82817535783529,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.module_pce_pct"
+ },
+ "cpce_nip_worse_C": {
+  "value": "20.50",
+  "raw": 20.5,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.cell_pce_pct"
+ },
+ "usd_nip_worse_C": {
+  "value": "12.23",
+  "raw": 12.22591984692023,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.usd_per_W"
+ },
+ "usd4_nip_worse_C": {
+  "value": "12.226",
+  "raw": 12.22591984692023,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.usd_per_W (table precision)"
+ },
+ "x_nip_worse_C_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.x.C60_nm"
+ },
+ "x_nip_worse_C_MAPbI3_nm": {
+  "value": "231.9",
+  "raw": 231.9,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.x.MAPbI3_nm"
+ },
+ "x_nip_worse_C_PTAA_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.x.PTAA_nm"
+ },
+ "x_nip_worse_C_stripe_mm": {
+  "value": "5.42",
+  "raw": 5.42,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.x.stripe_mm"
+ },
+ "part_nip_worse_C_materials": {
+  "value": "12.124",
+  "raw": 12.123947806628406,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.parts_usd_per_W.materials"
+ },
+ "part_nip_worse_C_capital": {
+  "value": "0.073",
+  "raw": 0.07324879358655897,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.parts_usd_per_W.capital"
+ },
+ "part_nip_worse_C_other_opex": {
+  "value": "0.029",
+  "raw": 0.028723246705264285,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_nip_worse_C_MY": {
+  "value": "12.23",
+  "raw": 12.22591984692023,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_nip_worse_C_CN": {
+  "value": "12.22",
+  "raw": 12.224958563089183,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_nip_worse_C_IN": {
+  "value": "12.23",
+  "raw": 12.233680965607038,
+  "source": "phase0/paperA/result.json cases['n-i-p/worse'].q2.cost_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "hv_nip_better_random": {
+  "value": "670.1",
+  "raw": 670.107476380596,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.random.hv_mean"
+ },
+ "hvci_nip_better_random": {
+  "value": "12",
+  "raw": 11.759147968708191,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.random.hv_ci95_half"
+ },
+ "n95_nip_better_random": {
+  "value": "46",
+  "raw": "46",
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.random.calls_to_95pct_best_median"
+ },
+ "inf_nip_better_random": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.random.n_infeasible (sum of 5)"
+ },
+ "hv_nip_better_nsga2": {
+  "value": "684.1",
+  "raw": 684.0652820719246,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.nsga2.hv_mean"
+ },
+ "hvci_nip_better_nsga2": {
+  "value": "2.1",
+  "raw": 2.053042807863924,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.nsga2.hv_ci95_half"
+ },
+ "n95_nip_better_nsga2": {
+  "value": "48",
+  "raw": "48",
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.nsga2.calls_to_95pct_best_median"
+ },
+ "inf_nip_better_nsga2": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.nsga2.n_infeasible (sum of 5)"
+ },
+ "hv_nip_better_qnehvi": {
+  "value": "688.2",
+  "raw": 688.2359299838033,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.qnehvi.hv_mean"
+ },
+ "hvci_nip_better_qnehvi": {
+  "value": "0.17",
+  "raw": 0.17188069365507133,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.qnehvi.hv_ci95_half"
+ },
+ "n95_nip_better_qnehvi": {
+  "value": "25",
+  "raw": "25",
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.qnehvi.calls_to_95pct_best_median"
+ },
+ "inf_nip_better_qnehvi": {
+  "value": "0",
+  "raw": 0,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].methods.qnehvi.n_infeasible (sum of 5)"
+ },
+ "q1v_nip_better": {
+  "value": "N>R, Q>R, Q>N",
+  "raw": "N>R, Q>R, Q>N",
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q1"
+ },
+ "unrel_nip_better": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].unreliable"
+ },
+ "small_nip_better": {
+  "value": "yes",
+  "raw": "yes",
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.gap_small"
+ },
+ "best_nip_better": {
+  "value": "qNEHVI",
+  "raw": "qNEHVI",
+  "source": "phase0/paperA/result.json cases['n-i-p/better'] argmax hv_mean"
+ },
+ "dhv_nip_better_nsga2": {
+  "value": "2.08",
+  "raw": 2.082920454300541,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'] 100*(hv_mean[nsga2]/hv_mean[random]-1)"
+ },
+ "dhv_nip_better_qnehvi": {
+  "value": "2.71",
+  "raw": 2.705305378940581,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'] 100*(hv_mean[qnehvi]/hv_mean[random]-1)"
+ },
+ "front_nip_better": {
+  "value": "5",
+  "raw": 5,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.front_size"
+ },
+ "nfeas_nip_better": {
+  "value": "3,304",
+  "raw": 3304,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.n_feasible_pooled"
+ },
+ "gpce_nip_better": {
+  "value": "0.010",
+  "raw": 0.009765106081506048,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.gap_pce_points"
+ },
+ "gcost_nip_better": {
+  "value": "0.188",
+  "raw": 0.18758877274656083,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.gap_cost_pct"
+ },
+ "mpce_nip_better_P": {
+  "value": "22.50",
+  "raw": 22.50451262449458,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.module_pce_pct"
+ },
+ "cpce_nip_better_P": {
+  "value": "24.55",
+  "raw": 24.55,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.cell_pce_pct"
+ },
+ "usd_nip_better_P": {
+  "value": "10.27",
+  "raw": 10.267055239415564,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.usd_per_W"
+ },
+ "usd4_nip_better_P": {
+  "value": "10.267",
+  "raw": 10.267055239415564,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.usd_per_W (table precision)"
+ },
+ "x_nip_better_P_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.x.C60_nm"
+ },
+ "x_nip_better_P_MAPbI3_nm": {
+  "value": "764.2",
+  "raw": 764.2,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.x.MAPbI3_nm"
+ },
+ "x_nip_better_P_PTAA_nm": {
+  "value": "12",
+  "raw": 12.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.x.PTAA_nm"
+ },
+ "x_nip_better_P_stripe_mm": {
+  "value": "5.15",
+  "raw": 5.15,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.x.stripe_mm"
+ },
+ "part_nip_better_P_materials": {
+  "value": "10.182",
+  "raw": 10.18174135200789,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.parts_usd_per_W.materials"
+ },
+ "part_nip_better_P_capital": {
+  "value": "0.061",
+  "raw": 0.06128287039180377,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.parts_usd_per_W.capital"
+ },
+ "part_nip_better_P_other_opex": {
+  "value": "0.024",
+  "raw": 0.024031017015869564,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_nip_better_P_MY": {
+  "value": "10.27",
+  "raw": 10.267055239415564,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_nip_better_P_CN": {
+  "value": "10.27",
+  "raw": 10.266250990914761,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_nip_better_P_IN": {
+  "value": "10.27",
+  "raw": 10.273548501724616,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.pce_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "mpce_nip_better_C": {
+  "value": "22.49",
+  "raw": 22.494747518413075,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.module_pce_pct"
+ },
+ "cpce_nip_better_C": {
+  "value": "24.54",
+  "raw": 24.54,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.cell_pce_pct"
+ },
+ "usd_nip_better_C": {
+  "value": "10.25",
+  "raw": 10.247831458150085,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.usd_per_W"
+ },
+ "usd4_nip_better_C": {
+  "value": "10.248",
+  "raw": 10.247831458150085,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.usd_per_W (table precision)"
+ },
+ "x_nip_better_C_C60_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.x.C60_nm"
+ },
+ "x_nip_better_C_MAPbI3_nm": {
+  "value": "760.4",
+  "raw": 760.4,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.x.MAPbI3_nm"
+ },
+ "x_nip_better_C_PTAA_nm": {
+  "value": "10",
+  "raw": 10.0,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.x.PTAA_nm"
+ },
+ "x_nip_better_C_stripe_mm": {
+  "value": "5.15",
+  "raw": 5.15,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.x.stripe_mm"
+ },
+ "part_nip_better_C_materials": {
+  "value": "10.162",
+  "raw": 10.162480535467395,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.parts_usd_per_W.materials"
+ },
+ "part_nip_better_C_capital": {
+  "value": "0.061",
+  "raw": 0.06130947365684888,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.parts_usd_per_W.capital"
+ },
+ "part_nip_better_C_other_opex": {
+  "value": "0.024",
+  "raw": 0.024041449025840527,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.parts_usd_per_W.other_opex"
+ },
+ "rate_nip_better_C_MY": {
+  "value": "10.25",
+  "raw": 10.247831458150085,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.usd_per_W_by_rate_region.MY"
+ },
+ "rate_nip_better_C_CN": {
+  "value": "10.25",
+  "raw": 10.247026860520139,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.usd_per_W_by_rate_region.CN"
+ },
+ "rate_nip_better_C_IN": {
+  "value": "10.25",
+  "raw": 10.254327539223615,
+  "source": "phase0/paperA/result.json cases['n-i-p/better'].q2.cost_optimal.usd_per_W_by_rate_region.IN"
+ },
+ "move_pin_pce_optimal": {
+  "value": "44",
+  "raw": 43.9,
+  "source": "phase0/paperA/result.json q3.p-i-n.absorber_move_frac_of_range.pce_optimal (x100)"
+ },
+ "move_pin_cost_optimal": {
+  "value": "44",
+  "raw": 44.0375,
+  "source": "phase0/paperA/result.json q3.p-i-n.absorber_move_frac_of_range.cost_optimal (x100)"
+ },
+ "q3_pin_q1_same_in_all_scenarios": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json q3.p-i-n.q1_same_in_all_scenarios"
+ },
+ "q3_pin_some_method_beats_random_in_all": {
+  "value": "yes",
+  "raw": "yes",
+  "source": "phase0/paperA/result.json q3.p-i-n.some_method_beats_random_in_all"
+ },
+ "q3_pin_q1_robust": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json q3.p-i-n.q1_robust"
+ },
+ "q3_pin_designs_robust": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json q3.p-i-n.designs_robust"
+ },
+ "move_nip_pce_optimal": {
+  "value": "67",
+  "raw": 66.53750000000001,
+  "source": "phase0/paperA/result.json q3.n-i-p.absorber_move_frac_of_range.pce_optimal (x100)"
+ },
+ "move_nip_cost_optimal": {
+  "value": "66",
+  "raw": 66.0625,
+  "source": "phase0/paperA/result.json q3.n-i-p.absorber_move_frac_of_range.cost_optimal (x100)"
+ },
+ "q3_nip_q1_same_in_all_scenarios": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json q3.n-i-p.q1_same_in_all_scenarios"
+ },
+ "q3_nip_some_method_beats_random_in_all": {
+  "value": "yes",
+  "raw": "yes",
+  "source": "phase0/paperA/result.json q3.n-i-p.some_method_beats_random_in_all"
+ },
+ "q3_nip_q1_robust": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json q3.n-i-p.q1_robust"
+ },
+ "q3_nip_designs_robust": {
+  "value": "no",
+  "raw": "no",
+  "source": "phase0/paperA/result.json q3.n-i-p.designs_robust"
+ }
+}

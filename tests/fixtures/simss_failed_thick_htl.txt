@@ -1,0 +1,99 @@
+Welcome to SimSS version 5.36.
+Copyright (C) 2020–2026, S. Heester, Dr T.S. Sherkar,
+Dr V.M. Le Corre, Dr M. Koopmans, F. Wobben,
+and Prof L.J.A. Koster, University of Groningen.
+
+Reading parameters of layer 1 from file L1_parameters.txt
+Reading parameters of layer 2 from file L2_parameters.txt
+Reading parameters of layer 3 from file L3_parameters.txt
+Read simulation setup from simulation_setup.txt
+Tidied-up simulation_setup.txt.
+Tidied-up L1_parameters.txt.
+Tidied-up L2_parameters.txt.
+Tidied-up L3_parameters.txt.
+
+Started calculation of the generation profile.
+Reading nk file: /mnt/f/SIMsalabim/src/Data/nk_SiO2.txt
+Reading nk file: /mnt/f/SIMsalabim/src/Data/nk_ITO.txt
+Reading nk file: /mnt/f/SIMsalabim/src/Data/nk_C60_1.txt
+Reading nk file: /mnt/f/SIMsalabim/src/Data/nk_MAPI.txt
+Reading nk file: /mnt/f/SIMsalabim/src/Data/nk_PTAA.txt
+Reading nk file: /mnt/f/SIMsalabim/src/Data/nk_Au.txt
+Reading spectrum: /mnt/f/SIMsalabim/src/Data/AM15G.txt
+Calculation of the generation profile was successful
+
+At Vint=-0.040 converged in 171 loop(s), Jext=-213.78 +- 0.00
+At Vint=-0.020 converged in 126 loop(s), Jext=-213.72 +- 0.00
+At Vint=0.000 converged in  29 loop(s), Jext=-213.66 +- 0.00
+At Vint=0.020 converged in  19 loop(s), Jext=-213.60 +- 0.00
+At Vint=0.040 converged in  16 loop(s), Jext=-213.55 +- 0.00
+At Vint=0.060 converged in  12 loop(s), Jext=-213.49 +- 0.00
+At Vint=0.080 converged in   7 loop(s), Jext=-213.43 +- 0.00
+At Vint=0.100 converged in   6 loop(s), Jext=-213.37 +- 0.00
+At Vint=0.120 converged in   8 loop(s), Jext=-213.30 +- 0.00
+At Vint=0.140 converged in  23 loop(s), Jext=-213.24 +- 0.00
+At Vint=0.160 converged in  22 loop(s), Jext=-213.18 +- 0.00
+At Vint=0.180 converged in  25 loop(s), Jext=-213.11 +- 0.00
+At Vint=0.200 converged in  29 loop(s), Jext=-213.05 +- 0.00
+At Vint=0.220 converged in  31 loop(s), Jext=-212.98 +- 0.00
+At Vint=0.240 converged in  34 loop(s), Jext=-212.91 +- 0.00
+At Vint=0.260 converged in  36 loop(s), Jext=-212.84 +- 0.00
+At Vint=0.280 converged in  39 loop(s), Jext=-212.77 +- 0.00
+At Vint=0.300 converged in  41 loop(s), Jext=-212.70 +- 0.00
+At Vint=0.320 converged in  43 loop(s), Jext=-212.62 +- 0.00
+At Vint=0.340 converged in  45 loop(s), Jext=-212.54 +- 0.00
+At Vint=0.360 converged in  47 loop(s), Jext=-212.46 +- 0.00
+At Vint=0.380 converged in  49 loop(s), Jext=-212.38 +- 0.00
+At Vint=0.400 converged in  51 loop(s), Jext=-212.29 +- 0.00
+At Vint=0.420 converged in  53 loop(s), Jext=-212.20 +- 0.00
+At Vint=0.440 converged in  55 loop(s), Jext=-212.11 +- 0.00
+At Vint=0.460 converged in  57 loop(s), Jext=-212.01 +- 0.00
+At Vint=0.480 converged in  59 loop(s), Jext=-211.90 +- 0.00
+At Vint=0.500 converged in  60 loop(s), Jext=-211.79 +- 0.00
+At Vint=0.520 converged in  62 loop(s), Jext=-211.67 +- 0.00
+At Vint=0.540 converged in  64 loop(s), Jext=-211.55 +- 0.00
+At Vint=0.560 converged in  65 loop(s), Jext=-211.41 +- 0.00
+At Vint=0.580 converged in  67 loop(s), Jext=-211.26 +- 0.00
+At Vint=0.600 converged in  68 loop(s), Jext=-211.10 +- 0.00
+At Vint=0.620 converged in  69 loop(s), Jext=-210.92 +- 0.00
+At Vint=0.640 converged in  70 loop(s), Jext=-210.72 +- 0.00
+At Vint=0.660 converged in  70 loop(s), Jext=-210.49 +- 0.00
+At Vint=0.680 converged in  70 loop(s), Jext=-210.23 +- 0.00
+At Vint=0.700 converged in  70 loop(s), Jext=-209.94 +- 0.00
+At Vint=0.720 converged in  69 loop(s), Jext=-209.59 +- 0.00
+At Vint=0.740 converged in  68 loop(s), Jext=-209.19 +- 0.00
+At Vint=0.760 converged in  67 loop(s), Jext=-208.70 +- 0.00
+At Vint=0.780 converged in  65 loop(s), Jext=-208.12 +- 0.00
+At Vint=0.800 converged in  62 loop(s), Jext=-207.42 +- 0.00
+At Vint=0.820 converged in  60 loop(s), Jext=-206.55 +- 0.00
+At Vint=0.840 converged in  57 loop(s), Jext=-205.47 +- 0.00
+At Vint=0.860 converged in  54 loop(s), Jext=-204.12 +- 0.00
+At Vint=0.880 converged in  50 loop(s), Jext=-202.39 +- 0.00
+At Vint=0.900 converged in  45 loop(s), Jext=-200.18 +- 0.00
+At Vint=0.920 converged in  38 loop(s), Jext=-197.31 +- 0.00
+At Vint=0.940 converged in  26 loop(s), Jext=-193.58 +- 0.00
+At Vint=0.960 converged in  38 loop(s), Jext=-188.73 +- 0.00
+At Vint=0.980 converged in  39 loop(s), Jext=-182.46 +- 0.00
+At Vint=1.000 converged in  39 loop(s), Jext=-174.49 +- 0.00
+At Vint=1.020 converged in  38 loop(s), Jext=-164.58 +- 0.00
+At Vint=1.040 converged in  36 loop(s), Jext=-152.64 +- 0.00
+At Vint=1.060 converged in  34 loop(s), Jext=-138.67 +- 0.00
+At Vint=1.080 converged in  32 loop(s), Jext=-122.82 +- 0.00
+At Vint=1.100 converged in  30 loop(s), Jext=-105.34 +- 0.00
+At Vint=1.120 converged in  28 loop(s), Jext= -86.49 +- 0.00
+At Vint=1.140 converged in  27 loop(s), Jext= -66.53 +- 0.00
+At Vint=1.160 converged in 425 loop(s), Jext= -45.67 +- 0.00
+At Vint=1.180 converged in1484 loop(s), Jext= -24.06 +- 0.00
+No convergence for Vint=1.200
+No convergence for Vint=1.220
+No convergence for Vint=1.240
+
+      Simulated             
+Jsc:  -213.6635 +/- 0.0000   A/m2
+Vmpp: 0.94 +/- 0.01          V
+MPP:  182.0 +/- 0.3          W/m2
+
+Could not determine (all) solar cell parameters.
+The JV characteristic is written in JV.dat.
+Stored internal variables in none.
+Finished, press enter to exit

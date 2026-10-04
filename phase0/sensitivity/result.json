@@ -1,0 +1,525 @@
+{
+ "README": "P2 sensitivity (docs/P2_sensitivity_preregistration.md). Ranges are an ASSUMED convention (x/\u00f710 densities/rates/mobilities, \u00b10.1 eV energies) except C1 (sourced ends). Maintenance (1% of capex) is inside other opex and does not follow C2.",
+ "n_rows": 12800,
+ "n_unique_sims": 8704,
+ "sim_status": {
+  "complete": 8624,
+  "failed": 71,
+  "partial": 9
+ },
+ "rows_usable": 12696,
+ "failure_fraction_rows": 0.008125000000000049,
+ "base_materials_usd_m2": 29.270571127819547,
+ "fto_item_usd_m2": 10.204081632653061,
+ "method": "borgonovo_delta",
+ "delta_estimator": {
+  "salib": "1.6.0",
+  "index": "delta_raw",
+  "robustness_check": "delta_balanced",
+  "num_resamples": 1000,
+  "note": "docs/P2_sensitivity_preregistration.md \u00a75 (amendment before any index)"
+ },
+ "outputs": {
+  "cell_pce_pct": {
+   "p5_p50_p95": [
+    5.3100000000000005,
+    19.069999999999997,
+    25.3925
+   ],
+   "n": 12696,
+   "robustness_top5_delta_balanced": [
+    "P1 MAPbI3 N_t_bulk",
+    "P2 MAPbI3 mu_n",
+    "P7 MAPbI3 N_ion",
+    "P14 C60 E_c",
+    "P9 MAPbI3|C60 N_t_int"
+   ],
+   "notes": {
+    "P1 MAPbI3 N_t_bulk": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P2 MAPbI3 mu_n": "Step: too few samples. 12696 (<=0),   0 (>0);",
+    "P3 MAPbI3 mu_p": "Step: too few samples. 12696 (<=0),   0 (>0);",
+    "P4 MAPbI3 E_c": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P5 MAPbI3 E_v": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P6 MAPbI3 k_direct": "Step: too few samples. 12696 (<=0),   0 (>0);",
+    "P7 MAPbI3 N_ion": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P8 NiOx|MAPbI3 N_t_int": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P9 MAPbI3|C60 N_t_int": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P10 NiOx N_A": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P11 NiOx mu_p": "Step: too few samples. 12696 (<=0),   0 (>0);",
+    "P12 NiOx E_v": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P13 C60 mu_n": "Step: too few samples. 12696 (<=0),   0 (>0);",
+    "P14 C60 E_c": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P15 SnO2 N_D": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C1 capital rate": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C2 line capex": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C3 yield": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C4 depreciation years": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C6 other opex factor": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C7 dead width mm": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C8 TCO sheet res": "Step: too few samples. 0 (<=0),   12696 (>0);"
+   },
+   "ranking": [
+    {
+     "param": "P1 MAPbI3 N_t_bulk",
+     "index": 0.25421146390872607,
+     "ci95_half": 0.007611882320979749,
+     "S1": 0.3874523086329136
+    },
+    {
+     "param": "P2 MAPbI3 mu_n",
+     "index": 0.2511072864314945,
+     "ci95_half": 0.0062419084848146745,
+     "S1": 0.32658958738789257
+    },
+    {
+     "param": "P9 MAPbI3|C60 N_t_int",
+     "index": 0.15351944740160361,
+     "ci95_half": 0.006917638992692995,
+     "S1": 0.03996085151013197
+    },
+    {
+     "param": "P7 MAPbI3 N_ion",
+     "index": 0.14569317507653418,
+     "ci95_half": 0.006994926040899046,
+     "S1": 0.1088779093463047
+    },
+    {
+     "param": "P14 C60 E_c",
+     "index": 0.141083652884065,
+     "ci95_half": 0.006928970894380347,
+     "S1": 0.014279175421946356
+    },
+    {
+     "param": "P10 NiOx N_A",
+     "index": 0.12551339784926022,
+     "ci95_half": 0.0076834336403726645,
+     "S1": 0.015318102766593308
+    },
+    {
+     "param": "C8 TCO sheet res",
+     "index": 0.12301738109925633,
+     "ci95_half": 0.0066977659103356554,
+     "S1": 0.005708625633541003
+    },
+    {
+     "param": "P3 MAPbI3 mu_p",
+     "index": 0.12291493442903498,
+     "ci95_half": 0.006462919658438031,
+     "S1": 0.006717930688590634
+    },
+    {
+     "param": "P5 MAPbI3 E_v",
+     "index": 0.12029796929773946,
+     "ci95_half": 0.008469930776801827,
+     "S1": 0.032636542034148106
+    },
+    {
+     "param": "P12 NiOx E_v",
+     "index": 0.1199202529503064,
+     "ci95_half": 0.008386519482161587,
+     "S1": 0.04688164218022489
+    },
+    {
+     "param": "C7 dead width mm",
+     "index": 0.1166342438459895,
+     "ci95_half": 0.006992156271659845,
+     "S1": 0.011840608255018833
+    },
+    {
+     "param": "P15 SnO2 N_D",
+     "index": 0.11577903031001804,
+     "ci95_half": 0.008546982675437654,
+     "S1": 0.010116679780481903
+    },
+    {
+     "param": "P11 NiOx mu_p",
+     "index": 0.112615861953934,
+     "ci95_half": 0.007176336402855188,
+     "S1": 0.005861150872840657
+    },
+    {
+     "param": "C5 FTO-glass price factor",
+     "index": 0.11226428252442547,
+     "ci95_half": 0.006879588514413611,
+     "S1": 0.005994834012169557
+    },
+    {
+     "param": "C3 yield",
+     "index": 0.109001780850925,
+     "ci95_half": 0.007047585402995333,
+     "S1": 0.014640723110460375
+    },
+    {
+     "param": "C1 capital rate",
+     "index": 0.10743708767140407,
+     "ci95_half": 0.00688843978104883,
+     "S1": 0.009122775932455448
+    },
+    {
+     "param": "P13 C60 mu_n",
+     "index": 0.10501610522503264,
+     "ci95_half": 0.007012162326856532,
+     "S1": 0.007662460184459095
+    },
+    {
+     "param": "P6 MAPbI3 k_direct",
+     "index": 0.10387805063269503,
+     "ci95_half": 0.006773391837474028,
+     "S1": 0.006013030361613695
+    },
+    {
+     "param": "C2 line capex",
+     "index": 0.10274436512083844,
+     "ci95_half": 0.00712312878238023,
+     "S1": 0.019346641293029362
+    },
+    {
+     "param": "C4 depreciation years",
+     "index": 0.10158027534518153,
+     "ci95_half": 0.006792990627556289,
+     "S1": 0.008707107052723501
+    },
+    {
+     "param": "C6 other opex factor",
+     "index": 0.09480232917134182,
+     "ci95_half": 0.005987341699272367,
+     "S1": 0.00874726566004953
+    },
+    {
+     "param": "P8 NiOx|MAPbI3 N_t_int",
+     "index": 0.09211964371596283,
+     "ci95_half": 0.007965741621165291,
+     "S1": 0.017838758102897593
+    },
+    {
+     "param": "P4 MAPbI3 E_c",
+     "index": 0.08804321683131681,
+     "ci95_half": 0.005857538455984172,
+     "S1": 0.008756035738538082
+    }
+   ],
+   "top5": [
+    "P1 MAPbI3 N_t_bulk",
+    "P2 MAPbI3 mu_n",
+    "P9 MAPbI3|C60 N_t_int",
+    "P7 MAPbI3 N_ion",
+    "P14 C60 E_c"
+   ],
+   "top5_resolved": true
+  },
+  "usd_per_W": {
+   "p5_p50_p95": [
+    0.22843562624040992,
+    0.4006462818034475,
+    1.365445448332097
+   ],
+   "n": 12696,
+   "robustness_top5_delta_balanced": [
+    "P1 MAPbI3 N_t_bulk",
+    "P2 MAPbI3 mu_n",
+    "C3 yield",
+    "P7 MAPbI3 N_ion",
+    "P12 NiOx E_v"
+   ],
+   "notes": {
+    "P1 MAPbI3 N_t_bulk": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P2 MAPbI3 mu_n": "Step: too few samples. 12696 (<=0),   0 (>0);",
+    "P3 MAPbI3 mu_p": "Step: too few samples. 12696 (<=0),   0 (>0);",
+    "P4 MAPbI3 E_c": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P5 MAPbI3 E_v": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P6 MAPbI3 k_direct": "Step: too few samples. 12696 (<=0),   0 (>0);",
+    "P7 MAPbI3 N_ion": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P8 NiOx|MAPbI3 N_t_int": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P9 MAPbI3|C60 N_t_int": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P10 NiOx N_A": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P11 NiOx mu_p": "Step: too few samples. 12696 (<=0),   0 (>0);",
+    "P12 NiOx E_v": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P13 C60 mu_n": "Step: too few samples. 12696 (<=0),   0 (>0);",
+    "P14 C60 E_c": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "P15 SnO2 N_D": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C1 capital rate": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C2 line capex": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C3 yield": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C4 depreciation years": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C6 other opex factor": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C7 dead width mm": "Step: too few samples. 0 (<=0),   12696 (>0);",
+    "C8 TCO sheet res": "Step: too few samples. 0 (<=0),   12696 (>0);"
+   },
+   "ranking": [
+    {
+     "param": "P1 MAPbI3 N_t_bulk",
+     "index": 0.28373895272506094,
+     "ci95_half": 0.00880872141748613,
+     "S1": 0.18966668417916877
+    },
+    {
+     "param": "P2 MAPbI3 mu_n",
+     "index": 0.2536648470239388,
+     "ci95_half": 0.008500596006645317,
+     "S1": 0.16499345384128342
+    },
+    {
+     "param": "C3 yield",
+     "index": 0.20262824983771793,
+     "ci95_half": 0.009476684222689678,
+     "S1": 0.048405011215791965
+    },
+    {
+     "param": "P7 MAPbI3 N_ion",
+     "index": 0.1949225428009916,
+     "ci95_half": 0.007228952640366701,
+     "S1": 0.07996369836518938
+    },
+    {
+     "param": "P12 NiOx E_v",
+     "index": 0.15544923325586454,
+     "ci95_half": 0.00974814607270306,
+     "S1": 0.030501922466265614
+    },
+    {
+     "param": "C7 dead width mm",
+     "index": 0.15151758871722695,
+     "ci95_half": 0.009212548168476076,
+     "S1": 0.02502431470977016
+    },
+    {
+     "param": "C8 TCO sheet res",
+     "index": 0.13488207258457396,
+     "ci95_half": 0.006932691913012481,
+     "S1": 0.029693388112100195
+    },
+    {
+     "param": "C6 other opex factor",
+     "index": 0.134760185626108,
+     "ci95_half": 0.00863066345732451,
+     "S1": 0.015085925587283862
+    },
+    {
+     "param": "C2 line capex",
+     "index": 0.1346843953856222,
+     "ci95_half": 0.007839175081099525,
+     "S1": 0.014756025273816593
+    },
+    {
+     "param": "P3 MAPbI3 mu_p",
+     "index": 0.13358049255865115,
+     "ci95_half": 0.00840084525698653,
+     "S1": 0.03294304712345367
+    },
+    {
+     "param": "C5 FTO-glass price factor",
+     "index": 0.13243294177632206,
+     "ci95_half": 0.007939269059502884,
+     "S1": 0.04264723355304674
+    },
+    {
+     "param": "P11 NiOx mu_p",
+     "index": 0.1318552658260139,
+     "ci95_half": 0.006735961809889172,
+     "S1": 0.01801369193167192
+    },
+    {
+     "param": "P4 MAPbI3 E_c",
+     "index": 0.13130239500445107,
+     "ci95_half": 0.00688498883601069,
+     "S1": 0.02341814454850493
+    },
+    {
+     "param": "P13 C60 mu_n",
+     "index": 0.12996460284590305,
+     "ci95_half": 0.0064787768184946535,
+     "S1": 0.015122556664590477
+    },
+    {
+     "param": "P9 MAPbI3|C60 N_t_int",
+     "index": 0.12921029803610407,
+     "ci95_half": 0.007253494524501028,
+     "S1": 0.018299817907969577
+    },
+    {
+     "param": "P14 C60 E_c",
+     "index": 0.1285293188951782,
+     "ci95_half": 0.007855386425281066,
+     "S1": 0.0225835663489954
+    },
+    {
+     "param": "P6 MAPbI3 k_direct",
+     "index": 0.12744844264472815,
+     "ci95_half": 0.006421824238798754,
+     "S1": 0.021440286992876152
+    },
+    {
+     "param": "P8 NiOx|MAPbI3 N_t_int",
+     "index": 0.1266545941127069,
+     "ci95_half": 0.007546270922719303,
+     "S1": 0.02706799436124169
+    },
+    {
+     "param": "P10 NiOx N_A",
+     "index": 0.12443271110048608,
+     "ci95_half": 0.006434858660995265,
+     "S1": 0.016052530087946784
+    },
+    {
+     "param": "P15 SnO2 N_D",
+     "index": 0.12287750250080076,
+     "ci95_half": 0.007564161350126663,
+     "S1": 0.027692350291492408
+    },
+    {
+     "param": "P5 MAPbI3 E_v",
+     "index": 0.1228464895835906,
+     "ci95_half": 0.007531699541164245,
+     "S1": 0.021887087994931678
+    },
+    {
+     "param": "C1 capital rate",
+     "index": 0.12283347349851312,
+     "ci95_half": 0.006351470837264653,
+     "S1": 0.01869973537929239
+    },
+    {
+     "param": "C4 depreciation years",
+     "index": 0.11717747087255827,
+     "ci95_half": 0.006074143740264215,
+     "S1": 0.015293663775475587
+    }
+   ],
+   "top5": [
+    "P1 MAPbI3 N_t_bulk",
+    "P2 MAPbI3 mu_n",
+    "C3 yield",
+    "P7 MAPbI3 N_ion",
+    "P12 NiOx E_v"
+   ],
+   "top5_resolved": false,
+   "tied_with_rank5": [
+    "P7 MAPbI3 N_ion",
+    "P12 NiOx E_v",
+    "C7 dead width mm"
+   ]
+  }
+ },
+ "failure_drivers": [
+  {
+   "param": "P5 MAPbI3 E_v",
+   "fail_lower_half": 0.00015624999999996891,
+   "fail_upper_half": 0.016093750000000018
+  },
+  {
+   "param": "P9 MAPbI3|C60 N_t_int",
+   "fail_lower_half": 0.015625,
+   "fail_upper_half": 0.0006249999999999867
+  },
+  {
+   "param": "P4 MAPbI3 E_c",
+   "fail_lower_half": 0.015468750000000031,
+   "fail_upper_half": 0.0007812499999999556
+  },
+  {
+   "param": "P14 C60 E_c",
+   "fail_lower_half": 0.015312499999999951,
+   "fail_upper_half": 0.0009375000000000355
+  },
+  {
+   "param": "P1 MAPbI3 N_t_bulk",
+   "fail_lower_half": 0.015000000000000013,
+   "fail_upper_half": 0.0012499999999999734
+  },
+  {
+   "param": "P15 SnO2 N_D",
+   "fail_lower_half": 0.014531249999999996,
+   "fail_upper_half": 0.0017187499999999911
+  },
+  {
+   "param": "C8 TCO sheet res",
+   "fail_lower_half": 0.014218749999999947,
+   "fail_upper_half": 0.00203125000000004
+  },
+  {
+   "param": "P11 NiOx mu_p",
+   "fail_lower_half": 0.013125000000000053,
+   "fail_upper_half": 0.0031250000000000444
+  },
+  {
+   "param": "C6 other opex factor",
+   "fail_lower_half": 0.0034374999999999822,
+   "fail_upper_half": 0.012812500000000004
+  },
+  {
+   "param": "P8 NiOx|MAPbI3 N_t_int",
+   "fail_lower_half": 0.00390625,
+   "fail_upper_half": 0.012343749999999987
+  },
+  {
+   "param": "P13 C60 mu_n",
+   "fail_lower_half": 0.010624999999999996,
+   "fail_upper_half": 0.005624999999999991
+  },
+  {
+   "param": "C5 FTO-glass price factor",
+   "fail_lower_half": 0.010468750000000027,
+   "fail_upper_half": 0.00578124999999996
+  },
+  {
+   "param": "C4 depreciation years",
+   "fail_lower_half": 0.00593750000000004,
+   "fail_upper_half": 0.010312499999999947
+  },
+  {
+   "param": "P7 MAPbI3 N_ion",
+   "fail_lower_half": 0.010156249999999978,
+   "fail_upper_half": 0.006093750000000009
+  },
+  {
+   "param": "P10 NiOx N_A",
+   "fail_lower_half": 0.010156249999999978,
+   "fail_upper_half": 0.006093750000000009
+  },
+  {
+   "param": "C3 yield",
+   "fail_lower_half": 0.010156249999999978,
+   "fail_upper_half": 0.006093750000000009
+  },
+  {
+   "param": "P2 MAPbI3 mu_n",
+   "fail_lower_half": 0.00968749999999996,
+   "fail_upper_half": 0.006562500000000027
+  },
+  {
+   "param": "P3 MAPbI3 mu_p",
+   "fail_lower_half": 0.006562500000000027,
+   "fail_upper_half": 0.00968749999999996
+  },
+  {
+   "param": "P6 MAPbI3 k_direct",
+   "fail_lower_half": 0.009375000000000022,
+   "fail_upper_half": 0.0068749999999999645
+  },
+  {
+   "param": "P12 NiOx E_v",
+   "fail_lower_half": 0.009218750000000053,
+   "fail_upper_half": 0.007031250000000044
+  },
+  {
+   "param": "C1 capital rate",
+   "fail_lower_half": 0.008906250000000004,
+   "fail_upper_half": 0.007343749999999982
+  },
+  {
+   "param": "C2 line capex",
+   "fail_lower_half": 0.007343749999999982,
+   "fail_upper_half": 0.008906250000000004
+  },
+  {
+   "param": "C7 dead width mm",
+   "fail_lower_half": 0.007343749999999982,
+   "fail_upper_half": 0.008906250000000004
+  }
+ ],
+ "module_pce_p5_p50_p95": [
+  4.884348837065548,
+  17.276623204739803,
+  23.054531119732335
+ ]
+}

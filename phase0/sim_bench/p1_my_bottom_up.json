@@ -1,0 +1,252 @@
+{
+ "README": "Malaysia bottom-up other opex = DOSM 2025 labour + Tian 2020 process electricity x TNB RP4 energy charge. Now INCLUDED (sourced): maintenance 1%/yr of capex (Kajal 2022), TNB capacity+network+fixed+KWTBB with max demand = average process load (LOWER BOUND, load factor 1). STILL OMITTED: HVAC/cleanroom, employer statutory contributions, 8% service tax; land/rent only as a non-MY Cai 2017 proxy case. The lower bottom-up total vs Liu's aggregate is an artefact of these omissions, NOT a Malaysia-vs-China finding. Only wage, tariff and FX are Malaysian; headcount and kWh/m2 are non-MY academic proxies. Materials and line capex remain Liu 2025 China values.",
+ "kWh_per_m2": {
+  "kWh_low": 12.1377,
+  "kWh_high": 16.32136666666667,
+  "steps": [
+   {
+    "step": "NiOx sputter (HTL)",
+    "kWh_low": 0.983,
+    "kWh_high": 5.166666666666667
+   },
+   {
+    "step": "perovskite print",
+    "kWh_low": 0.0107,
+    "kWh_high": 0.0107
+   },
+   {
+    "step": "perovskite anneal",
+    "kWh_low": 3.0,
+    "kWh_high": 3.0
+   },
+   {
+    "step": "C60",
+    "kWh_low": 0.515,
+    "kWh_high": 0.515
+   },
+   {
+    "step": "SnO2",
+    "kWh_low": 0.359,
+    "kWh_high": 0.359
+   },
+   {
+    "step": "Cu back electrode",
+    "kWh_low": 3.74,
+    "kWh_high": 3.74
+   },
+   {
+    "step": "ITO rear electrode (IZO proxy)",
+    "kWh_low": 3.53,
+    "kWh_high": 3.53
+   }
+  ],
+  "note": "LOWER BOUND on line electricity: process tools only (no HVAC/cleanroom, vacuum base load, scribing, cleaning); Tian 2020 lab-to-fab tandem inventory used for a single-junction p-i-n line"
+ },
+ "electricity": {
+  "usd_m2_low": 0.9490492437687691,
+  "usd_m2_high": 1.2761709955158553,
+  "usd_per_kWh": 0.07819020438540819,
+  "kWh": {
+   "kWh_low": 12.1377,
+   "kWh_high": 16.32136666666667,
+   "steps": [
+    {
+     "step": "NiOx sputter (HTL)",
+     "kWh_low": 0.983,
+     "kWh_high": 5.166666666666667
+    },
+    {
+     "step": "perovskite print",
+     "kWh_low": 0.0107,
+     "kWh_high": 0.0107
+    },
+    {
+     "step": "perovskite anneal",
+     "kWh_low": 3.0,
+     "kWh_high": 3.0
+    },
+    {
+     "step": "C60",
+     "kWh_low": 0.515,
+     "kWh_high": 0.515
+    },
+    {
+     "step": "SnO2",
+     "kWh_low": 0.359,
+     "kWh_high": 0.359
+    },
+    {
+     "step": "Cu back electrode",
+     "kWh_low": 3.74,
+     "kWh_high": 3.74
+    },
+    {
+     "step": "ITO rear electrode (IZO proxy)",
+     "kWh_low": 3.53,
+     "kWh_high": 3.53
+    }
+   ],
+   "note": "LOWER BOUND on line electricity: process tools only (no HVAC/cleanroom, vacuum base load, scribing, cleaning); Tian 2020 lab-to-fab tandem inventory used for a single-junction p-i-n line"
+  },
+  "excluded": [
+   "TNB capacity + network charges (RM per kW max demand): no sourced peak load",
+   "fixed user charge RM 200/month; KWTBB 1.6% levy; 8% service tax"
+  ],
+  "tag": "derived:process_kwh_per_m2 x (tnb_mv_energy + tnb_mv_afa) / wdi_fx_my_2025 [LOWER BOUND: process tools + energy charge only; AFA is the Sep-2026 monthly value]"
+ },
+ "labour_usd_m2": 1.071877068819831,
+ "labour_tag": "derived:cai_line_employees x dosm_mfg_mean_wage_2025 x 12 / wdi_fx_my_2025 / the costed line's throughput [LOWER BOUND: citizens' gross pay, no employer EPF/SOCSO/EIS/HRDF; PROXY: Cai 2017 headcount]",
+ "module_pce_pct": 18.189336543476127,
+ "rows": [
+  {
+   "case": "MY, Liu CN other-opex (0.088 USD/W basis)",
+   "usd_per_W": 0.4702345979204653,
+   "parts": {
+    "materials": 0.3218431970606192,
+    "capital": 0.07582140926917218,
+    "other_opex": 0.0725699915906739
+   },
+   "status": "sourced_with_proxies",
+   "opex_parts_usd_m2": null,
+   "omitted": null,
+   "regional_inputs": [
+    "rate"
+   ],
+   "other_opex_tag": "derived:liu_other_per_W*liu_module_eff/100*1000*liu_yield/100 [CN BASIS, NOT REGIONALISED]"
+  },
+  {
+   "case": "MY bottom-up (labour+electricity only), LOW",
+   "usd_per_W": 0.4198856071646287,
+   "parts": {
+    "materials": 0.3218431970606192,
+    "capital": 0.07582140926917218,
+    "other_opex": 0.022221000834837322
+   },
+   "status": "sourced_with_proxies",
+   "opex_parts_usd_m2": {
+    "labour": 1.071877068819831,
+    "electricity_energy": 0.9490492437687691
+   },
+   "omitted": [
+    "HVAC/cleanroom base load",
+    "employer EPF/SOCSO/EIS/HRDF (KWSP site blocked automated retrieval)",
+    "8% service tax",
+    "maintenance",
+    "TNB demand charges",
+    "land/rent/facilities"
+   ],
+   "regional_inputs": [
+    "rate",
+    "other_opex_usd_per_m2"
+   ],
+   "other_opex_tag": "derived:labour + electricity_energy [REGIONAL: MY wage + MY tariff + MY FX only; activity drivers (headcount, kWh/m2, hours) and maintenance share are non-MY proxies] [LOWER BOUND: omitted HVAC/cleanroom base load, employer EPF/SOCSO/EIS/HRDF (KWSP site blocked automated retrieval), 8% service tax, maintenance, TNB demand charges, land/rent/facilities]"
+  },
+  {
+   "case": "MY bottom-up + maintenance + TNB demand, LOW",
+   "usd_per_W": 0.42739665975133573,
+   "parts": {
+    "materials": 0.3218431970606192,
+    "capital": 0.07582140926917218,
+    "other_opex": 0.02973205342154433
+   },
+   "status": "sourced_with_proxies",
+   "opex_parts_usd_m2": {
+    "labour": 1.071877068819831,
+    "electricity_energy": 0.9490492437687691,
+    "maintenance": 0.30000000000000004,
+    "tnb_demand_fixed_levy": 0.383105316476803
+   },
+   "omitted": [
+    "HVAC/cleanroom base load",
+    "employer EPF/SOCSO/EIS/HRDF (KWSP site blocked automated retrieval)",
+    "8% service tax",
+    "land/rent/facilities"
+   ],
+   "regional_inputs": [
+    "rate",
+    "other_opex_usd_per_m2"
+   ],
+   "other_opex_tag": "derived:labour + electricity_energy + maintenance + tnb_demand_fixed_levy [REGIONAL: MY wage + MY tariff + MY FX only; activity drivers (headcount, kWh/m2, hours) and maintenance share are non-MY proxies] [LOWER BOUND: omitted HVAC/cleanroom base load, employer EPF/SOCSO/EIS/HRDF (KWSP site blocked automated retrieval), 8% service tax, land/rent/facilities]"
+  },
+  {
+   "case": "MY bottom-up + maintenance + TNB demand, HIGH",
+   "usd_per_W": 0.4324422273211912,
+   "parts": {
+    "materials": 0.3218431970606192,
+    "capital": 0.07582140926917218,
+    "other_opex": 0.03477762099139982
+   },
+   "status": "sourced_with_proxies",
+   "opex_parts_usd_m2": {
+    "labour": 1.071877068819831,
+    "electricity_energy": 1.2761709955158553,
+    "maintenance": 0.30000000000000004,
+    "tnb_demand_fixed_levy": 0.5148611976344698
+   },
+   "omitted": [
+    "HVAC/cleanroom base load",
+    "employer EPF/SOCSO/EIS/HRDF (KWSP site blocked automated retrieval)",
+    "8% service tax",
+    "land/rent/facilities"
+   ],
+   "regional_inputs": [
+    "rate",
+    "other_opex_usd_per_m2"
+   ],
+   "other_opex_tag": "derived:labour + electricity_energy + maintenance + tnb_demand_fixed_levy [REGIONAL: MY wage + MY tariff + MY FX only; activity drivers (headcount, kWh/m2, hours) and maintenance share are non-MY proxies] [LOWER BOUND: omitted HVAC/cleanroom base load, employer EPF/SOCSO/EIS/HRDF (KWSP site blocked automated retrieval), 8% service tax, land/rent/facilities]"
+  },
+  {
+   "case": "  ... + Cai facilities/rent proxy (not MY)",
+   "usd_per_W": 0.47598422227559556,
+   "parts": {
+    "materials": 0.3218431970606192,
+    "capital": 0.07582140926917218,
+    "other_opex": 0.07831961594580415
+   },
+   "status": "sourced_with_proxies",
+   "opex_parts_usd_m2": {
+    "labour": 1.071877068819831,
+    "electricity_energy": 1.2761709955158553,
+    "maintenance": 0.30000000000000004,
+    "tnb_demand_fixed_levy": 0.5148611976344698,
+    "facilities_rent_cai_proxy": 3.96
+   },
+   "omitted": [
+    "HVAC/cleanroom base load",
+    "employer EPF/SOCSO/EIS/HRDF (KWSP site blocked automated retrieval)",
+    "8% service tax"
+   ],
+   "regional_inputs": [
+    "rate",
+    "other_opex_usd_per_m2"
+   ],
+   "other_opex_tag": "derived:labour + electricity_energy + maintenance + tnb_demand_fixed_levy + facilities_rent_cai_proxy [REGIONAL: MY wage + MY tariff + MY FX only; activity drivers (headcount, kWh/m2, hours) and maintenance share are non-MY proxies] [LOWER BOUND: omitted HVAC/cleanroom base load, employer EPF/SOCSO/EIS/HRDF (KWSP site blocked automated retrieval), 8% service tax]"
+  },
+  {
+   "case": "  ... HIGH + WACC 10.2%",
+   "usd_per_W": 0.4440830496809673,
+   "parts": {
+    "materials": 0.3218431970606192,
+    "capital": 0.0874622316289483,
+    "other_opex": 0.03477762099139982
+   },
+   "status": "sourced_with_proxies",
+   "opex_parts_usd_m2": {
+    "labour": 1.071877068819831,
+    "electricity_energy": 1.2761709955158553,
+    "maintenance": 0.30000000000000004,
+    "tnb_demand_fixed_levy": 0.5148611976344698
+   },
+   "omitted": [
+    "HVAC/cleanroom base load",
+    "employer EPF/SOCSO/EIS/HRDF (KWSP site blocked automated retrieval)",
+    "8% service tax",
+    "land/rent/facilities"
+   ],
+   "regional_inputs": [
+    "other_opex_usd_per_m2"
+   ],
+   "other_opex_tag": "derived:labour + electricity_energy + maintenance + tnb_demand_fixed_levy [REGIONAL: MY wage + MY tariff + MY FX only; activity drivers (headcount, kWh/m2, hours) and maintenance share are non-MY proxies] [LOWER BOUND: omitted HVAC/cleanroom base load, employer EPF/SOCSO/EIS/HRDF (KWSP site blocked automated retrieval), 8% service tax, land/rent/facilities]"
+  }
+ ]
+}

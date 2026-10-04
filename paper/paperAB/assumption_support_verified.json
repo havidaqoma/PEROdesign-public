@@ -1,0 +1,696 @@
+{
+ "digiacomo2020": {
+  "cite": "digiacomo2020scribe",
+  "doi": "10.3390/mi11121127",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7767295/fullTextXML",
+  "openalex_title": "Upscaling Inverted Perovskite Solar Cells: Optimization of Laser Scribing for Highly Efficient Mini-Modules",
+  "openalex_year": 2020,
+  "sha256": "572e025b2c151ae0733fc9db0d521b43f1333140d3114716c68e859eb8ed4d03",
+  "bytes": 96379,
+  "quotes": [
+   {
+    "quote": "we calculated the interconnection width as w P2 plus 150 µm for the P1 and P3",
+    "found": true
+   },
+   {
+    "quote": "limiting the sheet resistance to values in the order of 7 to 60",
+    "found": true
+   },
+   {
+    "quote": "the geometrical losses due to the dead area of the P1-P2-P3 interconnection",
+    "found": true
+   },
+   {
+    "quote": "the resistive losses due to the TCO",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "castriotta2025": {
+  "cite": "nikbakht2025panels",
+  "doi": "10.1002/advs.202416316",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12165116/fullTextXML",
+  "openalex_title": "Upscaling Perovskite Photovoltaics: from 156 cm 2 Modules to 0.73 M 2 Panels",
+  "openalex_year": 2025,
+  "sha256": "541ab6d35345266649d4ccb6313a781c7f8fa82940d0ee90b70f34ea5ab2e4da",
+  "bytes": 174418,
+  "quotes": [
+   {
+    "quote": "The P1‐P3 interconnection distance was maintained at 180 µm",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "gff2025": {
+  "cite": "soto2025gff",
+  "doi": "10.1038/s44172-025-00512-4",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12638776/fullTextXML",
+  "openalex_title": "Inverted perovskite solar modules with 99.3% geometrical fill factor via nanosecond single laser patterning",
+  "openalex_year": 2025,
+  "sha256": "e4c2c3ea3784769dfbcb9db5489524156271a95c4850fbf7fe7300865750f964",
+  "bytes": 96979,
+  "quotes": [
+   {
+    "quote": "Fluorine-doped Tin Oxide (FTO) glass substrates (TEC 7",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "lcoe2023": {
+  "cite": "debastiani2023lcoe",
+  "doi": "10.1039/d2ee03136a",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9932852/fullTextXML",
+  "openalex_title": "The levelized cost of electricity from perovskite photovoltaics",
+  "openalex_year": 2022,
+  "sha256": "8d1c4e10e81e10017248c903fb338866cd4a898557e07ebf99c0b70d58b5f3e8",
+  "bytes": 77051,
+  "quotes": [
+   {
+    "quote": "the area required for the edge sealing (roughly 1 cm, running around the glass edge)",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "intaniwet2012": {
+  "cite": "intaniwet2012ptaa",
+  "doi": "10.1088/0957-4484/23/23/235502",
+  "url": null,
+  "fulltext_url": "https://openresearch.surrey.ac.uk/view/pdfCoverPage?download=true&filePid=13140478800002346&instCode=44SUR_INST",
+  "openalex_title": "Heavy metallic oxide nanoparticles for enhanced sensitivity in semiconducting polymer x-ray detectors",
+  "openalex_year": 2012,
+  "sha256": "86597ce310a407de6dd3247e4625f00e2a33226ae19d85f8ee0eb41c92d48ef6",
+  "bytes": 1789831,
+  "quotes": [
+   {
+    "quote": "1 gcm -3 for PTAA",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "connell2018": {
+  "cite": "connell2018htm",
+  "doi": "10.1039/c8tc04231d",
+  "url": null,
+  "fulltext_url": "https://eprints.gla.ac.uk/173162/7/173162.pdf",
+  "openalex_title": "Low cost triazatruxene hole transporting material for >20% efficiency perovskite solar cells",
+  "openalex_year": 2018,
+  "sha256": "efade8975876625ad4a821912aa631c3478e051df91e053287fce94ab9aca027",
+  "bytes": 1114675,
+  "quotes": [
+   {
+    "quote": "PTAA is more than twice the cost of spiro-OMeTAD",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "mathews2020": {
+  "cite": "mathews2020growth",
+  "doi": "10.1016/j.joule.2020.01.006",
+  "url": null,
+  "fulltext_url": "https://cora.ucc.ie/server/api/core/bitstreams/1a6a2c66-ba83-4a01-8cdb-4296a20bc925/content",
+  "openalex_title": "Economically Sustainable Growth of Perovskite Photovoltaics Manufacturing",
+  "openalex_year": 2020,
+  "sha256": "c3a24fee5fe0a2213c96c036c3b90d9dbdb16aab57ca51e9c5a006530e7e3a81",
+  "bytes": 1873114,
+  "quotes": [
+   {
+    "quote": "order-of-magnitude price increases observed for many materials",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "chang2017pip": {
+  "cite": "chang2017uncert",
+  "doi": "10.1002/pip.2871",
+  "url": null,
+  "fulltext_url": "https://unsworks.unsw.edu.au/bitstreams/a78d60f4-fa61-4fb3-8f5b-c47b9b7e53e8/download",
+  "openalex_title": "A manufacturing cost estimation method with uncertainty analysis and its application to perovskite on glass photovoltaic modules",
+  "openalex_year": 2017,
+  "sha256": "dfe3ef544126d7d0d730505cd0ae4c887e0043b6c9d62663908a10198b95ee9b",
+  "bytes": 2591987,
+  "quotes": [
+   {
+    "quote": "with 40 % material utilization in the evaporator",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "chang2017solmat": {
+  "cite": "chang2017r2r",
+  "doi": "10.1016/j.solmat.2017.08.038",
+  "url": null,
+  "fulltext_url": "https://unsworks.unsw.edu.au/bitstreams/39450074-f874-49d2-9497-593da5ceb680/download",
+  "openalex_title": "Manufacturing cost and market potential analysis of demonstrated roll-to-roll perovskite photovoltaic cell processes",
+  "openalex_year": 2017,
+  "sha256": "51799d34368ea022d17f4cc2ffc198309557301605b9df6c0842c20ad3c661aa",
+  "bytes": 1307495,
+  "quotes": [
+   {
+    "quote": "Building and Facility maintenance rate 4% of capex per year",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "liu2025": {
+  "cite": "liu2025cost",
+  "doi": "10.1007/s40820-025-01744-x",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12000492/fullTextXML",
+  "openalex_title": "Cost Effectivities Analysis of Perovskite Solar Cells: Will it Outperform Crystalline Silicon Ones?",
+  "openalex_year": 2025,
+  "sha256": "966ed756de805ea9e22426957252c2e4e8615af99c1641f405c10c9811618286",
+  "bytes": 94204,
+  "quotes": [
+   {
+    "quote": "Deposition of Cu by thermal evaporating",
+    "found": true
+   },
+   {
+    "quote": "modules with a size of 0.6 × 1.2 m 2 and an output of 110 W",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "cai2017": {
+  "cite": "cai2017cost",
+  "doi": "10.1002/advs.201600269",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5238749/fullTextXML",
+  "openalex_title": "Cost‐Performance Analysis of Perovskite Solar Modules",
+  "openalex_year": 2016,
+  "sha256": "cfe273cc78ed950a4c0523b2e5b0e18520b4f0b6dd6b694ac90cff57bc130ace",
+  "bytes": 69543,
+  "quotes": [
+   {
+    "quote": "After adding 1% of the capital costs for maintenance fees",
+    "found": true
+   },
+   {
+    "quote": "The overhead costs consisted of labor costs, the cost of renting facilities, and the cost of utilities.",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "ono2020": {
+  "cite": "ono2020defects",
+  "doi": "10.1002/anie.201905521",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7187320/fullTextXML",
+  "openalex_title": "Reducing Detrimental Defects for High‐Performance Metal Halide Perovskite Solar Cells",
+  "openalex_year": 2019,
+  "sha256": "ef99e2c03b294f117d88cdce49d560849438eebc17ad4bb1272eeffa0d964cdf",
+  "bytes": 356877,
+  "quotes": [
+   {
+    "quote": "it is likely that a defect density on the order of 1014 cm−3 or lower in the polycrystalline thin films is the upper bound threshold",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "css2024": {
+  "cite": "rodkey2024css",
+  "doi": "10.1021/acsenergylett.3c02794",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10928705/fullTextXML",
+  "openalex_title": "Close-Space Sublimation as a Scalable Method for Perovskite Solar Cells",
+  "openalex_year": 2024,
+  "sha256": "4aae429139eb8670a5b7ab613d95751c0f28a54e3224782d29c5debbf3804816",
+  "bytes": 82491,
+  "quotes": [
+   {
+    "quote": "the simulated bulk trap densities were 2.0 × 1021, 2.7 × 1020, and <1.1 × 1019 m–3",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "mobility2022": {
+  "cite": "lim2022mobility",
+  "doi": "10.1038/s41467-022-31569-w",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9300620/fullTextXML",
+  "openalex_title": "Long-range charge carrier mobility in metal halide perovskite thin-films and single crystals via transient photo-conductivity",
+  "openalex_year": 2022,
+  "sha256": "b339682bdfe5034d49d704f7bd4909ea4e2b414e6883ee24a1fded913ff59c5b",
+  "bytes": 127370,
+  "quotes": [
+   {
+    "quote": "We determine the mobilities to be in the range from 0.3 to 6.7 cm2 V−1 s−1",
+    "found": true
+   },
+   {
+    "quote": "is approximately double the value of the average of electron and hole mobilities",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "ionmonger2019": {
+  "cite": "courtier2019ionmonger",
+  "doi": "10.1007/s10825-019-01396-2",
+  "url": null,
+  "fulltext_url": "https://link.springer.com/article/10.1007/s10825-019-01396-2",
+  "openalex_title": "IonMonger: a free and fast planar perovskite solar cell simulator with coupled ion vacancy and charge carrier dynamics",
+  "openalex_year": 2019,
+  "sha256": "3c235666bb5dc7ac21a4fc679b4147aae220fd3ad9a63088757ca0506b7abba3",
+  "bytes": 440648,
+  "quotes": [
+   {
+    "quote": "On the external boundary with the metal contact, we impose Ohmic boundary conditions",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "simss_L2": {
+  "cite": "simsalabim536",
+  "doi": null,
+  "url": "https://github.com/kostergroup/SIMsalabim/releases/tag/v5.36",
+  "fulltext_url": "https://raw.githubusercontent.com/kostergroup/SIMsalabim/v5.36/SimSS/L2_parameters.txt",
+  "sha256": "458effbe7b1468c52cc0f7b95a62935a00229429dd5f6bdf34ececc49b735413",
+  "bytes": 4462,
+  "quotes": [
+   {
+    "quote": "N_t_bulk = 1E20",
+    "found": true
+   },
+   {
+    "quote": "mu_n = 1E-4",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "simss_setup": {
+  "cite": "simsalabim536",
+  "doi": null,
+  "url": "https://github.com/kostergroup/SIMsalabim/releases/tag/v5.36",
+  "fulltext_url": "https://raw.githubusercontent.com/kostergroup/SIMsalabim/v5.36/SimSS/simulation_setup.txt",
+  "sha256": "4ff2383ddf499e2584be956e1afbe1aaf35b42d99fbb4fa782da419bc0138e8d",
+  "bytes": 6101,
+  "quotes": [
+   {
+    "quote": "Use negative value for infinite R_shunt",
+    "found": true
+   },
+   {
+    "quote": "R_series = 0",
+    "found": true
+   },
+   {
+    "quote": "nb: use negative values if Sn/pR/L should be infinite",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "islam2021": {
+  "cite": "islam2021snx3",
+  "doi": "10.3390/nano11051218",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8147994/fullTextXML",
+  "openalex_title": "Defect Study and Modelling of SnX3-Based Perovskite Solar Cells with SCAPS-1D",
+  "openalex_year": 2021,
+  "sha256": "3ef78109d59e0f23e43d305aa9b56b8f3fa2862245982e0228eab838f6f67446",
+  "bytes": 134303,
+  "quotes": [
+   {
+    "quote": "Metal work function (eV) 5.1 4.7 4.8 4.6 5.0",
+    "found": true
+   },
+   {
+    "quote": "AM1.5 G illumination spectrum (1000 Watt/m 2",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "nist811": {
+  "cite": "thompson2008sp811",
+  "doi": "10.6028/NIST.SP.811e2008",
+  "url": null,
+  "fulltext_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf",
+  "openalex_title": "Guide for the use of the International System of Units (SI)",
+  "openalex_year": 2008,
+  "sha256": "788dd8f0bcb0ec06e40c300690266742532a7e760a93be57764b77ed0ef3482f",
+  "bytes": 2027518,
+  "quotes": [
+   {
+    "quote": "ounce (troy or apothecary) (oz) ........................... gram (g) ............................................... 3.110 348 E+01",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "nlr_am15": {
+  "cite": "nlr_am15",
+  "doi": null,
+  "url": "https://www.nlr.gov/grid/solar-resource/spectra-am1.5",
+  "fulltext_url": "https://www.nlr.gov/grid/solar-resource/spectra-am1.5",
+  "sha256": "d1ad9fe4eda75f4827da65b53ce413f121d916cd35ba7b1dbce6b83608fc871a",
+  "bytes": 37154,
+  "quotes": [
+   {
+    "quote": "An absolute air mass of 1.5",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "dipta2022": {
+  "cite": "dipta2022light",
+  "doi": "10.1016/j.heliyon.2022.e11380",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9663869/fullTextXML",
+  "openalex_title": "Enhanced light management and optimization of perovskite solar cells incorporating wavelength dependent reflectance modeling",
+  "openalex_year": 2022,
+  "sha256": "d033b9bcdbe3da21efd37139f8104ac7502d3dee2d6064ecc07dab3a8d297a26",
+  "bytes": 132355,
+  "quotes": [
+   {
+    "quote": "Bandgap (eV) 3.5 3.2 1.55 2.91 2.3 1.41 1.59 3.2 3.5 3.5 1.85 2.17 Affinity (eV) 4 4 3.9 2.2 3.9 3.52 4.09 4 4 2.2 3.1 3",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "simss_L1": {
+  "cite": "simsalabim536",
+  "doi": null,
+  "url": "https://github.com/kostergroup/SIMsalabim/releases/tag/v5.36",
+  "fulltext_url": "https://raw.githubusercontent.com/kostergroup/SIMsalabim/v5.36/SimSS/L1_parameters.txt",
+  "sha256": "08fad3d7c84057c44ceab67ca719ef4788c8f1bafa52de92f8a51e6efe63e6b8",
+  "bytes": 4506,
+  "quotes": [
+   {
+    "quote": "E_c = 4",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "simss_L3": {
+  "cite": "simsalabim536",
+  "doi": null,
+  "url": "https://github.com/kostergroup/SIMsalabim/releases/tag/v5.36",
+  "fulltext_url": "https://raw.githubusercontent.com/kostergroup/SIMsalabim/v5.36/SimSS/L3_parameters.txt",
+  "sha256": "13146f0bb47765e24e18c49941d4d786e0d9811a775a1c2c87d01425cbb0b3d9",
+  "bytes": 4462,
+  "quotes": [
+   {
+    "quote": "E_v = 5.4",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "kajal2021": {
+  "cite": "kajal2021carbon",
+  "doi": "10.1002/gch2.202100070",
+  "url": null,
+  "fulltext_url": null,
+  "openalex_title": "Costing Analysis of Scalable Carbon‐Based Perovskite Modules Using Bottom Up Technique",
+  "openalex_year": 2021,
+  "checked": "2026-10-04"
+ },
+ "wb_pink": {
+  "cite": "wb_pink2026",
+  "doi": null,
+  "url": null,
+  "fulltext_url": null,
+  "checked": "2026-10-04"
+ },
+ "wb_wdi": {
+  "cite": "wb_wdi2026",
+  "doi": null,
+  "url": null,
+  "fulltext_url": null,
+  "checked": "2026-10-04"
+ },
+ "tnb": {
+  "cite": "tnb_tariff2025",
+  "doi": null,
+  "url": null,
+  "fulltext_url": null,
+  "checked": "2026-10-04"
+ },
+ "dosm": {
+  "cite": "dosm_wages2025",
+  "doi": null,
+  "url": null,
+  "fulltext_url": null,
+  "checked": "2026-10-04"
+ },
+ "irena2023": {
+  "cite": "irena2023finance",
+  "doi": null,
+  "url": "https://www.irena.org/Publications/2023/May/The-cost-of-financing-for-renewable-power",
+  "fulltext_url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2023/May/IRENA_The_cost_of_financing_renewable_power_2023.pdf",
+  "sha256": "b0a3818bb14401b4624bccb3aba4e4c0a86e017376612ad686e25d1dce876734",
+  "bytes": 4062248,
+  "quotes": [
+   {
+    "quote": "with the cost of equity generally being higher than the cost of debt to compensate for the greater exposure to risk. The cost of debt is the cost to finance a loan on the renewable energy asset – typically provided by a bank.",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "steffen2020": {
+  "cite": "steffen2020coc",
+  "doi": "10.1016/j.eneco.2020.104783",
+  "url": null,
+  "fulltext_url": null,
+  "openalex_title": "Estimating the cost of capital for renewable energy projects",
+  "openalex_year": 2020,
+  "checked": "2026-10-04"
+ },
+ "iea2022": {
+  "cite": "iea2022pvsupply",
+  "doi": null,
+  "url": "https://www.iea.org/reports/solar-pv-global-supply-chains",
+  "fulltext_url": "https://iea.blob.core.windows.net/assets/d2ee601d-6b1a-4cd2-a0e8-db02dc64332c/SpecialReportonSolarPVGlobalSupplyChains.pdf",
+  "sha256": "d892eb140825823d7f2607f05e07cde7827aac8e61f3cc1458bb164348194ede",
+  "bytes": 4705336,
+  "quotes": [
+   {
+    "quote": "China is the most cost-competitive location to manufacture all components of the solar PV supply chain. Costs in China are 10% lower than in India, 20% lower than in the United States, and 35% lower than in Europe.",
+    "found": true
+   },
+   {
+    "quote": "In the ASEAN region, total module-manufacturing costs can be around 5% more than in China, mainly due to slightly higher overhead and labour costs.",
+    "found": true
+   },
+   {
+    "quote": "Large variations in energy, labour, investment and overhead costs explain these differences.",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "kwsp": {
+  "cite": "kwsp2025epf",
+  "doi": null,
+  "url": "https://www.kwsp.gov.my/en/employer/responsibilities/mandatory-contribution",
+  "fulltext_url": null,
+  "sha256": "7182aa1a4c5122d9739c33d6db63287a5117cb00f9643562cf2ba262fcc2ac49",
+  "bytes": 2394,
+  "quotes": [
+   {
+    "quote": "RM5,000 and below Employees share: 11% Employer’s share: 13%",
+    "found": true
+   },
+   {
+    "quote": "More than RM5,000 Employees share: 11% Employer’s share: 12%",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "perkeso": {
+  "cite": "perkeso2026",
+  "doi": null,
+  "url": "https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html",
+  "fulltext_url": "https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html",
+  "sha256": "e18b2e0d93d51f7c5e02c96412df326d30b24cca2f90137fa787123a32b15d6e",
+  "bytes": 183751,
+  "quotes": [
+   {
+    "quote": "The rate of contribution under this category comprises 1.75% of employer’s share",
+    "found": true
+   },
+   {
+    "quote": "0.2% will be paid by the employer",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "sst": {
+  "cite": "customs2024sst",
+  "doi": null,
+  "url": "https://mysst.customs.gov.my/faq-business/",
+  "fulltext_url": "https://mysst.customs.gov.my/faq-business/",
+  "sha256": "0330d67580e8ccb20eecb2df61d6d4e70e249ad96af2a787a2831d9a3f4fa429",
+  "bytes": 1068885,
+  "quotes": [
+   {
+    "quote": "The provision of electricity to the commercial consumer is not subject to service tax.",
+    "found": true
+   },
+   {
+    "quote": "The provision of electricity to the domestic consumer which exceeds 600kWh for a minimum period of twenty-eight days per billing cycle is subject to service tax.",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "geiser2013": {
+  "cite": "geiser2013au",
+  "doi": "10.1186/1743-8977-10-19",
+  "url": null,
+  "fulltext_url": null,
+  "openalex_title": "Cellular uptake and localization of inhaled gold nanoparticles in lungs of mice with chronic obstructive pulmonary disease",
+  "openalex_year": 2013,
+  "checked": "2026-10-04"
+ },
+ "thomas2018": {
+  "cite": "thomas2018ag",
+  "doi": "10.1186/s12989-018-0243-7",
+  "url": null,
+  "fulltext_url": null,
+  "openalex_title": "ISD3: a particokinetic model for predicting the combined effects of particle sedimentation, diffusion and dissolution on cellular dosimetry for in vitro systems",
+  "openalex_year": 2018,
+  "checked": "2026-10-04"
+ },
+ "shahinuzzaman2022": {
+  "cite": "shahinuzzaman2022htm",
+  "doi": "10.3390/nano12173003",
+  "url": null,
+  "fulltext_url": null,
+  "openalex_title": "Roles of Inorganic Oxide Based HTMs towards Highly Efficient and Long-Term Stable PSC—A Review",
+  "openalex_year": 2022,
+  "checked": "2026-10-04"
+ },
+ "vivo2017": {
+  "cite": "vivo2017htm",
+  "doi": "10.3390/ma10091087",
+  "url": null,
+  "fulltext_url": null,
+  "openalex_title": "Hole-Transporting Materials for Printable Perovskite Solar Cells",
+  "openalex_year": 2017,
+  "checked": "2026-10-04"
+ },
+ "mof2024sst": {
+  "cite": "mof2024sst",
+  "doi": null,
+  "url": "https://www.mof.gov.my/portal/en/news/press-citations/service-tax-increase-only-affects-discretionary-services-b2b-activities-mof",
+  "fulltext_url": "https://www.mof.gov.my/portal/en/news/press-citations/service-tax-increase-only-affects-discretionary-services-b2b-activities-mof",
+  "sha256": "d5414f0f5f5f920d4e88879ca8f4a2391f5defcd638125e648e205251d2724fc",
+  "bytes": 129666,
+  "quotes": [
+   {
+    "quote": "As for electricity services, the Service Tax is only imposed on usage exceeding 600 kilowatt hour (kWh)",
+    "found": true
+   },
+   {
+    "quote": "The increase in the Service Tax rate from 6.0 per cent to 8.0 per cent, effective from March 1, 2024",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "tian2020": {
+  "cite": "tian2020lca",
+  "doi": "10.1126/sciadv.abb0055",
+  "url": null,
+  "fulltext_url": null,
+  "openalex_title": "Life cycle energy use and environmental implications of high-performance perovskite tandem solar cells",
+  "openalex_year": 2020,
+  "checked": "2026-10-04"
+ },
+ "li2026": {
+  "cite": "li2026blade",
+  "doi": "10.1038/s41467-026-72581-8",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13407865/fullTextXML",
+  "openalex_title": "Low-hygroscopic solvents enable ambient blade coating of efficient perovskite solar cells",
+  "openalex_year": 2026,
+  "sha256": "54b7702f9c5d66a0a91353d92c65de60f480944bb5104d0d92cc6d57bd938d12",
+  "bytes": 111074,
+  "quotes": [
+   {
+    "quote": "The hole-only device structure is FTO/NiOx (20 nm)/SAM/Perovskite layer/Passivation layer/MoO 3 (10 nm)/Cu(80 nm).",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "xu2025": {
+  "cite": "xu2025strain",
+  "doi": "10.1038/s41467-025-67027-6",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12789107/fullTextXML",
+  "openalex_title": "Tensile strain regulation via grain boundary buffering for flexible perovskite solar cells",
+  "openalex_year": 2025,
+  "sha256": "5bb9386391945aa9f6bc08fab85cb38e1f9833f0e1be243aae78f9c0fe34f239",
+  "bytes": 105092,
+  "quotes": [
+   {
+    "quote": "Finally, MoO 3 (10 nm) and Ag (100 nm) were successively thermally evaporated on the hole-transporting layer.",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "usgs_mo": {
+  "cite": "usgs2026mo",
+  "doi": null,
+  "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-molybdenum.pdf",
+  "fulltext_url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-molybdenum.pdf",
+  "sha256": "497f50f03629ccccbc6b5b7b1c3dea02be0ebb02122c37314fed59d5c77294e1",
+  "bytes": 748728,
+  "quotes": [
+   {
+    "quote": "Price, average, dollars per kilogram4 35.62 41.72 54.32 47.72 51",
+    "found": true
+   },
+   {
+    "quote": "4U.S. molybdic oxide (MoO3) price, 57% molybdenum content.",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ },
+ "pubchem_moo3": {
+  "cite": "pubchem_moo3",
+  "doi": null,
+  "url": "https://pubchem.ncbi.nlm.nih.gov/compound/14802",
+  "fulltext_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/14802/JSON?heading=Density",
+  "sha256": "a8df1e64f1d9cef84138430d341100f3276d7405801f8570c3b3bf4909940987",
+  "bytes": 7192,
+  "quotes": [
+   {
+    "quote": "4.69 @ 26 °C/4 °C",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-04"
+ }
+}

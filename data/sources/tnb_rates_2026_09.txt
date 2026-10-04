@@ -1,0 +1,362 @@
+# SOURCE tnb_rates_2026_09
+# Tenaga Nasional Berhad (TNB), public tariff calculator rate table 'js/rates.js?v=1.1.69', served by
+# https://www.mytnb.com.my/tariff (the official post-1-July-2025 RP4 tariff page; the older mytnb business pages state
+# 'This information is valid until 30 June 2025 ... please visit https://www.mytnb.com.my/tariff'). Retrieved 2026-09-28.
+# Verbatim file content below. Units per TNB's own calculator (calculator-nonDomGen.js): energyCharge and afa in RM/kWh,
+# capacity and network for Medium/High Voltage in RM per kW of maximum demand per month, fixedUserCharge RM/month.
+# Licence: not stated (public tariff publication); used as a cited factual price, not redistributed beyond this record.
+
+const DOMESTIC = {
+  // Configuration variables for different tiers
+  RETAIL_CHARGE_AMOUNT: 10.0, // RM10/month
+  RETAIL_CHARGE_THRESHOLD: 800, // Apply retail charge only if consumption > 800 kWh
+  FUEL_ADJUSTMENT_THRESHOLD: 800, // Apply fuel adjustment only if consumption > 800 kWh
+  ST_THRESHOLD: 800, // Split charges at 800 kWh for service tax calculation
+  HIGH_USAGE_THRESHOLD: 1500, // Threshold for high usage rates
+  RATES: {
+    // Tier 1: 0-800 kWh (and 800-1500 kWh for most charges)
+    tier1: {
+      energy: 0.2703, // RM0.27250/kWh
+      fuel: +0.0367, // *update-monthly
+      capacity: 0.0455, // RM0.0455/kWh
+      network: 0.1285, // RM0.1395/kWh
+    },
+    // Tier 2: >1500 kWh
+    tier2: {
+      energy: 0.3703, // RM0.42250/kWh
+      fuel:  +0.0367, // *update-monthly
+      capacity: 0.0455, // RM0.04550/kWh
+      network: 0.1285, // RM0.13950/kWh
+    },
+  },
+  INCENTIVE_TIERS: [
+    { max: 200, rate: -0.25 },
+    { max: 250, rate: -0.245 },
+    { max: 300, rate: -0.225 },
+    { max: 350, rate: -0.21 },
+    { max: 400, rate: -0.17 },
+    { max: 450, rate: -0.145 },
+    { max: 500, rate: -0.12 },
+    { max: 550, rate: -0.105 },
+    { max: 600, rate: -0.09 },
+    { max: 650, rate: -0.075 },
+    { max: 700, rate: -0.055 },
+    { max: 750, rate: -0.045 },
+    { max: 800, rate: -0.04 },
+    { max: 850, rate: -0.025 },
+    { max: 900, rate: -0.01 },
+    { max: 1000, rate: -0.005 },
+    { max: 1500, rate: 0 },
+  ],
+};
+
+const NONDOMLVGEN = {
+  RETAIL_CHARGE_THRESHOLD: 0,
+  FUEL_ADJUSTMENT_THRESHOLD: 600,
+  ST_THRESHOLD: 600,
+  HIGH_USAGE_THRESHOLD: 1500,
+  RATES: {
+    energyCharge: 0.2703,
+    afa: +0.0367, // *update-monthly
+    capacity: 0.0883,
+    network: 0.1482,
+    fixedUserCharge: 20.00, //Caj tetap pengguna
+    tnbDiscount: 0.1, //DISKAUN TNB - 10%
+    kwtbb: 0.016, //1.6%
+    st: 0.08, //8%
+  },
+  INCENTIVE_TIERS: [{ max: 200, rate: -0.11 }],
+};
+
+const NONDOMLVGENNEM = {
+  RETAIL_CHARGE_THRESHOLD: 0,
+  FUEL_ADJUSTMENT_THRESHOLD: 600,
+  ST_THRESHOLD: 600,
+  HIGH_USAGE_THRESHOLD: 1500,
+  RATES: {
+    energyCharge: 0.2703,
+    afa: +0.0367, // *update-monthly
+    capacity: 0.0883,
+    network: 0.1482,
+    fixedUserCharge: 20.00, //Caj tetap pengguna
+    tnbDiscount: 0.1, //DISKAUN TNB - 10%
+    kwtbb: 0.016, //1.6%
+    st: 0.08, //8%
+  },
+  INCENTIVE_TIERS: [{ max: 200, rate: -0.11 }],
+};
+
+const DOMESTICNEM = {
+  // Configuration variables for different tiers
+  RETAIL_CHARGE_AMOUNT: 10.0, // RM10/month
+  RETAIL_CHARGE_THRESHOLD: 800, // Apply retail charge only if consumption > 800 kWh
+  FUEL_ADJUSTMENT_THRESHOLD: 800, // Apply fuel adjustment only if consumption > 800 kWh
+  ST_THRESHOLD: 800, // Split charges at 800 kWh for service tax calculation
+  HIGH_USAGE_THRESHOLD: 1500, // Threshold for high usage rates
+  RATES: {
+    // Tier 1: 0-800 kWh (and 600-1500 kWh for most charges)
+    tier1: {
+      energy: 0.2703, // RM0.27250/kWh
+      fuel: +0.0367, // *update-monthly
+      capacity: 0.0455, // RM0.0455/kWh
+      network: 0.1285, // RM0.1395/kWh
+    },
+    // Tier 2: >1500 kWh
+    tier2: {
+      energy: 0.3703, // RM0.42250/kWh
+      fuel: +0.0367, // *update-monthly
+      capacity: 0.0455, // RM0.04550/kWh
+      network: 0.1285, // RM0.13950/kWh
+    },
+  },
+  INCENTIVE_TIERS: [
+    { max: 200, rate: -0.25 },
+    { max: 250, rate: -0.245 },
+    { max: 300, rate: -0.225 },
+    { max: 350, rate: -0.21 },
+    { max: 400, rate: -0.17 },
+    { max: 450, rate: -0.145 },
+    { max: 500, rate: -0.12 },
+    { max: 550, rate: -0.105 },
+    { max: 600, rate: -0.09 },
+    { max: 650, rate: -0.075 },
+    { max: 700, rate: -0.055 },
+    { max: 750, rate: -0.045 },
+    { max: 800, rate: -0.04 },
+    { max: 850, rate: -0.025 },
+    { max: 900, rate: -0.01 },
+    { max: 1000, rate: -0.005 },
+    { max: 1500, rate: 0 },
+  ],
+};
+
+const NONDOMMVGEN = {
+  RETAIL_CHARGE_THRESHOLD: 0,
+  RATES: {
+    energyCharge: 0.2983,
+    afa: +0.0367, // *update-monthly
+    capacity: 29.43,
+    network: 59.84,
+    fixedUserCharge: 200.00, //Caj tetap pengguna
+    kwtbb: 0.016, //1.6%
+    st: 0.08, //8%
+  },
+};
+
+const NONDOMMVGENNEM = {
+  RETAIL_CHARGE_THRESHOLD: 0,
+  RATES: {
+    energyCharge: 0.2983,
+    afa: +0.0367, // *update-monthly
+    capacity: 29.43,
+    network: 59.84,
+    fixedUserCharge: 200.00, //Caj tetap pengguna
+    kwtbb: 0.016, //1.6%
+    st: 0.08, //8%
+  },
+};
+
+const NONDOMHVGEN = {
+  RETAIL_CHARGE_THRESHOLD: 0,
+  RATES: {
+    energyCharge: 0.4303,
+    afa: +0.0367, // *update-monthly
+    capacity: 16.68,
+    network: 14.53,
+    fixedUserCharge: 250.00, //Caj tetap pengguna
+    kwtbb: 0.016, //1.6%
+    st: 0.08, //8%
+  },
+};
+
+const DOMESTIC_TOU = {
+  USAGE_THRESHOLD: 800,
+  KWTBB_THRESHOLD: 300,
+  HIGH_USAGE_THRESHOLD: 1501, //>=
+  st: 0.08, //8%
+  kwtbb: 0.016, //1.6%
+  RATES: {
+    tier1: {
+      energyChargePeak: 0.2852,
+      energyChargeOffPeak: 0.2443,
+      afa: +0.0367, // *update-monthly
+      capacity: 0.0455,
+      network: 0.1285,
+      retailCharge: 10.00,
+      isl70: 18.00,
+      isl150: 18.00,
+      icptISL: 0.17,
+      get: 0.1,
+      icpt: 0.1,
+      tnbDiscount: 0.1, //DISKAUN TNB - 10%
+    },
+    tier2: {
+      energyChargePeak: 0.3852,
+      energyChargeOffPeak: 0.3443,
+      afa: +0.0367, // *update-monthly
+      capacity: 0.0455,
+      network: 0.1285,
+      retailCharge: 10.00,
+      isl70: 18.00,
+      isl150: 18.00,
+      icptISL: 0.17,
+      get: 0.1,
+      icpt: 0.1,
+      tnbDiscount: 0.1, //DISKAUN TNB - 10%
+    }
+  },
+  INCENTIVE_TIERS: [
+    { max: 200, rate: -0.25 },
+    { max: 250, rate: -0.245 },
+    { max: 300, rate: -0.225 },
+    { max: 350, rate: -0.21 },
+    { max: 400, rate: -0.17 },
+    { max: 450, rate: -0.145 },
+    { max: 500, rate: -0.12 },
+    { max: 550, rate: -0.105 },
+    { max: 600, rate: -0.09 },
+    { max: 650, rate: -0.075 },
+    { max: 700, rate: -0.055 },
+    { max: 750, rate: -0.045 },
+    { max: 800, rate: -0.04 },
+    { max: 850, rate: -0.025 },
+    { max: 900, rate: -0.01 },
+    { max: 1000, rate: -0.005 },
+    { max: 1500, rate: 0 }
+  ],
+};
+
+const DOMESTIC_TOU_NEM = {
+  USAGE_THRESHOLD: 800,
+  KWTBB_THRESHOLD: 300,
+  HIGH_USAGE_THRESHOLD: 1501, //>=
+  st: 0.08, //8%
+  kwtbb: 0.016, //1.6%
+  RATES: {
+    tier1: {
+      energyChargePeak: 0.2852,
+      energyChargeOffPeak: 0.2443,
+      afa: +0.0367, // *update-monthly
+      capacity: 0.0455,
+      network: 0.1285,
+      retailCharge: 10.00,
+      isl70: 18.00,
+      isl150: 18.00,
+      icptISL: 0.17,
+      get: 0.1,
+      icpt: 0.1,
+      tnbDiscount: 0.1, //DISKAUN TNB - 10%
+    },
+    tier2: {
+      energyChargePeak: 0.3852,
+      energyChargeOffPeak: 0.3443,
+      afa: +0.0367, // *update-monthly
+      capacity: 0.0455,
+      network: 0.1285,
+      retailCharge: 10.00,
+      isl70: 18.00,
+      isl150: 18.00,
+      icptISL: 0.17,
+      get: 0.1,
+      icpt: 0.1,
+      tnbDiscount: 0.1, //DISKAUN TNB - 10%
+    }
+  },
+  INCENTIVE_TIERS: [
+    { max: 200, rate: -0.25 },
+    { max: 250, rate: -0.245 },
+    { max: 300, rate: -0.225 },
+    { max: 350, rate: -0.21 },
+    { max: 400, rate: -0.17 },
+    { max: 450, rate: -0.145 },
+    { max: 500, rate: -0.12 },
+    { max: 550, rate: -0.105 },
+    { max: 600, rate: -0.09 },
+    { max: 650, rate: -0.075 },
+    { max: 700, rate: -0.055 },
+    { max: 750, rate: -0.045 },
+    { max: 800, rate: -0.04 },
+    { max: 850, rate: -0.025 },
+    { max: 900, rate: -0.01 },
+    { max: 1000, rate: -0.005 },
+    { max: 1500, rate: 0 }
+  ],
+};
+
+const NONDOMLVTOU = {
+  RETAIL_CHARGE_THRESHOLD: 0,
+  FUEL_ADJUSTMENT_THRESHOLD: 600,
+  ST_THRESHOLD: 600,
+  HIGH_USAGE_THRESHOLD: 1500,
+  RATES: {
+    energyChargePeak: 0.2852,
+    energyChargeOffPeak: 0.2443,
+    afa: +0.0367, // *update-monthly
+    capacity: 0.0883,
+    network: 0.1482,
+    fixedUserCharge: 20.00, //Caj tetap pengguna
+    tnbDiscount: 0.1, //DISKAUN TNB - 10%
+    kwtbb: 0.016, //1.6%
+    st: 0.08, //8%]
+  },
+  INCENTIVE_TIERS: [{ max: 200, rate: -0.11 }],
+};
+
+const NONDOMMVTOU = {
+  RETAIL_CHARGE_THRESHOLD: 0,
+  FUEL_ADJUSTMENT_THRESHOLD: 600,
+  ST_THRESHOLD: 600,
+  HIGH_USAGE_THRESHOLD: 1500,
+  RATES: {
+    energyChargePeak: 0.3132,
+    energyChargeOffPeak: 0.2723,
+    afa: +0.0367, // *update-monthly
+    capacity: 30.19,
+    network: 66.87,
+    fixedUserCharge: 200.00, //Caj tetap pengguna
+    tnbDiscount: 0, //DISKAUN TNB - 10%
+    kwtbb: 0.016, //1.6%
+    st: 0.08, //8%]
+  },
+  INCENTIVE_TIERS: [{ max: 200, rate: -0.11 }],
+};
+
+const NONDOMHVTOU = {
+  RETAIL_CHARGE_THRESHOLD: 0,
+  FUEL_ADJUSTMENT_THRESHOLD: 600,
+  ST_THRESHOLD: 600,
+  HIGH_USAGE_THRESHOLD: 1500,
+  RATES: {
+    energyChargePeak: 0.4452,
+    energyChargeOffPeak: 0.4043,
+    afa: +0.0367, // *update-monthly
+    capacity: 21.76,
+    network: 23.06,
+    fixedUserCharge: 250.00, //Caj tetap pengguna
+    tnbDiscount: 0, //DISKAUN TNB - 10%
+    kwtbb: 0.016, //1.6%
+    st: 0.08, //8%]
+  },
+  INCENTIVE_TIERS: [{ max: 200, rate: -0.11 }],
+};
+
+const FUEL_BY_MONTH = {
+  "2025-07": -0.0,
+  "2025-08": -0.0145,
+  "2025-09": -0.0110,
+  "2025-10": -0.0650,
+  "2025-11": -0.0891,
+  "2025-12": -0.0642,
+  "2026-01": -0.0499,
+  "2026-02": -0.0277,
+  "2026-03": -0.0215,
+  "2026-04": -0.0047,
+  "2026-05": +0.0138,
+  "2026-06": +0.0259,
+  "2026-07": +0.0359,
+  "2026-08": +0.0380,
+  "2026-09": +0.0367,
+  "2026-10": +0.0336,
+  "2026-11": +0.0281,
+  "2026-12": +0.0548,
+};

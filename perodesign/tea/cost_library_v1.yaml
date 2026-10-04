@@ -1,0 +1,493 @@
+# PeroDesign cost library v1 (P1-B). Every number here must pass perodesign/tea/provenance.py
+# (quote span found verbatim in a registered, hashed source file; value literally in the span;
+# currency-marked for currency units). Values that are NOT in a source are not in this file:
+# they are scenario inputs passed to the engine explicitly and labelled "assumed" in every result.
+#
+# Source files live in data/sources/ (retrieved text, verbatim except tag-stripping / whitespace).
+library_version: 1
+
+sources:
+  liu2025_nml:
+    file: liu2025_nml.txt
+    sha256: 09d5afe2867cb3f9d64517e31593c6212943086b43d781f760dd3bc6a82bb3b8
+    citation: "Liu et al., Nano-Micro Letters (2025), 'Cost Effectivities Analysis of Perovskite Solar Cells: Will it Outperform Crystalline Silicon Ones?'"
+    doi: 10.1007/s40820-025-01744-x
+    licence: CC-BY-4.0
+    geography: CN
+    notes: "100 MW/yr line, China; 15% module efficiency, 50% yield (stated). Materials per 1 m2 in Table 1."
+  kajal2022_gch:
+    file: kajal2022_gch.txt
+    sha256: e3c720e41dd8d232e60e0b13d70af75a98d076b5a03a1ce27a10ad210585808e
+    citation: "Kajal, Verma, Vadaga, Powar, Global Challenges 6 (2022) 2100070, 'Costing Analysis of Scalable Carbon-Based Perovskite Modules Using Bottom Up Technique'"
+    doi: 10.1002/gch2.202100070
+    licence: CC-BY-4.0
+    geography: IN
+    notes: "100 MW carbon-based modules, India; MSP 0.21 / 0.15 USD/W."
+
+  worldbank_pink_2026_09:
+    file: worldbank_pink_2026_09.txt
+    sha256: 6f9b50aef439189e4d17dea44601b972aad8a3eafdd337bc1f4a425d00dce4b4
+    citation: "World Bank, Commodity Price Data (The Pink Sheet), September 2026"
+    doi: null
+    url: "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-September-2026.pdf"
+    licence: CC-BY-4.0
+    geography: GLOBAL
+    notes: "Gold: London afternoon fixing, 99.5% fine, USD per troy ounce; columns 2023, 2024, 2025, 25Q2, 25Q3, 25Q4, 26Q1, 26Q2, Jun, Jul, Aug 2026."
+  shahinuzzaman2022_nano:
+    file: shahinuzzaman2022_nano.txt
+    sha256: 88f89f47f0fdb853cd6dbd5da02262002f60f3906999f06048bf71b3161aa0f7
+    citation: "Shahinuzzaman et al., Nanomaterials 12 (2022) 3003, Table 2 (HTM prices per gram, USD)"
+    doi: 10.3390/nano12173003
+    licence: CC-BY-4.0
+    geography: GLOBAL
+    notes: "Table 2 caption states '(note: the price is arbitrary)'; PTAA 1145 USD/g cites Luo et al. Science 2018, a device paper, not a price source. LAB-CATALOGUE scale price."
+  vivo2017_materials:
+    file: vivo2017_materials.txt
+    sha256: 2d1605db45dfb8e5fdffc080ed685041b44ef0223faba0b9ef03e9a6bec28a24
+    citation: "Vivo et al., Materials 10 (2017) 1087"
+    doi: 10.3390/ma10091087
+    licence: CC-BY-4.0
+    geography: GLOBAL
+    notes: "PTAA ~2000 USD/g citing the Sigma-Aldrich catalogue (accessed 2017-08-11). LAB-CATALOGUE scale price."
+  au_density_pmc3660288:
+    file: au_density_pmc3660288.txt
+    sha256: 92478730c794352d73db95c3438176e5bc95a0db01c31dd8b61e1369a07a2f7b
+    citation: "Geiser et al., Particle and Fibre Toxicology 10 (2013) 19"
+    doi: 10.1186/1743-8977-10-19
+    licence: CC-BY-2.0
+    geography: GLOBAL
+    notes: "states the density of gold (19.3 g/cm3)"
+  ag_density_pmc5784555:
+    file: ag_density_pmc5784555.txt
+    sha256: 6bac979923aa071e906ee97ebd301879d07d231e5d2b69f41b9ede055d55f535
+    citation: "Thomas et al., Particle and Fibre Toxicology 15 (2018) 6, 'ISD3: a particokinetic model ...'"
+    doi: 10.1186/s12989-018-0243-7
+    licence: CC-BY-4.0
+    geography: GLOBAL
+    notes: "states the density of silver (10.49 g/cm3). Paper B (Ag back electrode). Saved by scripts/fetch_ag_density_source.py"
+
+  worldbank_wdi_2026_07:
+    file: worldbank_wdi_2026_07.txt
+    sha256: 433c5cbd6361f3a77930212979e08805da0c5f4992ba303896fcc23947be6a00
+    citation: "World Bank, World Development Indicators (API v2, last updated 2026-07-13); FR.INR.LEND from IMF International Financial Statistics"
+    doi: null
+    url: "https://api.worldbank.org/v2/country/MYS;CHN;IND/indicator/FR.INR.LEND?format=json&date=2019:2025"
+    licence: CC-BY-4.0
+    geography: MY/CN/IN
+    notes: "Lending interest rate = bank rate for short/medium-term private-sector financing. Used as a COST-OF-DEBT proxy for the capital recovery factor (no equity premium, no tax shield)."
+
+  tnb_rates_2026_09:
+    file: tnb_rates_2026_09.txt
+    sha256: 0a6c7364d54b7f2657a92d19b4b4282d4eae9681f71d6f6bf975c9f7e00f9c45
+    citation: "Tenaga Nasional Berhad, tariff calculator rate table (RP4, from 1 July 2025), https://www.mytnb.com.my/tariff"
+    doi: null
+    url: "https://www.mytnb.com.my/tariff/js/rates.js?v=1.1.69"
+    licence: "not stated (public tariff); cited factual price"
+    geography: MY
+    notes: "Non-Domestic Medium Voltage General tariff (old E1). Energy + AFA in RM/kWh; capacity + network in RM per kW maximum demand per month."
+
+  dosm_salaries_wages_2025:
+    file: dosm_salaries_wages_2025.txt
+    sha256: db2bdb86ff95be46f49140c5431eb7a6e8a750e7d1e838f6af15a45aa3d1e866
+    citation: "Department of Statistics Malaysia, Salaries & Wages: 2025 (released 2026-09-21), Table A13"
+    doi: null
+    url: "https://storage.dosm.gov.my/labour/salaries_wages_2025.xlsx"
+    licence: CC-BY-4.0
+    geography: MY
+    notes: "Monthly salaries & wages of employees by industry (MSIC 2008), CITIZENS ONLY. Excludes employer contributions."
+  cai2017_advs_si:
+    file: cai2017_advs_si.txt
+    sha256: 60f8d039b8fcd6811e3c65b7813eba00415492b22d5f73b7f4cac1a43c57dc26
+    citation: "Cai et al., Advanced Science 4 (2017) 1600269, Supporting Information Tables S1, S7"
+    doi: 10.1002/advs.201600269
+    licence: CC-BY-4.0
+    geography: GLOBAL
+    notes: "100 MW printable perovskite line: 76 employees (3 shifts x 15 operators + 12 technicians + 4 managers), 120 W/m2 modules, 350 days/yr."
+
+  tian2020_sciadv_si:
+    file: tian2020_sciadv_si.txt
+    sha256: 6a1c84f1e01bf5783bc9410676d03f137d9444c90e9e604ca4e1d427b0fe523b
+    citation: "Tian, Stranks, You, Science Advances 6 (2020) eabb0055, Supplementary Tables S2 and S4 (energy inventory per 1 m2)"
+    doi: 10.1126/sciadv.abb0055
+    licence: CC-BY-NC-4.0
+    geography: GLOBAL
+    notes: "Per-step electricity per 1 m2 for lab-to-fab tandem stacks. S2 rows in kWh. S4 rows are in MJ although the column header says kWh: the 16 rows sum to 221.94 and 221.94/3.6 = 61.65 = the stated kWh Total (found by agy review 2026-09-28)."
+
+# ---------------------------------------------------------------------------------------------
+# Entries. value_text = the literal as printed. unit = the unit the engine uses.
+# `role` tells the engine what the number is for. `proxy_for` marks a value used for a material
+# that is not exactly the one the source priced (reported in every result as a proxy).
+entries:
+  # --- Liu 2025 Table 1: materials per 1 m2 (consumption, price, utilisation) -----------------
+  - {id: liu_fto_glass_price, position: {sep: '|', index: 2}, value: 10.0, value_text: "10.0", unit: USD/m2, role: price_per_m2, item: FTO_glass,
+     source: liu2025_nml, quote_span: "FTO Glass1 | 1 m2 | 10.0 $ m−2 | 0.98 | 10.2", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_fto_glass_util, position: {sep: '|', index: 3}, value: 0.98, value_text: "0.98", unit: fraction, role: utilisation, item: FTO_glass,
+     source: liu2025_nml, quote_span: "FTO Glass1 | 1 m2 | 10.0 $ m−2 | 0.98 | 10.2", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_perovskite_mass, position: {sep: '|', index: 1}, value: 2.83, value_text: "2.83", unit: g, unit_text: "g", role: consumption_per_m2, item: perovskite,
+     source: liu2025_nml, quote_span: "Perovskite2 | 2.83 g | 0.63 $ g−1 | 0.95 | 1.89", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_perovskite_price, position: {sep: '|', index: 2}, value: 0.63, value_text: "0.63", unit: USD/g, role: price_per_g, item: perovskite,
+     source: liu2025_nml, quote_span: "Perovskite2 | 2.83 g | 0.63 $ g−1 | 0.95 | 1.89", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_perovskite_util, position: {sep: '|', index: 3}, value: 0.95, value_text: "0.95", unit: fraction, role: utilisation, item: perovskite,
+     source: liu2025_nml, quote_span: "Perovskite2 | 2.83 g | 0.63 $ g−1 | 0.95 | 1.89", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_c60_mass, position: {sep: '|', index: 1}, value: 0.0504, value_text: "0.0504", unit: g, unit_text: "g", role: consumption_per_m2, item: C60,
+     source: liu2025_nml, quote_span: "C602 | 0.0504 g | 21.4 $ g−2 | 0.50 | 2.16", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_c60_price, position: {sep: '|', index: 2}, value: 21.4, value_text: "21.4", unit: USD/g, role: price_per_g, item: C60,
+     denominator_as_printed: "g−2",
+     denominator_note: "typo in source; row total 2.16 $/m2 = 0.0504 g x 21.4 / 0.50 confirms USD per g",
+     source: liu2025_nml, quote_span: "C602 | 0.0504 g | 21.4 $ g−2 | 0.50 | 2.16", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_c60_util, position: {sep: '|', index: 3}, value: 0.50, value_text: "0.50", unit: fraction, role: utilisation, item: C60,
+     source: liu2025_nml, quote_span: "C602 | 0.0504 g | 21.4 $ g−2 | 0.50 | 2.16", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_nio_vol, position: {sep: '|', index: 1}, value: 0.015, value_text: "0.015", unit: cm3, unit_text: "cm3", role: consumption_per_m2, item: NiOx,
+     source: liu2025_nml, quote_span: "NiOx2 | 0.015 cm3 | 19.0 $ cm−3 | 0.80 | 0.356", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_nio_price, position: {sep: '|', index: 2}, value: 19.0, value_text: "19.0", unit: USD/cm3, role: price_per_cm3, item: NiOx,
+     source: liu2025_nml, quote_span: "NiOx2 | 0.015 cm3 | 19.0 $ cm−3 | 0.80 | 0.356", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_nio_util, position: {sep: '|', index: 3}, value: 0.80, value_text: "0.80", unit: fraction, role: utilisation, item: NiOx,
+     source: liu2025_nml, quote_span: "NiOx2 | 0.015 cm3 | 19.0 $ cm−3 | 0.80 | 0.356", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_sno_vol, position: {sep: '|', index: 1}, value: 0.01, value_text: "0.01", unit: cm3, unit_text: "cm3", role: consumption_per_m2, item: SnOx,
+     source: liu2025_nml, quote_span: "SnOx2 | 0.01 cm3 | 24.3 $ cm−3 | 0.80 | 0.304", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_sno_price, position: {sep: '|', index: 2}, value: 24.3, value_text: "24.3", unit: USD/cm3, role: price_per_cm3, item: SnOx,
+     source: liu2025_nml, quote_span: "SnOx2 | 0.01 cm3 | 24.3 $ cm−3 | 0.80 | 0.304", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_sno_util, position: {sep: '|', index: 3}, value: 0.80, value_text: "0.80", unit: fraction, role: utilisation, item: SnOx,
+     source: liu2025_nml, quote_span: "SnOx2 | 0.01 cm3 | 24.3 $ cm−3 | 0.80 | 0.304", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_ito_vol, position: {sep: '|', index: 1}, value: 0.3, value_text: "0.3", unit: cm3, unit_text: "cm3", role: consumption_per_m2, item: ITO,
+     source: liu2025_nml, quote_span: "ITO2 | 0.3 cm3 | 9.00 $ cm−3 | 0.80 | 3.38", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_ito_price, position: {sep: '|', index: 2}, value: 9.00, value_text: "9.00", unit: USD/cm3, role: price_per_cm3, item: ITO,
+     source: liu2025_nml, quote_span: "ITO2 | 0.3 cm3 | 9.00 $ cm−3 | 0.80 | 3.38", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_ito_util, position: {sep: '|', index: 3}, value: 0.80, value_text: "0.80", unit: fraction, role: utilisation, item: ITO,
+     source: liu2025_nml, quote_span: "ITO2 | 0.3 cm3 | 9.00 $ cm−3 | 0.80 | 3.38", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_cu_mass, position: {sep: '|', index: 1}, value: 8, value_text: "8", unit: g, unit_text: "g", role: consumption_per_m2, item: Cu,
+     source: liu2025_nml, quote_span: "Cu4 | 8 g | 0.01 $ g−1 | 0.25 | 0.320", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_cu_price, position: {sep: '|', index: 2}, value: 0.01, value_text: "0.01", unit: USD/g, role: price_per_g, item: Cu,
+     source: liu2025_nml, quote_span: "Cu4 | 8 g | 0.01 $ g−1 | 0.25 | 0.320", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_cu_util, position: {sep: '|', index: 3}, value: 0.25, value_text: "0.25", unit: fraction, role: utilisation, item: Cu,
+     source: liu2025_nml, quote_span: "Cu4 | 8 g | 0.01 $ g−1 | 0.25 | 0.320", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_poe_price, position: {sep: '|', index: 2}, value: 1.93, value_text: "1.93", unit: USD/m2, role: price_per_m2, item: POE,
+     source: liu2025_nml, quote_span: "polyolefin elastomer (POE)3 | 1 m2 | 1.93 $ m−2 | 0.98 | 1.97", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_poe_util, position: {sep: '|', index: 3}, value: 0.98, value_text: "0.98", unit: fraction, role: utilisation, item: POE,
+     source: liu2025_nml, quote_span: "polyolefin elastomer (POE)3 | 1 m2 | 1.93 $ m−2 | 0.98 | 1.97", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_backglass_price, position: {sep: '|', index: 2}, value: 1.43, value_text: "1.43", unit: USD/m2, role: price_per_m2, item: back_glass,
+     source: liu2025_nml, quote_span: "Back Glass1 | 1 m2 | 1.43 $ m−2 | 0.98 | 1.46", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_backglass_util, position: {sep: '|', index: 3}, value: 0.98, value_text: "0.98", unit: fraction, role: utilisation, item: back_glass,
+     source: liu2025_nml, quote_span: "Back Glass1 | 1 m2 | 1.43 $ m−2 | 0.98 | 1.46", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_frame_mass, position: {sep: '|', index: 1}, value: 1555, value_text: "1555", unit: g, unit_text: "g", role: consumption_per_m2, item: Al_frame,
+     source: liu2025_nml, quote_span: "Al Frame4 | 1555 g | 2.71 $ kg−1 | 0.98 | 4.30", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_frame_price, position: {sep: '|', index: 2}, value: 2.71, value_text: "2.71", unit: USD/kg, role: price_per_kg, item: Al_frame,
+     source: liu2025_nml, quote_span: "Al Frame4 | 1555 g | 2.71 $ kg−1 | 0.98 | 4.30", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_frame_util, position: {sep: '|', index: 3}, value: 0.98, value_text: "0.98", unit: fraction, role: utilisation, item: Al_frame,
+     source: liu2025_nml, quote_span: "Al Frame4 | 1555 g | 2.71 $ kg−1 | 0.98 | 4.30", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_butyl_mass, position: {sep: '|', index: 1}, value: 10.5, value_text: "10.5", unit: g, unit_text: "g", role: consumption_per_m2, item: butyl,
+     source: liu2025_nml, quote_span: "Butyl rubber3 | 10.5 g | 2.86 $ kg−1 | 0.98 | 0.0306", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_butyl_price, position: {sep: '|', index: 2}, value: 2.86, value_text: "2.86", unit: USD/kg, role: price_per_kg, item: butyl,
+     source: liu2025_nml, quote_span: "Butyl rubber3 | 10.5 g | 2.86 $ kg−1 | 0.98 | 0.0306", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_butyl_util, position: {sep: '|', index: 3}, value: 0.98, value_text: "0.98", unit: fraction, role: utilisation, item: butyl,
+     source: liu2025_nml, quote_span: "Butyl rubber3 | 10.5 g | 2.86 $ kg−1 | 0.98 | 0.0306", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_jbox_price, position: {sep: '|', index: 2}, value: 2.86, value_text: "2.86", unit: USD, role: price_per_unit, item: junction_box,
+     source: liu2025_nml, quote_span: "Junction Box3 | 1 | 2.86 $ | 0.98 | 2.92", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_jbox_util, position: {sep: '|', index: 3}, value: 0.98, value_text: "0.98", unit: fraction, role: utilisation, item: junction_box,
+     source: liu2025_nml, quote_span: "Junction Box3 | 1 | 2.86 $ | 0.98 | 2.92", confidence: medium, cost_basis_year: 2024, geography: CN}
+  # --- Liu 2025 layer thicknesses (Fig. 1 caption) -> implied per-volume masses ----------------
+  - {id: liu_c60_thickness, value: 30, value_text: "30", unit: nm, role: reference_thickness, item: C60,
+     position: {after: "are", sep: " ", index: 2},
+     notes: "3rd item (C60) of 'NiOx, perovskite, C60, SnOx, ITO and Cu are 15, 600, 30, 10, 300 and 150 nm'; position is gate-checked",
+     source: liu2025_nml, quote_span: "the thickness of the film including NiO x , perovskite, C 60 , SnO x , ITO and Cu are 15, 600, 30, 10, 300 and 150 nm", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_perovskite_thickness, value: 600, value_text: "600", unit: nm, role: reference_thickness, item: perovskite,
+     position: {after: "are", sep: " ", index: 1},
+     notes: "2nd item (perovskite) of the same list; position is gate-checked",
+     source: liu2025_nml, quote_span: "the thickness of the film including NiO x , perovskite, C 60 , SnO x , ITO and Cu are 15, 600, 30, 10, 300 and 150 nm", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_nio_thickness, value: 15, value_text: "15", unit: nm, role: reference_thickness, item: NiOx,
+     position: {after: "are", sep: " ", index: 0}, notes: "1st item (NiOx) of the Fig. 1 thickness list",
+     source: liu2025_nml, quote_span: "the thickness of the film including NiO x , perovskite, C 60 , SnO x , ITO and Cu are 15, 600, 30, 10, 300 and 150 nm", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_sno_thickness, value: 10, value_text: "10", unit: nm, role: reference_thickness, item: SnOx,
+     position: {after: "are", sep: " ", index: 3}, notes: "4th item (SnOx)",
+     source: liu2025_nml, quote_span: "the thickness of the film including NiO x , perovskite, C 60 , SnO x , ITO and Cu are 15, 600, 30, 10, 300 and 150 nm", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_ito_thickness, value: 300, value_text: "300", unit: nm, role: reference_thickness, item: ITO,
+     position: {after: "are", sep: " ", index: 4}, notes: "5th item (ITO, top electrode under Cu)",
+     source: liu2025_nml, quote_span: "the thickness of the film including NiO x , perovskite, C 60 , SnO x , ITO and Cu are 15, 600, 30, 10, 300 and 150 nm", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_cu_thickness, value: 150, value_text: "150", unit: nm, role: reference_thickness, item: Cu,
+     position: {after: "are", sep: " ", index: 6}, notes: "6th item (Cu); token 5 is the word 'and' (caught by the POS gate)",
+     source: liu2025_nml, quote_span: "the thickness of the film including NiO x , perovskite, C 60 , SnO x , ITO and Cu are 15, 600, 30, 10, 300 and 150 nm", confidence: medium, cost_basis_year: 2024, geography: CN}
+  # --- Liu 2025 stated results (reproduction checkpoints, not engine inputs) --------------------
+  - {id: liu_materials_total, value: 29.3, value_text: "29.3", unit: USD/m2, role: checkpoint,
+     source: liu2025_nml, quote_span: "we estimated the material cost for the module with a size of 1 m 2 to be approximately 29.3 $ m −2", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_materials_per_W, value: 0.39, value_text: "0.39", unit: USD/W, role: checkpoint,
+     source: liu2025_nml, quote_span: "the corresponding materials cost was calculated to be about 0.39 $ W −1 in the condition of the efficiency of 15% and the yield of 50%", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_capital_per_W, value: 0.092, value_text: "0.092", unit: USD/W, role: checkpoint,
+     source: liu2025_nml, quote_span: "the capital cost was estimated to be approximately 0.092 $ W −1", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_other_per_W, value: 0.088, value_text: "0.088", unit: USD/W, role: checkpoint,
+     notes: "electricity, labor, land rent and maintenance",
+     source: liu2025_nml, quote_span: "which is calculated to be approximately 0.088 $ W −1", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_total_per_W, value: 0.57, value_text: "0.57", unit: USD/W, role: checkpoint,
+     source: liu2025_nml, quote_span: "The total manufacturing cost of the module was estimated to be 0.57 $ W −1", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_capex_line, value: 20000000, value_text: "20", scale_word: million, unit: USD, role: line_capex,
+     source: liu2025_nml, quote_span: "The establishment of a manufacturing line with 100 MW capacity should be invested ca. 20 million USD", confidence: low, cost_basis_year: 2024, geography: CN}
+  - {id: liu_module_eff, value: 15, value_text: "15", unit: percent, unit_text: "%", role: checkpoint,
+     source: liu2025_nml, quote_span: "in the condition of the efficiency of 15% and the yield of 50%", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_yield, value: 50, value_text: "50", unit: percent, unit_text: "%", role: checkpoint,
+     source: liu2025_nml, quote_span: "in the condition of the efficiency of 15% and the yield of 50%", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_capacity, value: 100, value_text: "100", unit: MW, unit_text: "MW", role: line_capacity,
+     source: liu2025_nml, quote_span: "we estimated the cost of PSMs as well as LCOE based on 100 MW year −1 manufacturing capacity", confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: liu_depreciation, value: 5, value_text: "5", unit: years, unit_text: "-year", role: depreciation_years,
+     source: liu2025_nml, quote_span: "In consideration of the 5-year depreciation period of equipment", confidence: medium, cost_basis_year: 2024, geography: CN}
+  # --- Kajal 2022 (India) ------------------------------------------------------------------
+  - {id: kajal_electricity, value: 0.073, value_text: "0.073", unit: USD/kWh, role: electricity_price, item: electricity,
+     source: kajal2022_gch, quote_span: "This model assumes an electricity cost of US$ 0.073 kWh −1 with annual inflation of 3%", confidence: medium, cost_basis_year: 2022, geography: IN}
+  - {id: kajal_wacc, value: 10.2, value_text: "10.2", unit: percent, unit_text: "%", role: wacc, item: IN_pv_factory,
+     notes: "70:30 debt:equity, 9% debt, 13% equity (same paragraph). A PV-FACTORY WACC for India 2022, not a Malaysian value.",
+     source: kajal2022_gch, quote_span: "The total weighted average cost of capital cost (WACC) is assumed to be 10.2% with an NPV rate of 10%",
+     confidence: medium, cost_basis_year: 2022, geography: IN}
+  - {id: kajal_msp_A, value: 0.21, value_text: "0.21", unit: USD/W, role: checkpoint,
+     source: kajal2022_gch, quote_span: "minimum sustainable prices (MSPs) of $ 0.21 W ‐1 and $ 0.15 W ‐1", confidence: medium, cost_basis_year: 2022, geography: IN}
+  - {id: kajal_msp_B, value: 0.15, value_text: "0.15", unit: USD/W, role: checkpoint,
+     source: kajal2022_gch, quote_span: "minimum sustainable prices (MSPs) of $ 0.21 W ‐1 and $ 0.15 W ‐1", confidence: medium, cost_basis_year: 2022, geography: IN}
+
+  # --- Region cost of capital (latest non-missing WDI lending rate per country) -------------------
+  - {id: wdi_lend_my_2025, value: 4.82472886111111, value_text: "4.82472886111111", unit: percent, role: lending_rate, item: MY,
+     position: {sep: "|", index: 4}, row_cells: {0: "MYS", 1: "FR.INR.LEND", 3: "2025"},
+     source: worldbank_wdi_2026_07, quote_span: "MYS | FR.INR.LEND | Lending interest rate (%) | 2025 | 4.82472886111111",
+     confidence: medium, cost_basis_year: 2025, geography: MY}
+  - {id: wdi_lend_cn_2024, value: 4.35, value_text: "4.35", unit: percent, role: lending_rate, item: CN,
+     position: {sep: "|", index: 4}, row_cells: {0: "CHN", 1: "FR.INR.LEND", 3: "2024"},
+     source: worldbank_wdi_2026_07, quote_span: "CHN | FR.INR.LEND | Lending interest rate (%) | 2024 | 4.35",
+     confidence: medium, cost_basis_year: 2024, geography: CN}
+  - {id: wdi_lend_in_2022, value: 8.56714285714286, value_text: "8.56714285714286", unit: percent, role: lending_rate, item: IN,
+     position: {sep: "|", index: 4}, row_cells: {0: "IND", 1: "FR.INR.LEND", 3: "2022"},
+     source: worldbank_wdi_2026_07, quote_span: "IND | FR.INR.LEND | Lending interest rate (%) | 2022 | 8.56714285714286",
+     confidence: medium, cost_basis_year: 2022, geography: IN}
+  - {id: wdi_fx_my_2025, value: 4.28442415048243, value_text: "4.28442415048243", unit: fraction, role: fx_lcu_per_usd, item: MYR,
+     position: {sep: "|", index: 4}, row_cells: {0: "MYS", 1: "PA.NUS.FCRF", 3: "2025"},
+     notes: "MYR per USD, period average (official exchange rate). Unit stored as 'fraction' = dimensionless ratio.",
+     source: worldbank_wdi_2026_07, quote_span: "MYS | PA.NUS.FCRF | Official exchange rate (LCU per US$, period average) | 2025 | 4.28442415048243",
+     confidence: high, cost_basis_year: 2025, geography: MY}
+  - {id: tnb_mv_energy, value: 0.2983, value_text: "0.2983", unit: MYR/kWh, role: electricity_tariff, item: MY_MV_general,
+     block: "const NONDOMMVGEN", label: "energyCharge:", unit_basis: "TNB calculator-nonDomGen.js: energy/afa x kWh; capacity/network x kW maximum demand (UI shows '/kW'); source file header",
+     source: tnb_rates_2026_09, quote_span: "const NONDOMMVGEN = { RETAIL_CHARGE_THRESHOLD: 0, RATES: { energyCharge: 0.2983, afa: +0.0367, // *update-monthly capacity: 29.43, network: 59.84,", confidence: medium, cost_basis_year: 2026, geography: MY}
+  - {id: tnb_mv_afa, value: 0.0367, value_text: "0.0367", unit: MYR/kWh, role: electricity_tariff, item: MY_MV_general,
+     block: "const NONDOMMVGEN", label: "afa:", unit_basis: "TNB calculator-nonDomGen.js: energy/afa x kWh; capacity/network x kW maximum demand (UI shows '/kW'); source file header",
+     source: tnb_rates_2026_09, quote_span: "const NONDOMMVGEN = { RETAIL_CHARGE_THRESHOLD: 0, RATES: { energyCharge: 0.2983, afa: +0.0367, // *update-monthly capacity: 29.43, network: 59.84,", confidence: medium, cost_basis_year: 2026, geography: MY}
+  - {id: tnb_mv_capacity, value: 29.43, value_text: "29.43", unit: MYR/kW/month, role: electricity_tariff, item: MY_MV_general,
+     block: "const NONDOMMVGEN", label: "capacity:", unit_basis: "TNB calculator-nonDomGen.js: energy/afa x kWh; capacity/network x kW maximum demand (UI shows '/kW'); source file header",
+     source: tnb_rates_2026_09, quote_span: "const NONDOMMVGEN = { RETAIL_CHARGE_THRESHOLD: 0, RATES: { energyCharge: 0.2983, afa: +0.0367, // *update-monthly capacity: 29.43, network: 59.84,", confidence: medium, cost_basis_year: 2026, geography: MY}
+  - {id: tnb_mv_network, value: 59.84, value_text: "59.84", unit: MYR/kW/month, role: electricity_tariff, item: MY_MV_general,
+     block: "const NONDOMMVGEN", label: "network:", unit_basis: "TNB calculator-nonDomGen.js: energy/afa x kWh; capacity/network x kW maximum demand (UI shows '/kW'); source file header",
+     source: tnb_rates_2026_09, quote_span: "const NONDOMMVGEN = { RETAIL_CHARGE_THRESHOLD: 0, RATES: { energyCharge: 0.2983, afa: +0.0367, // *update-monthly capacity: 29.43, network: 59.84,", confidence: medium, cost_basis_year: 2026, geography: MY}
+  # --- Labour (P1 regions) ------------------------------------------------------------------
+  - {id: dosm_mfg_mean_wage_2025, value: 3357, value_text: "3357", unit: MYR/month, role: monthly_wage, item: MY_manufacturing,
+     block: "A:Pembuatan", label: "Q:", unit_basis: "DOSM Table A13 sheet 'Ind Jum Purata': 'Purata (RM) | R:Mean (RM)', column Q = 2025",
+     source: dosm_salaries_wages_2025, quote_span: "A:Pembuatan | B:1691 | C:1709 | D:1884 | E:1969 | F:2154 | G:2187 | H:2348 | I:2443 | J:2565 | K:2616 | L:2569 | M:2635 | N:2846 | O:3052 | P:3278 | Q:3357 | R:Manufacturing",
+     confidence: high, cost_basis_year: 2025, geography: MY}
+  - {id: cai_line_employees, value: 76, value_text: "76", unit: count, unit_text: "in total", role: line_headcount, item: pvk_line_100MW,
+     source: cai2017_advs_si, quote_span: "There are 15 operators in one group; 12 technicians and 4 managers to direct the operators, the number of employee is 76 in total.",
+     confidence: medium, cost_basis_year: 2017, geography: GLOBAL}
+  - {id: cai_line_wage, value: 40000, value_text: "40000", unit: USD/yr, role: annual_wage, item: pvk_line_100MW,
+     position: {after: "employee", sep: " ", index: 1},
+     notes: "cells after 'employee': 76 | 40000 | 3040000; the header states 'Average wage US$/year'",
+     unit_header: "Average wage US$/year", header_index: 1,
+     source: cai2017_advs_si, quote_span: "number Average wage US$/year cost US$/year employee 76 40000 3040000 labor cost US$/W 0.0304",
+     confidence: low, cost_basis_year: 2017, geography: GLOBAL}
+  - {id: cai_module_W_per_m2, value: 120, value_text: "120", unit: count, unit_text: "W/m2", role: line_reference_output, item: pvk_line_100MW,
+     notes: "Cai Module A: 120 W per 1 m2 module; line throughput 100 MW / 120 W/m2 = 833,333 m2/yr",
+     source: cai2017_advs_si, quote_span: "V is the producing rate calculated as 100MW/(504000min*120W/m2)=1.654 m2/min.",
+     confidence: medium, cost_basis_year: 2017, geography: GLOBAL}
+  - {id: cai_line_capacity, value: 100, value_text: "100", unit: MW, unit_text: "MW/", role: line_capacity, item: pvk_line_100MW,
+     source: cai2017_advs_si, quote_span: "V is the producing rate calculated as 100MW/(504000min*120W/m2)=1.654 m2/min.",
+     confidence: medium, cost_basis_year: 2017, geography: GLOBAL}
+  # --- Electricity per 1 m2 per process step (Tian 2020 SI) ------------------------------------
+  - {id: tian_sno2_sputter, value: 0.359, value_text: "3.59E-01", unit: kWh, role: electricity_per_m2, table: S2,
+     position: {after: "SnO2 sputtering", sep: " ", index: 2}, notes: "Table S2 (self-consistent)",
+     source: tian2020_sciadv_si, quote_span: "SnO2 sputtering 6.80E+04 18 3.59E-01", confidence: medium, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_c60_sputter, value: 0.515, value_text: "5.15E-01", unit: kWh, role: electricity_per_m2, table: S2,
+     position: {after: "C60 sputtering", sep: " ", index: 2}, notes: "Table S2 (self-consistent)",
+     source: tian2020_sciadv_si, quote_span: "C60 sputtering 6.63E+04 27 5.15E-01", confidence: medium, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_cu_sputter, value: 3.74, value_text: "3.74E+00", unit: kWh, role: electricity_per_m2, table: S2,
+     position: {after: "Cu sputtering", sep: " ", index: 2}, notes: "Table S2 (self-consistent)",
+     source: tian2020_sciadv_si, quote_span: "Cu sputtering 6.13E+04 218 3.74E+00", confidence: medium, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_izo_sputter, value: 3.53, value_text: "3.53E+00", unit: kWh, role: electricity_per_m2, table: S2,
+     position: {after: "IZO sputtering", sep: " ", index: 2}, notes: "Table S2 (self-consistent)",
+     source: tian2020_sciadv_si, quote_span: "IZO sputtering 6.33E+04 200 3.53E+00", confidence: medium, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_pvk_print, value: 0.0107, value_text: "1.07E-02", unit: kWh, role: electricity_per_m2, table: S2,
+     position: {after: "Perovskite layer screen printing", sep: " ", index: 2}, notes: "Table S2 (self-consistent)",
+     source: tian2020_sciadv_si, quote_span: "Perovskite layer screen printing 6.42E+03 6 1.07E-02", confidence: medium, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_nio_sputter_listed, value: 18.6, value_text: "1.86E+01", unit: MJ, role: electricity_per_m2, table: S4,
+     position: {after: "NiO sputtering", sep: " ", index: 2}, notes: "Table S4 row value, in MJ (see source note). Calibrated sputter energy = 5.26 x power x time (tool base load)",
+     source: tian2020_sciadv_si, quote_span: "NiO sputtering 9.83E+04 36 1.86E+01", confidence: low, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_nio_power, value: 98300.0, value_text: "9.83E+04", unit: W, role: electricity_step_component, table: S4,
+     position: {after: "NiO sputtering", sep: " ", index: 0},
+     source: tian2020_sciadv_si, quote_span: "NiO sputtering 9.83E+04 36 1.86E+01", confidence: low, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_nio_time, value: 36, value_text: "36", unit: s, role: electricity_step_component, table: S4,
+     position: {after: "NiO sputtering", sep: " ", index: 1},
+     source: tian2020_sciadv_si, quote_span: "NiO sputtering 9.83E+04 36 1.86E+01", confidence: low, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_anneal_power, value: 18000.0, value_text: "1.80E+04", unit: W, role: electricity_step_component, table: S4,
+     position: {after: "Perovskite layer annealing", sep: " ", index: 0},
+     source: tian2020_sciadv_si, quote_span: "Perovskite layer annealing 1.80E+04 600 1.08E+01", confidence: low, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_anneal_time, value: 600, value_text: "600", unit: s, role: electricity_step_component, table: S4,
+     position: {after: "Perovskite layer annealing", sep: " ", index: 1},
+     source: tian2020_sciadv_si, quote_span: "Perovskite layer annealing 1.80E+04 600 1.08E+01", confidence: low, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_anneal_listed, value: 10.8, value_text: "1.08E+01", unit: MJ, role: electricity_step_component, table: S4,
+     position: {after: "Perovskite layer annealing", sep: " ", index: 2},
+     source: tian2020_sciadv_si, quote_span: "Perovskite layer annealing 1.80E+04 600 1.08E+01", confidence: low, cost_basis_year: 2020, geography: GLOBAL}
+  - {id: tian_s4_total_kwh, value: 61.65, value_text: "61.65", unit: kWh, unit_text: "", role: checkpoint, table: S4,
+     position: {after: "Encapsulation 1.50E+03 30 1.25E-02 Total", sep: " ", index: 0},
+     notes: "stated Total of Table S4 in kWh; equals the sum of the row values / 3.6 (rows are MJ). Test re-derives it.",
+     source: tian2020_sciadv_si, quote_span: "Cu sputtering 7.15E+04 182 2.80E+01 Encapsulation 1.50E+03 30 1.25E-02 Total 61.65",
+     confidence: medium, cost_basis_year: 2020, geography: GLOBAL}
+  # --- Maintenance, operating time, remaining TNB charges ------------------------------------------
+  - {id: kajal_maintenance_frac, value: 1, value_text: "1", unit: percent, unit_text: "%", role: maintenance_frac_of_capex_per_yr,
+     notes: "'industry-standard' 1% of total capital cost per year (Kajal 2022, India); Cai 2017 is consistent (test)",
+     source: kajal2022_gch, quote_span: "As an industry‐standard, 1% of the total capital cost is defined as the plant's maintenance cost per year.",
+     confidence: medium, cost_basis_year: 2022, geography: IN}
+  - {id: cai_maintenance_A, value: 0.0011, value_text: "0.0011", unit: USD/W, role: checkpoint,
+     position: {after: "Maintenance", sep: " ", index: 0}, unit_header: "PSC Module A Cost (US$/W)", header_index: 0,
+     source: cai2017_advs_si, quote_span: "Cost component PSC Module A Cost (US$/W) PSC Module B Cost (US$/W) Facilities (e.g. rent) 0.033 0.021 Utilities (electricity, water) 0.033 0.022 Labor 0.0304 0.0304 Maintenance 0.0011 0.0016", confidence: medium, cost_basis_year: 2017, geography: GLOBAL}
+  - {id: cai_facilities_A, value: 0.033, value_text: "0.033", unit: USD/W, role: facilities_rent_reference,
+     position: {after: "rent)", sep: " ", index: 0}, unit_header: "PSC Module A Cost (US$/W)", header_index: 0,
+     notes: "Cai: rents 'Based on DSCs and thin-film, silicon solar cell manufacturing lines'. NOT Malaysian; sensitivity only.",
+     source: cai2017_advs_si, quote_span: "Cost component PSC Module A Cost (US$/W) PSC Module B Cost (US$/W) Facilities (e.g. rent) 0.033 0.021 Utilities (electricity, water) 0.033 0.022 Labor 0.0304 0.0304 Maintenance 0.0011 0.0016", confidence: low, cost_basis_year: 2017, geography: GLOBAL}
+  - {id: cai_capex_A, value: 11000000, value_text: "11", scale_word: million, unit: USD, role: checkpoint,
+     source: cai2017_advs_si, quote_span: "Estimated capital investment of 100MW PSCs production line 11million US$",
+     confidence: medium, cost_basis_year: 2017, geography: GLOBAL}
+  - {id: cai_minutes_per_year, value: 504000, value_text: "504000", unit: min, unit_text: "min/year", role: operating_time,
+     notes: "350 days x 24 h; consistent with Cai's 3 shifts of 8 h",
+     source: cai2017_advs_si, quote_span: "T is the producing time by 350 days/year (504000 min/year)",
+     confidence: medium, cost_basis_year: 2017, geography: GLOBAL}
+  - {id: tnb_mv_fixed, value: 200.00, value_text: "200.00", unit: MYR/month, role: electricity_tariff, item: MY_MV_general,
+     block: "const NONDOMMVGEN", label: "fixedUserCharge:", unit_basis: "TNB calculator: fixedUserCharge added once per monthly bill (RM)",
+     source: tnb_rates_2026_09, quote_span: "const NONDOMMVGEN = { RETAIL_CHARGE_THRESHOLD: 0, RATES: { energyCharge: 0.2983, afa: +0.0367, // *update-monthly capacity: 29.43, network: 59.84, fixedUserCharge: 200.00, //Caj tetap pengguna kwtbb: 0.016, //1.6% st: 0.08, //8%", confidence: medium, cost_basis_year: 2026, geography: MY}
+  - {id: tnb_mv_kwtbb, value: 0.016, value_text: "0.016", unit: fraction, role: electricity_levy, item: MY_MV_general,
+     position: {after: "kwtbb:", sep: " ", index: 0},
+     notes: "KWTBB (Renewable Energy Fund) levy 1.6% of the bill; span starts with the MV-general block header",
+     source: tnb_rates_2026_09, quote_span: "const NONDOMMVGEN = { RETAIL_CHARGE_THRESHOLD: 0, RATES: { energyCharge: 0.2983, afa: +0.0367, // *update-monthly capacity: 29.43, network: 59.84, fixedUserCharge: 200.00, //Caj tetap pengguna kwtbb: 0.016, //1.6% st: 0.08, //8%", confidence: medium, cost_basis_year: 2026, geography: MY}
+  # --- Lab-device items (PTAA, Au) -----------------------------------------------------------
+  - {id: wb_gold_2026_aug, value: 4411, value_text: "4411", unit: USD/toz, role: price_per_toz, item: Au,
+     position: {sep: "|", index: 13}, unit_cell: {index: 1, text: "$/toz"},
+     notes: "August 2026 monthly average (last column). canon() removed the thousands separator of '4,411'.",
+     source: worldbank_pink_2026_09, quote_span: "Gold | $/toz | c/ | 1,943 | 2,388 | 3,442 | 3,293 | 3,459 | 4,152 | 4,876 | 4,512 | 4,228 | 4,073 | 4,411",
+     confidence: high, cost_basis_year: 2026, geography: GLOBAL}
+  - {id: au_density, value: 19.3, value_text: "19.3", unit: g/cm3, unit_text: "g/cm 3", role: density, item: Au,
+     source: au_density_pmc3660288, quote_span: "due to the high gold density of 19.3 g/cm 3 the estimated mass concentration",
+     confidence: high, cost_basis_year: 2013, geography: GLOBAL}
+  # --- Paper B: silver back electrode (same row format / gate rules as gold) --------------------
+  - {id: wb_silver_2026_aug, value: 65.4, value_text: "65.4", unit: USD/toz, role: price_per_toz, item: Ag,
+     position: {sep: "|", index: 13}, unit_cell: {index: 1, text: "$/toz"},
+     notes: "August 2026 monthly average (last column), same Pink Sheet as wb_gold_2026_aug.",
+     source: worldbank_pink_2026_09, quote_span: "Silver | $/toz | c/ | 23.4 | 28.3 | 39.8 | 33.7 | 39.6 | 54.1 | 84.0 | 73.5 | 66.7 | 58.8 | 65.4",
+     confidence: high, cost_basis_year: 2026, geography: GLOBAL}
+  - {id: ag_density, value: 10.49, value_text: "10.49", unit: g/cm3, unit_text: "g/cm 3", role: density, item: Ag,
+     source: ag_density_pmc5784555, quote_span: "lighter than silver, (10.49 g/cm 3 )",
+     confidence: high, cost_basis_year: 2018, geography: GLOBAL}
+  - {id: ptaa_price_catalogue_2017, value: 2000, value_text: "2000", unit: USD/g, role: price_per_g, item: PTAA,
+     notes: "lab catalogue (Sigma-Aldrich via Vivo 2017). Upper bound.",
+     source: vivo2017_materials, quote_span: "PTAA is an extremely expensive material (~2000 $/g [ 106 ])",
+     confidence: low, cost_basis_year: 2017, geography: GLOBAL}
+  - {id: ptaa_price_review_2022, value: 1145, value_text: "1145", unit: USD/g, role: price_per_g, item: PTAA,
+     position: {after: "PTAA:poly(triarylamine)", sep: " ", index: 4},
+     unit_header: "Price (per Gram, USD)", header_index: 4,
+     notes: "Shahinuzzaman 2022 Table 2 says the prices are arbitrary. Lower of the two catalogue-scale values.",
+     source: shahinuzzaman2022_nano, quote_span: "Price (per Gram, USD) Reference Spiro-OMeTAD 4 × 10 −5 422 [ 82 ] PTAA:poly(triarylamine) 10 −2 –10 −3 1145 [ 83 ]",
+     confidence: low, cost_basis_year: 2022, geography: GLOBAL}
+
+# ---------------------------------------------------------------------------------------------
+# Map PeroDesign library materials to priced items. A layer whose material has no mapping here makes
+# the engine report the design cost as INCOMPLETE (never zero).
+# density_from: derive g/cm3 as consumption / (reference_thickness x 1 m2). This is the mass the source
+# actually budgets per volume (precursor + waste inside `utilisation`), not a crystallographic density.
+layer_materials:
+  C60:
+    item: C60
+    density_from: {mass: liu_c60_mass, thickness: liu_c60_thickness}
+    price: liu_c60_price
+    utilisation: liu_c60_util
+  MAPbI3:
+    item: perovskite
+    proxy_for: "Liu 2025 prices an unspecified production perovskite, not MAPbI3"
+    density_from: {mass: liu_perovskite_mass, thickness: liu_perovskite_thickness}
+    price: liu_perovskite_price
+    utilisation: liu_perovskite_util
+  NiOx:
+    item: NiOx
+    volume_price: {price: liu_nio_price, utilisation: liu_nio_util, check: {volume: liu_nio_vol, thickness: liu_nio_thickness}}
+    notes: "Liu prices NiOx per cm3 of film (0.015 cm3 per m2 at 15 nm = exactly 15 nm x 1 m2); cost scales with thickness"
+  SnO2:
+    item: SnOx
+    volume_price: {price: liu_sno_price, utilisation: liu_sno_util, check: {volume: liu_sno_vol, thickness: liu_sno_thickness}}
+    notes: "Liu prices SnOx (RPD) per cm3 of film (0.01 cm3 per m2 at 10 nm)"
+  PTAA:
+    item: PTAA
+    density: null              # no open-access source found (searched 2026-09-28): caller must supply assumption 'density:PTAA'
+    price: ptaa_price_review_2022
+    price_high: ptaa_price_catalogue_2017
+    utilisation: liu_perovskite_util
+    proxy_for: "LAB-CATALOGUE price (arbitrary per source); utilisation proxied by Liu's slot-die perovskite (0.95)"
+
+# Extra per-architecture BOM items (not simulated as SimSS layers). p-i-n: Liu's 300 nm ITO rear electrode (sputtered over Cu).
+bom_by_architecture:
+  p-i-n:
+    - {item: ITO_rear_electrode, volume: liu_ito_vol, price_per_cm3: liu_ito_price, utilisation: liu_ito_util,
+       proxy_for: "SIMPLIFICATION: costed at Liu's 300 nm, not simulated optically (SimSS back contact = Cu only)"}
+
+# Regions (P1). MY electricity TARIFF is sourced (tnb_mv_*) but NOT used: turning it into a cost needs the line's
+# energy intensity (kWh and peak kW per m2), which no admitted source gives. Only the cost of capital is regionalised. Electricity, labour, land and
+# maintenance stay at Liu's China basis (0.088 USD/W aggregate) for EVERY region, because no source gives a
+# factory energy or labour INTENSITY (kWh/m2, h/m2): Liu gives only the aggregate and "450 KW for each vacuum
+# machine" (no machine count); Kajal's labour line (85.23 million USD/yr for 150-100 staff) is not plausible.
+# rate_basis "lending" = WDI bank lending rate (senior-debt proxy, LOWER bound). "wacc_kajal" = the only sourced
+# PV-factory WACC in the library (India 2022, 10.2%), used as an UPPER-bound scenario for every region.
+regions:
+  MY: {lending_rate: wdi_lend_my_2025, fx_lcu_per_usd: wdi_fx_my_2025}
+  CN: {lending_rate: wdi_lend_cn_2024}
+  IN: {lending_rate: wdi_lend_in_2022}
+
+# Process electricity per architecture (Tian 2020 SI). Each step maps a device layer (or fixed step) to entries.
+# kind "listed": S2 value in kWh. kind "s4": Table S4 row value in MJ (/3.6 -> kWh). For vacuum steps the calibrated
+# S4 value exceeds power x time (tool base load, pump-down); power x time is kept as the LOW sensitivity.
+# PROXIES: IZO sputtering stands in for Liu's ITO rear electrode; Tian's per-m2 times are LAB-TO-FAB estimates for
+# a tandem line; C60 is 'sputtering' in Tian (evaporated in Liu). NOT included: cleanroom/HVAC, vacuum base load,
+# laser scribing, cleaning, facility lighting -> the total is a LOWER BOUND on line electricity.
+process_electricity:
+  p-i-n:
+    - {step: "NiOx sputter (HTL)", kind: s4, power: tian_nio_power, time: tian_nio_time, listed: tian_nio_sputter_listed}
+    - {step: "perovskite print", kind: listed, entry: tian_pvk_print}
+    - {step: "perovskite anneal", kind: s4, power: tian_anneal_power, time: tian_anneal_time, listed: tian_anneal_listed}
+    - {step: "C60", kind: listed, entry: tian_c60_sputter}
+    - {step: "SnO2", kind: listed, entry: tian_sno2_sputter}
+    - {step: "Cu back electrode", kind: listed, entry: tian_cu_sputter}
+    - {step: "ITO rear electrode (IZO proxy)", kind: listed, entry: tian_izo_sputter}
+
+# Non-layer bill of materials per m2 (does not depend on the design in v1).
+bom_per_m2:
+  - {item: FTO_glass, price: liu_fto_glass_price, utilisation: liu_fto_glass_util, quantity: 1,
+     proxy_for: "front TCO glass (SimSS stack uses ITO on glass; Liu prices FTO glass)"}
+  - {item: POE, price: liu_poe_price, utilisation: liu_poe_util, quantity: 1}
+  - {item: back_glass, price: liu_backglass_price, utilisation: liu_backglass_util, quantity: 1}
+  - {item: Al_frame, mass: liu_frame_mass, price_per_kg: liu_frame_price, utilisation: liu_frame_util}
+  - {item: butyl, mass: liu_butyl_mass, price_per_kg: liu_butyl_price, utilisation: liu_butyl_util}
+  - {item: junction_box, price: liu_jbox_price, utilisation: liu_jbox_util, quantity: 1}
+  # back electrode: see back_electrode below (depends on the device_setup of the physics library)
+
+# Back electrode, costed from the physics library's device_setup (L_BE_m, nkBE_file) so the cost always
+# matches what SimSS simulated. price_per_toz -> USD/g with the troy ounce = 31.1034768 g (exact by definition).
+back_electrode:
+  nk_Cu_McPeak2015.txt:
+    item: Cu
+    mass_price: {mass: liu_cu_mass, price: liu_cu_price, utilisation: liu_cu_util, thickness: liu_cu_thickness}
+    notes: "Liu: 8 g Cu per m2 for a 150 nm film (budgeted mass incl. evaporation losses before utilisation); scaled by L_BE / 150 nm"
+  nk_Au.txt:
+    item: Au
+    density: au_density
+    price_per_toz: wb_gold_2026_aug
+    utilisation: liu_cu_util
+    proxy_for: "utilisation proxied by Liu's thermally evaporated Cu (0.25)"
+  # Paper B (material choice): the same metals with McPeak 2015 optics (data/nk/, CC0; built by
+  # scripts/build_mcpeak_nk.py, which reproduces nk_Cu_McPeak2015.txt byte for byte). Costing is identical to the
+  # entries above for the same metal; only the optics file key differs. Used by perodesign/optim/objective_b.py.
+  nk_Au_McPeak2015.txt:
+    item: Au
+    density: au_density
+    price_per_toz: wb_gold_2026_aug
+    utilisation: liu_cu_util
+    proxy_for: "utilisation proxied by Liu's thermally evaporated Cu (0.25)"
+  nk_Ag_McPeak2015.txt:
+    item: Ag
+    density: ag_density
+    price_per_toz: wb_silver_2026_aug
+    utilisation: liu_cu_util
+    proxy_for: "utilisation proxied by Liu's thermally evaporated Cu (0.25)"

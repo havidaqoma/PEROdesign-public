@@ -1,0 +1,32 @@
+# SOURCE kwsp_epf_rates_2026_10
+# Employees Provident Fund (KWSP/EPF) Malaysia, 'Employer Mandatory Contribution' page:
+# https://www.kwsp.gov.my/en/employer/responsibilities/mandatory-contribution
+# Retrieved 2026-10-01 with a text extractor (the site answers HTTP 403 to plain curl). Extracted page text below,
+# unchanged except that blank lines were collapsed. The page states the rates follow the Third Schedule of the
+# EPF Act 1991 and are 'Effective for October 2025 salary/wage (November 2025 contribution month)'.
+# Licence: not stated (public government page); used as a cited statutory rate, not redistributed beyond this record.
+
+Employer Mandatory Contribution
+Subject to the provisions of section 52, every employee and every employer of a person who is an employee within the meaning of this Act shall be liable to pay monthly contributions on the amount of wages at the rate respectively set out in the Third Schedule.
+Section 43(1), EPF Act 1991
+Contribution Rate
+Malaysian
+No limit
+Employees share: 0% Employer’s share: 4% (Ref Third Schedule – Part E)
+1. Malaysian
+2. Permanent Residents (PR)
+3. Non-Malaysians (registered as member before 1 August 1998)
+RM5,000 and below
+Employees share: 11% Employer’s share: 13% (Ref Third Schedule – Part A)
+Applicable for (ii) and (iii) only Employees share: 5.5% Employer’s share: 6.5% (Ref Third Schedule – Part C)
+1. Malaysian
+2. Permanent Residents (PR)
+3. Non-Malaysians (registered as member before 1 August 1998)
+More than RM5,000
+Employees share: 11% Employer’s share: 12% (Ref Third Schedule – Part A)
+Applicable for (ii) and (iii) only Employees share: 5.5% Employer’s share: 6% (Ref Third Schedule – Part C)
+Non-Malaysians (registered as member from 1 August 1998)
+No limit
+Employees share: 2% Employer’s share: 2% (Ref Third Schedule – Part F)
+| Employee’s Status | Monthly Salary Rate | Stage 1 (Below 60 years old) | Stage 2 (Age 60 and above) |
+Note: 1. The minimum age to register and contribute as an EPF member is age 14. Meanwhile, maximum age of contribution is 75 years old. 2. Employers are not allowed to calculate the employer’s and employee’s share based on exact percentage EXCEPT for salaries that exceed RM20,000.00. The total contribution which includes cents shall be rounded to the next ringgit. 3. Effective for October 2025 salary/wage (November 2025 contribution month).

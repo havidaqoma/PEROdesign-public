@@ -1,0 +1,70 @@
+# Paper B overlay (docs/PaperB_preregistration.md). Loaded ON TOP of materials_v2.yaml by
+# perodesign/optim/objective_b.py only; the production library is unchanged. Hand-written; every value is
+# copied from an existing library entry (provenance given), none is new physics.
+README: >-
+  Paper B lets the optimiser choose the HTL (NiOx | PTAA) and the back-electrode metal (Cu | Ag | Au) inside each
+  stack. Two material pairs that the production library never places next to each other get interface data here:
+  PTAA|MAPbI3 (p-i-n: PTAA below the absorber) and MAPbI3|NiOx (n-i-p: NiOx on top of the absorber). Both use the
+  SimSS default hole-side interface (same values as the production MAPbI3|PTAA entry and as
+  perodesign/library/g1s2_overlay.yaml), labelled simss_default_transferred.
+
+interfaces:
+  "PTAA|MAPbI3":
+    provenance: {status: simss_default_transferred, from: "materials_v2.yaml MAPbI3|PTAA (hole-side interface)"}
+    params:
+      nu_int_n_m_s: 1.0e+3
+      nu_int_p_m_s: 1.0e+3
+      N_t_int_m2: 1.0e+12
+      E_t_int_eV: 4.7
+      intTrapType: 1
+      C_n_int_m3_s: 2.0e-14
+      C_p_int_m3_s: 2.0e-14
+      intTrapFile: none
+    overridable:
+      N_t_int_m2: {min: 1.0e+10, max: 1.0e+14, provenance: phase0_bound}
+  "MAPbI3|NiOx":
+    provenance: {status: simss_default_transferred, from: "materials_v2.yaml MAPbI3|PTAA (hole-side interface)"}
+    params:
+      nu_int_n_m_s: 1.0e+3
+      nu_int_p_m_s: 1.0e+3
+      N_t_int_m2: 1.0e+12
+      E_t_int_eV: 4.7
+      intTrapType: 1
+      C_n_int_m3_s: 2.0e-14
+      C_p_int_m3_s: 2.0e-14
+      intTrapFile: none
+    overridable:
+      N_t_int_m2: {min: 1.0e+10, max: 1.0e+14, provenance: phase0_bound}
+
+# Back-electrode metals: optics from McPeak 2015 (refractiveindex.info, CC0; data/nk/, built by
+# scripts/build_mcpeak_nk.py), priced in perodesign/tea/cost_library_v1.yaml `back_electrode` under the same keys.
+metals:
+  Cu: nk_Cu_McPeak2015.txt
+  Ag: nk_Ag_McPeak2015.txt
+  Au: nk_Au_McPeak2015.txt
+
+# Metal thickness per architecture = the production value (n-i-p device_setup L_BE_m, p-i-n architecture_setup),
+# the same for every metal, so only the metal changes.
+metal_thickness_m:
+  n-i-p: 1.01e-7
+  p-i-n: 1.5e-7
+
+# Contact rule B2 (docs/G1_step2_preregistration.md amendment B2): each electrode's work function equals the
+# majority band edge of the layer it touches (cathode = E_c of the electron-side layer, anode = E_v of the
+# hole-side layer). Barrier-free and thermionic; the metal's own work function does not enter. In p-i-n the metal
+# does not touch SnO2 at all (Liu's 300 nm ITO rear electrode sits between them, costed but not simulated).
+contact_rule: B2
+
+# Pre-registered SENSITIVITY S-WF (docs/PaperB_preregistration.md §7), n-i-p only: the metal touches the HTL, so the
+# anode work function W_R is set to the metal's bare work function instead of B2. These are SCAPS INPUT values chosen by
+# the authors of one published simulation study (not measurements; same caveat as materials_v2.yaml
+# contact_scenarios). p-i-n: not applicable (the metal sits behind the 300 nm ITO rear electrode; ITO contacts SnO2).
+metal_work_function_eV:
+  Au: 5.1
+  Ag: 4.7
+  Cu: 4.6
+  provenance:
+    source: wf_metals_nano2021.txt
+    doi: 10.3390/nano11051218
+    quote: "Back Contact Metal Au Ag Fe Cu Cu Doped C Metal work function (eV) 5.1 4.7 4.8 4.6 5.0"
+    columns: "Au | Ag | Fe | Cu | Cu Doped C  ->  5.1 | 4.7 | 4.8 | 4.6 | 5.0"

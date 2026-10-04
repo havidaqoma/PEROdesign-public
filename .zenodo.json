@@ -1,0 +1,27 @@
+{
+  "title": "PEROdesign: code and data for cost-aware design of perovskite solar modules",
+  "upload_type": "software",
+  "description": "Code and data for the paper 'Cost-aware design of perovskite solar modules with drift-diffusion simulation and multi-objective optimisation'. Drift-diffusion simulation (SIMsalabim 5.36), a module model and a bottom-up factory-gate cost model for a Malaysian production line, optimised for module efficiency and cost per watt with a Bayesian optimiser, NSGA-II and Sobol random search at two pre-registered levels of design freedom. Includes the two pre-registrations, all 180 stored optimisation runs (43,200 simulator calls), the result files, the source of every number in the paper and the Source Data workbooks. Code under MIT, data under CC BY 4.0; third-party source texts keep their own licences.",
+  "creators": [
+    {
+      "name": "Aqoma, Havid",
+      "affiliation": "School of Energy and Chemical Engineering, Xiamen University Malaysia",
+      "orcid": "0000-0003-1264-1916"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "perovskite photovoltaics",
+    "drift-diffusion simulation",
+    "techno-economic analysis",
+    "multi-objective Bayesian optimisation",
+    "mixed-variable optimisation"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.21105/joss.03727",
+      "relation": "requires",
+      "scheme": "doi"
+    }
+  ]
+}

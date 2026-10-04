@@ -1,0 +1,6 @@
+# SOURCE hossain2020_rscadv (QUOTE ONLY)
+# Hossain, Mohammad, Qarony et al., 'Atomic layer deposition of metal oxides for efficient perovskite single-junction
+# and perovskite/silicon tandem solar cells', RSC Advances (2020), DOI 10.1039/d0ra00939c (PMC9052116).
+# Licence not stated in the Europe PMC record: only this one sentence is kept, as a short quotation with citation.
+
+Perovskite and metal oxides have comparable refractive indices ranging from 2.1–2.5, which helps to minimize the reflection losses.

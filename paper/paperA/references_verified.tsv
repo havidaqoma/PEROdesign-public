@@ -1,0 +1,35 @@
+key	doi	year	openalex_title
+koopmans2022simsalabim	10.21105/joss.03727	2022	SIMsalabim: An open-source drift-diffusion simulator for semiconductor devices
+balandat2020botorch	10.48550/arxiv.1910.06403	2019	BoTorch: A Framework for Efficient Monte-Carlo Bayesian Optimization
+daulton2021qnehvi	10.48550/arxiv.2105.08195	2021	Parallel Bayesian Optimization of Multiple Noisy Objectives with Expected Hypervolume Improvement
+ament2023logei	10.48550/arxiv.2310.20708	2023	Unexpected Improvements to Expected Improvement for Bayesian Optimization
+deb2002nsga2	10.1109/4235.996017	2002	A fast and elitist multiobjective genetic algorithm: NSGA-II
+blank2020pymoo	10.1109/access.2020.2990567	2020	Pymoo: Multi-Objective Optimization in Python
+zitzler1999hv	10.1109/4235.797969	1999	Multiobjective evolutionary algorithms: a comparative case study and the strength Pareto approach
+borgonovo2007delta	10.1016/j.ress.2006.04.015	2006	A new uncertainty importance measure
+herman2017salib	10.21105/joss.00097	2017	SALib: An open-source Python library for Sensitivity Analysis
+sobol1967	10.1016/0041-5553(67)90144-9	1967	On the distribution of points in a cube and the approximate evaluation of integrals
+song2017tea	10.1039/c7ee00757d	2017	A technoeconomic analysis of perovskite solar module manufacturing with low-cost materials and techniques
+cai2017cost	10.1002/advs.201600269	2016	Cost‐Performance Analysis of Perovskite Solar Modules
+chang2017r2r	10.1016/j.solmat.2017.08.038	2017	Manufacturing cost and market potential analysis of demonstrated roll-to-roll perovskite photovoltaic cell processes
+li2018tandemcost	10.1016/j.joule.2018.05.001	2018	Cost Analysis of Perovskite Tandem Photovoltaics
+li2018scalable	10.1038/natrevmats.2018.17	2018	Scalable fabrication of perovskite solar cells
+yang2018module	10.1021/acsenergylett.7b01221	2018	Highly Efficient Perovskite Solar Modules by Scalable Fabrication and Interconnection Optimization
+courtier2018transport	10.1039/c8ee01576g	2018	How transport layer properties affect perovskite solar cell performance: insights from a coupled charge transport/ion migration model
+eames2015ionic	10.1038/ncomms8497	2015	Ionic transport in hybrid lead iodide perovskite solar cells
+sherkar2017recomb	10.1021/acsenergylett.7b00236	2017	Recombination in Perovskite Solar Cells: Significance of Grain Boundaries, Interface Traps, and Defect Ions
+khenkin2020isos	10.1038/s41560-019-0529-5	2020	Consensus statement for stability assessment and reporting for perovskite photovoltaics based on ISOS procedures
+macleod2020sdl	10.1126/sciadv.aaz8867	2020	Self-driving laboratory for accelerated discovery of thin-film materials
+shields2021bo	10.1038/s41586-021-03213-y	2021	Bayesian reaction optimization as a tool for chemical synthesis
+liang2021benchmark	10.1038/s41524-021-00656-9	2021	Benchmarking the performance of Bayesian optimization across multiple experimental materials science domains
+felton2021summit	10.1002/cmtd.202000051	2021	Summit: Benchmarking Machine Learning Methods for Reaction Optimisation
+hase2021olympus	10.1088/2632-2153/abedc8	2021	Olympus: a benchmarking framework for noisy optimization and experiment planning
+rohr2020bench	10.1039/c9sc05999g	2020	Benchmarking the acceleration of materials discovery by sequential learning
+low2024ebo	10.1038/s41524-024-01274-x	2024	Evolution-guided Bayesian optimization for constrained multi-objective optimization in self-driving labs
+sun2021fusion	10.1016/j.matt.2021.01.008	2021	A data fusion approach to optimize compositional stability of halide perovskites
+perovskiter1_2026	10.1038/s43246-026-01099-9	2026	Perovskite-R1: a domain-specialized large language model for intelligent discovery of precursor additives and experimental design
+pvkllm2026	10.48550/arxiv.2602.04914	2026	From Literature to Lab: Closed-Loop Advancement of Perovskite Solar Cells via Domain Knowledge Guided LLM
+leap2026	10.48550/arxiv.2605.20242	2026	LEAP: A closed-loop framework for perovskite precursor additive discovery
+liu2025cost	10.1007/s40820-025-01744-x	2025	Cost Effectivities Analysis of Perovskite Solar Cells: Will it Outperform Crystalline Silicon Ones?
+tian2020lca	10.1126/sciadv.abb0055	2020	Life cycle energy use and environmental implications of high-performance perovskite tandem solar cells
+kajal2021carbon	10.1002/gch2.202100070	2021	Costing Analysis of Scalable Carbon‐Based Perovskite Modules Using Bottom Up Technique

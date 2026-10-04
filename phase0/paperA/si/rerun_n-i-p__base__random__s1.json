@@ -1,0 +1,12 @@
+{
+ "run_id": "n-i-p__base__random__s1",
+ "code_commit_of_clone": "1bdbecc",
+ "n_calls": 240,
+ "identical_x": 240,
+ "identical_objectives": 240,
+ "max_abs_du": 0.0,
+ "first_differing_call": null,
+ "hv_final_rerun": 613.0160294008564,
+ "hv_final_stored": 613.0160294008564,
+ "seconds": 3.8
+}

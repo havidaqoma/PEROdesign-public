@@ -1,0 +1,27 @@
+# SOURCE dosm_salaries_wages_2025
+# Department of Statistics Malaysia (DOSM), 'Salaries & Wages: 2025', released 2026-09-21.
+# File https://storage.dosm.gov.my/labour/salaries_wages_2025.xlsx (sheets 'JADUAL A13 Ind Jum Purata' = mean,
+# 'JADUAL A13 Ind Jum Penengah' = median). Licence: CC BY 4.0 (OpenDOSM license_text on
+# https://open.dosm.gov.my/publications/salaries_wages_2025, checked 2026-09-28). Rows kept verbatim: title, header,
+# Total, Manufacturing, footnotes 1 and 4. Cells as 'column:value' joined with ' | ' (scripts/xlsx_dump.py).
+# NOTE footnote 1: CITIZENS ONLY (non-citizen workers, common in Malaysian manufacturing, are excluded).
+
+## SHEET JADUAL A13 Ind Jum Purata
+A:A13 : Bilangan penerima, penengah dan purata gaji & upah bulanan pekerja mengikut industri, Malaysia, 2010–2025 (samb.)
+A:A13: Number of recipients, median and mean monthly salaries & wages of employees by industry, Malaysia, 2010–2025 (cont'd)
+A:Industri | B:2010 | C:2011 | D:2012 | E:2013 | F:2014 | G:2015 | H:2016 | I:2017 | J:2018 | K:2019 | L:2020 | M:2021 | N:2022 | O:2023 | P:2024 | Q:2025 | R:Industry
+A:Purata (RM) | R:Mean (RM)
+A:Jumlah2 | B:1936 | C:1959 | D:2052 | E:2186 | F:2377 | G:2487 | H:2657 | I:2879 | J:3087 | K:3224 | L:2954 | M:3049 | N:3219 | O:3441 | P:3652 | Q:3803 | R:Total2
+A:Pembuatan | B:1691 | C:1709 | D:1884 | E:1969 | F:2154 | G:2187 | H:2348 | I:2443 | J:2565 | K:2616 | L:2569 | M:2635 | N:2846 | O:3052 | P:3278 | Q:3357 | R:Manufacturing
+A:1 Data merujuk kepada warganegara sahaja Data refer to citizen
+A:4 Bermula tahun 2020, Statistik Gaji & Upah dianggar berasaskan Banci Penduduk dan Perumahan Malaysia 2020 The Salaries & Wages statistics from 2020 are estimated based on the Population and Housing Census of Malaysia 2020
+
+## SHEET JADUAL A13 Ind Jum Penengah
+A:A13: Bilangan penerima, penengah dan purata gaji & upah bulanan pekerja mengikut industri, Malaysia, 2010–2025 (samb.)
+A:A13: Number of recipients, median and mean monthly salaries & wages of employees by industry, Malaysia, 2010–2025 (cont'd)
+A:Industri | B:2010 | C:2011 | D:2012 | E:2013 | F:2014 | G:2015 | H:2016 | I:2017 | J:2018 | K:2019 | L:2020 | M:2021 | N:2022 | O:2023 | P:2024 | Q:2025 | R:Industry
+A:Penengah (RM) | R:Median (RM)
+A:Jumlah2 | B:1500 | C:1500 | D:1566 | E:1700 | F:1800 | G:1942 | H:2000 | I:2160 | J:2308 | K:2442 | L:2076 | M:2256 | N:2429 | O:2602 | P:2793 | Q:2940 | R:Total2
+A:Pembuatan | B:1270 | C:1320 | D:1500 | E:1500 | F:1700 | G:1610 | H:1800 | I:1900 | J:1959 | K:1967 | L:1913 | M:1980 | N:2150 | O:2360 | P:2490 | Q:2663 | R:Manufacturing
+A:1 Data merujuk kepada warganegara sahaja Data refer to citizen
+A:4 Bermula tahun 2020, Statistik Gaji & Upah dianggar berasaskan Banci Penduduk dan Perumahan Malaysia 2020 The Salaries & Wages statistics from 2020 are estimated based on the Population and Housing Census of Malaysia 2020
