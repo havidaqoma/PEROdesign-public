@@ -54,6 +54,9 @@ def main():
                 ["Assumptions", "every assumption and proxy specific to the material choice (assumed)"],
                 ["PostHoc_contact", "POST-HOC: contact attribution over the 12 optimised NiOx designs"],
                 ["PostHoc_prices", "POST-HOC: re-costing at the 2023-2026 metal price extremes"],
+                ["PostHoc_interlayer", "POST-HOC: n-i-p interlayer cost bound (SI Table S26)"],
+                ["PostHoc_grid", "POST-HOC: simulation grid check, both front ends at 250/500/1000 grid points (SI Note S19, Table S28)"],
+                ["FigS9_HV_curves", "Figure S9 and main Figure 6b: hypervolume vs calls, mean and 95% band per method and case (computed)"],
                 ["Numbers_material_choice", "every material-choice number printed in the paper with its source (computed)"]):
         ws.append(row)
     cols = ["arch", "scenario", "method", "seed", "call", "batch", "HTL", "metal", "feasible", "sim_status", "reason",
@@ -148,6 +151,37 @@ def main():
     SD.sheet(wb, "PostHoc_prices", "POST-HOC (external review): re-costing at 2023-2026 metal price extremes (SI Tables S24-S25). "
              f"Verified Pink Sheet values: Ag {ph['p2_prices']['Ag']['values']}; Au {ph['p2_prices']['Au']['values']}",
              ["price case", "Ag factor", "Au factor", "case", "sets on front", "gap_pce", "gap_cost_pct", "wording"], rows)
+    mx = json.loads((PB / "posthoc_moox.json").read_text())
+    SD.sheet(wb, "PostHoc_interlayer", "POST-HOC (citation review): n-i-p interlayer cost bound, no new simulations (SI Table S26). "
+             f"Layer: {json.dumps(mx['layer'])}; illustrative: {json.dumps(mx['illustrative'])}",
+             ["case", "sets on front (no interlayer)", "reading (no interlayer)", "added USD/W (cheapest Cu)", "added %",
+              "break-even K USD/m2", "break-even MoO3 USD/g", "reading above break-even"],
+             [[k, "; ".join(v["no_interlayer"]["combos"]), v["no_interlayer"]["wording"],
+               v["illustrative_add_usd_per_W_cheapest_cu"], v["illustrative_add_pct_cheapest_cu"], v["breakeven_usd_m2"],
+               v["breakeven_usd_per_g_moo3"], v["after_breakeven"]["wording"]] for k, v in mx["cases"].items()])
+    me = json.loads((PB / "posthoc_mesh.json").read_text())
+    SD.sheet(wb, "PostHoc_grid", "POST-HOC (pre-submission review): stored front ends re-simulated at "
+             f"{me['NP_values']} grid points (SIMsalabim max {me['simsalabim_max_NP']}); scripts/paperAB_mesh_check.py",
+             ["level", "case", "end", "NP", "module_pce_pct", "stored_module_pce_pct", "cell_pce_pct", "usd_per_W", "material set / note"],
+             [[r["level"], r["case"], r["end"], r["NP"], r["module_pce_pct"], r["stored_module_pce_pct"], r.get("cell_pce_pct"),
+               r["usd_per_W"], r.get("combo")] for r in me["rows"]]
+             + [[f["level"], f["case"], "gap", f["NP"], f["gap_pce_points"], None, None, f["gap_cost_pct"],
+                 "above_0p2_line=" + str(f["above_0p2_line"])] for f in me["fronts"]])
+    import numpy as np
+    from perodesign.optim import search as HS  # noqa: E402  (hv_curve, as used by Figure S9)
+    hv_rows = []
+    for key, cres in sorted(res["cases"].items()):
+        a, s = key.split("/")
+        for m in METHODS:
+            C = np.array([HS.hv_curve([{"y": ([c["module_pce_pct"], c["log10_usd_per_W"]] if c["feasible"] else None)}
+                                        for c in runs[(a, s, m, k)]["calls"]], cres["ref_point"]) for k in range(5)])
+            mu, sd = C.mean(0), C.std(0, ddof=1)
+            for i in range(C.shape[1]):
+                hv_rows.append([a, s, m, i + 1, mu[i], mu[i] - 2.776 * sd[i] / 5 ** 0.5, mu[i] + 2.776 * sd[i] / 5 ** 0.5]
+                               + list(C[:, i]))
+    SD.sheet(wb, "FigS9_HV_curves", "Figure S9 / main Figure 6b. Hypervolume (PCE points x decades of USD/W) vs simulator calls "
+             "(computed). Band = mean +- t(0.975,4) sd/sqrt(5).",
+             ["arch", "scenario", "method", "call", "hv_mean", "band_lo", "band_hi"] + [f"seed{k}" for k in range(5)], hv_rows)
     SD.sheet(wb, "Numbers_material_choice", "Every material-choice token printed in the manuscript", ["token", "printed value", "raw", "source"],
              [[k, v["value"], json.dumps(v["raw"]) if not isinstance(v["raw"], (int, float, str)) else v["raw"], v["source"]]
               for k, v in sorted(num.items()) if k.startswith("b_")])

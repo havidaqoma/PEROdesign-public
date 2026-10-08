@@ -1,5 +1,5 @@
 {
- "built_from_private_commit": "d4036ec",
+ "built_from_private_commit": "71b4387",
  "with_manuscript": false,
  "files": [
   ".gitattributes",
@@ -204,6 +204,7 @@
   "phase0/paperB/numbers.json",
   "phase0/paperB/pilot.json",
   "phase0/paperB/posthoc.json",
+  "phase0/paperB/posthoc_mesh.json",
   "phase0/paperB/posthoc_moox.json",
   "phase0/paperB/result.json",
   "phase0/paperB/runs/n-i-p__base__mixbo__s0.json",
@@ -311,6 +312,7 @@
   "scripts/my_bottom_up.py",
   "scripts/p2_sensitivity.py",
   "scripts/paperAB_assumptions_verify.py",
+  "scripts/paperAB_mesh_check.py",
   "scripts/paperAB_numbers.py",
   "scripts/paperA_figures.py",
   "scripts/paperA_numbers.py",

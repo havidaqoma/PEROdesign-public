@@ -232,6 +232,37 @@ def main():
     rng("mx_be", [v["breakeven_usd_m2"] for v in mc], "{:.0f}", S16m + " breakeven_usd_m2")
     rng("mx_beg", [v["breakeven_usd_per_g_moo3"] for v in mc], "{:.0f}", S16m + " breakeven_usd_per_g_moo3")
     rng("mx_ratio", [v["breakeven_over_illustrative"] for v in mc], "{:.0f}", S16m + " breakeven_over_illustrative")
+    # --- POST-HOC (pre-submission review 2026-10-08): bound of the PTAA exceptions (same contact, NiOx not re-optimised)
+    neg = [-r["lead_same_contact"] for r in ph["p1"] if r["lead_same_contact"] < 0]
+    put("ph_neg_hi", max(neg), "{:.2f}", S16 + " p1 max(-lead_same_contact) over rows with lead_same_contact < 0")
+    # --- POST-HOC (pre-submission review 2026-10-08): spatial grid check, phase0/paperB/posthoc_mesh.json, SI Note S19
+    me = json.loads((PB / "posthoc_mesh.json").read_text())
+    S19 = "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered)"
+    if not me["np250_reproduces_stored_exactly"] or me["failed_sims"]:
+        raise SystemExit("grid check: NP=250 does not reproduce the stored values or a simulation failed")
+    flips = me["material_reading_flips"]
+    if sorted({f["case"] for f in flips}) != ["n-i-p/better"]:
+        raise SystemExit(f"grid check: reading flips are not only n-i-p/better: {flips}; rewrite the grid sentences")
+    np0, np1 = me["NP_values"][0], me["NP_values"][-1]
+    put("mesh_np0", np0, "{:d}", S19 + " NP_values[0] (grid of every run)")
+    put("mesh_np1", np1, "{:d}", S19 + " NP_values[-1] (SIMsalabim 5.36 maximum, Max_NP)")
+    put("mesh_n", me["n_designs"], "{:d}", S19 + " n_designs (both front ends of all 12 cases)")
+    put("mesh_dpce", me["max_abs_dpce_points_vs_np250"][str(np1)], "{:.2f}", S19 + f" max_abs_dpce_points_vs_np250['{np1}']")
+    put("mesh_dcost", 100 * me["max_rel_dcost_vs_np250"][str(np1)], "{:.1f}", S19 + f" max_rel_dcost_vs_np250['{np1}'] (x100, %)")
+    fr = {(f["level"], f["case"], f["NP"]): f for f in me["fronts"]}
+    put("mesh_thick_gap", max(abs(f["gap_pce_points"]) for f in me["fronts"] if f["level"] == "thickness_only"), "{:.3f}",
+        S19 + " max |gap_pce_points| over thickness_only fronts at every NP")
+    for n in me["NP_values"][1:]:
+        put(f"mesh_nipb_{n}", fr[("material_choice", "n-i-p/better", n)]["gap_pce_points"], "{:.2f}",
+            S19 + f" fronts material_choice n-i-p/better NP={n} gap_pce_points")
+    # --- uniform-bias sensitivity of the 0.2-point line (pre-submission review 2026-10-08): the efficiency reduction
+    # (%) at which each poor-absorber gap, scaled with every efficiency, falls under DPCE_MIN
+    line = float(N["b_dpce_min"]["raw"])
+    bias = {a: 100 * (1 - line / res["cases"][f"{a}/worse"]["q2"]["gap_pce_points"]) for a in ARCHS}
+    put("bias_lo", bias["n-i-p"], "{:.0f}", R + " 100*(1 - DPCE_MIN / cases['n-i-p/worse'].q2.gap_pce_points)")
+    put("bias_hi", bias["p-i-n"], "{:.0f}", R + " 100*(1 - DPCE_MIN / cases['p-i-n/worse'].q2.gap_pce_points)")
+    if not bias["n-i-p"] < bias["p-i-n"]:
+        raise SystemExit("bias tokens: n-i-p is no longer the lower value; rewrite the sentence")
     # --- cross-study comparison (post-hoc)
     A = json.loads((REPO / "phase0" / "paperA" / "result.json").read_text())
     nipA = A["cases"]["n-i-p/base"]["q2"]["pce_optimal"]["usd_per_W"]

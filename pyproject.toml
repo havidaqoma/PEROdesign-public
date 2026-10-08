@@ -20,6 +20,7 @@ perodesign = ["library/*.yaml"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 markers = ["simss: runs the real SIMsalabim binary (skipped if not installed)",
            "slow: BoTorch mixed-BO smoke on a synthetic objective (~1-3 min)"]
 addopts = "-ra"

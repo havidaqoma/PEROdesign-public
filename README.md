@@ -103,7 +103,7 @@ levels of reproduction (check, re-analyse, re-run), the expected run times, and 
 | Figure 5 (cheap corner, material choice) | `scripts/paperB_figures.py` | `phase0/paperB/figures/figB2_front_zoom.png` |
 | Figure 6 (hypervolume against calls) | `scripts/paperA_figures.py` | `phase0/paperA/figures/fig2_hv_vs_calls.png` |
 | Tables 1 to 7 and every number in the text | `scripts/paperA_numbers.py`, `paperB_numbers.py`, `paperAB_numbers.py` | `paper/paperAB/numbers.json` (from `phase0/paperA/result.json`, `phase0/paperB/result.json`) |
-| Supplementary figures and tables | `scripts/paperA_si_analysis.py`, `paperB_figures.py`, `paperB_posthoc.py`, `paperB_moox_bound.py`, `p2_sensitivity.py` | `phase0/paperA/si/`, `phase0/paperB/`, `phase0/sensitivity/`, `paper/paperAB/numbers_si.json` |
+| Supplementary figures and tables | `scripts/paperA_si_analysis.py`, `paperB_figures.py`, `paperB_posthoc.py`, `paperB_moox_bound.py`, `paperAB_mesh_check.py`, `p2_sensitivity.py` | `phase0/paperA/si/`, `phase0/paperB/`, `phase0/sensitivity/`, `paper/paperAB/numbers_si.json` |
 | Source Data workbooks | `scripts/paperA_sourcedata.py --merged`, `paperB_sourcedata.py` | `paper/paperAB/build/` (the published copies are in `source_data/`) |
 
 File names follow the order in which the figures were made, not their order in the paper.

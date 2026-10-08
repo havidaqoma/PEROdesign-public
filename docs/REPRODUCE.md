@@ -54,9 +54,11 @@ in `paper/paperA/numbers.json` and `paper/paperAB/numbers.json` (`2.14.0+cpu` in
 written to `paper/paperAB/build/`; compare them with the copies in `source_data/`. Each Source Data script re-reads
 its workbook and checks row counts and sample values against the run files.
 
-Two scripts need SIMsalabim and are part of level 3: `scripts/paperB_si_verify.py` (the checks of Supplementary
-Note S15; its last check re-simulates 60 stored designs) and `scripts/paperB_posthoc.py` (the POST-HOC contact
-attribution of Supplementary Note S16 re-simulates the optimised NiOx designs).
+Three scripts need SIMsalabim and are part of level 3: `scripts/paperB_si_verify.py` (the checks of Supplementary
+Note S15; its last check re-simulates 60 stored designs), `scripts/paperB_posthoc.py` (the POST-HOC contact
+attribution of Supplementary Note S16 re-simulates the optimised NiOx designs) and `scripts/paperAB_mesh_check.py`
+(the POST-HOC grid check of Supplementary Note S19 re-simulates the 24 stored front ends at 250, 500 and 1000 grid
+points, 72 simulations, output `phase0/paperB/posthoc_mesh.json`).
 
 ## Level 3: re-run with SIMsalabim
 

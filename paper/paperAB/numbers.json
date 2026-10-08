@@ -4189,6 +4189,61 @@
   "raw": 518.2490584490484,
   "source": "phase0/paperB/posthoc_moox.json (POST-HOC, not pre-registered) breakeven_over_illustrative (max)"
  },
+ "b_ph_neg_hi": {
+  "value": "0.53",
+  "raw": 0.5348019086359557,
+  "source": "phase0/paperB/posthoc.json (POST-HOC, not pre-registered) p1 max(-lead_same_contact) over rows with lead_same_contact < 0"
+ },
+ "b_mesh_np0": {
+  "value": "250",
+  "raw": 250,
+  "source": "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered) NP_values[0] (grid of every run)"
+ },
+ "b_mesh_np1": {
+  "value": "1000",
+  "raw": 1000,
+  "source": "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered) NP_values[-1] (SIMsalabim 5.36 maximum, Max_NP)"
+ },
+ "b_mesh_n": {
+  "value": "24",
+  "raw": 24,
+  "source": "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered) n_designs (both front ends of all 12 cases)"
+ },
+ "b_mesh_dpce": {
+  "value": "0.37",
+  "raw": 0.3720729246221701,
+  "source": "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered) max_abs_dpce_points_vs_np250['1000']"
+ },
+ "b_mesh_dcost": {
+  "value": "1.6",
+  "raw": 1.5999705535906683,
+  "source": "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered) max_rel_dcost_vs_np250['1000'] (x100, %)"
+ },
+ "b_mesh_thick_gap": {
+  "value": "0.010",
+  "raw": 0.009765106081506048,
+  "source": "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered) max |gap_pce_points| over thickness_only fronts at every NP"
+ },
+ "b_mesh_nipb_500": {
+  "value": "0.27",
+  "raw": 0.2721865198983977,
+  "source": "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered) fronts material_choice n-i-p/better NP=500 gap_pce_points"
+ },
+ "b_mesh_nipb_1000": {
+  "value": "0.22",
+  "raw": 0.2174971485154238,
+  "source": "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered) fronts material_choice n-i-p/better NP=1000 gap_pce_points"
+ },
+ "b_bias_lo": {
+  "value": "18",
+  "raw": 17.934830100205833,
+  "source": "phase0/paperB/result.json 100*(1 - DPCE_MIN / cases['n-i-p/worse'].q2.gap_pce_points)"
+ },
+ "b_bias_hi": {
+  "value": "31",
+  "raw": 30.887069961477252,
+  "source": "phase0/paperB/result.json 100*(1 - DPCE_MIN / cases['p-i-n/worse'].q2.gap_pce_points)"
+ },
  "b_x_nip_ratio": {
   "value": "37",
   "raw": 37.023122734990544,

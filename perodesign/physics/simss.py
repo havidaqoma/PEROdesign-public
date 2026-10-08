@@ -99,7 +99,9 @@ class SimSSConfigError(RuntimeError):
 def _default_dirs() -> tuple[Path, Path, str]:
     """(SimSS dir with binary + template files, Data dir, binary name). Point PERODESIGN_SIMSALABIM at the root of a
     SIMsalabim 5.36 checkout (the folder holding SimSS/ and Data/), or set PERODESIGN_SIMSS_DIR / PERODESIGN_SIMSS_DATA
-    directly. The fallback is the location used for the published runs."""
+    directly. Without these variables the code falls back to F:/SIMsalabim/src (Windows) or /mnt/f/SIMsalabim/src
+    (WSL): the checkout on the machine where the published runs were made. That path exists nowhere else, so on any
+    other machine set PERODESIGN_SIMSALABIM (docs/REPRODUCE.md)."""
     win = platform.system() == "Windows"
     root = os.environ.get("PERODESIGN_SIMSALABIM")
     base = Path(root) if root else (Path("F:/SIMsalabim/src") if win else Path("/mnt/f/SIMsalabim/src"))

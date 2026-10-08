@@ -61,4 +61,7 @@ their unit where one applies.
 | `Assumptions` | every assumption and proxy specific to the material choice (assumed) | 12 | `assumption`, `value / rule`, `where used`, `status` |
 | `PostHoc_contact` | POST-HOC: contact attribution over the 12 optimised NiOx designs | 15 | `arch`, `scenario`, `metal`, `x`, `niox_B2_pce`, `niox_PTAA_contact_pce`, `ptaa_best_B2_pce`, `lead_B2`, `contact_part`, `lead_same_contact`, `status` |
 | `PostHoc_prices` | POST-HOC: re-costing at the 2023-2026 metal price extremes | 33 | `price case`, `Ag factor`, `Au factor`, `case`, `sets on front`, `gap_pce`, `gap_cost_pct`, `wording` |
-| `Numbers_material_choice` | every material-choice number printed in the paper with its source (computed) | 375 | `token`, `printed value`, `raw`, `source` |
+| `Numbers_material_choice` | every material-choice number printed in the paper with its source (computed) | 386 | `token`, `printed value`, `raw`, `source` |
+| `PostHoc_interlayer` | POST-HOC: n-i-p interlayer cost bound (SI Table S26) | 6 | `case`, `sets on front (no interlayer)`, `reading (no interlayer)`, `added USD/W (cheapest Cu)`, `added %`, `break-even K USD/m2`, `break-even MoO3 USD/g`, `reading above break-even` |
+| `PostHoc_grid` | POST-HOC: simulation grid check, both front ends at 250/500/1000 grid points (SI Note S19, Table S28) | 111 | `level`, `case`, `end`, `NP`, `module_pce_pct`, `stored_module_pce_pct`, `cell_pce_pct`, `usd_per_W`, `material set / note` |
+| `FigS9_HV_curves` | Figure S9 and main Figure 6b: hypervolume vs calls, mean and 95% band per method and case (computed) | 4,323 | `arch`, `scenario`, `method`, `call`, `hv_mean`, `band_lo`, `band_hi`, `seed0`, `seed1`, `seed2`, `seed3`, `seed4` |

@@ -397,7 +397,7 @@ def main():
         ("cost", "line capital: Chinese line, no regional adjustment", line["capex_usd"], "USD", "sourced, proxy for MY", "liu_capex_line"),
         ("cost", "capital rate = MY bank lending rate (lower bound)", line["rate"], "fraction", "sourced, proxy", "wdi_lend_my_2025"),
         ("cost", "throughput independent of thickness", line["throughput_m2_per_yr"], "m2/yr", "assumed (tested post-hoc, Note S9)", "liu2025_line"),
-        ("cost", "other opex excludes land/rent, HVAC base load, employer contributions, service tax", line["other_opex_usd_m2"], "USD/m2", "lower bound", "region_line_MY_bottom_up"),
+        ("cost", "other opex excludes land/rent, HVAC base load, employer contributions (service tax not applicable: SI Note S17)", line["other_opex_usd_m2"], "USD/m2", "lower bound", "region_line_MY_bottom_up"),
         ("cost", "staffing from Cai 2017 printable line; kWh/m2 from Tian 2020 tandem inventory; maintenance 1%/yr (Kajal)", None, "", "proxies", "tea module"),
         ("optimiser", "budget per run", S.BUDGET, "calls", "pre-registered", "search.BUDGET"),
         ("optimiser", "shared Sobol initial design", S.N_INIT, "points", "pre-registered", "search.N_INIT"),
