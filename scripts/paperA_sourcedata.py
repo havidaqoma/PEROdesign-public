@@ -450,6 +450,9 @@ def main():
     if MERGED:
         merged_numbering(wb)
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import plan_terms  # noqa: E402  reader-facing plan wording (operator decision 2026-10-09)
+    plan_terms.workbook(wb, OUT.name)
     wb.save(OUT)
     # ------------------------------------------------------------------ read back and check
     wb2 = load_workbook(OUT, read_only=True)

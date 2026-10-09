@@ -6,7 +6,7 @@ Code and data for the paper
 > optimisation* (2026). Preprint and journal links will be added here when they exist.
 
 The repository holds everything needed to check and reproduce the paper's results: the evaluation chain, the
-optimisers, the two pre-registrations, all 180 stored optimisation runs (43,200 simulator calls), the result files,
+optimisers, the two analysis plans, all 180 stored optimisation runs (43,200 simulator calls), the result files,
 the table of every number printed in the paper with the file it came from, and the Source Data workbooks.
 
 ## What the study does
@@ -22,7 +22,7 @@ design (layer thicknesses, stripe width, and at the second level the hole-transp
   -> objectives: module efficiency (maximise), cost per watt (minimise)
 ```
 
-Two levels of design freedom were pre-registered and run:
+Two levels of design freedom were pre-specified and run:
 
 | Level | What the optimiser chooses | Runs | Simulator calls |
 |---|---|---|---|
@@ -53,12 +53,12 @@ All results are model predictions. No device of these stacks was fabricated for 
 | `data/sources/` | the source texts behind every sourced cost number; the cost model checks each quotation against them when it loads ([licences](data/sources/README.md)) |
 | `data/nk/` | optical constants used by the device model |
 | `third_party/autotea/` | two hash-pinned files from the author's AutoTEA code (capital recovery factor, text normalisation) |
-| `docs/PaperA_preregistration.md` | pre-registration of the thickness-only design |
-| `docs/PaperB_preregistration.md` | pre-registration of the material-choice design, with its dated amendments A1 to A3 |
-| `docs/PREREGISTRATION_PROVENANCE.md` | commit hashes, dates and file hashes of both pre-registrations |
+| `docs/PaperA_preregistration.md` | analysis plan of the thickness-only design |
+| `docs/PaperB_preregistration.md` | analysis plan of the material-choice design, with its dated amendments A1 to A3 |
+| `docs/PREREGISTRATION_PROVENANCE.md` | commit hashes, dates and file hashes of both analysis plans |
 | `docs/preregistration_provenance.json` | the order of plans, amendments and runs, read from git and the run logs by `scripts/prereg_provenance.py` (the script needs the private development history; its output is shipped) |
-| `docs/PaperA_plan.md`, `PaperA_results.md`, `PaperB_plan.md`, `PaperB_results.md` | the working plan and results log of each design, as named in the pre-registrations |
-| `docs/P2_sensitivity_*.md`, `docs/G1_step2_preregistration.md` | pre-registration and results of the sensitivity analysis; the earlier pre-registration that defined the contact rule B2 |
+| `docs/PaperA_plan.md`, `PaperA_results.md`, `PaperB_plan.md`, `PaperB_results.md` | the working plan and results log of each design, as named in the analysis plans |
+| `docs/P2_sensitivity_*.md`, `docs/G1_step2_preregistration.md` | analysis plan and results of the sensitivity analysis; the earlier analysis plan that defined the contact rule B2 |
 | `phase0/paperA/`, `phase0/paperB/` | stored runs (`runs/*.json`, one file per run with every call), result files (`result.json`), figures, post-hoc analyses (`posthoc*.json`), logs |
 | `phase0/sensitivity/` | global sensitivity analysis of the device model |
 | `paper/paperAB/numbers.json`, `numbers_si.json` | every number printed in the paper and SI, with the file and field it came from |
@@ -69,7 +69,7 @@ All results are model predictions. No device of these stacks was fabricated for 
 | `tests/` | test suite |
 
 The folder names `paperA` and `paperB` are the internal names of the thickness-only and material-choice designs.
-They are kept because the stored run files and the pre-registrations refer to them. Some comments and documents
+They are kept because the stored run files and the analysis plans refer to them. Some comments and documents
 mention "MASTER §n" or `docs/implementation-notes.md`: these are entries of the private development log and are not
 part of this repository. The two AutoTEA files in `third_party/` name documents of the AutoTEA project.
 
@@ -121,8 +121,10 @@ File names follow the order in which the figures were made, not their order in t
 
 ## How the results are kept honest
 
-* **Pre-registration.** Both designs were pre-registered before their first optimisation run; amendments are dated
-  and kept in the same files. Post-hoc analyses are labelled POST-HOC wherever they appear.
+* **Analysis plan.** Both designs were pre-specified before their first optimisation run; amendments are dated
+  and kept in the same files. The plans were committed to this version history, not deposited in an independent
+  registry, so the paper calls them pre-specified analysis plans; their file names keep "preregistration" from the
+  time of the runs. Post-hoc analyses are labelled POST-HOC wherever they appear.
 * **No hand-typed numbers.** Every number in the paper was filled in by the manuscript build from `numbers.json`,
   and the build refuses any number that is not there. Each entry names the file and field it came from. The
   manuscript sources and build scripts will be added here when the preprint is public.
@@ -139,10 +141,10 @@ File names follow the order in which the figures were made, not their order in t
 
 This work is part of a research project on building a reliable autonomous research agent. Under the direction of
 the author, an AI agent (Claude Opus 5, Anthropic, run through the Hermes agent framework) wrote the code, ran the
-simulations and analyses, and drafted the text, following the two pre-registrations. A second model (Gemini 3.8
-Flash High, Google) reviewed the pre-registrations, the material-choice results and the draft without write access.
+simulations and analyses, and drafted the text, following the two analysis plans. A second model (Gemini 3.8
+Flash High, Google) reviewed the analysis plans, the material-choice results and the draft without write access.
 Simulation, optimisation, statistics, figures and verification are deterministic scripts, not model output. The
-author designed the study, fixed the pre-registration decisions and takes responsibility for the content.
+author designed the study, fixed the analysis plan decisions and takes responsibility for the content.
 
 ## Licence
 

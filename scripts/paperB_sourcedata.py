@@ -301,6 +301,9 @@ def main():
     SD.sheet(wb, "Numbers_material_choice", "Every material-choice token printed in the manuscript", ["token", "printed value", "raw", "source"],
              [[k, v["value"], SD.raw_cell(k, v["raw"]), v["source"]] for k, v in sorted(num.items()) if k.startswith("b_")])
     OUT.parent.mkdir(parents=True, exist_ok=True)
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import plan_terms  # noqa: E402  reader-facing plan wording (operator decision 2026-10-09)
+    plan_terms.workbook(wb, OUT.name)
     wb.save(OUT)
     wb2 = load_workbook(OUT, read_only=True)
     data = list(wb2["Calls_all"].iter_rows(values_only=True))

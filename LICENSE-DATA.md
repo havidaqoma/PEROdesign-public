@@ -9,7 +9,7 @@ This covers:
 * `phase0/` (stored runs, result files, figures, logs, post-hoc analyses)
 * `source_data/` (Source Data workbooks)
 * `paper/` (number tables, reference records, assumption records)
-* `docs/` (pre-registrations and plans)
+* `docs/` (analysis plans and project notes)
 * `perodesign/library/*.yaml` and `perodesign/tea/cost_library_v1.yaml` (the material and cost libraries; each
   sourced value also carries the citation of its original source, which should be cited too)
 * `README.md` and the other documentation files

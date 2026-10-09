@@ -8,7 +8,7 @@ paper. They are written from the stored files by `scripts/paperA_sourcedata.py -
 Each workbook starts with a `README` sheet. Its status labels: **measured** (read from a simulator call),
 **computed** (derived by a script from measured values), **sourced** (a published value, with its quotation and
 source), **assumed** (a value chosen by the author, with the reason) and **post-hoc** (analysis added after the
-pre-registered analysis). All efficiencies and costs are model predictions.
+pre-specified analysis). All efficiencies and costs are model predictions.
 
 Units: efficiencies in percent (PCE) or percentage points (differences), thicknesses in nm, stripe width in mm,
 cost per watt in USD/W, area costs in USD/m2. Hypervolume is in PCE points x USD/W for the thickness-only design
@@ -75,6 +75,6 @@ simulator; it does not cover the stripe width, so a design is identified by `des
 | `PostHoc_paired` | POST-HOC: paired per-seed comparison of the final hypervolume, both levels (SI Table S31) | 37 | `level`, `case`, `pair (first minus second)`, `seeds`, `mean difference`, `ci95_half`, `paired interval excludes 0`, `separated by CI non-overlap`, `winner` |
 | `PostHoc_JV_optima` | POST-HOC: current-voltage metrics of the PCE-optimal design of every case, both levels (SI Table S32) | 13 | `level`, `case`, `material_set`, `voc_V`, `ff`, `jsc_mA_cm2`, `cell_pce_pct`, `module_pce_pct` |
 | `PostHoc_rho` | POST-HOC: efficiency-cost rank correlation over all feasible calls and over distinct designs, both levels | 13 | `level`, `case`, `rho, all feasible calls`, `feasible calls`, `rho, distinct designs`, `distinct designs` |
-| `PostHoc_absorber_price` | POST-HOC: published MAPbI3 precursor prices against the library value (SI Note S20) | 5 | `source`, `item`, `USD/g`, `low USD/g`, `high USD/g`, `multiple of library value`, `verbatim quote`, `url`, `sha256` |
+| `PostHoc_absorber_price` | POST-HOC: published MAPbI3 precursor prices against the library value (SI Note S17) | 5 | `source`, `item`, `USD/g`, `low USD/g`, `high USD/g`, `multiple of library value`, `verbatim quote`, `url`, `sha256` |
 | `FigS9_HV_curves` | Figure S9 and main Figure 6b: hypervolume vs calls, mean and 95% band per method and case (computed) | 4,321 | `arch`, `scenario`, `method`, `call`, `hv_mean`, `band_lo`, `band_hi`, `seed0`, `seed1`, `seed2`, `seed3`, `seed4` |
 | `Numbers_material_choice` | every material-choice number printed in the paper with its source (computed) | 445 | `token`, `printed value`, `raw`, `source` |

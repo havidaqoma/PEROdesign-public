@@ -94,7 +94,7 @@ def main():
     put("front_ito_nm", round(float(lt[0]) * 1e9), "{:d}", "perodesign/library/materials_v2.yaml L_TCO_m (front ITO, optics)")
     put("bo_batchlimit", bl, "{:d}", "perodesign/optim/{search,bo_step}.py optimize_acqf options batch_limit")
     put("bo_maxiter", mi, "{:d}", "perodesign/optim/{search,bo_step}.py optimize_acqf options maxiter")
-    # decision D1: dates of the two pre-registration commits and of the first upload (Malaysia time, UTC+8)
+    # decision D1: dates of the two analysis plan commits and of the first upload (Malaysia time, UTC+8)
     from datetime import datetime, timedelta, timezone
     pv = json.loads((REPO / "docs" / "preregistration_provenance.json").read_text(encoding="utf-8"))
 
@@ -216,7 +216,7 @@ def main():
         "swf.json worse NiOx/Cu, NiOx/Ag metal_wf module PCE")
     # --- POST-HOC (external review 2026-10-01): phase0/paperB/posthoc.json, SI Note S16
     ph = json.loads((PB / "posthoc.json").read_text())
-    S16 = "phase0/paperB/posthoc.json (POST-HOC, not pre-registered)"
+    S16 = "phase0/paperB/posthoc.json (POST-HOC, not pre-specified)"
     p1 = [r for r in ph["p1"] if r.get("lead_same_contact") is not None]
     put("ph_n", len(ph["p1"]), "{:d}", S16 + " p1 rows")
     rng("ph_contact", [r["contact_part"] for r in p1], "{:.2f}", S16 + " p1 contact_part (module PCE points)")
@@ -251,7 +251,7 @@ def main():
     rng("ph_scan", [100 * x for x in sc], "{:.0f}", S16 + " p2_scan factor_gap_becomes_not_small (x100, % of base silver cost)")
     # --- POST-HOC (citation review 2026-10-02): phase0/paperB/posthoc_moox.json, SI Note S16 (interlayer cost bound)
     mx = json.loads((PB / "posthoc_moox.json").read_text())
-    S16m = "phase0/paperB/posthoc_moox.json (POST-HOC, not pre-registered)"
+    S16m = "phase0/paperB/posthoc_moox.json (POST-HOC, not pre-specified)"
     mc = mx["cases"].values()
     if not all(v["no_interlayer"]["combos"] == v["after_breakeven"]["combos"] for v in mc):
         raise SystemExit("the interlayer bound changes the front materials: rewrite the interlayer sentences")
@@ -271,7 +271,7 @@ def main():
     put("ph_neg_hi", max(neg), "{:.2f}", S16 + " p1 max(-lead_same_contact) over rows with lead_same_contact < 0")
     # --- POST-HOC (pre-submission review 2026-10-08): spatial grid check, phase0/paperB/posthoc_mesh.json, SI Note S19
     me = json.loads((PB / "posthoc_mesh.json").read_text())
-    S19 = "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered)"
+    S19 = "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-specified)"
     if not me["np250_reproduces_stored_exactly"] or me["failed_sims"]:
         raise SystemExit("grid check: NP=250 does not reproduce the stored values or a simulation failed")
     flips = me["material_reading_flips"]
@@ -292,7 +292,7 @@ def main():
     # --- POST-HOC (pre-submission review 2026-10-09): every pooled-front point re-simulated at three grids,
     # phase0/paperB/posthoc_mesh_front.json (scripts/paperAB_mesh_front.py), SI Note S19
     mf = json.loads((PB / "posthoc_mesh_front.json").read_text())
-    S19f = "phase0/paperB/posthoc_mesh_front.json (POST-HOC, not pre-registered)"
+    S19f = "phase0/paperB/posthoc_mesh_front.json (POST-HOC, not pre-specified)"
     ms = mf["summary"]
     ffr = {(f["case"], f["NP"]): f for f in mf["fronts"]}
     if not ms["np250_reproduces_stored_exactly"]:
@@ -318,7 +318,7 @@ def main():
     # --- POST-HOC (pre-submission review 2026-10-09): stored-data analyses, phase0/paperB/posthoc_review.json
     # (scripts/paperAB_posthoc_review.py), SI Note S20
     pr = json.loads((PB / "posthoc_review.json").read_text())
-    S20 = "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered)"
+    S20 = "phase0/paperB/posthoc_review.json (POST-HOC, not pre-specified)"
     pt = pr["r1_ptaa_nip_front"]
     if [(pt[s]["pce_end"]["metal"], pt[s]["cost_end"]["metal"]) for s in ("base", "worse", "better")] != \
             [("Ag", "Cu"), ("Ag", "Cu"), ("Au", "Cu")]:
@@ -343,7 +343,7 @@ def main():
     rng("jv_ff", [r["ff"] for r in jv], "{:.2f}", S20 + " r3_jv_pce_optimal material_choice ff")
     rho_all = [v["all_feasible_calls"] for v in pr["r4_rho"]["material_choice"].values()]
     rng("rho_calls", rho_all, "{:.2f}", S20 + " r4_rho.material_choice[*].all_feasible_calls")
-    # built-in voltage of rule B2 for the n-i-p NiOx stack, from the pre-registration text
+    # built-in voltage of rule B2 for the n-i-p NiOx stack, from the analysis plan text
     pre = (REPO / "docs" / "PaperB_preregistration.md").read_text(encoding="utf-8")
     m = re.search(r"n-i-p NiOx ([0-9.]+) V vs\s+PTAA ([0-9.]+) V", pre)
     if not m:
@@ -353,7 +353,7 @@ def main():
     # --- POST-HOC (pre-submission review 2026-10-09): published precursor prices against the absorber-price scan,
     # phase0/paperB/posthoc_absorber_prices.json (scripts/paperAB_absorber_prices.py), SI Note S17
     ap = json.loads((PB / "posthoc_absorber_prices.json").read_text(encoding="utf-8"))
-    S17p = "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered)"
+    S17p = "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-specified)"
     sc, ch = ap["scan_pin_base"], ap["chang2017"]["MAPbI3_usd_per_g"]
     if not (ch["usd_per_g"] < sc["last_small_usd_per_g"] < sc["first_not_small_usd_per_g"] < ap["wu2026"]["usd_per_g"]):
         raise SystemExit("absorber prices: the production and laboratory prices no longer straddle the scan; rewrite")
