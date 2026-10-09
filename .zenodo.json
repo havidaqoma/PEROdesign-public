@@ -23,5 +23,6 @@
       "relation": "requires",
       "scheme": "doi"
     }
-  ]
+  ],
+  "notes": "Licences: code under the MIT licence (LICENSE); data, results and documentation under CC BY 4.0 (LICENSE-DATA.md); third-party source texts in data/sources/ keep their own licences."
 }

@@ -41,6 +41,16 @@ def ys(run):
     return [{"y": ([c["module_pce_pct"], c["log10_usd_per_W"]] if c["feasible"] else None)} for c in run["calls"]]
 
 
+def key_handles():
+    """Legend shared by the two front figures: colour = back metal, marker = HTL, large black-edged symbols = the
+    pooled Pareto front (drawn as they are plotted; pre-submission review F15)."""
+    from matplotlib.lines import Line2D
+    hs = [Line2D([], [], ls="none", marker="s", ms=7, color=MCOL[m], label=m) for m in MCOL]
+    hs += [Line2D([], [], ls="none", marker=HMARK[h], ms=7, color="0.4", label=h.replace("NiOx", "NiO$_x$")) for h in HMARK]
+    hs += [Line2D([], [], color="k", lw=1.0, marker="o", ms=9, mfc="0.75", mec="k", mew=1.0, label="pooled Pareto front")]
+    return hs
+
+
 def fig_fronts(res, runs, out):
     """Every feasible design (base scenario), coloured by metal, marker by HTL; pooled front drawn; per stack."""
     from matplotlib.lines import Line2D
@@ -63,10 +73,7 @@ def fig_fronts(res, runs, out):
         ax.set_xlabel("module PCE (%)")
         ax.set_ylabel("cost (USD/W, Malaysia, log scale)")
         ax.set_title(STACK[a], fontsize=10)
-    handles = [Line2D([], [], ls="none", marker="s", ms=7, color=MCOL[m], label=m) for m in MCOL]
-    handles += [Line2D([], [], ls="none", marker=HMARK[h], ms=7, color="0.4", label=h) for h in HMARK]
-    handles += [Line2D([], [], color="k", marker="o", mfc="white", mec="k", label="pooled Pareto front")]
-    fig.legend(handles=handles, loc="lower center", ncol=6, fontsize=8, frameon=False)
+    fig.legend(handles=key_handles(), loc="lower center", ncol=6, fontsize=8, frameon=False)
     fig.tight_layout(rect=(0, 0.07, 1, 1))
     fig.savefig(out / "figB1_fronts.png", dpi=200)
     plt.close(fig)
@@ -100,7 +107,9 @@ def fig_front_zoom(res, runs, out):
                 ax.set_ylabel("USD/W")
             if i == 1:
                 ax.set_xlabel("module PCE (%)")
-    fig.tight_layout()
+    fig.legend(handles=[h for h in key_handles() if h.get_label() != "Au"], loc="lower center", ncol=5, fontsize=9,
+               frameon=False)
+    fig.tight_layout(rect=(0, 0.05, 1, 1))
     fig.savefig(out / "figB2_front_zoom.png", dpi=200)
     plt.close(fig)
 

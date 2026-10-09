@@ -41,3 +41,9 @@ this repository's data does not apply to them.
 | `wf_metals_nano2021.txt` | doi:10.3390/nano11051218 | CC BY 4.0 |
 | `worldbank_pink_2026_09.txt` | https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-September-2026.pdf | CC BY 4.0 |
 | `worldbank_wdi_2026_07.txt` | https://api.worldbank.org/v2/country/MYS | CC BY 4.0 |
+
+The texts are verbatim copies of open-access publications, so some contain the authors' published contact lines
+(e-mail addresses in the "Contributor Information" or correspondence blocks, in 12 files). They are left as
+published: seven of these files are pinned by SHA-256 in `perodesign/tea/cost_library_v1.yaml`, so changing a byte
+would make the cost model refuse to load, and the other five are kept unchanged so that every quotation taken from
+them can be checked against the published text.

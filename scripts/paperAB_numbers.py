@@ -6,6 +6,7 @@ Every entry carries its source. Run in the WSL venv (imports the optimiser and c
 """
 import json
 import math
+import re
 import sys
 from importlib import metadata
 from pathlib import Path
@@ -73,10 +74,43 @@ def main():
     put("dpce_min", 0.2, "{:g}", "scripts/paperB_run.py DPCE_MIN (prereg §7)")
     put("bo_restarts", 4, "{:d}", "search_b.run_mixbo restarts (amendment A1)")
     put("bo_maxparallel", 6, "{:d}", "scripts/paperB_run.py PAPERB_BO_MAX default (amendment A2)")
+    # acquisition-optimiser options, read from both BO code paths (fixed materials and material choice) so the Methods
+    # sentence cannot drift from the code
+    opts = set()
+    for f in ("search.py", "bo_step.py"):
+        s = (REPO / "perodesign" / "optim" / f).read_text(encoding="utf-8")
+        m = re.search(r'options=\{"batch_limit": (\d+), "maxiter": (\d+)\}', s)
+        if not m or "prune_baseline=True" not in s:
+            raise SystemExit(f"{f}: acquisition options or prune_baseline=True not found")
+        opts.add((int(m.group(1)), int(m.group(2))))
+    if len(opts) != 1:
+        raise SystemExit(f"the two BO code paths use different acquisition options: {opts}")
+    (bl, mi), = opts
+    from perodesign.optim import search as SA
+    put("ngen_off", SA.BUDGET // SA.POP - 1, "{:d}", "perodesign/optim/search.py BUDGET / POP - 1 (offspring generations)")
+    lt = re.findall(r"L_TCO_m:\s*([0-9.eE+-]+)", (REPO / "perodesign" / "library" / "materials_v2.yaml").read_text(encoding="utf-8"))
+    if len(lt) != 1:
+        raise SystemExit(f"materials_v2.yaml: expected one L_TCO_m, found {lt}")
+    put("front_ito_nm", round(float(lt[0]) * 1e9), "{:d}", "perodesign/library/materials_v2.yaml L_TCO_m (front ITO, optics)")
+    put("bo_batchlimit", bl, "{:d}", "perodesign/optim/{search,bo_step}.py optimize_acqf options batch_limit")
+    put("bo_maxiter", mi, "{:d}", "perodesign/optim/{search,bo_step}.py optimize_acqf options maxiter")
+    # decision D1: dates of the two pre-registration commits and of the first upload (Malaysia time, UTC+8)
+    from datetime import datetime, timedelta, timezone
+    pv = json.loads((REPO / "docs" / "preregistration_provenance.json").read_text(encoding="utf-8"))
+
+    def day(s):
+        d = datetime.fromisoformat(s.replace("Z", "+00:00")).astimezone(timezone(timedelta(hours=8)))
+        return f"{d.day} {d:%B %Y}"
+    PV = "docs/preregistration_provenance.json (scripts/prereg_provenance.py)"
+    put("prereg_a_date", day(pv["preregistration"]["thickness-only"]["date"]), "{}", PV + " preregistration.thickness-only.date")
+    put("prereg_b_date", day(pv["preregistration"]["material-choice"]["date"]), "{}", PV + " preregistration.material-choice.date")
+    put("upload_date", day(pv["github_first_upload"]["timestamp"]), "{}", PV + " github_first_upload.timestamp")
     put("ver_botorch", metadata.version("botorch"), "{}", "importlib.metadata in the run venv")
     put("ver_pymoo", metadata.version("pymoo"), "{}", "importlib.metadata in the run venv")
     put("nruns", len(runs), "{:d}", "phase0/paperB/runs/*.json count")
     put("ncalls", sum(len(r["calls"]) for r in runs.values()), "{:,}", "sum of calls over phase0/paperB/runs")
+    put("calls_case", sum(len(r["calls"]) for r in runs.values()) // (len(ARCHS) * len(SCENS)), "{:,}",
+        "sum of calls over phase0/paperB/runs / 6 cases")
     put("ninf", sum(r["n_infeasible"] for r in runs.values()), "{:d}", "sum n_infeasible over phase0/paperB/runs")
     put("ninf_max", max(r["n_infeasible"] for r in runs.values()), "{:d}", "max n_infeasible in one run")
     put("commit_prereg", "2b32a78", "{}", "git commit of docs/PaperB_preregistration.md before any run")
@@ -255,6 +289,98 @@ def main():
     for n in me["NP_values"][1:]:
         put(f"mesh_nipb_{n}", fr[("material_choice", "n-i-p/better", n)]["gap_pce_points"], "{:.2f}",
             S19 + f" fronts material_choice n-i-p/better NP={n} gap_pce_points")
+    # --- POST-HOC (pre-submission review 2026-10-09): every pooled-front point re-simulated at three grids,
+    # phase0/paperB/posthoc_mesh_front.json (scripts/paperAB_mesh_front.py), SI Note S19
+    mf = json.loads((PB / "posthoc_mesh_front.json").read_text())
+    S19f = "phase0/paperB/posthoc_mesh_front.json (POST-HOC, not pre-registered)"
+    ms = mf["summary"]
+    ffr = {(f["case"], f["NP"]): f for f in mf["fronts"]}
+    if not ms["np250_reproduces_stored_exactly"]:
+        raise SystemExit("full-front grid check: NP=250 does not reproduce the stored values")
+    for (c, n), f in ffr.items():
+        if n in (np0, np1) and (f["pce_end_combo"], f["cost_end_combo"]) != ("NiOx/Ag", "NiOx/Cu"):
+            raise SystemExit(f"full-front grid check: {c} at NP {n} is no longer NiOx/Ag -> NiOx/Cu; rewrite the grid sentences")
+    if sorted(ms["cases_above_line_by_np"][str(np1)]) != ["n-i-p/better", "n-i-p/worse", "p-i-n/worse"] or \
+            sorted(ms["cases_above_line_by_np"][str(np0)]) != ["n-i-p/worse", "p-i-n/worse"]:
+        raise SystemExit(f"full-front grid check: cases above the line changed {ms['cases_above_line_by_np']}")
+    put("mf_n", ms["n_points"], "{:d}", S19f + " summary.n_points (all members of the six material-choice fronts)")
+    put("mf_nsim", ms["n_sims"], "{:d}", S19f + " summary.n_sims")
+    put("mf_gap_lo", ms["gap_range_by_np"][str(np1)][0], "{:.2f}", S19f + f" summary.gap_range_by_np['{np1}'][0]")
+    put("mf_gap_hi", ms["gap_range_by_np"][str(np1)][1], "{:.2f}", S19f + f" summary.gap_range_by_np['{np1}'][1]")
+    put("mf_dgap", max(abs(ffr[(c, np1)]["gap_pce_points"] - ffr[(c, np0)]["gap_pce_points"]) for c, n in ffr if n == np1),
+        "{:.3f}", S19f + f" max over cases |gap(NP={np1}) - gap(NP={np0})| from fronts[*].gap_pce_points")
+    put("mf_nipb", ffr[("n-i-p/better", np1)]["gap_pce_points"], "{:.2f}", S19f + f" fronts n-i-p/better NP={np1} gap_pce_points")
+    npm = sorted({n for _, n in ffr if n not in (np0, np1)})
+    no_ag = sorted(c for (c, n), f in ffr.items() if n in npm and "NiOx/Ag" not in f["combos_on_front"])
+    if len(npm) != 1 or no_ag != ["n-i-p/better"]:
+        raise SystemExit(f"full-front grid check: silver-free fronts at the middle grid changed {no_ag}; rewrite the grid sentence")
+    put("mf_npmid", npm[0], "{:d}", S19f + " middle NP; the only front without NiOx/Ag there is n-i-p/better (fronts[*].combos_on_front)")
+    # --- POST-HOC (pre-submission review 2026-10-09): stored-data analyses, phase0/paperB/posthoc_review.json
+    # (scripts/paperAB_posthoc_review.py), SI Note S20
+    pr = json.loads((PB / "posthoc_review.json").read_text())
+    S20 = "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered)"
+    pt = pr["r1_ptaa_nip_front"]
+    if [(pt[s]["pce_end"]["metal"], pt[s]["cost_end"]["metal"]) for s in ("base", "worse", "better")] != \
+            [("Ag", "Cu"), ("Ag", "Cu"), ("Au", "Cu")]:
+        raise SystemExit("PTAA-only n-i-p front: end metals changed; rewrite the PTAA sentences")
+    if not (pt["worse"]["above_0p2_line"] and not pt["base"]["above_0p2_line"] and not pt["better"]["above_0p2_line"]):
+        raise SystemExit("PTAA-only n-i-p front: line classification changed; rewrite the PTAA sentences")
+    rng("ptaa_n", [pt[s]["n_distinct"] for s in pt], "{:,}", S20 + " r1_ptaa_nip_front[*].n_distinct")
+    for s in ("base", "worse", "better"):
+        put(f"ptaa_gap_{s}", pt[s]["gap_pce_points"], "{:.3f}", S20 + f" r1_ptaa_nip_front.{s}.gap_pce_points")
+    rng("ptaa_gcost", [pt[s]["gap_cost_pct"] for s in ("base", "worse")], "{:.0f}", S20 + " r1_ptaa_nip_front.{base,worse}.gap_cost_pct")
+    put("ptaa_au_x", 1 + pt["better"]["gap_cost_pct"] / 100, "{:.0f}", S20 + " 1 + r1_ptaa_nip_front.better.gap_cost_pct/100")
+    for lvl, tag in (("thickness_only", "a"), ("material_choice", "b")):
+        rows = pr["r2_paired"][lvl]
+        for r in rows:
+            if r["nonoverlap_separates"] and not r["paired_separates"]:
+                raise SystemExit(f"paired test fails to separate a pair the registered rule separates: {r}")
+        put(f"pair_{tag}_n", len(rows), "{:d}", S20 + f" len(r2_paired.{lvl})")
+        put(f"pair_{tag}_paired", sum(r["paired_separates"] for r in rows), "{:d}", S20 + f" r2_paired.{lvl} count paired_separates")
+        put(f"pair_{tag}_reg", sum(r["nonoverlap_separates"] for r in rows), "{:d}", S20 + f" r2_paired.{lvl} count nonoverlap_separates")
+    jv = [r for r in pr["r3_jv_pce_optimal"] if r["level"] == "material_choice"]
+    rng("jv_voc", [r["voc_V"] for r in jv], "{:.2f}", S20 + " r3_jv_pce_optimal material_choice voc_V")
+    rng("jv_ff", [r["ff"] for r in jv], "{:.2f}", S20 + " r3_jv_pce_optimal material_choice ff")
+    rho_all = [v["all_feasible_calls"] for v in pr["r4_rho"]["material_choice"].values()]
+    rng("rho_calls", rho_all, "{:.2f}", S20 + " r4_rho.material_choice[*].all_feasible_calls")
+    # built-in voltage of rule B2 for the n-i-p NiOx stack, from the pre-registration text
+    pre = (REPO / "docs" / "PaperB_preregistration.md").read_text(encoding="utf-8")
+    m = re.search(r"n-i-p NiOx ([0-9.]+) V vs\s+PTAA ([0-9.]+) V", pre)
+    if not m:
+        raise SystemExit("PaperB_preregistration.md: built-in voltage sentence not found")
+    put("vbi_nip_niox", float(m.group(1)), "{:.1f}", "docs/PaperB_preregistration.md rule B2 consequence: n-i-p NiOx built-in voltage (V)")
+    put("vbi_nip_ptaa", float(m.group(2)), "{:.1f}", "docs/PaperB_preregistration.md rule B2 consequence: n-i-p PTAA built-in voltage (V)")
+    # --- POST-HOC (pre-submission review 2026-10-09): published precursor prices against the absorber-price scan,
+    # phase0/paperB/posthoc_absorber_prices.json (scripts/paperAB_absorber_prices.py), SI Note S17
+    ap = json.loads((PB / "posthoc_absorber_prices.json").read_text(encoding="utf-8"))
+    S17p = "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered)"
+    sc, ch = ap["scan_pin_base"], ap["chang2017"]["MAPbI3_usd_per_g"]
+    if not (ch["usd_per_g"] < sc["last_small_usd_per_g"] < sc["first_not_small_usd_per_g"] < ap["wu2026"]["usd_per_g"]):
+        raise SystemExit("absorber prices: the production and laboratory prices no longer straddle the scan; rewrite")
+    put("pvk_chang", ch["usd_per_g"], "{:.2f}", S17p + " chang2017.MAPbI3_usd_per_g.usd_per_g")
+    put("pvk_chang_lo", ch["lo"], "{:.2f}", S17p + " chang2017.MAPbI3_usd_per_g.lo")
+    put("pvk_chang_hi", ch["hi"], "{:.2f}", S17p + " chang2017.MAPbI3_usd_per_g.hi")
+    put("pvk_wu", ap["wu2026"]["usd_per_g"], "{:.1f}", S17p + " wu2026.usd_per_g")
+    put("pvk_lib", ap["library_usd_per_g"], "{:.2f}", S17p + " library_usd_per_g (cost_library_v1.yaml liu_perovskite_price)")
+    put("pvk_x_small", sc["last_small_mult"], "{:d}", S17p + " scan_pin_base.last_small_mult")
+    put("pvk_x_open", sc["first_not_small_mult"], "{:d}", S17p + " scan_pin_base.first_not_small_mult")
+    put("pvk_small_usd", sc["last_small_usd_per_g"], "{:.2f}", S17p + " scan_pin_base.last_small_usd_per_g")
+    put("pvk_open_usd", sc["first_not_small_usd_per_g"], "{:.2f}", S17p + " scan_pin_base.first_not_small_usd_per_g")
+    # --- validation record (G1 step 2, round 2): the one testable measured n-i-p thickness series
+    g1 = json.loads((REPO / "phase0" / "g1s2" / "round2" / "result_main.json").read_text(encoding="utf-8"))
+    sv = [s for s in g1["series"] if s["n_ok"] >= 4]
+    if len(sv) != 1:
+        raise SystemExit(f"validation record: expected one eligible series, found {len(sv)}")
+    G1 = "phase0/g1s2/round2/result_main.json series[eligible] (doi " + sv[0]["doi"] + ")"
+    pts = sv[0]["points"]
+    put("val_n", len(pts), "{:d}", G1 + " len(points)")
+    rng("val_dpce", [p["sim"]["pce_pct"] - p["measured"]["pce"] for p in pts], "{:.1f}", G1 + " sim.pce_pct - measured.pce")
+    rng("val_jsc_sim", [p["sim"]["jsc_mA_cm2"] for p in pts], "{:.1f}", G1 + " sim.jsc_mA_cm2")
+    rng("val_jsc_meas", [p["measured"]["jsc"] for p in pts], "{:.1f}", G1 + " measured.jsc")
+    rng("val_voc_sim", [p["sim"]["voc_V"] for p in pts], "{:.2f}", G1 + " sim.voc_V")
+    rng("val_voc_meas", [p["measured"]["voc"] for p in pts], "{:.2f}", G1 + " measured.voc")
+    rng("val_ff_sim", [p["sim"]["ff"] for p in pts], "{:.2f}", G1 + " sim.ff")
+    rng("val_ff_meas", [p["measured"]["ff"] for p in pts], "{:.2f}", G1 + " measured.ff")
     # --- uniform-bias sensitivity of the 0.2-point line (pre-submission review 2026-10-08): the efficiency reduction
     # (%) at which each poor-absorber gap, scaled with every efficiency, falls under DPCE_MIN
     line = float(N["b_dpce_min"]["raw"])

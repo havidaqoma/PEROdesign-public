@@ -26,7 +26,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "castriotta2025": {
   "cite": "nikbakht2025panels",
@@ -43,7 +43,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "gff2025": {
   "cite": "soto2025gff",
@@ -60,7 +60,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "lcoe2023": {
   "cite": "debastiani2023lcoe",
@@ -77,7 +77,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "intaniwet2012": {
   "cite": "intaniwet2012ptaa",
@@ -94,7 +94,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "connell2018": {
   "cite": "connell2018htm",
@@ -111,7 +111,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "mathews2020": {
   "cite": "mathews2020growth",
@@ -128,7 +128,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "chang2017pip": {
   "cite": "chang2017uncert",
@@ -143,9 +143,42 @@
    {
     "quote": "with 40 % material utilization in the evaporator",
     "found": true
+   },
+   {
+    "quote": "Coat PbI2 g 1.4 (0.6-6) [9 ] 0.7 (0.4-1.4)",
+    "found": true
+   },
+   {
+    "quote": "Coat MAI g 0.14 (0.07-0.5) [9 ] 0.469 (0.24-0.92)",
+    "found": true
+   },
+   {
+    "quote": "Cost (US$/unit)",
+    "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
+ },
+ "wu2026": {
+  "cite": "wu2026recycle",
+  "doi": "10.1002/adma.73266",
+  "url": null,
+  "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13244800/fullTextXML",
+  "openalex_title": "Composition Restoration Enables Recycling of Mixed‐Cation, Mixed‐Halide Perovskites for Solar Cells",
+  "openalex_year": 2026,
+  "sha256": "061eb86738947e62b1155af632e14e1ec75a8420b5a30f1a7f62fc54d2e275c8",
+  "bytes": 103083,
+  "quotes": [
+   {
+    "quote": "1 kg of virgin perovskite precursor mixture costs 3029.1€",
+    "found": true
+   },
+   {
+    "quote": "representative bulk laboratory pricing",
+    "found": true
+   }
+  ],
+  "checked": "2026-10-09"
  },
  "chang2017solmat": {
   "cite": "chang2017r2r",
@@ -162,7 +195,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "liu2025": {
   "cite": "liu2025cost",
@@ -183,7 +216,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "cai2017": {
   "cite": "cai2017cost",
@@ -204,7 +237,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "ono2020": {
   "cite": "ono2020defects",
@@ -221,7 +254,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "css2024": {
   "cite": "rodkey2024css",
@@ -238,7 +271,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "mobility2022": {
   "cite": "lim2022mobility",
@@ -259,7 +292,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "ionmonger2019": {
   "cite": "courtier2019ionmonger",
@@ -276,7 +309,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "simss_L2": {
   "cite": "simsalabim536",
@@ -295,7 +328,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "simss_setup": {
   "cite": "simsalabim536",
@@ -318,7 +351,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "islam2021": {
   "cite": "islam2021snx3",
@@ -339,7 +372,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "nist811": {
   "cite": "thompson2008sp811",
@@ -356,7 +389,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "nlr_am15": {
   "cite": "nlr_am15",
@@ -371,7 +404,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "dipta2022": {
   "cite": "dipta2022light",
@@ -388,7 +421,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "simss_L1": {
   "cite": "simsalabim536",
@@ -403,7 +436,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "simss_L3": {
   "cite": "simsalabim536",
@@ -418,7 +451,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "kajal2021": {
   "cite": "kajal2021carbon",
@@ -427,35 +460,35 @@
   "fulltext_url": null,
   "openalex_title": "Costing Analysis of Scalable Carbon‐Based Perovskite Modules Using Bottom Up Technique",
   "openalex_year": 2021,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "wb_pink": {
   "cite": "wb_pink2026",
   "doi": null,
   "url": null,
   "fulltext_url": null,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "wb_wdi": {
   "cite": "wb_wdi2026",
   "doi": null,
   "url": null,
   "fulltext_url": null,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "tnb": {
   "cite": "tnb_tariff2025",
   "doi": null,
   "url": null,
   "fulltext_url": null,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "dosm": {
   "cite": "dosm_wages2025",
   "doi": null,
   "url": null,
   "fulltext_url": null,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "irena2023": {
   "cite": "irena2023finance",
@@ -470,7 +503,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "steffen2020": {
   "cite": "steffen2020coc",
@@ -479,7 +512,7 @@
   "fulltext_url": null,
   "openalex_title": "Estimating the cost of capital for renewable energy projects",
   "openalex_year": 2020,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "iea2022": {
   "cite": "iea2022pvsupply",
@@ -500,9 +533,21 @@
    {
     "quote": "Large variations in energy, labour, investment and overhead costs explain these differences.",
     "found": true
+   },
+   {
+    "quote": "Other important manufacturers include Viet Nam (5%), Malaysia (4%), Korea (4%) and Thailand (2%)",
+    "found": true
+   },
+   {
+    "quote": "In 2012-2016, cell manufacturing began to develop in Southeast Asia, first in Korea and Malaysia",
+    "found": true
+   },
+   {
+    "quote": "most manufacturing capacity in these countries was developed by Chinese companies focusing on exports",
+    "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "kwsp": {
   "cite": "kwsp2025epf",
@@ -521,7 +566,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "perkeso": {
   "cite": "perkeso2026",
@@ -540,7 +585,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "sst": {
   "cite": "customs2024sst",
@@ -559,7 +604,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "geiser2013": {
   "cite": "geiser2013au",
@@ -568,7 +613,7 @@
   "fulltext_url": null,
   "openalex_title": "Cellular uptake and localization of inhaled gold nanoparticles in lungs of mice with chronic obstructive pulmonary disease",
   "openalex_year": 2013,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "thomas2018": {
   "cite": "thomas2018ag",
@@ -577,7 +622,7 @@
   "fulltext_url": null,
   "openalex_title": "ISD3: a particokinetic model for predicting the combined effects of particle sedimentation, diffusion and dissolution on cellular dosimetry for in vitro systems",
   "openalex_year": 2018,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "shahinuzzaman2022": {
   "cite": "shahinuzzaman2022htm",
@@ -586,7 +631,7 @@
   "fulltext_url": null,
   "openalex_title": "Roles of Inorganic Oxide Based HTMs towards Highly Efficient and Long-Term Stable PSC—A Review",
   "openalex_year": 2022,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "vivo2017": {
   "cite": "vivo2017htm",
@@ -595,7 +640,7 @@
   "fulltext_url": null,
   "openalex_title": "Hole-Transporting Materials for Printable Perovskite Solar Cells",
   "openalex_year": 2017,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "mof2024sst": {
   "cite": "mof2024sst",
@@ -614,7 +659,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "tian2020": {
   "cite": "tian2020lca",
@@ -623,7 +668,7 @@
   "fulltext_url": null,
   "openalex_title": "Life cycle energy use and environmental implications of high-performance perovskite tandem solar cells",
   "openalex_year": 2020,
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "li2026": {
   "cite": "li2026blade",
@@ -640,7 +685,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "xu2025": {
   "cite": "xu2025strain",
@@ -657,7 +702,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "usgs_mo": {
   "cite": "usgs2026mo",
@@ -676,7 +721,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  },
  "pubchem_moo3": {
   "cite": "pubchem_moo3",
@@ -691,6 +736,6 @@
     "found": true
    }
   ],
-  "checked": "2026-10-08"
+  "checked": "2026-10-09"
  }
 }

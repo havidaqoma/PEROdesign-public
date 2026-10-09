@@ -2464,6 +2464,41 @@
   "raw": 6,
   "source": "scripts/paperB_run.py PAPERB_BO_MAX default (amendment A2)"
  },
+ "b_ngen_off": {
+  "value": "9",
+  "raw": 9,
+  "source": "perodesign/optim/search.py BUDGET / POP - 1 (offspring generations)"
+ },
+ "b_front_ito_nm": {
+  "value": "50",
+  "raw": 50,
+  "source": "perodesign/library/materials_v2.yaml L_TCO_m (front ITO, optics)"
+ },
+ "b_bo_batchlimit": {
+  "value": "5",
+  "raw": 5,
+  "source": "perodesign/optim/{search,bo_step}.py optimize_acqf options batch_limit"
+ },
+ "b_bo_maxiter": {
+  "value": "200",
+  "raw": 200,
+  "source": "perodesign/optim/{search,bo_step}.py optimize_acqf options maxiter"
+ },
+ "b_prereg_a_date": {
+  "value": "30 September 2026",
+  "raw": "30 September 2026",
+  "source": "docs/preregistration_provenance.json (scripts/prereg_provenance.py) preregistration.thickness-only.date"
+ },
+ "b_prereg_b_date": {
+  "value": "1 October 2026",
+  "raw": "1 October 2026",
+  "source": "docs/preregistration_provenance.json (scripts/prereg_provenance.py) preregistration.material-choice.date"
+ },
+ "b_upload_date": {
+  "value": "2 October 2026",
+  "raw": "2 October 2026",
+  "source": "docs/preregistration_provenance.json (scripts/prereg_provenance.py) github_first_upload.timestamp"
+ },
  "b_ver_botorch": {
   "value": "0.18.1",
   "raw": "0.18.1",
@@ -2483,6 +2518,11 @@
   "value": "21,600",
   "raw": 21600,
   "source": "sum of calls over phase0/paperB/runs"
+ },
+ "b_calls_case": {
+  "value": "3,600",
+  "raw": 3600,
+  "source": "sum of calls over phase0/paperB/runs / 6 cases"
  },
  "b_ninf": {
   "value": "16",
@@ -4233,6 +4273,271 @@
   "value": "0.22",
   "raw": 0.2174971485154238,
   "source": "phase0/paperB/posthoc_mesh.json (POST-HOC, not pre-registered) fronts material_choice n-i-p/better NP=1000 gap_pce_points"
+ },
+ "b_mf_n": {
+  "value": "42",
+  "raw": 42,
+  "source": "phase0/paperB/posthoc_mesh_front.json (POST-HOC, not pre-registered) summary.n_points (all members of the six material-choice fronts)"
+ },
+ "b_mf_nsim": {
+  "value": "126",
+  "raw": 126,
+  "source": "phase0/paperB/posthoc_mesh_front.json (POST-HOC, not pre-registered) summary.n_sims"
+ },
+ "b_mf_gap_lo": {
+  "value": "0.05",
+  "raw": 0.0543305735188504,
+  "source": "phase0/paperB/posthoc_mesh_front.json (POST-HOC, not pre-registered) summary.gap_range_by_np['1000'][0]"
+ },
+ "b_mf_gap_hi": {
+  "value": "0.30",
+  "raw": 0.29841101217423827,
+  "source": "phase0/paperB/posthoc_mesh_front.json (POST-HOC, not pre-registered) summary.gap_range_by_np['1000'][1]"
+ },
+ "b_mf_dgap": {
+  "value": "0.055",
+  "raw": 0.05488958012120548,
+  "source": "phase0/paperB/posthoc_mesh_front.json (POST-HOC, not pre-registered) max over cases |gap(NP=1000) - gap(NP=250)| from fronts[*].gap_pce_points"
+ },
+ "b_mf_nipb": {
+  "value": "0.22",
+  "raw": 0.21750447267602624,
+  "source": "phase0/paperB/posthoc_mesh_front.json (POST-HOC, not pre-registered) fronts n-i-p/better NP=1000 gap_pce_points"
+ },
+ "b_mf_npmid": {
+  "value": "500",
+  "raw": 500,
+  "source": "phase0/paperB/posthoc_mesh_front.json (POST-HOC, not pre-registered) middle NP; the only front without NiOx/Ag there is n-i-p/better (fronts[*].combos_on_front)"
+ },
+ "b_ptaa_n_lo": {
+  "value": "1,051",
+  "raw": 1051,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r1_ptaa_nip_front[*].n_distinct (min)"
+ },
+ "b_ptaa_n_hi": {
+  "value": "1,129",
+  "raw": 1129,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r1_ptaa_nip_front[*].n_distinct (max)"
+ },
+ "b_ptaa_gap_base": {
+  "value": "0.198",
+  "raw": 0.19802658426326047,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r1_ptaa_nip_front.base.gap_pce_points"
+ },
+ "b_ptaa_gap_worse": {
+  "value": "0.319",
+  "raw": 0.3190020340956572,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r1_ptaa_nip_front.worse.gap_pce_points"
+ },
+ "b_ptaa_gap_better": {
+  "value": "0.081",
+  "raw": 0.08061843670670399,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r1_ptaa_nip_front.better.gap_pce_points"
+ },
+ "b_ptaa_gcost_lo": {
+  "value": "16",
+  "raw": 16.202321622244664,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r1_ptaa_nip_front.{base,worse}.gap_cost_pct (min)"
+ },
+ "b_ptaa_gcost_hi": {
+  "value": "18",
+  "raw": 17.952309292031067,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r1_ptaa_nip_front.{base,worse}.gap_cost_pct (max)"
+ },
+ "b_ptaa_au_x": {
+  "value": "24",
+  "raw": 24.46233513177863,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) 1 + r1_ptaa_nip_front.better.gap_cost_pct/100"
+ },
+ "b_pair_a_n": {
+  "value": "18",
+  "raw": 18,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) len(r2_paired.thickness_only)"
+ },
+ "b_pair_a_paired": {
+  "value": "18",
+  "raw": 18,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r2_paired.thickness_only count paired_separates"
+ },
+ "b_pair_a_reg": {
+  "value": "15",
+  "raw": 15,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r2_paired.thickness_only count nonoverlap_separates"
+ },
+ "b_pair_b_n": {
+  "value": "18",
+  "raw": 18,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) len(r2_paired.material_choice)"
+ },
+ "b_pair_b_paired": {
+  "value": "18",
+  "raw": 18,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r2_paired.material_choice count paired_separates"
+ },
+ "b_pair_b_reg": {
+  "value": "17",
+  "raw": 17,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r2_paired.material_choice count nonoverlap_separates"
+ },
+ "b_jv_voc_lo": {
+  "value": "1.22",
+  "raw": 1.215,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r3_jv_pce_optimal material_choice voc_V (min)"
+ },
+ "b_jv_voc_hi": {
+  "value": "1.24",
+  "raw": 1.237,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r3_jv_pce_optimal material_choice voc_V (max)"
+ },
+ "b_jv_ff_lo": {
+  "value": "0.81",
+  "raw": 0.808,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r3_jv_pce_optimal material_choice ff (min)"
+ },
+ "b_jv_ff_hi": {
+  "value": "0.87",
+  "raw": 0.868,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r3_jv_pce_optimal material_choice ff (max)"
+ },
+ "b_rho_calls_lo": {
+  "value": "-0.72",
+  "raw": -0.7173622040074661,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r4_rho.material_choice[*].all_feasible_calls (min)"
+ },
+ "b_rho_calls_hi": {
+  "value": "-0.61",
+  "raw": -0.6074656322942606,
+  "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-registered) r4_rho.material_choice[*].all_feasible_calls (max)"
+ },
+ "b_vbi_nip_niox": {
+  "value": "1.7",
+  "raw": 1.7,
+  "source": "docs/PaperB_preregistration.md rule B2 consequence: n-i-p NiOx built-in voltage (V)"
+ },
+ "b_vbi_nip_ptaa": {
+  "value": "1.4",
+  "raw": 1.4,
+  "source": "docs/PaperB_preregistration.md rule B2 consequence: n-i-p PTAA built-in voltage (V)"
+ },
+ "b_pvk_chang": {
+  "value": "0.64",
+  "raw": 0.6407687530847869,
+  "source": "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered) chang2017.MAPbI3_usd_per_g.usd_per_g"
+ },
+ "b_pvk_chang_lo": {
+  "value": "0.36",
+  "raw": 0.3589740281106749,
+  "source": "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered) chang2017.MAPbI3_usd_per_g.lo"
+ },
+ "b_pvk_chang_hi": {
+  "value": "1.28",
+  "raw": 1.2769220843320248,
+  "source": "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered) chang2017.MAPbI3_usd_per_g.hi"
+ },
+ "b_pvk_wu": {
+  "value": "3.4",
+  "raw": 3.422831921058819,
+  "source": "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered) wu2026.usd_per_g"
+ },
+ "b_pvk_lib": {
+  "value": "0.63",
+  "raw": 0.63,
+  "source": "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered) library_usd_per_g (cost_library_v1.yaml liu_perovskite_price)"
+ },
+ "b_pvk_x_small": {
+  "value": "2",
+  "raw": 2,
+  "source": "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered) scan_pin_base.last_small_mult"
+ },
+ "b_pvk_x_open": {
+  "value": "5",
+  "raw": 5,
+  "source": "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered) scan_pin_base.first_not_small_mult"
+ },
+ "b_pvk_small_usd": {
+  "value": "1.26",
+  "raw": 1.26,
+  "source": "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered) scan_pin_base.last_small_usd_per_g"
+ },
+ "b_pvk_open_usd": {
+  "value": "3.15",
+  "raw": 3.15,
+  "source": "phase0/paperB/posthoc_absorber_prices.json (POST-HOC, not pre-registered) scan_pin_base.first_not_small_usd_per_g"
+ },
+ "b_val_n": {
+  "value": "4",
+  "raw": 4,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) len(points)"
+ },
+ "b_val_dpce_lo": {
+  "value": "2.4",
+  "raw": 2.3699999999999974,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) sim.pce_pct - measured.pce (min)"
+ },
+ "b_val_dpce_hi": {
+  "value": "3.5",
+  "raw": 3.469999999999999,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) sim.pce_pct - measured.pce (max)"
+ },
+ "b_val_jsc_sim_lo": {
+  "value": "19.0",
+  "raw": 19.02945,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) sim.jsc_mA_cm2 (min)"
+ },
+ "b_val_jsc_sim_hi": {
+  "value": "21.7",
+  "raw": 21.72249,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) sim.jsc_mA_cm2 (max)"
+ },
+ "b_val_jsc_meas_lo": {
+  "value": "19.2",
+  "raw": 19.2,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) measured.jsc (min)"
+ },
+ "b_val_jsc_meas_hi": {
+  "value": "21.4",
+  "raw": 21.4,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) measured.jsc (max)"
+ },
+ "b_val_voc_sim_lo": {
+  "value": "1.15",
+  "raw": 1.149,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) sim.voc_V (min)"
+ },
+ "b_val_voc_sim_hi": {
+  "value": "1.15",
+  "raw": 1.15,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) sim.voc_V (max)"
+ },
+ "b_val_voc_meas_lo": {
+  "value": "1.05",
+  "raw": 1.05,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) measured.voc (min)"
+ },
+ "b_val_voc_meas_hi": {
+  "value": "1.10",
+  "raw": 1.1,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) measured.voc (max)"
+ },
+ "b_val_ff_sim_lo": {
+  "value": "0.83",
+  "raw": 0.828,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) sim.ff (min)"
+ },
+ "b_val_ff_sim_hi": {
+  "value": "0.85",
+  "raw": 0.853,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) sim.ff (max)"
+ },
+ "b_val_ff_meas_lo": {
+  "value": "0.75",
+  "raw": 0.754,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) measured.ff (min)"
+ },
+ "b_val_ff_meas_hi": {
+  "value": "0.78",
+  "raw": 0.7759999999999999,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) measured.ff (max)"
  },
  "b_bias_lo": {
   "value": "18",

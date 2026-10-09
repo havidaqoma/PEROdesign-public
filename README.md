@@ -56,7 +56,10 @@ All results are model predictions. No device of these stacks was fabricated for 
 | `docs/PaperA_preregistration.md` | pre-registration of the thickness-only design |
 | `docs/PaperB_preregistration.md` | pre-registration of the material-choice design, with its dated amendments A1 to A3 |
 | `docs/PREREGISTRATION_PROVENANCE.md` | commit hashes, dates and file hashes of both pre-registrations |
-| `phase0/paperA/`, `phase0/paperB/` | stored runs (`runs/*.json`, one file per run with every call), result files (`result.json`), figures, post-hoc analyses, logs |
+| `docs/preregistration_provenance.json` | the order of plans, amendments and runs, read from git and the run logs by `scripts/prereg_provenance.py` (the script needs the private development history; its output is shipped) |
+| `docs/PaperA_plan.md`, `PaperA_results.md`, `PaperB_plan.md`, `PaperB_results.md` | the working plan and results log of each design, as named in the pre-registrations |
+| `docs/P2_sensitivity_*.md`, `docs/G1_step2_preregistration.md` | pre-registration and results of the sensitivity analysis; the earlier pre-registration that defined the contact rule B2 |
+| `phase0/paperA/`, `phase0/paperB/` | stored runs (`runs/*.json`, one file per run with every call), result files (`result.json`), figures, post-hoc analyses (`posthoc*.json`), logs |
 | `phase0/sensitivity/` | global sensitivity analysis of the device model |
 | `paper/paperAB/numbers.json`, `numbers_si.json` | every number printed in the paper and SI, with the file and field it came from |
 | `paper/paperAB/assumption_support*.json` | every assumed input, the published quotation that supports it and the record of its check |
@@ -66,7 +69,13 @@ All results are model predictions. No device of these stacks was fabricated for 
 | `tests/` | test suite |
 
 The folder names `paperA` and `paperB` are the internal names of the thickness-only and material-choice designs.
-They are kept because the stored run files and the pre-registrations refer to them.
+They are kept because the stored run files and the pre-registrations refer to them. Some comments and documents
+mention "MASTER §n" or `docs/implementation-notes.md`: these are entries of the private development log and are not
+part of this repository. The two AutoTEA files in `third_party/` name documents of the AutoTEA project.
+
+The run logs in `phase0/` are shipped without the repeated warnings of third-party libraries (several thousand
+identical lines), and home-directory paths are shortened to `~/`; every line written by the run scripts is kept.
+`.release_manifest.json` lists the logs trimmed this way.
 
 ## Quick start: check the stored results (no simulator needed)
 
@@ -101,9 +110,11 @@ levels of reproduction (check, re-analyse, re-run), the expected run times, and 
 | Figure 3 (cost parts) | `scripts/paperA_figures.py` | `phase0/paperA/figures/fig4_cost_parts.png` |
 | Figure 4 (fronts, material choice) | `scripts/paperB_figures.py` | `phase0/paperB/figures/figB1_fronts.png` |
 | Figure 5 (cheap corner, material choice) | `scripts/paperB_figures.py` | `phase0/paperB/figures/figB2_front_zoom.png` |
-| Figure 6 (hypervolume against calls) | `scripts/paperA_figures.py` | `phase0/paperA/figures/fig2_hv_vs_calls.png` |
-| Tables 1 to 7 and every number in the text | `scripts/paperA_numbers.py`, `paperB_numbers.py`, `paperAB_numbers.py` | `paper/paperAB/numbers.json` (from `phase0/paperA/result.json`, `phase0/paperB/result.json`) |
-| Supplementary figures and tables | `scripts/paperA_si_analysis.py`, `paperB_figures.py`, `paperB_posthoc.py`, `paperB_moox_bound.py`, `paperAB_mesh_check.py`, `p2_sensitivity.py` | `phase0/paperA/si/`, `phase0/paperB/`, `phase0/sensitivity/`, `paper/paperAB/numbers_si.json` |
+| Figure 6a (hypervolume against calls, fixed materials) | `scripts/paperA_figures.py` | `phase0/paperA/figures/fig2_hv_vs_calls.png` |
+| Figure 6b (hypervolume against calls, material choice) | data in `source_data/SourceData_material_choice.xlsx`, sheet `FigS9_HV_curves`; the panel and the two-part assembly are drawn by the SI build and `scripts/paperAB_fig_hv.py`, which are released with the manuscript sources | `paper/paperAB/figures/fig2_hv_vs_calls_ab.png` (with the manuscript sources) |
+| Tables 1 to 6 and every number in the text | `scripts/paperA_numbers.py`, `paperB_numbers.py`, `paperAB_numbers.py` | `paper/paperAB/numbers.json` (from `phase0/paperA/result.json`, `phase0/paperB/result.json` and the post-hoc files) |
+| Supplementary figures and tables | `scripts/paperA_si_analysis.py`, `paperB_figures.py`, `paperB_posthoc.py`, `paperB_moox_bound.py`, `paperAB_mesh_check.py`, `paperAB_mesh_front.py`, `paperAB_posthoc_review.py`, `paperAB_absorber_prices.py`, `p2_sensitivity.py` | `phase0/paperA/si/`, `phase0/paperB/`, `phase0/sensitivity/` |
+| `paper/paperAB/numbers_si.json` | a copy of `paper/paperA/numbers_si.json` made by `scripts/paperAB_numbers.py`; the original is written by the thickness-only SI build, released with the manuscript sources | `paper/paperA/numbers_si.json` |
 | Source Data workbooks | `scripts/paperA_sourcedata.py --merged`, `paperB_sourcedata.py` | `paper/paperAB/build/` (the published copies are in `source_data/`) |
 
 File names follow the order in which the figures were made, not their order in the paper.
@@ -119,6 +130,10 @@ File names follow the order in which the figures were made, not their order in t
   not found in its source text. Every reference was resolved against OpenAlex and the DOI registry by a script.
 * **Verification.** Stored runs were re-executed and stored designs were re-simulated with fresh simulator calls;
   the comparisons are in `phase0/paperA/si/` and `phase0/paperB/` (Supplementary Notes S8 and S15).
+* **Order of plan and runs.** The development repository was private when the runs were made; its first upload to
+  GitHub came after the runs had begun. The order of plans, amendments and runs therefore rests on the git parent
+  chain and on the run logs, which name the commit each run started from (`docs/preregistration_provenance.json`).
+  The full development history will be archived with the release DOI.
 
 ## Use of AI tools
 

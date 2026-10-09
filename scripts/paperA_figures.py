@@ -165,7 +165,8 @@ def fig_schematic(out):
     xl, xr, yb = xs[0] + w / 2, xs[-1] + w / 2, 0.2
     ax.plot([xr, xr, xl], [y, yb, yb], color="k", lw=1, ls="--")
     ax.add_patch(FancyArrowPatch((xl, yb), (xl, y), arrowstyle="-|>", mutation_scale=10, lw=1, ls="--"))
-    ax.text((xl + xr) / 2, yb - 0.05, "optimiser proposes the next batch (Sobol random, NSGA-II or qNEHVI)",
+    ax.text((xl + xr) / 2, yb - 0.05, "optimiser proposes the next batch (Sobol random, NSGA-II or a Bayesian optimiser, each with or without "
+            "material choice)",
             ha="center", va="top", fontsize=9)
     fig.savefig(out / "fig1_environment.png", dpi=200, bbox_inches="tight")
     plt.close(fig)

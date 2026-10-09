@@ -65,7 +65,19 @@
    "doi": "10.1002/pip.2871",
    "fulltext_url": "https://unsworks.unsw.edu.au/bitstreams/a78d60f4-fa61-4fb3-8f5b-c47b9b7e53e8/download",
    "quotes": [
-    "with 40 % material utilization in the evaporator"
+    "with 40 % material utilization in the evaporator",
+    "Coat PbI2 g 1.4 (0.6-6) [9 ] 0.7 (0.4-1.4)",
+    "Coat MAI g 0.14 (0.07-0.5) [9 ] 0.469 (0.24-0.92)",
+    "Cost (US$/unit)"
+   ]
+  },
+  "wu2026": {
+   "cite": "wu2026recycle",
+   "doi": "10.1002/adma.73266",
+   "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13244800/fullTextXML",
+   "quotes": [
+    "1 kg of virgin perovskite precursor mixture costs 3029.1€",
+    "representative bulk laboratory pricing"
    ]
   },
   "chang2017solmat": {
@@ -235,7 +247,10 @@
    "quotes": [
     "China is the most cost-competitive location to manufacture all components of the solar PV supply chain. Costs in China are 10% lower than in India, 20% lower than in the United States, and 35% lower than in Europe.",
     "In the ASEAN region, total module-manufacturing costs can be around 5% more than in China, mainly due to slightly higher overhead and labour costs.",
-    "Large variations in energy, labour, investment and overhead costs explain these differences."
+    "Large variations in energy, labour, investment and overhead costs explain these differences.",
+    "Other important manufacturers include Viet Nam (5%), Malaysia (4%), Korea (4%) and Thailand (2%)",
+    "In 2012-2016, cell manufacturing began to develop in Southeast Asia, first in Korea and Malaysia",
+    "most manufacturing capacity in these countries was developed by Chinese companies focusing on exports"
    ]
   },
   "kwsp": {
@@ -646,9 +661,11 @@
    "value": "0.63 USD/g",
    "status": "proxy",
    "support": [
-    "liu2025"
+    "liu2025",
+    "chang2017pip",
+    "wu2026"
    ],
-   "how": "Price of the absorber of the reference line; MAPbI₃ itself has no price there."
+   "how": "Price of the absorber of the reference line; MAPbI₃ itself has no price there. A perovskite cost study lists PbI₂ at 0.7 and MAI at 0.469 USD/g (0.64 USD/g for the MAPbI₃ mixture, close to the proxy); a 2026 laboratory price is about 3.4 USD/g. Note S20 compares both with the absorber-price scan."
   },
   {
    "id": "rear_ito",
@@ -672,6 +689,17 @@
     "liu2025"
    ],
    "how": "Stated by the reference line study."
+  },
+  {
+   "id": "site",
+   "group": "Line and operating cost",
+   "item": "Malaysia as the production site",
+   "unit": "",
+   "status": "sourced",
+   "support": [
+    "iea2022"
+   ],
+   "how": "Malaysia makes about 4% of the world's modules (2021), among the largest shares outside China, and has made cells since 2012 to 2016; its plants were built mostly for export."
   },
   {
    "id": "regional",

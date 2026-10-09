@@ -1,7 +1,7 @@
 [project]
 name = "perodesign"
-version = "0.1.0"
-description = "Physics- and cost-verified RL environment for perovskite device design"
+version = "1.0.0"
+description = "Cost-aware design of perovskite solar modules: drift-diffusion simulation, module and cost models, multi-objective optimisation"
 requires-python = ">=3.11"
 dependencies = ["pyyaml>=6", "numpy>=1.24"]
 

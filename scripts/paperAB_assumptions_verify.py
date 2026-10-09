@@ -21,7 +21,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 P = REPO / "paper" / "paperAB"
 CACHE = Path(os.environ.get("PERODESIGN_FT_CACHE", Path(os.environ.get("TMPDIR", REPO / ".cache")) / "perodesign_fulltext"))
-MAIL = os.environ.get("PERODESIGN_CONTACT_EMAIL", "havidaqoma.khoiruddin@xmu.edu.my")  # polite-pool contact for OpenAlex
+MAIL = os.environ.get("PERODESIGN_CONTACT_EMAIL", "research@example.org")  # polite-pool contact for OpenAlex
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 
 

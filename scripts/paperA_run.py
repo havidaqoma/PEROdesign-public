@@ -4,7 +4,7 @@ finishes (atomic), so the job is resumable: finished runs are skipped.
 
   python scripts/paperA_run.py run [workers]     -> phase0/paperA/runs/*.json
   python scripts/paperA_run.py analyse           -> phase0/paperA/result.json
-Run in WSL from a native-FS clone (see skill grpo-simulator-reward): ~/venvs/perodesign-dev/bin/python ...
+Run in WSL from a native-FS clone (see docs/REPRODUCE.md in the public repository): ~/venvs/perodesign-dev/bin/python ...
 """
 import os
 import sys

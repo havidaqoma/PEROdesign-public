@@ -69,19 +69,19 @@
    "note": "m, thickness of back electrode, must be >0"
   },
   "nkSubstrate": {
-   "value": "/home/havidaqoma/simss/Data/nk_SiO2.txt",
+   "value": "~/simss/Data/nk_SiO2.txt",
    "note": "name of file with n,k values of substrate"
   },
   "nkTCO": {
-   "value": "/home/havidaqoma/simss/Data/nk_ITO.txt",
+   "value": "~/simss/Data/nk_ITO.txt",
    "note": "name of file with n,k values of TCO"
   },
   "nkBE": {
-   "value": "/home/havidaqoma/simss/Data/nk_Au.txt",
+   "value": "~/simss/Data/nk_Au.txt",
    "note": "name of file with n,k values of back electrode"
   },
   "spectrum": {
-   "value": "/home/havidaqoma/simss/Data/AM15G.txt",
+   "value": "~/simss/Data/AM15G.txt",
    "note": "name of file that contains the spectrum"
   },
   "lambda_min": {
@@ -363,7 +363,7 @@
    "note": "does this layer generate electron/hole pairs? yes(1) or no (0)"
   },
   "nkLayer": {
-   "value": "/home/havidaqoma/simss/Data/nk_C60_1.txt",
+   "value": "~/simss/Data/nk_C60_1.txt",
    "note": "name of file with n,k values of this layer"
   },
   "fieldDepG": {
@@ -537,7 +537,7 @@
    "note": "does this layer generate electron/hole pairs? yes(1) or no (0)"
   },
   "nkLayer": {
-   "value": "/home/havidaqoma/simss/Data/nk_MAPI.txt",
+   "value": "~/simss/Data/nk_MAPI.txt",
    "note": "name of file with n,k values of this layer"
   },
   "fieldDepG": {
@@ -711,7 +711,7 @@
    "note": "does this layer generate electron/hole pairs? yes(1) or no (0)"
   },
   "nkLayer": {
-   "value": "/home/havidaqoma/simss/Data/nk_PTAA.txt",
+   "value": "~/simss/Data/nk_PTAA.txt",
    "note": "name of file with n,k values of this layer"
   },
   "fieldDepG": {

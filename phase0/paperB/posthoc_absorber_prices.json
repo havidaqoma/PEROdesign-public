@@ -1,0 +1,60 @@
+{
+ "schema": "perodesign.posthoc_absorber_prices/v1",
+ "label": "POST-HOC, not pre-registered",
+ "library_usd_per_g": 0.63,
+ "chang2017": {
+  "url": "https://unsworks.unsw.edu.au/bitstreams/a78d60f4-fa61-4fb3-8f5b-c47b9b7e53e8/download",
+  "sha256": "dfe3ef544126d7d0d730505cd0ae4c887e0043b6c9d62663908a10198b95ee9b",
+  "PbI2": {
+   "usd_per_g": 0.7,
+   "lo": 0.4,
+   "hi": 1.4,
+   "quote": "Coat PbI2 g 1.4 (0.6-6) [9 ] 0.7 (0.4-1.4)"
+  },
+  "MAI": {
+   "usd_per_g": 0.469,
+   "lo": 0.24,
+   "hi": 0.92,
+   "quote": "Coat MAI g 0.14 (0.07-0.5) [9 ] 0.469 (0.24-0.92)"
+  },
+  "mass_fraction_PbI2_in_MAPbI3": 0.7435876756917181,
+  "MAPbI3_usd_per_g": {
+   "usd_per_g": 0.6407687530847869,
+   "lo": 0.3589740281106749,
+   "hi": 1.2769220843320248
+  }
+ },
+ "wu2026": {
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13244800/fullTextXML",
+  "sha256": "061eb86738947e62b1155af632e14e1ec75a8420b5a30f1a7f62fc54d2e275c8",
+  "eur_per_kg": 3029.1,
+  "quote": "1 kg of virgin perovskite precursor mixture costs 3029.1€",
+  "basis": "representative bulk laboratory pricing (1 kg precursor batches)",
+  "eur_per_usd_2025": 0.88496895841236,
+  "wb_url": "https://api.worldbank.org/v2/country/EMU/indicator/PA.NUS.FCRF?format=json&date=2025",
+  "wb_sha256": "6f9c763ed4577f030c5327552908e727d36ce7eae1c3616c104572dfc096fde8",
+  "usd_per_g": 3.422831921058819
+ },
+ "scan_pin_base": {
+  "multipliers": [
+   1,
+   2,
+   5,
+   10,
+   20,
+   50,
+   100,
+   200
+  ],
+  "last_small_mult": 2,
+  "first_not_small_mult": 5,
+  "last_small_usd_per_g": 1.26,
+  "first_not_small_usd_per_g": 3.15
+ },
+ "multiples_of_library": {
+  "chang_mid": 1.017093258864741,
+  "chang_lo": 0.5698000446201189,
+  "chang_hi": 2.0268604513206743,
+  "wu_lab": 5.433066541363204
+ }
+}

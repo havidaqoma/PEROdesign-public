@@ -28,9 +28,22 @@ if MERGED:
     OUT = REPO / "paper" / "paperAB" / "build" / "SourceData_thickness_only.xlsx"
 ARCHS, SCENS, METHODS = ("p-i-n", "n-i-p"), ("base", "worse", "better"), ("random", "nsga2", "qnehvi")
 # main-text numbering of the merged manuscript (paperAB build order: tab:space, tab:gap, tab:designs, tab:bgap,
-# tab:q1, tab:speed, tab:bq1; fig:env, fig:fronts, fig:parts, fig:bfronts, fig:bzoom, fig:hv)
-MERGED_TABLES = {1: 1, 2: 5, 3: 6, 4: 2, 5: 3}
+# tab:q1, tab:bq1; fig:env, fig:fronts, fig:parts, fig:bfronts, fig:bzoom, fig:hv). The speed table (Paper A Table 3)
+# moved to the SI as Table S33 (pre-submission review), so it maps to "SI Table S33" / sheet "TableS33_".
+MERGED_TABLES = {1: "1", 2: "5", 3: "S33", 4: "2", 5: "3"}
 MERGED_FIGS = {2: 6, 3: 2, 4: 3}
+
+
+def raw_cell(token, raw):
+    """Raw value for a Numbers sheet: lists and dicts as JSON, numbers stored as text turned into numbers (review F31);
+    version strings and printed forms such as '>240' stay text."""
+    if isinstance(raw, (list, dict)):
+        return json.dumps(raw)
+    if isinstance(raw, str) and not token.startswith(("ver_", "b_ver_")):
+        import re as _re
+        if _re.fullmatch(r"-?\d+(\.\d+)?([eE]-?\d+)?", raw.strip()):
+            return float(raw) if any(ch in raw for ch in ".eE") else int(raw)
+    return raw
 
 
 def merged_numbering(wb):
@@ -41,7 +54,8 @@ def merged_numbering(wb):
         # only main-text references ("main Table 2", "Main Figure 3") and sheet names ("Table2_", "Fig3_");
         # literature citations such as "Shahinuzzaman 2022 Table 2" are left untouched
         text = _re.sub(r"\b([Mm]ain Table )([1-5])\b",
-                       lambda m: f"{m.group(1)}{MERGED_TABLES[int(m.group(2))]}", text)
+                       lambda m: ("SI Table " if MERGED_TABLES[int(m.group(2))].startswith("S") else m.group(1))
+                       + MERGED_TABLES[int(m.group(2))], text)
         text = _re.sub(r"\b([Mm]ain Figure )([2-4])\b",
                        lambda m: f"{m.group(1)}{MERGED_FIGS[int(m.group(2))]}", text)
         text = _re.sub(r"^(\s*Table)([1-5])_", lambda m: f"{m.group(1)}{MERGED_TABLES[int(m.group(2))]}_", text)
@@ -118,6 +132,17 @@ def main():
         "  post-hoc   = analysis added after the pre-registered analysis (Supplementary Notes S9, S10)",
         "All efficiencies and costs are model predictions (no device validation).",
         "",
+        "How to read: each sheet has a title row, optional note rows and one blank row before the header row; the header is "
+        "the first row whose first cell is a column name (pandas: header=2 with no note row, header=3 with one note row).",
+        "Units: efficiencies in % (PCE) or percentage points; thicknesses in nm, stripe width in mm; cost per watt in USD/W; "
+        "area costs in USD/m2; hypervolume of the thickness-only design in PCE points x USD/W.",
+        "calls_to_95pct: 241 means the run never reached 95% of the best hypervolume within 240 calls (every sheet).",
+        "Keys: design_hash is the SHA-256 of the device input passed to the simulator; it does not cover the stripe width "
+        "(a module parameter), so a design is identified by design_hash together with stripe_mm.",
+        "Figures without a sheet: SI Figures S3, S4 and S6 are drawn from Calls_all and Table5_designs as described in SI "
+        "Note S13; main Figures 4 and 5 belong to the material-choice workbook (SourceData_material_choice.xlsx)." if MERGED
+        else "Figures without a sheet: SI Figures S3, S4 and S6 are drawn from Calls_all as described in the SI.",
+        "",
         "Sheets:",
     ]
     sheets_doc = [
@@ -138,6 +163,7 @@ def main():
         ("FigS7_repeats", "SI Figure S7: repeated designs per run"),
         ("FigS8_P2_sensitivity", "SI Figure S8 and Table S8: earlier global sensitivity ranking"),
         ("Verification", "SI Table S9/S10: deterministic checks, re-execution and fresh re-simulation"),
+        ("Verification_fresh", "SI Table S10: stored calls re-simulated without the cache, stored and new values side by side"),
         ("Physics_library", "every layer, interface and device parameter passed to SimSS, with provenance"),
         ("Cost_library", "every cost-library entry: value, unit, verbatim quotation, source, confidence"),
         ("Cost_sources", "registered source files with DOI, licence and SHA-256"),
@@ -184,7 +210,7 @@ def main():
                      min(c["usd_per_W"] for c in r["calls"] if c["feasible"]), r["seconds"], r["ref_point"][0], r["ref_point"][1],
                      r["sim_binary_sha256"], r["library_sha256"]])
     sheet(wb, "Runs_summary", "Run-level results (measured / computed).",
-          ["arch", "scenario", "method", "seed", "hv_final", "n_infeasible", "calls_to_95pct_best (241 = not reached)",
+          ["arch", "scenario", "method", "seed", "hv_final (PCE pt x USD/W)", "n_infeasible", "calls_to_95pct_best (241 = not reached)",
            "best_module_pce_pct", "lowest_usd_per_W", "wall_seconds", "ref_pce_pct", "ref_usd_per_W", "sim_binary_sha256",
            "library_sha256"], rows)
 
@@ -202,7 +228,7 @@ def main():
             rows.append([k, m, mm["hv_mean"], mm["hv_ci95_half"], *mm["hv_final"],
                          ", ".join(kk for kk, b in c["q1"].items() if b)])
     sheet(wb, "Table2_Q1_HV", "Main Table 2. Final hypervolume after 240 calls (computed).",
-          ["case", "method", "hv_mean", "hv_ci95_half (t, 4 dof)", "seed0", "seed1", "seed2", "seed3", "seed4", "verdicts (CI non-overlap)"], rows)
+          ["case", "method", "hv_mean (PCE pt x USD/W)", "hv_ci95_half (t, 4 dof)", "seed0", "seed1", "seed2", "seed3", "seed4", "verdicts (CI non-overlap)"], rows)
     rows = [[k, m, c["methods"][m]["calls_to_95pct_best_median"], *c["methods"][m]["calls_to_95pct_best"]]
             for k, c in res["cases"].items() for m in METHODS]
     sheet(wb, "Table3_speed", "Main Table 3. Calls to reach 95% of the best hypervolume of any run (241 = not reached).",
@@ -239,7 +265,7 @@ def main():
                 mu, sd = C.mean(0), C.std(0, ddof=1)
                 for i in range(C.shape[1]):
                     rows.append([a, s, m, i + 1, mu[i], mu[i] - 2.776 * sd[i] / math.sqrt(5), mu[i] + 2.776 * sd[i] / math.sqrt(5), *C[:, i]])
-    sheet(wb, "Fig2_HV_curves", "Main Figure 2. Hypervolume vs simulator calls (computed). Band = mean ± t(0.975,4) sd/sqrt(5).",
+    sheet(wb, "Fig2_HV_curves", "Main Figure 2. Hypervolume (PCE points x USD/W) vs simulator calls (computed). Band = mean ± t(0.975,4) sd/sqrt(5).",
           ["arch", "scenario", "method", "call", "mean", "band_lo", "band_hi", "seed0", "seed1", "seed2", "seed3", "seed4"], rows)
     rows = []
     for a in ARCHS:
@@ -306,7 +332,8 @@ def main():
             for i, x in enumerate(p2["outputs"][k]["ranking"])]
     sheet(wb, "FigS8_P2_sensitivity", "SI Figure S8 / Table S8. Earlier global sensitivity (phase0/sensitivity/result.json).",
           ["output", "rank", "parameter", "Borgonovo delta", "ci95_half", "S1"], rows,
-          notes=[f"{p2['n_unique_sims']} unique simulations; estimator: {p2.get('delta_estimator', '')}"[:250]])
+          notes=[f"{p2['n_unique_sims']} unique simulations; estimator: " + "; ".join(
+              f"{k.replace('_', ' ')} {v}" for k, v in p2.get("delta_estimator", {}).items())])
 
     # ------------------------------------------------------------------ verification
     ver = si["verification"]
@@ -415,8 +442,8 @@ def main():
           ["area", "assumption / setting", "value", "unit", "status", "where in code / library"], [list(a) for a in A_],
           widths={"assumption / setting": 80, "where in code / library": 45})
 
-    rows = [[k, v["value"], v["raw"] if not isinstance(v["raw"], (list, dict)) else json.dumps(v["raw"]), v["source"], "numbers.json"] for k, v in N.items()]
-    rows += [[k, v["value"], v["raw"], v["source"], "numbers_si.json (post-hoc)"] for k, v in NS.items()]
+    rows = [[k, v["value"], raw_cell(k, v["raw"]), v["source"], "numbers.json"] for k, v in N.items()]
+    rows += [[k, v["value"], raw_cell(k, v["raw"]), v["source"], "numbers_si.json (post-hoc)"] for k, v in NS.items()]
     sheet(wb, "Numbers_main_text", "Every token the manuscript can print (value as printed, raw value, source).",
           ["token", "printed", "raw", "source", "file"], rows, widths={"source": 100})
 

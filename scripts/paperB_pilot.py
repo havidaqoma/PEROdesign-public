@@ -3,7 +3,7 @@
 Purpose (go/no-go for the design, not a result):
   P1 convergence: every (stack, HTL, metal) combination runs at the Paper A reference thicknesses and at the two box
      corners (all min / all max), base scenario, plus the reference design in the worse / better scenarios.
-  P2 degeneracy check (skill lesson from Paper A): 8 Sobol points per combination (seed 1000, NOT a run seed), to see
+  P2 degeneracy check (lesson from Paper A): 8 Sobol points per combination (seed 1000, NOT a run seed), to see
      whether module PCE and USD/W are still almost perfectly anti-correlated once materials vary.
 Usage (WSL): ~/venvs/perodesign-dev/bin/python scripts/paperB_pilot.py [workers]
 """

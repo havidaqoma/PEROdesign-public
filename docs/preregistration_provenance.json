@@ -1,0 +1,58 @@
+{
+ "schema": "perodesign.prereg_provenance/v1",
+ "what_can_be_checked": "Order of plan, amendments and runs through the git parent chain (each commit holds its parent's hash) and the run logs, which name the commit each run started from.",
+ "what_cannot": "Absolute dates before the first upload rest on git commit dates in a then-private repository; the first independent time stamp is the GitHub upload below, after the runs began.",
+ "preregistration": {
+  "thickness-only": {
+   "file": "docs/PaperA_preregistration.md",
+   "hash": "1bdbecc74c98b1d89804165179812dfcca4c19c7",
+   "date": "2026-09-30T18:56:37+08:00",
+   "subject": "Paper A pre-registration + objective/search/runner/tests, committed BEFORE any optimisation run (agy review adopted: infeasible fill, PCE-domain guard, \u00a77 rewrites). botorch 0.18.1, pymoo 0.6.2"
+  },
+  "material-choice": {
+   "file": "docs/PaperB_preregistration.md",
+   "hash": "2b32a78d8e0cd1940c660cbc09aabe36677afc1e",
+   "date": "2026-10-01T02:28:53+08:00",
+   "subject": "Paper B pre-registration (optimiser also chooses HTL NiOx|PTAA and metal Cu|Ag|Au), committed BEFORE any optimisation run: G0 baseline reproduction PASS 8/8 vs Paper A; Ag price+density pass provenanc"
+  }
+ },
+ "runs": {
+  "thickness-only": {
+   "log": "phase0/paperA/run.log",
+   "started": "2026-09-30T18:57:00+08:00",
+   "commit": "1bdbecc"
+  },
+  "material-choice": {
+   "logs": [
+    "phase0/paperB/logs/paperB_run_attempt1_2b32a78.log",
+    "phase0/paperB/logs/paperB_run_attempt2_776401b.log",
+    "phase0/paperB/logs/paperB_run_attempt3_0adafae.log"
+   ],
+   "commits": [
+    {
+     "hash": "2b32a78d8e0cd1940c660cbc09aabe36677afc1e",
+     "date": "2026-10-01T02:28:53+08:00",
+     "subject": "Paper B pre-registration (optimiser also chooses HTL NiOx|PTAA and metal Cu|Ag|Au), committed BEFORE any optimisation run: G0 baseline reproduction PASS 8/8 vs Paper A; Ag price+density pass provenanc"
+    },
+    {
+     "hash": "776401b59ec6a3333cdb8508711698bef87fbf16",
+     "date": "2026-10-01T05:08:46+08:00",
+     "subject": "Paper B amendment A1 (before any run finished: 0/90 run files, no result seen): mixed-BO acquisition by exact enumeration over the 6 material combinations (optimize_acqf_mixed, Paper A continuous sett"
+    },
+    {
+     "hash": "0adafaed486248de636b4a83afe6c332cebfa4f7",
+     "date": "2026-10-01T06:04:52+08:00",
+     "subject": "Paper B amendment A2 (before any run finished: 0/90, no result seen): OOM at 05:05 (qLogNEHVI step 3.5-5.7 GB/worker x 12 > 47 GB) -> at most 6 concurrent mixed-BO runs, broken pool rebuilt and unfini"
+    }
+   ]
+  }
+ },
+ "github_first_upload": {
+  "source": "GitHub REST API repos/{owner}/{repo}/activity (private repository; record kept here)",
+  "retrieved": "2026-10-09T17:31:20+08:00",
+  "timestamp": "2026-10-02T03:32:51Z",
+  "activity_type": "branch_creation",
+  "ref": "refs/heads/main",
+  "after": "d31e03d5b9b7af43d83fdbf1ab1dd56e5f62a45e"
+ }
+}

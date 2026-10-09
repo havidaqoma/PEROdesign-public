@@ -1,0 +1,698 @@
+{
+ "schema": "perodesign.posthoc_review/v1",
+ "label": "POST-HOC, not pre-registered; stored data only",
+ "r1_ptaa_nip_front": {
+  "base": {
+   "n_feasible_calls": 1187,
+   "n_distinct": 1067,
+   "front_size": 2,
+   "metals_on_front": [
+    "Ag",
+    "Cu"
+   ],
+   "pce_end": {
+    "metal": "Ag",
+    "module_pce_pct": 21.58415894465793,
+    "usd_per_W": 0.5060791302706417
+   },
+   "cost_end": {
+    "metal": "Cu",
+    "module_pce_pct": 21.38613236039467,
+    "usd_per_W": 0.4290540247225433
+   },
+   "gap_pce_points": 0.19802658426326047,
+   "gap_cost_pct": 17.952309292031067,
+   "above_0p2_line": false,
+   "per_metal": {
+    "Cu": {
+     "n_distinct": 375,
+     "best_pce": 21.38613236039467,
+     "usd_at_best": 0.4290540247225433,
+     "min_usd": 0.4290540247225433
+    },
+    "Ag": {
+     "n_distinct": 365,
+     "best_pce": 21.58415894465793,
+     "usd_at_best": 0.5060791302706417,
+     "min_usd": 0.5060791302706417
+    },
+    "Au": {
+     "n_distinct": 327,
+     "best_pce": 21.4823865314356,
+     "usd_at_best": 10.720503025218996,
+     "min_usd": 10.720503025218996
+    }
+   }
+  },
+  "worse": {
+   "n_feasible_calls": 1258,
+   "n_distinct": 1129,
+   "front_size": 2,
+   "metals_on_front": [
+    "Ag",
+    "Cu"
+   ],
+   "pce_end": {
+    "metal": "Ag",
+    "module_pce_pct": 19.241891953231715,
+    "usd_per_W": 0.5624875608309661
+   },
+   "cost_end": {
+    "metal": "Cu",
+    "module_pce_pct": 18.922889919136058,
+    "usd_per_W": 0.48405879760261933
+   },
+   "gap_pce_points": 0.3190020340956572,
+   "gap_cost_pct": 16.202321622244664,
+   "above_0p2_line": true,
+   "per_metal": {
+    "Cu": {
+     "n_distinct": 385,
+     "best_pce": 18.922889919136058,
+     "usd_at_best": 0.48405879760261933,
+     "min_usd": 0.48405879760261933
+    },
+    "Ag": {
+     "n_distinct": 399,
+     "best_pce": 19.241891953231715,
+     "usd_at_best": 0.5624875608309661,
+     "min_usd": 0.5624875608309661
+    },
+    "Au": {
+     "n_distinct": 345,
+     "best_pce": 19.067740560166836,
+     "usd_at_best": 12.072176807248308,
+     "min_usd": 12.072176807248308
+    }
+   }
+  },
+  "better": {
+   "n_feasible_calls": 1171,
+   "n_distinct": 1051,
+   "front_size": 3,
+   "metals_on_front": [
+    "Au",
+    "Cu"
+   ],
+   "pce_end": {
+    "metal": "Au",
+    "module_pce_pct": 22.89779203048726,
+    "usd_per_W": 10.067846360475844
+   },
+   "cost_end": {
+    "metal": "Cu",
+    "module_pce_pct": 22.817173593780556,
+    "usd_per_W": 0.4115652208278704
+   },
+   "gap_pce_points": 0.08061843670670399,
+   "gap_cost_pct": 2346.233513177863,
+   "above_0p2_line": false,
+   "per_metal": {
+    "Cu": {
+     "n_distinct": 397,
+     "best_pce": 22.874849189156926,
+     "usd_at_best": 0.4164346642311048,
+     "min_usd": 0.4115652208278704
+    },
+    "Ag": {
+     "n_distinct": 332,
+     "best_pce": 22.85944226639411,
+     "usd_at_best": 0.4926347335275584,
+     "min_usd": 0.4835913464551371
+    },
+    "Au": {
+     "n_distinct": 322,
+     "best_pce": 22.89779203048726,
+     "usd_at_best": 10.067846360475844,
+     "min_usd": 10.067846360475844
+    }
+   }
+  }
+ },
+ "r2_paired": {
+  "thickness_only": [
+   {
+    "case": "p-i-n/base",
+    "pair": "qnehvi-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 0.7565761080207623,
+    "ci95_half": 0.1150493390868781,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "p-i-n/base",
+    "pair": "qnehvi-random",
+    "n_seeds": 5,
+    "mean_diff": 1.8547155568684026,
+    "ci95_half": 0.7292904377135693,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "p-i-n/base",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 1.0981394488476404,
+    "ci95_half": 0.8165597000004086,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   },
+   {
+    "case": "p-i-n/worse",
+    "pair": "qnehvi-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 0.9662859854569881,
+    "ci95_half": 0.6599429275506395,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "p-i-n/worse",
+    "pair": "qnehvi-random",
+    "n_seeds": 5,
+    "mean_diff": 3.2766519725074232,
+    "ci95_half": 0.8752603145141133,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "p-i-n/worse",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 2.310365987050435,
+    "ci95_half": 1.4160639699947453,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   },
+   {
+    "case": "p-i-n/better",
+    "pair": "qnehvi-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 0.3138041628510244,
+    "ci95_half": 0.20880705080938153,
+    "paired_separates": true,
+    "nonoverlap_separates": false,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "p-i-n/better",
+    "pair": "qnehvi-random",
+    "n_seeds": 5,
+    "mean_diff": 1.3108971725074299,
+    "ci95_half": 0.5144410793017271,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "p-i-n/better",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 0.9970930096564053,
+    "ci95_half": 0.5549517235805836,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   },
+   {
+    "case": "n-i-p/base",
+    "pair": "qnehvi-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 6.231802956600086,
+    "ci95_half": 5.964484104373223,
+    "paired_separates": true,
+    "nonoverlap_separates": false,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "n-i-p/base",
+    "pair": "qnehvi-random",
+    "n_seeds": 5,
+    "mean_diff": 27.945190197886724,
+    "ci95_half": 15.427372842968575,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "n-i-p/base",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 21.713387241286636,
+    "ci95_half": 11.1235481202158,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   },
+   {
+    "case": "n-i-p/worse",
+    "pair": "qnehvi-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 7.215368333558433,
+    "ci95_half": 7.188527388533082,
+    "paired_separates": true,
+    "nonoverlap_separates": false,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "n-i-p/worse",
+    "pair": "qnehvi-random",
+    "n_seeds": 5,
+    "mean_diff": 39.31199936173168,
+    "ci95_half": 10.063981683279762,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "n-i-p/worse",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 32.09663102817325,
+    "ci95_half": 9.354283663348332,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   },
+   {
+    "case": "n-i-p/better",
+    "pair": "qnehvi-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 4.170647911878814,
+    "ci95_half": 2.083633701922699,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "n-i-p/better",
+    "pair": "qnehvi-random",
+    "n_seeds": 5,
+    "mean_diff": 18.128453603207323,
+    "ci95_half": 11.63094394426363,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "qnehvi"
+   },
+   {
+    "case": "n-i-p/better",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 13.957805691328508,
+    "ci95_half": 11.198946245239133,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   }
+  ],
+  "material_choice": [
+   {
+    "case": "p-i-n/base",
+    "pair": "mixbo-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 1.4787692133357537,
+    "ci95_half": 0.7215816310933716,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "p-i-n/base",
+    "pair": "mixbo-random",
+    "n_seeds": 5,
+    "mean_diff": 4.219470880023499,
+    "ci95_half": 0.8156205659270921,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "p-i-n/base",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 2.7407016666877455,
+    "ci95_half": 1.019415784420368,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   },
+   {
+    "case": "p-i-n/worse",
+    "pair": "mixbo-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 2.4427910429792106,
+    "ci95_half": 1.2928075712012324,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "p-i-n/worse",
+    "pair": "mixbo-random",
+    "n_seeds": 5,
+    "mean_diff": 4.79733804971477,
+    "ci95_half": 1.074838789167149,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "p-i-n/worse",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 2.3545470067355594,
+    "ci95_half": 1.9322880657986448,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   },
+   {
+    "case": "p-i-n/better",
+    "pair": "mixbo-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 1.652573819710001,
+    "ci95_half": 0.6997925584153103,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "p-i-n/better",
+    "pair": "mixbo-random",
+    "n_seeds": 5,
+    "mean_diff": 2.657677361710931,
+    "ci95_half": 0.7202926475263374,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "p-i-n/better",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 1.00510354200093,
+    "ci95_half": 0.8667343520786664,
+    "paired_separates": true,
+    "nonoverlap_separates": false,
+    "winner": "nsga2"
+   },
+   {
+    "case": "n-i-p/base",
+    "pair": "mixbo-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 0.9209879703467209,
+    "ci95_half": 0.13525478759704138,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "n-i-p/base",
+    "pair": "mixbo-random",
+    "n_seeds": 5,
+    "mean_diff": 2.8516423031772833,
+    "ci95_half": 0.5983732698603159,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "n-i-p/base",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 1.9306543328305623,
+    "ci95_half": 0.6995150402889886,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   },
+   {
+    "case": "n-i-p/worse",
+    "pair": "mixbo-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 1.416329944777594,
+    "ci95_half": 0.6740267704415521,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "n-i-p/worse",
+    "pair": "mixbo-random",
+    "n_seeds": 5,
+    "mean_diff": 3.1111133148549635,
+    "ci95_half": 0.4335825216693692,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "n-i-p/worse",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 1.6947833700773693,
+    "ci95_half": 0.9637052878994894,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   },
+   {
+    "case": "n-i-p/better",
+    "pair": "mixbo-nsga2",
+    "n_seeds": 5,
+    "mean_diff": 0.3598758807877701,
+    "ci95_half": 0.12507566001089054,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "n-i-p/better",
+    "pair": "mixbo-random",
+    "n_seeds": 5,
+    "mean_diff": 1.9680220139095042,
+    "ci95_half": 0.3447393647036963,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "mixbo"
+   },
+   {
+    "case": "n-i-p/better",
+    "pair": "nsga2-random",
+    "n_seeds": 5,
+    "mean_diff": 1.6081461331217342,
+    "ci95_half": 0.33533682727566616,
+    "paired_separates": true,
+    "nonoverlap_separates": true,
+    "winner": "nsga2"
+   }
+  ]
+ },
+ "r3_jv_pce_optimal": [
+  {
+   "level": "thickness_only",
+   "case": "p-i-n/base",
+   "combo": "fixed",
+   "voc_V": 1.213,
+   "ff": 0.822,
+   "jsc_mA_cm2": 23.53277,
+   "cell_pce_pct": 23.47,
+   "module_pce_pct": 21.51917792253889
+  },
+  {
+   "level": "thickness_only",
+   "case": "p-i-n/worse",
+   "combo": "fixed",
+   "voc_V": 1.2011,
+   "ff": 0.789,
+   "jsc_mA_cm2": 21.50694,
+   "cell_pce_pct": 20.380000000000003,
+   "module_pce_pct": 18.719210116577386
+  },
+  {
+   "level": "thickness_only",
+   "case": "p-i-n/better",
+   "combo": "fixed",
+   "voc_V": 1.2206,
+   "ff": 0.848,
+   "jsc_mA_cm2": 24.27339,
+   "cell_pce_pct": 25.119999999999997,
+   "module_pce_pct": 23.013658348307658
+  },
+  {
+   "level": "thickness_only",
+   "case": "n-i-p/base",
+   "combo": "fixed",
+   "voc_V": 1.2266,
+   "ff": 0.82,
+   "jsc_mA_cm2": 22.89922,
+   "cell_pce_pct": 23.03,
+   "module_pce_pct": 21.126792816736497
+  },
+  {
+   "level": "thickness_only",
+   "case": "n-i-p/worse",
+   "combo": "fixed",
+   "voc_V": 1.215,
+   "ff": 0.802,
+   "jsc_mA_cm2": 21.041,
+   "cell_pce_pct": 20.5,
+   "module_pce_pct": 18.82817535783529
+  },
+  {
+   "level": "thickness_only",
+   "case": "n-i-p/better",
+   "combo": "fixed",
+   "voc_V": 1.232,
+   "ff": 0.838,
+   "jsc_mA_cm2": 23.785310000000003,
+   "cell_pce_pct": 24.55,
+   "module_pce_pct": 22.50451262449458
+  },
+  {
+   "level": "material_choice",
+   "case": "p-i-n/base",
+   "combo": "NiOx/Ag",
+   "voc_V": 1.2256,
+   "ff": 0.837,
+   "jsc_mA_cm2": 23.67735,
+   "cell_pce_pct": 24.28,
+   "module_pce_pct": 22.264609114239892
+  },
+  {
+   "level": "material_choice",
+   "case": "p-i-n/worse",
+   "combo": "NiOx/Ag",
+   "voc_V": 1.215,
+   "ff": 0.808,
+   "jsc_mA_cm2": 21.82256,
+   "cell_pce_pct": 21.41,
+   "module_pce_pct": 19.664775736970377
+  },
+  {
+   "level": "material_choice",
+   "case": "p-i-n/better",
+   "combo": "NiOx/Ag",
+   "voc_V": 1.2316,
+   "ff": 0.861,
+   "jsc_mA_cm2": 24.328229999999998,
+   "cell_pce_pct": 25.81,
+   "module_pce_pct": 23.650143028686617
+  },
+  {
+   "level": "material_choice",
+   "case": "n-i-p/base",
+   "combo": "NiOx/Ag",
+   "voc_V": 1.231,
+   "ff": 0.857,
+   "jsc_mA_cm2": 23.09997,
+   "cell_pce_pct": 24.39,
+   "module_pce_pct": 22.373399583120964
+  },
+  {
+   "level": "material_choice",
+   "case": "n-i-p/worse",
+   "combo": "NiOx/Ag",
+   "voc_V": 1.2211,
+   "ff": 0.82,
+   "jsc_mA_cm2": 21.43051,
+   "cell_pce_pct": 21.47,
+   "module_pce_pct": 19.7253577455101
+  },
+  {
+   "level": "material_choice",
+   "case": "n-i-p/better",
+   "combo": "NiOx/Ag",
+   "voc_V": 1.237,
+   "ff": 0.868,
+   "jsc_mA_cm2": 23.84439,
+   "cell_pce_pct": 25.6,
+   "module_pce_pct": 23.468549991917772
+  }
+ ],
+ "r4_rho": {
+  "thickness_only": {
+   "p-i-n/base": {
+    "all_feasible_calls": -0.9901072742281052,
+    "n_calls": 3600,
+    "distinct_designs": -0.989922276718167,
+    "n_distinct": 3281
+   },
+   "p-i-n/worse": {
+    "all_feasible_calls": -0.9989395668329732,
+    "n_calls": 3599,
+    "distinct_designs": -0.9989310136228686,
+    "n_distinct": 3167
+   },
+   "p-i-n/better": {
+    "all_feasible_calls": -0.9636010650131772,
+    "n_calls": 3600,
+    "distinct_designs": -0.9648140641704624,
+    "n_distinct": 3313
+   },
+   "n-i-p/base": {
+    "all_feasible_calls": -0.9906258796811752,
+    "n_calls": 3600,
+    "distinct_designs": -0.9892272252312113,
+    "n_distinct": 3258
+   },
+   "n-i-p/worse": {
+    "all_feasible_calls": -0.9965622238597642,
+    "n_calls": 3600,
+    "distinct_designs": -0.9963337126508193,
+    "n_distinct": 3273
+   },
+   "n-i-p/better": {
+    "all_feasible_calls": -0.9918731133357366,
+    "n_calls": 3600,
+    "distinct_designs": -0.9910342674884343,
+    "n_distinct": 3304
+   }
+  },
+  "material_choice": {
+   "p-i-n/base": {
+    "all_feasible_calls": -0.6903021138501703,
+    "n_calls": 3595,
+    "distinct_designs": -0.702112789534152,
+    "n_distinct": 3346
+   },
+   "p-i-n/worse": {
+    "all_feasible_calls": -0.7173622040074661,
+    "n_calls": 3597,
+    "distinct_designs": -0.7020257367464211,
+    "n_distinct": 3174
+   },
+   "p-i-n/better": {
+    "all_feasible_calls": -0.6074656322942606,
+    "n_calls": 3593,
+    "distinct_designs": -0.6113132925538751,
+    "n_distinct": 3340
+   },
+   "n-i-p/base": {
+    "all_feasible_calls": -0.6711979769144584,
+    "n_calls": 3599,
+    "distinct_designs": -0.6795831255506106,
+    "n_distinct": 3336
+   },
+   "n-i-p/worse": {
+    "all_feasible_calls": -0.6880059415174841,
+    "n_calls": 3600,
+    "distinct_designs": -0.6940138776092163,
+    "n_distinct": 3313
+   },
+   "n-i-p/better": {
+    "all_feasible_calls": -0.6157024141950761,
+    "n_calls": 3600,
+    "distinct_designs": -0.6169579706849571,
+    "n_distinct": 3345
+   }
+  }
+ }
+}
