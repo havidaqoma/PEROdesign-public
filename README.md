@@ -5,6 +5,8 @@ Code and data for the paper
 > H. Aqoma, *Cost-aware design of perovskite solar modules with drift-diffusion simulation and multi-objective
 > optimisation* (2026). Preprint and journal links will be added here when they exist.
 
+Archived on Zenodo: [doi:10.5281/zenodo.23367536](https://doi.org/10.5281/zenodo.23367536) (all versions; version 1.0.0 is [doi:10.5281/zenodo.23367537](https://doi.org/10.5281/zenodo.23367537)).
+
 The repository holds everything needed to check and reproduce the paper's results: the evaluation chain, the
 optimisers, the two analysis plans, all 180 stored optimisation runs (43,200 simulator calls), the result files,
 the table of every number printed in the paper with the file it came from, and the Source Data workbooks.
@@ -136,7 +138,7 @@ File names follow the order in which the figures were made, not their order in t
 * **Order of plan and runs.** The development repository was private when the runs were made; its first upload to
   GitHub came after the runs had begun. The order of plans, amendments and runs therefore rests on the git parent
   chain and on the run logs, which name the commit each run started from (`docs/preregistration_provenance.json`).
-  The full development history will be archived with the release DOI.
+  The full development history will be added to the same Zenodo archive, as a later version, with the manuscript sources.
 
 ## Use of AI tools
 

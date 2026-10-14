@@ -1,5 +1,5 @@
 {
- "built_from_private_commit": "b2e8517",
+ "built_from_private_commit": "52082bc",
  "with_manuscript": false,
  "logs_trimmed": [
   "phase0/paperA/run.log",
@@ -64,6 +64,7 @@
   "docs/PaperB_preregistration.md",
   "docs/PaperB_results.md",
   "docs/REPRODUCE.md",
+  "docs/archive.json",
   "docs/preregistration_provenance.json",
   "paper/paperA/numbers.json",
   "paper/paperA/numbers_si.json",

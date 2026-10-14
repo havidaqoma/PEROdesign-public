@@ -77,4 +77,4 @@ simulator; it does not cover the stripe width, so a design is identified by `des
 | `PostHoc_rho` | POST-HOC: efficiency-cost rank correlation over all feasible calls and over distinct designs, both levels | 13 | `level`, `case`, `rho, all feasible calls`, `feasible calls`, `rho, distinct designs`, `distinct designs` |
 | `PostHoc_absorber_price` | POST-HOC: published MAPbI3 precursor prices against the library value (SI Note S17) | 5 | `source`, `item`, `USD/g`, `low USD/g`, `high USD/g`, `multiple of library value`, `verbatim quote`, `url`, `sha256` |
 | `FigS9_HV_curves` | Figure S9 and main Figure 6b: hypervolume vs calls, mean and 95% band per method and case (computed) | 4,321 | `arch`, `scenario`, `method`, `call`, `hv_mean`, `band_lo`, `band_hi`, `seed0`, `seed1`, `seed2`, `seed3`, `seed4` |
-| `Numbers_material_choice` | every material-choice number printed in the paper with its source (computed) | 445 | `token`, `printed value`, `raw`, `source` |
+| `Numbers_material_choice` | every material-choice number printed in the paper with its source (computed) | 447 | `token`, `printed value`, `raw`, `source` |

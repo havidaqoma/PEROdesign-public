@@ -16,6 +16,7 @@ authors:
 repository-code: "https://github.com/havidaqoma/PEROdesign-public"
 license: MIT
 version: "1.0.0"
+doi: "10.5281/zenodo.23367536"
 date-released: "2026-10-14"
 keywords:
   - perovskite photovoltaics

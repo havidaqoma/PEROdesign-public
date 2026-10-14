@@ -114,6 +114,11 @@ def main():
     put("ninf", sum(r["n_infeasible"] for r in runs.values()), "{:d}", "sum n_infeasible over phase0/paperB/runs")
     put("ninf_max", max(r["n_infeasible"] for r in runs.values()), "{:d}", "max n_infeasible in one run")
     put("commit_prereg", "2b32a78", "{}", "git commit of docs/PaperB_preregistration.md before any run")
+    arch = json.loads((REPO / "docs" / "archive.json").read_text(encoding="utf-8"))
+    if not (arch["repository_url"].startswith("https://github.com/") and arch["concept_doi"].startswith("10.5281/zenodo.")):
+        raise SystemExit("docs/archive.json: repository URL or Zenodo DOI missing or malformed")
+    put("repo_url", arch["repository_url"], "{}", "docs/archive.json repository_url")
+    put("repo_doi", arch["concept_doi"], "{}", "docs/archive.json concept_doi (Zenodo, all versions)")
     # --- gate G0 and diagnostics
     put("g0_n", len(g0["g0_checks"]), "{:d}", "phase0/paperB/gate0.json g0_checks")
     for d in g0["deltas"]:

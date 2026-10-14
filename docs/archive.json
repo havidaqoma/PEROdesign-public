@@ -1,0 +1,15 @@
+{
+  "_what": "Public archive of this repository. Read by scripts/paperAB_numbers.py (tokens b_repo_url, b_repo_doi) and checked against paper/paperAB/submission/EES_Solar/preprint.json by scripts/paperAB_cover_letter.py.",
+  "repository_url": "https://github.com/havidaqoma/PEROdesign-public",
+  "concept_doi": "10.5281/zenodo.23367536",
+  "concept_doi_meaning": "all versions; resolves to the latest version",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "tag": "v1.0.0",
+      "doi": "10.5281/zenodo.23367537",
+      "published": "2026-10-14",
+      "zenodo_record": "https://zenodo.org/records/23367537"
+    }
+  ]
+}

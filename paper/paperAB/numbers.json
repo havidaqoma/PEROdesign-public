@@ -2539,6 +2539,16 @@
   "raw": "2b32a78",
   "source": "git commit of docs/PaperB_preregistration.md before any run"
  },
+ "b_repo_url": {
+  "value": "https://github.com/havidaqoma/PEROdesign-public",
+  "raw": "https://github.com/havidaqoma/PEROdesign-public",
+  "source": "docs/archive.json repository_url"
+ },
+ "b_repo_doi": {
+  "value": "10.5281/zenodo.23367536",
+  "raw": "10.5281/zenodo.23367536",
+  "source": "docs/archive.json concept_doi (Zenodo, all versions)"
+ },
  "b_g0_n": {
   "value": "8",
   "raw": 8,
