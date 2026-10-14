@@ -360,8 +360,10 @@ def main():
     m = re.search(r"n-i-p NiOx ([0-9.]+) V vs\s+PTAA ([0-9.]+) V", pre)
     if not m:
         raise SystemExit("PaperB_preregistration.md: built-in voltage sentence not found")
-    put("vbi_nip_niox", float(m.group(1)), "{:.1f}", "docs/PaperB_preregistration.md rule B2 consequence: n-i-p NiOx built-in voltage (V)")
-    put("vbi_nip_ptaa", float(m.group(2)), "{:.1f}", "docs/PaperB_preregistration.md rule B2 consequence: n-i-p PTAA built-in voltage (V)")
+    put("vbi_nip_niox", float(m.group(1)), "{:.2f}", "docs/PaperB_preregistration.md rule B2 consequence: n-i-p NiOx built-in voltage (V)")
+    put("vbi_nip_ptaa", float(m.group(2)), "{:.2f}", "docs/PaperB_preregistration.md rule B2 consequence: n-i-p PTAA built-in voltage (V)")
+    if abs(float(m.group(1)) - vbi["SnO2"]) > 0.005:
+        raise SystemExit(f"plan built-in voltage {m.group(1)} V differs from the library value {vbi['SnO2']:.2f} V")
     # --- POST-HOC (pre-submission review 2026-10-09): published precursor prices against the absorber-price scan,
     # phase0/paperB/posthoc_absorber_prices.json (scripts/paperAB_absorber_prices.py), SI Note S17
     ap = json.loads((PB / "posthoc_absorber_prices.json").read_text(encoding="utf-8"))
@@ -426,9 +428,22 @@ def main():
     put("bias_hi", bias["p-i-n"], "{:.0f}", R + " 100*(1 - DPCE_MIN / cases['p-i-n/worse'].q2.gap_pce_points)")
     if not bias["n-i-p"] < bias["p-i-n"]:
         raise SystemExit("bias tokens: n-i-p is no longer the lower value; rewrite the sentence")
-    # the text says a bias of the observed size could remove the n-i-p trade-off but not the p-i-n one
-    if not (max(vrel) >= bias["n-i-p"] and max(vrel) < bias["p-i-n"]):
-        raise SystemExit(f"validation bias {max(vrel):.1f}% vs thresholds {bias}: rewrite the n-i-p/p-i-n bias sentences")
+    # the measured bias falls with thickness, so compare it at the thickness of the poor-absorber end designs
+    # (final agy check, p12): only the thinnest measured cell exceeds the n-i-p value; at the end-design thickness
+    # linear interpolation between the measured cells gives less; every measured cell stays below the p-i-n value
+    tv = sorted(zip([p["t"] for p in pts], vrel))
+    over = [t for t, v in tv if v >= bias["n-i-p"]]
+    q2n = res["cases"]["n-i-p/worse"]["q2"]
+    t_end = (q2n["pce_optimal"]["x"]["MAPbI3_nm"] + q2n["cost_optimal"]["x"]["MAPbI3_nm"]) / 2
+    k = next(i for i in range(len(tv) - 1) if tv[i][0] <= t_end <= tv[i + 1][0])
+    (t0, v0), (t1, v1) = tv[k], tv[k + 1]
+    v_end = v0 + (v1 - v0) * (t_end - t0) / (t1 - t0)
+    if not (over == [tv[0][0]] and v_end < bias["n-i-p"] and max(vrel) < bias["p-i-n"]):
+        raise SystemExit(f"validation bias by thickness {tv} vs thresholds {bias} (end design {t_end:.0f} nm: "
+                         f"{v_end:.1f}%): rewrite the n-i-p/p-i-n bias sentences")
+    put("val_t_thin", tv[0][0], "{:.0f}", G1 + " thinnest measured cell, points[].t (nm)")
+    put("val_t_end_nip", t_end, "{:.0f}", R + " mean MAPbI3_nm of cases['n-i-p/worse'].q2 pce_optimal and cost_optimal")
+    put("val_rel_end_nip", v_end, "{:.0f}", G1 + " relative bias linearly interpolated in t at val_t_end_nip")
     # --- cross-study comparison (post-hoc)
     A = json.loads((REPO / "phase0" / "paperA" / "result.json").read_text())
     nipA = A["cases"]["n-i-p/base"]["q2"]["pce_optimal"]["usd_per_W"]

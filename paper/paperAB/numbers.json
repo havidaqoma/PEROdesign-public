@@ -4430,12 +4430,12 @@
   "source": "phase0/paperB/posthoc_review.json (POST-HOC, not pre-specified) r4_rho.material_choice[*].all_feasible_calls (max)"
  },
  "b_vbi_nip_niox": {
-  "value": "1.7",
+  "value": "1.70",
   "raw": 1.7,
   "source": "docs/PaperB_preregistration.md rule B2 consequence: n-i-p NiOx built-in voltage (V)"
  },
  "b_vbi_nip_ptaa": {
-  "value": "1.4",
+  "value": "1.40",
   "raw": 1.4,
   "source": "docs/PaperB_preregistration.md rule B2 consequence: n-i-p PTAA built-in voltage (V)"
  },
@@ -4628,6 +4628,21 @@
   "value": "31",
   "raw": 30.887069961477252,
   "source": "phase0/paperB/result.json 100*(1 - DPCE_MIN / cases['p-i-n/worse'].q2.gap_pce_points)"
+ },
+ "b_val_t_thin": {
+  "value": "150",
+  "raw": 150.0,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) thinnest measured cell, points[].t (nm)"
+ },
+ "b_val_t_end_nip": {
+  "value": "235",
+  "raw": 235.3,
+  "source": "phase0/paperB/result.json mean MAPbI3_nm of cases['n-i-p/worse'].q2 pce_optimal and cost_optimal"
+ },
+ "b_val_rel_end_nip": {
+  "value": "13",
+  "raw": 12.724374824429981,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) relative bias linearly interpolated in t at val_t_end_nip"
  },
  "b_x_nip_ratio": {
   "value": "37",
