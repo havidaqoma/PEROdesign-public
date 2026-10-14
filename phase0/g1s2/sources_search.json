@@ -1,0 +1,523 @@
+{
+ "query": "perovskite AND (SCAPS OR \"drift-diffusion\" OR \"numerical simulation\") AND (\"Spiro-OMeTAD\" OR \"spiro-MeOTAD\") AND (PCBM OR \"PEDOT:PSS\" OR BCP) AND \"electron affinity\" AND OPEN_ACCESS:y AND (LICENSE:\"cc by\" OR LICENSE:\"cc-by\" OR LICENSE:\"cc by-nc\")",
+ "n_candidates": 73,
+ "failed": [],
+ "ranked": [
+  {
+   "pmcid": "PMC12617105",
+   "doi": "10.1039/d5ra06604b",
+   "year": "2025",
+   "title": "Simulated photovoltaic performance of N719 ruthenium dye sensitised solar cell with a power conversion efficiency exceed",
+   "licence": "creativecommons.org/licenses/by/3.0",
+   "table_index": 0,
+   "materials": [
+    "Spiro",
+    "TiO2",
+    "PCBM"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameter | Spiro-OMeTAD 4,19 | N719 dye 20 | PC61BM 21 | TiO 2 (ref. 4 ) | FTO 22–24 || Thickness, (nm) | 50.00 | 2000.0 | 50.0 | 30.0 | 100.0"
+  },
+  {
+   "pmcid": "PMC9694249",
+   "doi": "10.3390/molecules27227927",
+   "year": "2022",
+   "title": "Nitrogen-Doped Titanium Dioxide as a Hole Transport Layer for High-Efficiency Formamidinium Perovskite Solar Cells.",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 6,
+   "materials": [
+    "Spiro",
+    "TiO2",
+    "PEDOT"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | Substrate | ETL | Perovskite Absorber Layer | Novel HTL | Polymeric HTLs || FTO | TiO 2 | FAPbI 3 | TiO 2 :N | Spiro-OMeTAD [ 62 ] | P3HT [ 68 ] | PEDOT: PSS [ 58 ]"
+  },
+  {
+   "pmcid": "PMC13467878",
+   "doi": "10.3390/nano16150965",
+   "year": "2026",
+   "title": "Design of MAPb(Br&lt;sub&gt;x&lt;/sub&gt;I&lt;sub&gt;1-x&lt;/sub&gt;)&lt;sub&gt;3&lt;/sub&gt;-Based Solar Cells: Composi",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 0,
+   "materials": [
+    "TiO2",
+    "PEDOT"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameter | Unit | TiO 2 (ETL) | PEDOT:PSS (HTL) | MAPb(Br x I 1−x ) 3 || Thickness | nm | 50 | 50 | 500"
+  },
+  {
+   "pmcid": "PMC13326813",
+   "doi": "10.1039/d6ra02908f",
+   "year": "2026",
+   "title": "A dielectric SiO&lt;sub&gt;2&lt;/sub&gt; nanosphere array-assisted optical confinement strategy for high-efficiency and ",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_index": 0,
+   "materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | Spiro-MeOTD | CH 3 NH 3 PbI 3 | TiO 2 | FTO || Thickness (nm) | 200 | 300 | 50 | 100"
+  },
+  {
+   "pmcid": "PMC13362570",
+   "doi": "10.3390/ma19132700",
+   "year": "2026",
+   "title": "Towards High-Efficiency Inverted CH&lt;sub&gt;3&lt;/sub&gt;NH&lt;sub&gt;3&lt;/sub&gt;GeI&lt;sub&gt;3&lt;/sub&gt; Perovsk",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 1,
+   "materials": [
+    "PEDOT",
+    "PCBM"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | PCBM | MAGeI 3 | MoS 2 | WS 2 | PEDOT:PSS || Thickness, d (nm) | 50 | 400 | 5 | 5 | 20"
+  },
+  {
+   "pmcid": "PMC12091092",
+   "doi": "10.1039/d5ra02248g",
+   "year": "2025",
+   "title": "Numerical analysis of the MASnI&lt;sub&gt;3&lt;/sub&gt;/CZT(Se&lt;sub&gt;1-&lt;i&gt;x&lt;/i&gt;&lt;/sub&gt; S &lt;sub&gt",
+   "licence": "creativecommons.org/licenses/by/3.0",
+   "table_index": 0,
+   "materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "props": [
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | FTO | TiO 2 | MASnI 3 | Spiro-OMeTAD | CZTSe | CZTS || ε r | 9 | 10 | 8.2 | 3.0 | 10 | 10"
+  },
+  {
+   "pmcid": "PMC11755110",
+   "doi": "10.1039/d4ra08515a",
+   "year": "2025",
+   "title": "Optimizing Cs<sub>2</sub>CuBiBr<sub>6</sub> double halide perovskite for solar applications: the role of electron transp",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_index": 0,
+   "materials": [
+    "TiO2",
+    "PCBM"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameter (unit) | ITO | ETL | Cs 2 CuBiBr 6 | HTL || WS 2 | C 60 | PCBM | TiO 2 | CBTS"
+  },
+  {
+   "pmcid": "PMC10636004",
+   "doi": "10.1038/s41598-023-33419-1",
+   "year": "2023",
+   "title": "Pivotal avenue for hybrid electron transport layer-based perovskite solar cells with improved efficiency.",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 1,
+   "materials": [
+    "Spiro",
+    "PEDOT"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "HTL | PEDOT:PSS | CuI | Spiro-OMeTAD | CBTS | NiO || Thickness (nm) | 50 | 100 | 200 | 100 | 40"
+  },
+  {
+   "pmcid": "PMC10203109",
+   "doi": "10.1038/s41598-023-35504-x",
+   "year": "2023",
+   "title": "Performance analyses of highly efficient inverted all-perovskite bilayer solar cell.",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 0,
+   "materials": [
+    "PEDOT",
+    "PCBM"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | PEDOT:PSS 40 | PCBM 41 | MAPbI 3 42 | FA 0.5 MA 0.5 Pb 0.5 Sn 0.5 I 3 43 | TCO 40 || Thickness (nm) | 40 | 20 | 100–800 | 100–800 | 500"
+  },
+  {
+   "pmcid": "PMC10142877",
+   "doi": "10.3390/nano13081313",
+   "year": "2023",
+   "title": "Numerical Analysis of Stable (FAPbI<sub>3</sub>)<sub>0.85</sub>(MAPbBr<sub>3</sub>)<sub>0.15</sub>-Based Perovskite Sola",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 0,
+   "materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | TiO 2 [ 44 , 45 , 46 ] | ZnO [ 47 , 48 ] | (FAPbI 3 ) 0.85 (MAPbBr 3 ) 0.15 [ 49 ] | Spiro-OMeTAD [ 27 , 50 ] || Thickness (nm) | -- | -- | 550 | 150"
+  },
+  {
+   "pmcid": "PMC9925818",
+   "doi": "10.1038/s41598-023-28506-2",
+   "year": "2023",
+   "title": "An extensive study on multiple ETL and HTL layers to design and simulation of high-performance lead-free CsSnCl<sub>3</s",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 1,
+   "materials": [
+    "TiO2",
+    "PCBM"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | ITO | TiO 2 | PCBM | ZnO | C 60 | IGZO | SnO 2 | WS 2 | CeO 2 | CsSnCl 3 || Thickness (nm) | 500 | 30 | 50 | 50 | 50 | 30 | 100 | 100 | 100 | 800*"
+  },
+  {
+   "pmcid": "PMC9727753",
+   "doi": "10.1039/d2ra06734j",
+   "year": "2022",
+   "title": "Combined DFT, SCAPS-1D, and wxAMPS frameworks for design optimization of efficient Cs<sub>2</sub>BiAgI<sub>6</sub>-based",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_index": 0,
+   "materials": [
+    "TiO2",
+    "PCBM"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | ITO | TiO 2 | PCBM | ZnO | C 60 | IGZO | SnO 2 | WS 2 | CeO 2 | Cs 2 BiAgI 6 || Thickness (nm) | 500 | 30 | 50 | 50 | 50 | 30 | 100 | 100 | 100 | 800 a"
+  },
+  {
+   "pmcid": "PMC8470809",
+   "doi": "10.3390/nano11092321",
+   "year": "2021",
+   "title": "Design and Numerical Investigation of a Lead-Free Inorganic Layered Double Perovskite Cs<sub>4</sub>CuSb<sub>2</sub>Cl<s",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 0,
+   "materials": [
+    "Spiro",
+    "PEDOT"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | CCSCNCs | P3HT | PEDOT:PSS | Spiro-OMETAD | Cu 2 O | CuI || Thickness, d (nm) | 200 | 30 | 30 | 30 | 30 | 30"
+  },
+  {
+   "pmcid": "PMC12984023",
+   "doi": "10.1039/d5ra08437g",
+   "year": "2026",
+   "title": "SCAPS-1D simulation of lead-free perovskite solar cells: performance analysis and optimization.",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_index": 0,
+   "materials": [
+    "Spiro"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Input parameters | FTO | ETL (SnO 2 ) | Cs 2 PtI 6 | HTL (Spiro-OMeTAD) || Thickness, d (nm) | 150 | 40 | 200 | 100"
+  },
+  {
+   "pmcid": "PMC12421307",
+   "doi": "10.1039/d5ra05441a",
+   "year": "2025",
+   "title": "Computational modeling and photovoltaic performance evaluation of various ETL/HTL engineered CsCdI&lt;sub&gt;3&lt;/sub&g",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_index": 0,
+   "materials": [
+    "PCBM"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameter (unit) | ITO 14 | ETL | Absorber || LBSO 47 | SnS 2 (ref. 47 ) | PCBM 14 | IGZO 14 | WS 2 (ref. 14 ) | ZnO 14 | CsCdI 3 (ref. 34 )"
+  },
+  {
+   "pmcid": "PMC10502065",
+   "doi": "10.1038/s41598-023-42447-w",
+   "year": "2023",
+   "title": "All-inorganic perovskite photovoltaics for power conversion efficiency of 31.",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 2,
+   "materials": [
+    "TiO2"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | ZnO 64 | Al-ZnO 64 | TiO 2 65 | Li-TiO 2 65 || Thickness (nm) | 100 | 100 | 100 | 100"
+  },
+  {
+   "pmcid": "PMC10336477",
+   "doi": "10.1039/d3ra02485g",
+   "year": "2023",
+   "title": "Harnessing the potential of CsPbBr<sub>3</sub>-based perovskite solar cells using efficient charge transport materials a",
+   "licence": null,
+   "table_index": 0,
+   "materials": [
+    "TiO2"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | TCO | TiO 2 | CFTS | CsPbBr 3 || Thickness (μm) | 0.5 | 0.03 | 0.1 | 0.8 a"
+  },
+  {
+   "pmcid": "PMC10246436",
+   "doi": "10.1039/d3ra02170j",
+   "year": "2023",
+   "title": "Selection of a compatible electron transport layer and hole transport layer for the mixed perovskite FA<sub>0.85</sub>Cs",
+   "licence": null,
+   "table_index": 0,
+   "materials": [
+    "Spiro"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | FTO | SnO 2 | FA 0.85 Cs 0.15 Pb (I 0.85 Br 0.15 ) 3 | Spiro-OMeTAD | Au || Thickness ( t ) in nm | 500 | 70 | 350 | 165 | —"
+  },
+  {
+   "pmcid": "PMC10245210",
+   "doi": "10.1098/rsos.230331",
+   "year": "2023",
+   "title": "Boosting efficiency of eco-friendly perovskite solar cell through optimization of novel charge transport layers.",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 2,
+   "materials": [
+    "PCBM"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "parameters | FASnI 3 | PCBM | C 60 | Cu 2 O | CuAlO 2 | CuSCN | CuSbS 2 || thickness (nm) | 300 | 150 | 150 | 150 | 150 | 150 | 150"
+  },
+  {
+   "pmcid": "PMC10014240",
+   "doi": "10.1098/rsos.221127",
+   "year": "2023",
+   "title": "Performance analysis and optimization of inverted inorganic CsGeI<sub>3</sub> perovskite cells with carbon/copper charge",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 0,
+   "materials": [
+    "PCBM"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "parameters | C 60 | PCBM | CsGeI 3 | CuSCN | CuSbS 2 || thickness (nm) | 100 | 100 | 500 | 200 | 150"
+  },
+  {
+   "pmcid": "PMC9503613",
+   "doi": "10.3390/ma15186272",
+   "year": "2022",
+   "title": "Numerical Simulation of the Performance of Sb<sub>2</sub>Se<sub>3</sub> Solar Cell via Optimizing the Optoelectronic Pro",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 0,
+   "materials": [
+    "PEDOT"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Properties | ZnS (ETL) | Sb 2 Se 3 | PEDOT: PSS (HTL) | References || Thickness (nm) | 70 | variable | 40 | [ 29 , 36 ]"
+  },
+  {
+   "pmcid": "PMC8707567",
+   "doi": "10.3390/mi12121508",
+   "year": "2021",
+   "title": "Study of a Lead-Free Perovskite Solar Cell Using CZTS as HTL to Achieve a 20% PCE by SCAPS-1D Simulation.",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 1,
+   "materials": [
+    "TiO2"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | Symbol | p-CZTS | i-MASnI 3 | n-TiO 2 | n-FTO || Thickness | W (nm) | 300 | 500 | 50 | 50"
+  },
+  {
+   "pmcid": "PMC8659653",
+   "doi": "10.1371/journal.pone.0259778",
+   "year": "2021",
+   "title": "Novel perovskite solar cell with Distributed Bragg Reflector.",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_index": 0,
+   "materials": [
+    "Spiro"
+   ],
+   "props": [
+    "eps",
+    "Eg",
+    "chi",
+    "Nc",
+    "Nv",
+    "mun",
+    "mup",
+    "dop"
+   ],
+   "header": "Parameters | FTO | Al 2 0 3 | SnO 2 | NiO 2 | Pb based Perovskite | ZnO:Al | Tin based Perovskite | Si | SiO 2 | Spiro || m* n /m o | 0.26 | 2.86 | 0.24 | 1.794 | - | 0.010 | - | 162 | - | -"
+  }
+ ]
+}

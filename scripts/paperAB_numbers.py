@@ -128,7 +128,7 @@ def main():
         put(f"g0_{t}_d", d["step2_b2_contacts"]["module_pce_pct"] - d["production"]["module_pce_pct"], "{:.2f}",
             "gate0.json step2 - production module_pce_pct")
     sds = [diag["d1"][a][m]["resid_sd_points"] for a in ARCHS for m in ("Cu", "Ag")]
-    put("noise_sd", max(sds), "{:.3f}", "diag.json d1 max resid_sd_points (module PCE)")
+    put("noise_sd", max(sds), "{:.4f}", "diag.json d1 max resid_sd_points (module PCE); 4 decimals so that b_snr (computed from the unrounded SD) checks against the printed value")
     agcu = [diag["d1"][a]["ag_minus_cu"]["mean"] for a in ARCHS]
     rng("agcu_ref", agcu, "{:.3f}", "diag.json d1 ag_minus_cu mean (reference design)")
     d2 = {(r["HTL"], r["W_R_eV"]): r for r in diag["d2"]}
@@ -141,6 +141,13 @@ def main():
     put("snr_hi", max(agcu) / max(sds), "{:.0f}", "diag.json max ag_minus_cu mean / max resid_sd_points")
     wfgap = [pp("NiOx", "E_v_eV") - ov["metal_work_function_eV"][m] for m in ("Cu", "Ag")]
     rng("wfgap", wfgap, "{:.1f}", "NiOx E_v_eV - metal_work_function_eV for Cu and Ag (eV)")
+    # built-in voltage under the band-edge rule B2 with NiOx (panel review 2026-10-15): anode at the NiOx valence band,
+    # cathode at the conduction band of the electron-transport layer of either stack (SnO2 n-i-p, C60 p-i-n)
+    vbi = {e: pp("NiOx", "E_v_eV") - pp(e, "E_c_eV") for e in ("SnO2", "C60")}
+    if len(set(vbi.values())) != 1:
+        raise SystemExit(f"built-in voltage differs between the stacks {vbi}; the wording must name both")
+    put("vbi_nio", vbi["SnO2"], "{:.2f}", "materials_v2 NiOx E_v_eV - E_c_eV of SnO2 and of C60 (equal; contact rule B2)")
+    put("eg_abs", pp("MAPbI3", "E_v_eV") - pp("MAPbI3", "E_c_eV"), "{:.2f}", "materials_v2 MAPbI3 E_v_eV - E_c_eV")
     for a in ARCHS:
         put(f"pilot_rho_{TAG[a]}", pilot["summary"][a]["spearman_pce_usd"], "{:.2f}", f"pilot.json summary.{a}.spearman_pce_usd")
     # --- per case
@@ -380,12 +387,37 @@ def main():
     pts = sv[0]["points"]
     put("val_n", len(pts), "{:d}", G1 + " len(points)")
     rng("val_dpce", [p["sim"]["pce_pct"] - p["measured"]["pce"] for p in pts], "{:.1f}", G1 + " sim.pce_pct - measured.pce")
+    # relative to the SIMULATED efficiency, the same base as the uniform-bias sensitivity below (panel review p12, qwen)
+    vrel = [100 * (p["sim"]["pce_pct"] - p["measured"]["pce"]) / p["sim"]["pce_pct"] for p in pts]
+    rng("val_rel", vrel, "{:.0f}", G1 + " 100*(sim.pce_pct - measured.pce)/sim.pce_pct")
+    by_t = [v for _, v in sorted(zip([p["t"] for p in pts], vrel))]
+    if any(b >= a for a, b in zip(by_t, by_t[1:])):
+        raise SystemExit("validation bias no longer falls with absorber thickness; rewrite 'falling with thickness'")
     rng("val_jsc_sim", [p["sim"]["jsc_mA_cm2"] for p in pts], "{:.1f}", G1 + " sim.jsc_mA_cm2")
     rng("val_jsc_meas", [p["measured"]["jsc"] for p in pts], "{:.1f}", G1 + " measured.jsc")
     rng("val_voc_sim", [p["sim"]["voc_V"] for p in pts], "{:.2f}", G1 + " sim.voc_V")
     rng("val_voc_meas", [p["measured"]["voc"] for p in pts], "{:.2f}", G1 + " measured.voc")
     rng("val_ff_sim", [p["sim"]["ff"] for p in pts], "{:.2f}", G1 + " sim.ff")
     rng("val_ff_meas", [p["measured"]["ff"] for p in pts], "{:.2f}", G1 + " measured.ff")
+    # pre-specified verdict of that validation, both rounds (panel review 2026-10-15): reported, never re-judged
+    g1r1 = json.loads((REPO / "phase0" / "g1s2" / "result_main.json").read_text(encoding="utf-8"))
+    for lab, d in (("round 1", g1r1), ("round 2", g1)):
+        if d["summary"]["verdict"] != "NO-GO" or d["summary"]["adds_no_information_beyond_thickness"] is not True:
+            raise SystemExit(f"validation {lab}: verdict changed; the manuscript wording must be revisited")
+    req = [k for k in g1["summary"]["criteria"] if k.startswith("n_eligible_ge_")]
+    if len(req) != 1:
+        raise SystemExit("validation record: cannot read the required number of eligible series")
+    S2, S1 = "phase0/g1s2/round2/result_main.json", "phase0/g1s2/result_main.json"
+    put("val_req", int(req[0].rsplit("_", 1)[1]), "{:d}", S2 + " summary.criteria." + req[0])
+    put("val_nsel", g1["summary"]["n_series_selected"], "{:d}", S2 + " summary.n_series_selected")
+    put("val_elig_r1", g1r1["summary"]["n_eligible"], "{:d}", S1 + " summary.n_eligible")
+    put("val_elig_r2", g1["summary"]["n_eligible"], "{:d}", S2 + " summary.n_eligible")
+    put("val_rho_sim", sv[0]["rho_sim"], "{:.2f}", G1 + " rho_sim")
+    put("val_rho_base", sv[0]["rho_base"], "{:.2f}", G1 + " rho_base")
+    put("val_rho_voc", sv[0]["rho_voc"], "{:.2f}", G1 + " rho_voc")
+    put("val_rho_ff", sv[0]["rho_ff"], "{:.2f}", G1 + " rho_ff")
+    put("val_r1_rho_sim", g1r1["summary"]["mean_rho_sim"], "{:.2f}", S1 + " summary.mean_rho_sim")
+    put("val_r1_rho_base", g1r1["summary"]["mean_rho_base"], "{:.2f}", S1 + " summary.mean_rho_base")
     # --- uniform-bias sensitivity of the 0.2-point line (pre-submission review 2026-10-08): the efficiency reduction
     # (%) at which each poor-absorber gap, scaled with every efficiency, falls under DPCE_MIN
     line = float(N["b_dpce_min"]["raw"])
@@ -394,6 +426,9 @@ def main():
     put("bias_hi", bias["p-i-n"], "{:.0f}", R + " 100*(1 - DPCE_MIN / cases['p-i-n/worse'].q2.gap_pce_points)")
     if not bias["n-i-p"] < bias["p-i-n"]:
         raise SystemExit("bias tokens: n-i-p is no longer the lower value; rewrite the sentence")
+    # the text says a bias of the observed size could remove the n-i-p trade-off but not the p-i-n one
+    if not (max(vrel) >= bias["n-i-p"] and max(vrel) < bias["p-i-n"]):
+        raise SystemExit(f"validation bias {max(vrel):.1f}% vs thresholds {bias}: rewrite the n-i-p/p-i-n bias sentences")
     # --- cross-study comparison (post-hoc)
     A = json.loads((REPO / "phase0" / "paperA" / "result.json").read_text())
     nipA = A["cases"]["n-i-p/base"]["q2"]["pce_optimal"]["usd_per_W"]

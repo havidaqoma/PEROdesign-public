@@ -1,0 +1,387 @@
+{
+ "README": "G1 step 2 analysis (docs/G1_step2_preregistration.md \u00a73-\u00a74, amendments B1-B3). Reads phase0/g1s2/designs.json\n(measured values) + sim_<case>.json and applies the registered rules EXACTLY. No parameter is fitted.\nMain test (\u00a73): per eligible series (>= 4 thickness points simulated OK) Spearman rho(sim PCE, measured PCE) = rho_sim,\nplus rho for Jsc/Voc/FF and the thickness-only baseline rho_base = Spearman(thickness, measured PCE).\nGO iff: >= 10 eligible series; median rho_sim >= 0.5; rho_sim > 0 in >= 60 %; permutation p < 0.05 (10,000 within-series\nshuffles of measured PCE, one-sided on the mean rho_sim). Wording rule: if mean(rho_sim) - mean(rho_base) <= 0.10 the\nverdict must say the simulator adds no ranking information beyond thickness itself.\nSecondary (\u00a74): per family Spearman rho over successfully simulated devices; count families with rho >= 0.5 vs 15.",
+ "summary": {
+  "case": "S1",
+  "solver_variant": "b3",
+  "status_counts": {
+   "series:skipped": 51,
+   "series:failed": 56,
+   "series:complete": 11,
+   "family:skipped": 375,
+   "family:complete": 60,
+   "family:failed": 380,
+   "family:invalid": 7
+  },
+  "n_series_selected": 24,
+  "n_eligible": 1,
+  "n_ineligible": 23,
+  "median_rho_sim": 1.0,
+  "mean_rho_sim": 1.0,
+  "mean_rho_base": 1.0,
+  "frac_rho_sim_positive": 1.0,
+  "perm_p": 0.0413958604139586,
+  "criteria": {
+   "n_eligible_ge_10": false,
+   "median_rho_ge_0.5": true,
+   "frac_positive_ge_0.6": true,
+   "perm_p_lt_0.05": true
+  },
+  "verdict": "NO-GO",
+  "adds_no_information_beyond_thickness": true,
+  "families_simulable": 5,
+  "families_rho_ge_0.5": 1,
+  "plan_bar": 15,
+  "plan_bar_reachable": false
+ },
+ "series": [
+  {
+   "i": 8,
+   "doi": "10.1039/C6TA06718B",
+   "stack": "nip || MAPbI || PTAA || TiO2-c || Au",
+   "architecture": "n-i-p",
+   "n_ok": 4,
+   "n_failed": 0,
+   "t_range_nm": [
+    150.0,
+    290.0
+   ],
+   "rho_sim": 1.0,
+   "rho_base": 1.0,
+   "points": [
+    {
+     "t": 150.0,
+     "measured": {
+      "pce": 15.2,
+      "jsc": 19.2,
+      "voc": 1.05,
+      "ff": 0.754
+     },
+     "sim": {
+      "pce_pct": 20.75,
+      "jsc_mA_cm2": 19.03132,
+      "voc_V": 1.268,
+      "ff": 0.86
+     }
+    },
+    {
+     "t": 180.0,
+     "measured": {
+      "pce": 15.9,
+      "jsc": 19.7,
+      "voc": 1.07,
+      "ff": 0.755
+     },
+     "sim": {
+      "pce_pct": 21.490000000000002,
+      "jsc_mA_cm2": 19.78904,
+      "voc_V": 1.267,
+      "ff": 0.857
+     }
+    },
+    {
+     "t": 210.0,
+     "measured": {
+      "pce": 17.2,
+      "jsc": 20.8,
+      "voc": 1.08,
+      "ff": 0.765
+     },
+     "sim": {
+      "pce_pct": 22.15,
+      "jsc_mA_cm2": 20.50274,
+      "voc_V": 1.266,
+      "ff": 0.853
+     }
+    },
+    {
+     "t": 290.0,
+     "measured": {
+      "pce": 18.3,
+      "jsc": 21.4,
+      "voc": 1.1,
+      "ff": 0.7759999999999999
+     },
+     "sim": {
+      "pce_pct": 23.09,
+      "jsc_mA_cm2": 21.72877,
+      "voc_V": 1.2635,
+      "ff": 0.841
+     }
+    }
+   ],
+   "rho_jsc": 1.0,
+   "rho_voc": -1.0,
+   "rho_ff": -1.0
+  }
+ ],
+ "ineligible": [
+  {
+   "i": 0,
+   "doi": "10.1002/adma.201606774",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || SnO2-c || Au",
+   "n_points": 6,
+   "n_ok": 0,
+   "statuses": [
+    "skipped"
+   ]
+  },
+  {
+   "i": 1,
+   "doi": "10.1002/anie.201405334",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Ag",
+   "n_points": 4,
+   "n_ok": 0,
+   "statuses": [
+    "failed"
+   ]
+  },
+  {
+   "i": 2,
+   "doi": "10.1016/j.jssc.2015.08.002",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Au",
+   "n_points": 4,
+   "n_ok": 0,
+   "statuses": [
+    "failed"
+   ]
+  },
+  {
+   "i": 3,
+   "doi": "10.1016/j.orgel.2015.02.023",
+   "stack": "pin || MAPbI || PEDOT:PSS || PCBM-60 || Al",
+   "n_points": 9,
+   "n_ok": 0,
+   "statuses": [
+    "skipped"
+   ]
+  },
+  {
+   "i": 4,
+   "doi": "10.1016/j.orgel.2015.05.028",
+   "stack": "nip || MAPbI || PEDOT:PSS || PCBM-60 || Al",
+   "n_points": 5,
+   "n_ok": 0,
+   "statuses": [
+    "skipped"
+   ]
+  },
+  {
+   "i": 5,
+   "doi": "10.1016/j.orgel.2019.03.047",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c | PCBM-60 || Au",
+   "n_points": 5,
+   "n_ok": 1,
+   "statuses": [
+    "complete",
+    "failed"
+   ]
+  },
+  {
+   "i": 6,
+   "doi": "10.1021/acs.chemmater.5b01924",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Ag",
+   "n_points": 4,
+   "n_ok": 1,
+   "statuses": [
+    "complete",
+    "failed"
+   ]
+  },
+  {
+   "i": 7,
+   "doi": "10.1021/acsphotonics.5b00119",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Ag",
+   "n_points": 6,
+   "n_ok": 0,
+   "statuses": [
+    "failed"
+   ]
+  },
+  {
+   "i": 9,
+   "doi": "10.1039/C6TA07972E",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Au",
+   "n_points": 5,
+   "n_ok": 0,
+   "statuses": [
+    "failed"
+   ]
+  },
+  {
+   "i": 10,
+   "doi": "10.1039/c4nr02751e",
+   "stack": "pin || MAPbI || PEDOT:PSS || PCBM-60 || Al",
+   "n_points": 4,
+   "n_ok": 0,
+   "statuses": [
+    "skipped"
+   ]
+  },
+  {
+   "i": 11,
+   "doi": "10.1039/c5nr08935b",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Au",
+   "n_points": 4,
+   "n_ok": 0,
+   "statuses": [
+    "failed"
+   ]
+  },
+  {
+   "i": 12,
+   "doi": "10.1039/c5ra09110a",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Au",
+   "n_points": 4,
+   "n_ok": 1,
+   "statuses": [
+    "complete",
+    "failed"
+   ]
+  },
+  {
+   "i": 13,
+   "doi": "10.1039/c5ta03593g",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Au",
+   "n_points": 4,
+   "n_ok": 2,
+   "statuses": [
+    "complete",
+    "failed"
+   ]
+  },
+  {
+   "i": 14,
+   "doi": "10.1039/c6dt00900j",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Ag",
+   "n_points": 5,
+   "n_ok": 0,
+   "statuses": [
+    "failed"
+   ]
+  },
+  {
+   "i": 15,
+   "doi": "10.1039/c6ra23074a",
+   "stack": "pin || MAPbI || PEDOT:PSS || PCBM-60 || Ag",
+   "n_points": 8,
+   "n_ok": 0,
+   "statuses": [
+    "skipped"
+   ]
+  },
+  {
+   "i": 16,
+   "doi": "10.1039/c6ta07972e",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Au",
+   "n_points": 5,
+   "n_ok": 0,
+   "statuses": [
+    "failed"
+   ]
+  },
+  {
+   "i": 17,
+   "doi": "10.1039/c8ta04919j",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || PCBM-60 || Au",
+   "n_points": 4,
+   "n_ok": 0,
+   "statuses": [
+    "skipped"
+   ]
+  },
+  {
+   "i": 18,
+   "doi": "10.1039/c8ta04919j",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Au",
+   "n_points": 4,
+   "n_ok": 1,
+   "statuses": [
+    "complete",
+    "failed"
+   ]
+  },
+  {
+   "i": 19,
+   "doi": "10.1039/c8ta04919j",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c | PCBM-60 || Au",
+   "n_points": 4,
+   "n_ok": 0,
+   "statuses": [
+    "failed"
+   ]
+  },
+  {
+   "i": 20,
+   "doi": "10.1039/c8ta07318j",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || C60 || Ag",
+   "n_points": 4,
+   "n_ok": 0,
+   "statuses": [
+    "skipped"
+   ]
+  },
+  {
+   "i": 21,
+   "doi": "10.1063/1.4928516",
+   "stack": "pin || MAPbI || PEDOT:PSS || PCBM-60 || Al",
+   "n_points": 5,
+   "n_ok": 0,
+   "statuses": [
+    "skipped"
+   ]
+  },
+  {
+   "i": 22,
+   "doi": "10.1117/1.JPE.5.057405",
+   "stack": "pin || MAPbI || PEDOT:PSS || PCBM-60 || Al",
+   "n_points": 6,
+   "n_ok": 0,
+   "statuses": [
+    "skipped"
+   ]
+  },
+  {
+   "i": 23,
+   "doi": "10.1186/s11671-017-2401-5",
+   "stack": "nip || MAPbI || Spiro-MeOTAD || TiO2-c || Au",
+   "n_points": 5,
+   "n_ok": 1,
+   "statuses": [
+    "complete",
+    "failed"
+   ]
+  }
+ ],
+ "families": [
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | SnO2-c",
+   "n_devices": 75,
+   "n_ok": 0,
+   "rho": null
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | TiO2-c",
+   "n_devices": 420,
+   "n_ok": 55,
+   "rho": 0.5066742816835392
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | TiO2-c | PCBM-60",
+   "n_devices": 27,
+   "n_ok": 5,
+   "rho": null
+  },
+  {
+   "family": "pin | MAPbI | NiO-c | PCBM-60",
+   "n_devices": 48,
+   "n_ok": 0,
+   "rho": null
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | PCBM-60",
+   "n_devices": 252,
+   "n_ok": 0,
+   "rho": null
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "README": "G1 step 2: convergence breakdown per stack (series points and family devices), and whether failures depend on\nthickness (a selection-bias check for the secondary family test). Reads designs.json + sim_<case>.json.",
+ "case": "main",
+ "series_points_by_stack": {
+  "series SnO2/MAPbI3/Spiro-OMeTAD": {
+   "failed timeout": 6
+  },
+  "series TiO2-c/MAPbI3/Spiro-OMeTAD": {
+   "complete": 8,
+   "failed nonconv": 22,
+   "failed timeout": 24
+  },
+  "series PEDOT:PSS/MAPbI3/PCBM-60": {
+   "complete": 11,
+   "failed timeout": 21
+  },
+  "series PCBM-60/MAPbI3/PEDOT:PSS": {
+   "failed timeout": 5
+  },
+  "series TiO2-c/PCBM-60/MAPbI3/Spiro-OMeTAD": {
+   "failed timeout": 8,
+   "complete": 1
+  },
+  "series TiO2-c/MAPbI3/PTAA": {
+   "complete": 4
+  },
+  "series PCBM-60/MAPbI3/Spiro-OMeTAD": {
+   "failed timeout": 4
+  },
+  "series C60/MAPbI3/Spiro-OMeTAD": {
+   "complete": 1,
+   "failed nonconv": 2,
+   "failed timeout": 1
+  }
+ },
+ "series_complete_point_counts": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  2,
+  4,
+  9
+ ],
+ "families": [
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | SnO2-c",
+   "counts": {
+    "failed timeout": 68,
+    "complete": 6,
+    "failed nonconv": 1
+   },
+   "frac_complete": 0.08,
+   "median_absorber_nm_complete": 195.0,
+   "median_absorber_nm_not_complete": 380.0
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | TiO2-c",
+   "counts": {
+    "complete": 56,
+    "failed timeout": 207,
+    "failed nonconv": 150,
+    "invalid": 7
+   },
+   "frac_complete": 0.13333333333333333,
+   "median_absorber_nm_complete": 300.0,
+   "median_absorber_nm_not_complete": 350.0
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | TiO2-c | PCBM-60",
+   "counts": {
+    "failed timeout": 22,
+    "failed nonconv": 5
+   },
+   "frac_complete": 0.0,
+   "median_absorber_nm_complete": null,
+   "median_absorber_nm_not_complete": 300.0
+  },
+  {
+   "family": "pin | MAPbI | NiO-c | PCBM-60",
+   "counts": {
+    "complete": 48
+   },
+   "frac_complete": 1.0,
+   "median_absorber_nm_complete": 355.0,
+   "median_absorber_nm_not_complete": null
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | PCBM-60",
+   "counts": {
+    "failed timeout": 121,
+    "complete": 129,
+    "partial": 2
+   },
+   "frac_complete": 0.5119047619047619,
+   "median_absorber_nm_complete": 400.0,
+   "median_absorber_nm_not_complete": 290.0
+  }
+ ]
+}

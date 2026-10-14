@@ -120,6 +120,11 @@ first. Summed over all runs, the original runs took about 27 hours (thickness-on
 ran in parallel on a 14-thread machine. The global sensitivity analysis is `python scripts/p2_sensitivity.py run 12`
 followed by `analyse`.
 
+Memory: a mixed-variable Bayesian optimiser run grows to about 7 GB as its training data accumulate. The original
+runs therefore executed at most 6 of them at the same time (`PAPERB_BO_MAX`, default 6) in 47 GB of memory
+(analysis plan, Amendment A2). With less memory, set `PAPERB_BO_MAX` lower; this changes wall time only, because
+the designs a run evaluates depend only on its seed.
+
 ## Release check
 
 Before publication this tree was cloned into a new Python 3.11 environment built from `requirements-cpu.txt` and

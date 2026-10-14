@@ -218,7 +218,7 @@ def main():
              [[r["level"], r["case"], r["end"], r["NP"], r["module_pce_pct"], r["stored_module_pce_pct"], r.get("cell_pce_pct"),
                r["usd_per_W"], r.get("combo")] for r in me["rows"]]
              + [[f["level"], f["case"], "gap", f["NP"], f["gap_pce_points"], None, None, f["gap_cost_pct"],
-                 "above the 0.2-point line: " + yes_no(f["above_0p2_line"])
+                 "above the 0.2-point threshold: " + yes_no(f["above_0p2_line"])
                  + (" (fixed materials: no line applies)" if f["above_0p2_line"] is None else "")] for f in me["fronts"]])
     # --- POST-HOC sheets added with the pre-submission review (SI Notes S17, S19, S20)
     mf = json.loads((PB / "posthoc_mesh_front.json").read_text(encoding="utf-8"))
@@ -235,7 +235,7 @@ def main():
                r["stored_usd_per_W"]] for r in mf["rows"]])
     SD.sheet(wb, "PostHoc_mesh_fronts", "POST-HOC: fronts rebuilt from the re-simulated members (SI Table S29)",
              ["case", "NP", "points simulated", "front_size", "sets on front", "PCE-end set", "cost-end set",
-              "PCE-end module_pce_pct", "cost-end module_pce_pct", "gap_pce_points", "gap_cost_pct", "above the 0.2-point line"],
+              "PCE-end module_pce_pct", "cost-end module_pce_pct", "gap_pce_points", "gap_cost_pct", "above the 0.2-point threshold"],
              [[f["case"], f["NP"], f["n_points_simulated"], f["front_size"], "; ".join(f["combos_on_front"]), f["pce_end_combo"],
                f["cost_end_combo"], f["pce_end_pct"], f["cost_end_pct"], f["gap_pce_points"], f["gap_cost_pct"],
                yes_no(f["above_0p2_line"])] for f in mf["fronts"]])
@@ -245,7 +245,7 @@ def main():
              "SI Note S20, Table S30)",
              ["scenario", "feasible calls", "distinct designs", "front_size", "metals on front", "PCE-end metal",
               "PCE-end module_pce_pct", "PCE-end usd_per_W", "cost-end metal", "cost-end module_pce_pct", "cost-end usd_per_W",
-              "gap_pce_points", "gap_cost_pct", "above the 0.2-point line"],
+              "gap_pce_points", "gap_cost_pct", "above the 0.2-point threshold"],
              [[s, v["n_feasible_calls"], v["n_distinct"], v["front_size"], "; ".join(v["metals_on_front"]), v["pce_end"]["metal"],
                v["pce_end"]["module_pce_pct"], v["pce_end"]["usd_per_W"], v["cost_end"]["metal"],
                v["cost_end"]["module_pce_pct"], v["cost_end"]["usd_per_W"], v["gap_pce_points"], v["gap_cost_pct"],

@@ -1,0 +1,89 @@
+{
+ "README": "Amendment C1 convergence pre-check, GENERIC stacks only (scripts/g1s2r2_precheck.py, B2 contacts, B3 solver). Status only; no PCE was printed or used. Pass = all 3 absorber thicknesses complete.",
+ "runs": [
+  {
+   "material": "Spiro-OMeTAD",
+   "absorber_nm": 200,
+   "status": "failed",
+   "reason": "non-converged point at -0.04 V <= Vmpp=0.94 V",
+   "source": "stanic2022_materials"
+  },
+  {
+   "material": "Spiro-OMeTAD",
+   "absorber_nm": 400,
+   "status": "failed",
+   "reason": "non-converged point at -0.04 V <= Vmpp=0.916 V",
+   "source": "stanic2022_materials"
+  },
+  {
+   "material": "Spiro-OMeTAD",
+   "absorber_nm": 700,
+   "status": "failed",
+   "reason": "no MPP line in SimSS stdout",
+   "source": "stanic2022_materials"
+  },
+  {
+   "material": "TiO2-c",
+   "absorber_nm": 200,
+   "status": "complete",
+   "reason": "converged",
+   "source": "stanic2022_materials"
+  },
+  {
+   "material": "TiO2-c",
+   "absorber_nm": 400,
+   "status": "complete",
+   "reason": "converged",
+   "source": "stanic2022_materials"
+  },
+  {
+   "material": "TiO2-c",
+   "absorber_nm": 700,
+   "status": "complete",
+   "reason": "converged",
+   "source": "stanic2022_materials"
+  },
+  {
+   "material": "Spiro-OMeTAD",
+   "absorber_nm": 200,
+   "status": "failed",
+   "reason": "non-converged point at -0.04 V <= Vmpp=0.94 V",
+   "source": "stanic2021_materials"
+  },
+  {
+   "material": "Spiro-OMeTAD",
+   "absorber_nm": 400,
+   "status": "failed",
+   "reason": "non-converged point at -0.04 V <= Vmpp=0.916 V",
+   "source": "stanic2021_materials"
+  },
+  {
+   "material": "Spiro-OMeTAD",
+   "absorber_nm": 700,
+   "status": "failed",
+   "reason": "timeout after 130 s",
+   "source": "stanic2021_materials"
+  }
+ ],
+ "verdict": {
+  "Spiro-OMeTAD": {
+   "stanic2022_materials": "FAIL",
+   "stanic2021_materials": "FAIL",
+   "result": "not simulable in round 2 (both qualifying tables fail)"
+  },
+  "TiO2-c": {
+   "stanic2022_materials": "PASS",
+   "result": "stanic2022_materials used"
+  },
+  "PEDOT:PSS": {
+   "result": "not simulable (no C1-qualifying source)"
+  },
+  "PCBM-60": {
+   "result": "not simulable (no C1-qualifying source)"
+  },
+  "BCP": {
+   "result": "not simulable (no C1-qualifying source)"
+  }
+ },
+ "note": "Both Spiro tables list mu = 1e-4 cm2/Vs and N_A = 1e18 cm-3 (same authors); the first-run pre-check attempt built designs without schema/roles (script bug, all 'invalid'), fixed and re-run; the invalid attempt is not a physics result."
+}

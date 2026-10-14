@@ -1,0 +1,1032 @@
+{
+ "README": "Write phase0/g1s2/round2/qualification.json (amendment C1): every ranked candidate from find_g1s2r2_sources.py with\nits C1 verdict. Verdicts for papers with >= 1 lab-fabrication marker come from reading (2026-09-29, reading aid\nscripts/g1s2r2_fab_screen.py); papers with 0 markers and no 'we fabricated/prepared ... device' sentence are\nclassified mechanically as 'C1.2: simulation only' (disclosed as mechanical in the file).",
+ "n_ranked": 72,
+ "n_qualifying": 2,
+ "candidates_per_material_in_rank_order": {
+  "Spiro": [
+   "stanic2022_materials",
+   "stanic2021_materials"
+  ],
+  "TiO2": [
+   "stanic2022_materials",
+   "stanic2021_materials"
+  ],
+  "PEDOT": [],
+  "PCBM": [],
+  "BCP": []
+ },
+ "candidates": [
+  {
+   "pmcid": "PMC13448465",
+   "doi": "10.1039/d6ra04398d",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC13482617",
+   "doi": "10.1038/s41598-026-54942-x",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC10805918",
+   "doi": "10.1016/j.heliyon.2024.e23985",
+   "year": "2024",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC10636004",
+   "doi": "10.1038/s41598-023-33419-1",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC10308408",
+   "doi": "10.1021/acsomega.3c00306",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC9925818",
+   "doi": "10.1038/s41598-023-28506-2",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 3,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only; compares with other groups' reported results (Table 7)",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC9727753",
+   "doi": "10.1039/d2ra06734j",
+   "year": "2022",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC9713884",
+   "doi": "10.1021/acsomega.2c05912",
+   "year": "2022",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC8470809",
+   "doi": "10.3390/nano11092321",
+   "year": "2021",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC13362570",
+   "doi": "10.3390/ma19132700",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC12617105",
+   "doi": "10.1039/d5ra06604b",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by/3.0",
+   "table_materials": [
+    "PCBM",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 2,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC12402094",
+   "doi": "10.1038/s41598-025-00822-9",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "PCBM",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC12350632",
+   "doi": "10.1038/s41598-025-99575-8",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC9694249",
+   "doi": "10.3390/molecules27227927",
+   "year": "2022",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PEDOT",
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC13467878",
+   "doi": "10.3390/nano16150965",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PEDOT",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC13430446",
+   "doi": "10.1039/d6ra02463g",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by/3.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC13326813",
+   "doi": "10.1039/d6ra02908f",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 10,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: fabrication route is PROPOSED, no device was made",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC13325005",
+   "doi": "10.1039/d6ra03133a",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 12,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: authors state the full cell could not be fabricated (HTL incompatibility); simulation only",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC13294909",
+   "doi": "10.1021/acsomega.6c01385",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 2,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC13261463",
+   "doi": "10.1021/acsomega.5c11687",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "PEDOT",
+    "TiO2"
+   ],
+   "fab_markers": 12,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: fabricated device is a dye-sensitised cell, not a perovskite cell",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC13613869",
+   "doi": "10.1021/acsomega.6c02691",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "PCBM",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC12921307",
+   "doi": "10.1038/s41598-026-37468-0",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PEDOT",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC12436251",
+   "doi": "10.1186/s11671-025-04357-w",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 8,
+   "verdict": "rejected",
+   "rule_failed": "C1.3: table has no doping rows (7 of 8 properties); a CH3NH3SnI3 device was fabricated",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC12421307",
+   "doi": "10.1039/d5ra05441a",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_materials": [
+    "PCBM",
+    "Spiro"
+   ],
+   "fab_markers": 4,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only; fabrication discussed as future challenges",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC12091092",
+   "doi": "10.1039/d5ra02248g",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by/3.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC11971468",
+   "doi": "10.1038/s41598-025-96623-1",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 3,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: experimental J-V data provided by another laboratory, not a cell the authors fabricated",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC11755110",
+   "doi": "10.1039/d4ra08515a",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_materials": [
+    "PCBM",
+    "TiO2"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC12254258",
+   "doi": "10.1038/s41598-025-10731-6",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PCBM",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC11467589",
+   "doi": "10.1016/j.heliyon.2024.e38169",
+   "year": "2024",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC10551566",
+   "doi": "10.1016/j.heliyon.2023.e20558",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC10310699",
+   "doi": "10.1038/s41598-023-36769-y",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC10284827",
+   "doi": "10.1038/s41598-023-37018-y",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 3,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: powders synthesised; the cell is simulated only and validated against other groups' reports",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC10203109",
+   "doi": "10.1038/s41598-023-35504-x",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT"
+   ],
+   "fab_markers": 2,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: calibrated to other groups' reported J-V",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC10142877",
+   "doi": "10.3390/nano13081313",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC10707534",
+   "doi": "10.3390/ma16237445",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PCBM",
+    "PEDOT"
+   ],
+   "fab_markers": 3,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: only SiOx films were deposited; the perovskite cell is simulated and compared with reports",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC9656284",
+   "doi": "10.3390/ma15217859",
+   "year": "2022",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC9608959",
+   "doi": "10.3390/ma15207310",
+   "year": "2022",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 31,
+   "verdict": "QUALIFIES",
+   "source_id": "stanic2022_materials",
+   "usable_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "how": "read",
+   "note": "Fabricated FTO/c-TiO2(sputtered)/mp-BaTiO3/FAPbI3/spiro-OMeTAD/Au, J-V with Keithley 2400; SCAPS fitted to the measured J-V (Figure 2)."
+  },
+  {
+   "pmcid": "PMC9436975",
+   "doi": "10.1038/s41598-022-19194-5",
+   "year": "2022",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC9657588",
+   "doi": "10.3390/nano12213885",
+   "year": "2022",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PEDOT",
+    "TiO2"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC8585371",
+   "doi": "10.3390/ma14216341",
+   "year": "2021",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 20,
+   "verdict": "QUALIFIES",
+   "source_id": "stanic2021_materials",
+   "usable_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "how": "read",
+   "note": "Fabricated Rb0.05Cs0.1FA0.85PbI3 cell (~7%), J-V with Keithley 2400; SCAPS fitted to the measured J-V."
+  },
+  {
+   "pmcid": "PMC8494808",
+   "doi": "10.1038/s41598-021-99098-y",
+   "year": "2021",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro",
+    "TiO2"
+   ],
+   "fab_markers": 4,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC7770773",
+   "doi": "10.1007/s40820-019-0320-y",
+   "year": "2019",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PCBM",
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC13457608",
+   "doi": "10.1038/s41598-026-51783-6",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "Spiro"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: literature ranges, simulation only",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC12984023",
+   "doi": "10.1039/d5ra08437g",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_materials": [
+    "Spiro"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only ('fabricated devices' refers to simulated devices)",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC13046740",
+   "doi": "10.1038/s41598-026-41519-x",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 4,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: fabrication route is PROPOSED",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC12852119",
+   "doi": "10.1038/s41598-025-34000-8",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 5,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: fabrication route is PROPOSED",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC12858811",
+   "doi": "10.1038/s41598-025-34494-2",
+   "year": "2026",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "PEDOT"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC12604019",
+   "doi": "10.1039/d5ra07289a",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_materials": [
+    "PCBM"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC12125296",
+   "doi": "10.1038/s41598-025-98351-y",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 2,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC11772591",
+   "doi": "10.1038/s41598-024-80473-4",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 6,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC11721548",
+   "doi": "10.3390/ma18010186",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PEDOT"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC12216752",
+   "doi": "10.1038/s41598-025-06820-1",
+   "year": "2025",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC11513619",
+   "doi": "10.1039/d4ra06193d",
+   "year": "2024",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_materials": [
+    "Spiro"
+   ],
+   "fab_markers": 8,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: MAPbI3 films measured, but the cell is designed and simulated only (no fabricated cell)",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC11510213",
+   "doi": "10.3390/nano14201650",
+   "year": "2024",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC11002682",
+   "doi": "10.1016/j.heliyon.2024.e29091",
+   "year": "2024",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "BCP",
+    "PCBM"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC10923826",
+   "doi": "10.1038/s41598-024-56461-z",
+   "year": "2024",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro"
+   ],
+   "fab_markers": 2,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: fits J-V data from another group's experimental work (ref. 44)",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC11575632",
+   "doi": "10.1039/d4na00708e",
+   "year": "2024",
+   "licence": "creativecommons.org/licenses/by-nc/3.0",
+   "table_materials": [
+    "PCBM"
+   ],
+   "fab_markers": 2,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: NiO nanoparticles synthesised; no perovskite cell with the tabled material fabricated",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC11637156",
+   "doi": "10.1016/j.heliyon.2024.e33096",
+   "year": "2024",
+   "licence": "creativecommons.org/licenses/by-nc/4.0",
+   "table_materials": [
+    "PCBM"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC11224425",
+   "doi": "10.1038/s41598-024-66485-0",
+   "year": "2024",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PCBM"
+   ],
+   "fab_markers": 5,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: fabrication steps described from literature; simulation only",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC10780520",
+   "doi": "10.3390/nano14010048",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC10568731",
+   "doi": "10.1021/acsomega.3c03891",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by-nc-nd/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC10502065",
+   "doi": "10.1038/s41598-023-42447-w",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 2,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC10336477",
+   "doi": "10.1039/d3ra02485g",
+   "year": "2023",
+   "licence": null,
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC10246436",
+   "doi": "10.1039/d3ra02170j",
+   "year": "2023",
+   "licence": null,
+   "table_materials": [
+    "Spiro"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC10301252",
+   "doi": "10.3390/mi14061127",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "Spiro"
+   ],
+   "fab_markers": 3,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC9939591",
+   "doi": "10.1016/j.heliyon.2023.e13477",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 1,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: no own-fabrication sentence (1-2 generic markers only)",
+   "how": "screened: 'we/our ... fabricated/prepared ... device/cell' sentences read, not the full text"
+  },
+  {
+   "pmcid": "PMC10181465",
+   "doi": "10.3390/polym15092049",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PEDOT"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: polymer/Si tandem, calibrated against other groups' experiments",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC10142275",
+   "doi": "10.3390/polym15081823",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PEDOT"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: polymer/CIGS tandem, not a perovskite cell",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC10372323",
+   "doi": "10.1016/j.heliyon.2023.e18265",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "PCBM"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC10054775",
+   "doi": "10.3390/nano13060983",
+   "year": "2023",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 12,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: cell fabricated only to CHECK a prior simulation (19.03% sim vs 11.77% measured), no parameter fit to its J-V; first marked QUALIFIES in error, corrected 2026-09-29 after the agy review (no effect: rank-1 Stanic 2022 TiO2 was used)",
+   "how": "read"
+  },
+  {
+   "pmcid": "PMC9565295",
+   "doi": "10.3390/nano12193315",
+   "year": "2022",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  },
+  {
+   "pmcid": "PMC8707567",
+   "doi": "10.3390/mi12121508",
+   "year": "2021",
+   "licence": "creativecommons.org/licenses/by/4.0",
+   "table_materials": [
+    "TiO2"
+   ],
+   "fab_markers": 0,
+   "verdict": "rejected",
+   "rule_failed": "C1.2: simulation only (no fabrication described)",
+   "how": "mechanical"
+  }
+ ]
+}

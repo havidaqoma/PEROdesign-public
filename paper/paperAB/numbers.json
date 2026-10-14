@@ -2585,9 +2585,9 @@
   "source": "gate0.json step2 - production module_pce_pct"
  },
  "b_noise_sd": {
-  "value": "0.003",
+  "value": "0.0028",
   "raw": 0.002799862358223413,
-  "source": "diag.json d1 max resid_sd_points (module PCE)"
+  "source": "diag.json d1 max resid_sd_points (module PCE); 4 decimals so that b_snr (computed from the unrounded SD) checks against the printed value"
  },
  "b_agcu_ref_lo": {
   "value": "0.040",
@@ -2633,6 +2633,16 @@
   "value": "1.1",
   "raw": 1.1000000000000005,
   "source": "NiOx E_v_eV - metal_work_function_eV for Cu and Ag (eV) (max)"
+ },
+ "b_vbi_nio": {
+  "value": "1.70",
+  "raw": 1.7000000000000002,
+  "source": "materials_v2 NiOx E_v_eV - E_c_eV of SnO2 and of C60 (equal; contact rule B2)"
+ },
+ "b_eg_abs": {
+  "value": "1.63",
+  "raw": 1.6300000000000003,
+  "source": "materials_v2 MAPbI3 E_v_eV - E_c_eV"
  },
  "b_pilot_rho_pin": {
   "value": "-0.37",
@@ -4489,6 +4499,16 @@
   "raw": 3.469999999999999,
   "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) sim.pce_pct - measured.pce (max)"
  },
+ "b_val_rel_lo": {
+  "value": "11",
+  "raw": 11.465892597968057,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) 100*(sim.pce_pct - measured.pce)/sim.pce_pct (min)"
+ },
+ "b_val_rel_hi": {
+  "value": "19",
+  "raw": 18.585966791644346,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) 100*(sim.pce_pct - measured.pce)/sim.pce_pct (max)"
+ },
  "b_val_jsc_sim_lo": {
   "value": "19.0",
   "raw": 19.02945,
@@ -4548,6 +4568,56 @@
   "value": "0.78",
   "raw": 0.7759999999999999,
   "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) measured.ff (max)"
+ },
+ "b_val_req": {
+  "value": "10",
+  "raw": 10,
+  "source": "phase0/g1s2/round2/result_main.json summary.criteria.n_eligible_ge_10"
+ },
+ "b_val_nsel": {
+  "value": "24",
+  "raw": 24,
+  "source": "phase0/g1s2/round2/result_main.json summary.n_series_selected"
+ },
+ "b_val_elig_r1": {
+  "value": "2",
+  "raw": 2,
+  "source": "phase0/g1s2/result_main.json summary.n_eligible"
+ },
+ "b_val_elig_r2": {
+  "value": "1",
+  "raw": 1,
+  "source": "phase0/g1s2/round2/result_main.json summary.n_eligible"
+ },
+ "b_val_rho_sim": {
+  "value": "1.00",
+  "raw": 1.0,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) rho_sim"
+ },
+ "b_val_rho_base": {
+  "value": "1.00",
+  "raw": 1.0,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) rho_base"
+ },
+ "b_val_rho_voc": {
+  "value": "-0.89",
+  "raw": -0.8944271909999159,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) rho_voc"
+ },
+ "b_val_rho_ff": {
+  "value": "-1.00",
+  "raw": -1.0,
+  "source": "phase0/g1s2/round2/result_main.json series[eligible] (doi 10.1039/C6TA06718B) rho_ff"
+ },
+ "b_val_r1_rho_sim": {
+  "value": "0.34",
+  "raw": 0.3416666666666667,
+  "source": "phase0/g1s2/result_main.json summary.mean_rho_sim"
+ },
+ "b_val_r1_rho_base": {
+  "value": "0.91",
+  "raw": 0.9083333333333333,
+  "source": "phase0/g1s2/result_main.json summary.mean_rho_base"
  },
  "b_bias_lo": {
   "value": "18",

@@ -58,8 +58,9 @@ def merged_numbering(wb):
                        + MERGED_TABLES[int(m.group(2))], text)
         text = _re.sub(r"\b([Mm]ain Figure )([2-4])\b",
                        lambda m: f"{m.group(1)}{MERGED_FIGS[int(m.group(2))]}", text)
-        text = _re.sub(r"^(\s*Table)([1-5])_", lambda m: f"{m.group(1)}{MERGED_TABLES[int(m.group(2))]}_", text)
-        return _re.sub(r"^(\s*Fig)([2-4])_", lambda m: f"{m.group(1)}{MERGED_FIGS[int(m.group(2))]}_", text)
+        # sheet names anywhere in a cell (a panel review found "Table5_designs" left inside the README text)
+        text = _re.sub(r"\b(Table)([1-5])_", lambda m: f"{m.group(1)}{MERGED_TABLES[int(m.group(2))]}_", text)
+        return _re.sub(r"\b(Fig)([2-4])_", lambda m: f"{m.group(1)}{MERGED_FIGS[int(m.group(2))]}_", text)
     for ws in wb.worksheets:
         if ws.title != "Calls_all":
             for row in ws.iter_rows():
@@ -67,6 +68,17 @@ def merged_numbering(wb):
                     if isinstance(c.value, str) and ("Table" in c.value or "Fig" in c.value):
                         c.value = fix(c.value)
         ws.title = fix(ws.title)
+    # fail closed: every sheet name quoted in a text cell must exist after renumbering
+    names = set(wb.sheetnames)
+    for ws in wb.worksheets:
+        if ws.title == "Calls_all":
+            continue
+        for row in ws.iter_rows():
+            for c in row:
+                if isinstance(c.value, str):
+                    for ref in _re.findall(r"\b(?:Table|Fig)S?\d+_[A-Za-z0-9_]+", c.value):
+                        if ref not in names:
+                            raise SystemExit(f"Source Data: sheet {ws.title} names {ref}, which is not a sheet")
 HEAD = Font(bold=True, color="FFFFFF")
 FILL = PatternFill("solid", fgColor="305496")
 NOTE = Font(italic=True, color="555555")
@@ -160,7 +172,8 @@ def main():
         ("FigS2_final_scores", "SI Figure S2 and Table S13: per-seed final scores and alternative verdicts"),
         ("FigS5_scans", "SI Figure S5 and Table S12: post-hoc gap scans"),
         ("TableS11_sensitivity", "SI Table S11: post-hoc gap under single changed assumptions"),
-        ("FigS7_repeats", "SI Figure S7: repeated designs per run"),
+        ("FigS7_repeats", "SI Figure S7: repeated cell devices and repeated full designs per run" if MERGED
+         else "SI Figure S7: repeated designs per run"),
         ("FigS8_P2_sensitivity", "SI Figure S8 and Table S8: earlier global sensitivity ranking"),
         ("Verification", "SI Table S9/S10: deterministic checks, re-execution and fresh re-simulation"),
         ("Verification_fresh", "SI Table S10: stored calls re-simulated without the cache, stored and new values side by side"),
@@ -322,12 +335,19 @@ def main():
            "cost-opt USD/W", "gap_pce_pt", "gap_cost_pct", "small", "PCE-opt design", "cost-opt design", "n designs"], rows)
     rows = []
     for (a, s, m, k), r in sorted(runs.items()):
-        seen, n = set(), 0
+        seen, n, seen_x, nf = set(), 0, set(), 0
         for c in r["calls"]:
             n += c["design_hash"] in seen
             seen.add(c["design_hash"])
-        rows.append([a, s, m, k, n])
-    sheet(wb, "FigS7_repeats", "SI Figure S7. Repeated designs per run (computed).", ["arch", "scenario", "method", "seed", "repeats"], rows)
+            nf += tuple(c["x"]) in seen_x
+            seen_x.add(tuple(c["x"]))
+        rows.append([a, s, m, k, n] + ([nf] if MERGED else []))
+    if MERGED:  # panel review 2026-10-15: the hash leaves out the stripe width, so give both counts
+        sheet(wb, "FigS7_repeats", "SI Figure S7. Calls per run that asked again for a simulated cell device "
+              "(design hash, stripe width not included) and calls that repeated the full design (computed).",
+              ["arch", "scenario", "method", "seed", "cell_device_repeats", "full_design_repeats"], rows)
+    else:
+        sheet(wb, "FigS7_repeats", "SI Figure S7. Repeated designs per run (computed).", ["arch", "scenario", "method", "seed", "repeats"], rows)
     rows = [[k, i + 1, x["param"], x["index"], x["ci95_half"], x.get("S1")] for k in ("cell_pce_pct", "usd_per_W")
             for i, x in enumerate(p2["outputs"][k]["ranking"])]
     sheet(wb, "FigS8_P2_sensitivity", "SI Figure S8 / Table S8. Earlier global sensitivity (phase0/sensitivity/result.json).",

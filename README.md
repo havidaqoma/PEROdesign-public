@@ -73,8 +73,8 @@ All results are model predictions. No device of these stacks was fabricated for 
 
 The folder names `paperA` and `paperB` are the internal names of the thickness-only and material-choice designs.
 They are kept because the stored run files and the analysis plans refer to them. Some comments and documents
-mention "MASTER §n" or `docs/implementation-notes.md`: these are entries of the private development log and are not
-part of this repository. The two AutoTEA files in `third_party/` name documents of the AutoTEA project.
+mention "MASTER §n", `docs/implementation-notes.md` or development scripts such as `scripts/compare_devices.py` and
+`scripts/pin_parser_check.py`: these belong to the private development log and are not part of this repository. The two AutoTEA files in `third_party/` name documents of the AutoTEA project.
 
 The run logs in `phase0/` are shipped without the repeated warnings of third-party libraries (several thousand
 identical lines), and home-directory paths are shortened to `~/`; every line written by the run scripts is kept.
@@ -112,13 +112,14 @@ levels of reproduction (check, re-analyse, re-run), the expected run times, and 
 | Figure 2 (fronts, fixed materials) | `scripts/paperA_figures.py` | `phase0/paperA/figures/fig3_pareto_fronts.png` |
 | Figure 3 (cost parts) | `scripts/paperA_figures.py` | `phase0/paperA/figures/fig4_cost_parts.png` |
 | Figure 4 (fronts, material choice) | `scripts/paperB_figures.py` | `phase0/paperB/figures/figB1_fronts.png` |
-| Figure 5 (cheap corner, material choice) | `scripts/paperB_figures.py` | `phase0/paperB/figures/figB2_front_zoom.png` |
+| Figure 5 (low-cost end of the fronts, material choice) | `scripts/paperB_figures.py` | `phase0/paperB/figures/figB2_front_zoom.png` |
 | Figure 6a (hypervolume against calls, fixed materials) | `scripts/paperA_figures.py` | `phase0/paperA/figures/fig2_hv_vs_calls.png` |
 | Figure 6b (hypervolume against calls, material choice) | data in `source_data/SourceData_material_choice.xlsx`, sheet `FigS9_HV_curves`; the panel and the two-part assembly are drawn by the SI build and `scripts/paperAB_fig_hv.py`, which are released with the manuscript sources | `paper/paperAB/figures/fig2_hv_vs_calls_ab.png` (with the manuscript sources) |
 | Tables 1 to 6 and every number in the text | `scripts/paperA_numbers.py`, `paperB_numbers.py`, `paperAB_numbers.py` | `paper/paperAB/numbers.json` (from `phase0/paperA/result.json`, `phase0/paperB/result.json` and the post-hoc files) |
 | Supplementary figures and tables | `scripts/paperA_si_analysis.py`, `paperB_figures.py`, `paperB_posthoc.py`, `paperB_moox_bound.py`, `paperAB_mesh_check.py`, `paperAB_mesh_front.py`, `paperAB_posthoc_review.py`, `paperAB_absorber_prices.py`, `p2_sensitivity.py` | `phase0/paperA/si/`, `phase0/paperB/`, `phase0/sensitivity/` |
 | `paper/paperAB/numbers_si.json` | a copy of `paper/paperA/numbers_si.json` made by `scripts/paperAB_numbers.py`; the original is written by the thickness-only SI build, released with the manuscript sources | `paper/paperA/numbers_si.json` |
 | Source Data workbooks | `scripts/paperA_sourcedata.py --merged`, `paperB_sourcedata.py` | `paper/paperAB/build/` (the published copies are in `source_data/`) |
+| Table-of-contents graphic (journal submission only) | `scripts/paperAB_toc.py`, released with the manuscript sources; it plots every feasible design of one stored run, `phase0/paperB/runs/p-i-n__worse__mixbo__s0.json` | not in this repository |
 
 File names follow the order in which the figures were made, not their order in the paper.
 

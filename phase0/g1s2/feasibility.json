@@ -1,0 +1,813 @@
+{
+ "README": "G1 step 2 feasibility (metadata only, NO simulation): which Perovskite Database device families have enough devices\nwith complete per-layer thicknesses, and which library materials they would need.\n\nData: The Perovskite Database (Archive) v1.0.1, Zenodo doi 10.5281/zenodo.5837035, CC BY 4.0 (Jacobsson et al., Nat.\nEnergy 7, 107 (2022)). Downloaded zip md5 1119f05607ebe4bbf46ad7cc3258c6b0 (matches Zenodo's checksum).\nFamily = Cell_architecture x Perovskite_composition_short_form x HTL_stack_sequence x ETL_stack_sequence (plan v2 §12).\nA device is 'complete' if it has JV_default_PCE, a numeric perovskite thickness, and one numeric thickness per HTL and\nper ETL layer. 3D polycrystalline nip/pin only.",
+ "n_devices_with_pce": 40124,
+ "n_complete": 5095,
+ "families_ge20": 32,
+ "families_ge30": 20,
+ "families_ge67": 6,
+ "families_representable_now": [],
+ "materials_to_add_by_family_count": [
+  [
+   "Spiro-MeOTAD",
+   16
+  ],
+  [
+   "PCBM-60",
+   12
+  ],
+  [
+   "TiO2-c",
+   10
+  ],
+  [
+   "PEDOT:PSS",
+   9
+  ],
+  [
+   "BCP",
+   7
+  ],
+  [
+   "CsFAMAPbBrI",
+   6
+  ],
+  [
+   "FAMAPbBrI",
+   4
+  ],
+  [
+   "TiO2-mp",
+   3
+  ],
+  [
+   "SnO2-np",
+   2
+  ],
+  [
+   "NiMgLiO",
+   1
+  ],
+  [
+   "LiF",
+   1
+  ],
+  [
+   "ZnO-c",
+   1
+  ],
+  [
+   "Bphen",
+   1
+  ],
+  [
+   "TiO2-np",
+   1
+  ],
+  [
+   "PCBM-60; F8TBT",
+   1
+  ],
+  [
+   "ZnO-np",
+   1
+  ],
+  [
+   "PFN",
+   1
+  ],
+  [
+   "MAPbBrI",
+   1
+  ],
+  [
+   "CsFAPbI",
+   1
+  ],
+  [
+   "P3HT",
+   1
+  ],
+  [
+   "PEIE",
+   1
+  ]
+ ],
+ "families": [
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | TiO2-c",
+   "n_complete": 461,
+   "n_papers": 114,
+   "materials": [
+    "MAPbI",
+    "Spiro-MeOTAD",
+    "TiO2-c"
+   ],
+   "missing_from_library": [
+    "Spiro-MeOTAD",
+    "TiO2-c"
+   ],
+   "pce_median": 13.5,
+   "pce_iqr": 5.25,
+   "t_pvk_iqr_nm": 100.0,
+   "back_contacts": {
+    "Au": 286,
+    "Ag": 134,
+    "MoO3 | Au | MoO3": 10,
+    "NiO | Ag | NiO | NaYF4 | Ag": 9
+   }
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | TiO2-c | TiO2-mp",
+   "n_complete": 344,
+   "n_papers": 95,
+   "materials": [
+    "MAPbI",
+    "Spiro-MeOTAD",
+    "TiO2-c",
+    "TiO2-mp"
+   ],
+   "missing_from_library": [
+    "Spiro-MeOTAD",
+    "TiO2-c",
+    "TiO2-mp"
+   ],
+   "pce_median": 12.75,
+   "pce_iqr": 5.69,
+   "t_pvk_iqr_nm": 100.0,
+   "back_contacts": {
+    "Au": 221,
+    "Ag": 96,
+    "AgAl": 10,
+    "MoO3 | IZO": 3
+   }
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | PCBM-60",
+   "n_complete": 328,
+   "n_papers": 77,
+   "materials": [
+    "MAPbI",
+    "PEDOT:PSS",
+    "PCBM-60"
+   ],
+   "missing_from_library": [
+    "PEDOT:PSS",
+    "PCBM-60"
+   ],
+   "pce_median": 10.53,
+   "pce_iqr": 5.83,
+   "t_pvk_iqr_nm": 150.0,
+   "back_contacts": {
+    "Al": 133,
+    "Ag": 119,
+    "Ca | Al": 45,
+    "MoO3 ∣ Au ∣ Ag ∣ MoO3 | Alq3": 8
+   }
+  },
+  {
+   "family": "nip | CsFAMAPbBrI | Spiro-MeOTAD | TiO2-c | TiO2-mp",
+   "n_complete": 119,
+   "n_papers": 33,
+   "materials": [
+    "CsFAMAPbBrI",
+    "Spiro-MeOTAD",
+    "TiO2-c",
+    "TiO2-mp"
+   ],
+   "missing_from_library": [
+    "CsFAMAPbBrI",
+    "Spiro-MeOTAD",
+    "TiO2-c",
+    "TiO2-mp"
+   ],
+   "pce_median": 16.8,
+   "pce_iqr": 3.2,
+   "t_pvk_iqr_nm": 110.0,
+   "back_contacts": {
+    "Au": 112,
+    "ITO | Au": 5,
+    "Ag": 2
+   }
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | SnO2-c",
+   "n_complete": 75,
+   "n_papers": 18,
+   "materials": [
+    "MAPbI",
+    "Spiro-MeOTAD",
+    "SnO2-c"
+   ],
+   "missing_from_library": [
+    "Spiro-MeOTAD"
+   ],
+   "pce_median": 13.9,
+   "pce_iqr": 8.11,
+   "t_pvk_iqr_nm": 150.0,
+   "back_contacts": {
+    "Au": 53,
+    "Ag": 22
+   }
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | PCBM-60 | BCP",
+   "n_complete": 74,
+   "n_papers": 24,
+   "materials": [
+    "MAPbI",
+    "PEDOT:PSS",
+    "PCBM-60",
+    "BCP"
+   ],
+   "missing_from_library": [
+    "PEDOT:PSS",
+    "PCBM-60",
+    "BCP"
+   ],
+   "pce_median": 13.41,
+   "pce_iqr": 4.39,
+   "t_pvk_iqr_nm": 20.0,
+   "back_contacts": {
+    "Ag": 72,
+    "Al": 1,
+    "Au": 1
+   }
+  },
+  {
+   "family": "pin | MAPbI | NiMgLiO | PCBM-60 | BCP",
+   "n_complete": 66,
+   "n_papers": 1,
+   "materials": [
+    "MAPbI",
+    "NiMgLiO",
+    "PCBM-60",
+    "BCP"
+   ],
+   "missing_from_library": [
+    "NiMgLiO",
+    "PCBM-60",
+    "BCP"
+   ],
+   "pce_median": 13.55,
+   "pce_iqr": 10.66,
+   "t_pvk_iqr_nm": 0.0,
+   "back_contacts": {
+    "Ag": 66
+   }
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | PCBM-60 | LiF",
+   "n_complete": 60,
+   "n_papers": 17,
+   "materials": [
+    "MAPbI",
+    "PEDOT:PSS",
+    "PCBM-60",
+    "LiF"
+   ],
+   "missing_from_library": [
+    "PEDOT:PSS",
+    "PCBM-60",
+    "LiF"
+   ],
+   "pce_median": 12.62,
+   "pce_iqr": 3.31,
+   "t_pvk_iqr_nm": 140.0,
+   "back_contacts": {
+    "Al": 58,
+    "Ag": 2
+   }
+  },
+  {
+   "family": "nip | FAMAPbBrI | Spiro-MeOTAD | TiO2-c | TiO2-mp",
+   "n_complete": 57,
+   "n_papers": 20,
+   "materials": [
+    "FAMAPbBrI",
+    "Spiro-MeOTAD",
+    "TiO2-c",
+    "TiO2-mp"
+   ],
+   "missing_from_library": [
+    "FAMAPbBrI",
+    "Spiro-MeOTAD",
+    "TiO2-c",
+    "TiO2-mp"
+   ],
+   "pce_median": 17.1,
+   "pce_iqr": 4.55,
+   "t_pvk_iqr_nm": 200.0,
+   "back_contacts": {
+    "Au": 57
+   }
+  },
+  {
+   "family": "nip | FAMAPbBrI | Spiro-MeOTAD | SnO2-np",
+   "n_complete": 56,
+   "n_papers": 12,
+   "materials": [
+    "FAMAPbBrI",
+    "Spiro-MeOTAD",
+    "SnO2-np"
+   ],
+   "missing_from_library": [
+    "FAMAPbBrI",
+    "Spiro-MeOTAD",
+    "SnO2-np"
+   ],
+   "pce_median": 16.77,
+   "pce_iqr": 3.43,
+   "t_pvk_iqr_nm": 102.5,
+   "back_contacts": {
+    "Au": 55,
+    "Ag": 1
+   }
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | ZnO-c",
+   "n_complete": 51,
+   "n_papers": 13,
+   "materials": [
+    "MAPbI",
+    "Spiro-MeOTAD",
+    "ZnO-c"
+   ],
+   "missing_from_library": [
+    "Spiro-MeOTAD",
+    "ZnO-c"
+   ],
+   "pce_median": 13.85,
+   "pce_iqr": 3.01,
+   "t_pvk_iqr_nm": 89.0,
+   "back_contacts": {
+    "Ag": 38,
+    "Au": 12,
+    "MoO3 | Ag": 1
+   }
+  },
+  {
+   "family": "pin | MAPbI | NiO-c | PCBM-60",
+   "n_complete": 49,
+   "n_papers": 10,
+   "materials": [
+    "MAPbI",
+    "NiO-c",
+    "PCBM-60"
+   ],
+   "missing_from_library": [
+    "PCBM-60"
+   ],
+   "pce_median": 14.05,
+   "pce_iqr": 9.94,
+   "t_pvk_iqr_nm": 45.0,
+   "back_contacts": {
+    "Ag": 46,
+    "Al": 2,
+    "AgAl": 1
+   }
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | PCBM-60 | Bphen",
+   "n_complete": 45,
+   "n_papers": 9,
+   "materials": [
+    "MAPbI",
+    "PEDOT:PSS",
+    "PCBM-60",
+    "Bphen"
+   ],
+   "missing_from_library": [
+    "PEDOT:PSS",
+    "PCBM-60",
+    "Bphen"
+   ],
+   "pce_median": 14.01,
+   "pce_iqr": 2.52,
+   "t_pvk_iqr_nm": 30.0,
+   "back_contacts": {
+    "Ag": 45
+   }
+  },
+  {
+   "family": "nip | FAMAPbBrI | Spiro-MeOTAD | TiO2-c",
+   "n_complete": 43,
+   "n_papers": 12,
+   "materials": [
+    "FAMAPbBrI",
+    "Spiro-MeOTAD",
+    "TiO2-c"
+   ],
+   "missing_from_library": [
+    "FAMAPbBrI",
+    "Spiro-MeOTAD",
+    "TiO2-c"
+   ],
+   "pce_median": 17.1,
+   "pce_iqr": 3.1,
+   "t_pvk_iqr_nm": 200.0,
+   "back_contacts": {
+    "Au": 43
+   }
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | C60 | BCP",
+   "n_complete": 42,
+   "n_papers": 7,
+   "materials": [
+    "MAPbI",
+    "PEDOT:PSS",
+    "C60",
+    "BCP"
+   ],
+   "missing_from_library": [
+    "PEDOT:PSS",
+    "BCP"
+   ],
+   "pce_median": 10.62,
+   "pce_iqr": 5.23,
+   "t_pvk_iqr_nm": 80.0,
+   "back_contacts": {
+    "Ag": 32,
+    "Au": 6,
+    "Al": 4
+   }
+  },
+  {
+   "family": "nip | CsFAMAPbBrI | Spiro-MeOTAD | TiO2-c",
+   "n_complete": 38,
+   "n_papers": 12,
+   "materials": [
+    "CsFAMAPbBrI",
+    "Spiro-MeOTAD",
+    "TiO2-c"
+   ],
+   "missing_from_library": [
+    "CsFAMAPbBrI",
+    "Spiro-MeOTAD",
+    "TiO2-c"
+   ],
+   "pce_median": 17.7,
+   "pce_iqr": 2.09,
+   "t_pvk_iqr_nm": 82.5,
+   "back_contacts": {
+    "Au": 38
+   }
+  },
+  {
+   "family": "nip | CsFAMAPbBrI | Spiro-MeOTAD | SnO2-c",
+   "n_complete": 35,
+   "n_papers": 9,
+   "materials": [
+    "CsFAMAPbBrI",
+    "Spiro-MeOTAD",
+    "SnO2-c"
+   ],
+   "missing_from_library": [
+    "CsFAMAPbBrI",
+    "Spiro-MeOTAD"
+   ],
+   "pce_median": 18.3,
+   "pce_iqr": 3.04,
+   "t_pvk_iqr_nm": 125.0,
+   "back_contacts": {
+    "Au": 33,
+    "MoO3 | Al": 1,
+    "MoO3 | Au": 1
+   }
+  },
+  {
+   "family": "nip | CsFAMAPbBrI | Spiro-MeOTAD | TiO2-np",
+   "n_complete": 32,
+   "n_papers": 3,
+   "materials": [
+    "CsFAMAPbBrI",
+    "Spiro-MeOTAD",
+    "TiO2-np"
+   ],
+   "missing_from_library": [
+    "CsFAMAPbBrI",
+    "Spiro-MeOTAD",
+    "TiO2-np"
+   ],
+   "pce_median": 15.24,
+   "pce_iqr": 3.8,
+   "t_pvk_iqr_nm": 12.5,
+   "back_contacts": {
+    "Au": 32
+   }
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | PCBM-60; F8TBT",
+   "n_complete": 32,
+   "n_papers": 1,
+   "materials": [
+    "MAPbI",
+    "PEDOT:PSS",
+    "PCBM-60; F8TBT"
+   ],
+   "missing_from_library": [
+    "PEDOT:PSS",
+    "PCBM-60; F8TBT"
+   ],
+   "pce_median": 19.27,
+   "pce_iqr": 0.57,
+   "t_pvk_iqr_nm": 0.0,
+   "back_contacts": {
+    "Ag": 32
+   }
+  },
+  {
+   "family": "nip | CsFAMAPbBrI | Spiro-MeOTAD | SnO2-np",
+   "n_complete": 30,
+   "n_papers": 11,
+   "materials": [
+    "CsFAMAPbBrI",
+    "Spiro-MeOTAD",
+    "SnO2-np"
+   ],
+   "missing_from_library": [
+    "CsFAMAPbBrI",
+    "Spiro-MeOTAD",
+    "SnO2-np"
+   ],
+   "pce_median": 17.9,
+   "pce_iqr": 4.27,
+   "t_pvk_iqr_nm": 267.5,
+   "back_contacts": {
+    "Au": 24,
+    "Ag": 5,
+    "MoO3 | Ag": 1
+   }
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | TiO2-c | PCBM-60",
+   "n_complete": 29,
+   "n_papers": 6,
+   "materials": [
+    "MAPbI",
+    "Spiro-MeOTAD",
+    "TiO2-c",
+    "PCBM-60"
+   ],
+   "missing_from_library": [
+    "Spiro-MeOTAD",
+    "TiO2-c",
+    "PCBM-60"
+   ],
+   "pce_median": 12.22,
+   "pce_iqr": 2.94,
+   "t_pvk_iqr_nm": 100.0,
+   "back_contacts": {
+    "Au": 27,
+    "WO3 | Ag": 2
+   }
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | PCBM-60 | ZnO-np",
+   "n_complete": 29,
+   "n_papers": 8,
+   "materials": [
+    "MAPbI",
+    "PEDOT:PSS",
+    "PCBM-60",
+    "ZnO-np"
+   ],
+   "missing_from_library": [
+    "PEDOT:PSS",
+    "PCBM-60",
+    "ZnO-np"
+   ],
+   "pce_median": 9.37,
+   "pce_iqr": 7.28,
+   "t_pvk_iqr_nm": 170.0,
+   "back_contacts": {
+    "Al": 21,
+    "Ag-nw": 5,
+    "Ag": 3
+   }
+  },
+  {
+   "family": "pin | MAPbI | PTAA | PFN | PCBM-60 | BCP",
+   "n_complete": 28,
+   "n_papers": 2,
+   "materials": [
+    "MAPbI",
+    "PTAA",
+    "PFN",
+    "PCBM-60",
+    "BCP"
+   ],
+   "missing_from_library": [
+    "PFN",
+    "PCBM-60",
+    "BCP"
+   ],
+   "pce_median": 18.6,
+   "pce_iqr": 1.05,
+   "t_pvk_iqr_nm": 30.0,
+   "back_contacts": {
+    "Cu": 21,
+    "Cu | Ag": 3,
+    "Ag": 2,
+    "Al": 2
+   }
+  },
+  {
+   "family": "pin | FAMAPbBrI | PTAA | PCBM-60 | C60 | BCP",
+   "n_complete": 28,
+   "n_papers": 1,
+   "materials": [
+    "FAMAPbBrI",
+    "PTAA",
+    "PCBM-60",
+    "C60",
+    "BCP"
+   ],
+   "missing_from_library": [
+    "FAMAPbBrI",
+    "PCBM-60",
+    "BCP"
+   ],
+   "pce_median": 20.0,
+   "pce_iqr": 1.09,
+   "t_pvk_iqr_nm": 0.0,
+   "back_contacts": {
+    "Cu": 28
+   }
+  },
+  {
+   "family": "pin | MAPbI | NiO-c | PCBM-60 | BCP",
+   "n_complete": 25,
+   "n_papers": 7,
+   "materials": [
+    "MAPbI",
+    "NiO-c",
+    "PCBM-60",
+    "BCP"
+   ],
+   "missing_from_library": [
+    "PCBM-60",
+    "BCP"
+   ],
+   "pce_median": 11.72,
+   "pce_iqr": 5.79,
+   "t_pvk_iqr_nm": 160.0,
+   "back_contacts": {
+    "Ag": 18,
+    "Au": 6,
+    "Al": 1
+   }
+  },
+  {
+   "family": "nip | MAPbBrI | Spiro-MeOTAD | C60",
+   "n_complete": 24,
+   "n_papers": 1,
+   "materials": [
+    "MAPbBrI",
+    "Spiro-MeOTAD",
+    "C60"
+   ],
+   "missing_from_library": [
+    "MAPbBrI",
+    "Spiro-MeOTAD"
+   ],
+   "pce_median": 11.46,
+   "pce_iqr": 3.47,
+   "t_pvk_iqr_nm": 75.0,
+   "back_contacts": {
+    "Ag": 12,
+    "MoO3 | Au | MoO3": 12
+   }
+  },
+  {
+   "family": "pin | CsFAMAPbBrI | PEDOT:PSS | C60 | BCP",
+   "n_complete": 23,
+   "n_papers": 1,
+   "materials": [
+    "CsFAMAPbBrI",
+    "PEDOT:PSS",
+    "C60",
+    "BCP"
+   ],
+   "missing_from_library": [
+    "CsFAMAPbBrI",
+    "PEDOT:PSS",
+    "BCP"
+   ],
+   "pce_median": 10.0,
+   "pce_iqr": 6.4,
+   "t_pvk_iqr_nm": 0.0,
+   "back_contacts": {
+    "Ag": 23
+   }
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | C60",
+   "n_complete": 23,
+   "n_papers": 5,
+   "materials": [
+    "MAPbI",
+    "Spiro-MeOTAD",
+    "C60"
+   ],
+   "missing_from_library": [
+    "Spiro-MeOTAD"
+   ],
+   "pce_median": 12.8,
+   "pce_iqr": 4.95,
+   "t_pvk_iqr_nm": 120.0,
+   "back_contacts": {
+    "Ag": 12,
+    "Au": 7,
+    "MoO3 | Au | MoO3": 4
+   }
+  },
+  {
+   "family": "nip | CsFAPbI | Spiro-MeOTAD | TiO2-c",
+   "n_complete": 23,
+   "n_papers": 4,
+   "materials": [
+    "CsFAPbI",
+    "Spiro-MeOTAD",
+    "TiO2-c"
+   ],
+   "missing_from_library": [
+    "CsFAPbI",
+    "Spiro-MeOTAD",
+    "TiO2-c"
+   ],
+   "pce_median": 13.4,
+   "pce_iqr": 5.71,
+   "t_pvk_iqr_nm": 250.0,
+   "back_contacts": {
+    "Ag": 16,
+    "Au": 7
+   }
+  },
+  {
+   "family": "nip | MAPbI | P3HT | TiO2-c",
+   "n_complete": 21,
+   "n_papers": 10,
+   "materials": [
+    "MAPbI",
+    "P3HT",
+    "TiO2-c"
+   ],
+   "missing_from_library": [
+    "P3HT",
+    "TiO2-c"
+   ],
+   "pce_median": 5.93,
+   "pce_iqr": 9.25,
+   "t_pvk_iqr_nm": 100.0,
+   "back_contacts": {
+    "Au": 7,
+    "Ag": 6,
+    "MoO3 | Al": 5,
+    "MoO3 | Ag": 2
+   }
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | PCBM-60 | PEIE",
+   "n_complete": 21,
+   "n_papers": 3,
+   "materials": [
+    "MAPbI",
+    "PEDOT:PSS",
+    "PCBM-60",
+    "PEIE"
+   ],
+   "missing_from_library": [
+    "PEDOT:PSS",
+    "PCBM-60",
+    "PEIE"
+   ],
+   "pce_median": 7.72,
+   "pce_iqr": 5.79,
+   "t_pvk_iqr_nm": 230.0,
+   "back_contacts": {
+    "Ag": 21
+   }
+  },
+  {
+   "family": "nip | MAPbI | PTAA | TiO2-c",
+   "n_complete": 20,
+   "n_papers": 5,
+   "materials": [
+    "MAPbI",
+    "PTAA",
+    "TiO2-c"
+   ],
+   "missing_from_library": [
+    "TiO2-c"
+   ],
+   "pce_median": 15.61,
+   "pce_iqr": 3.68,
+   "t_pvk_iqr_nm": 53.8,
+   "back_contacts": {
+    "Au": 14,
+    "PEDOT:PSS | ITO | SLG": 6
+   }
+  }
+ ]
+}

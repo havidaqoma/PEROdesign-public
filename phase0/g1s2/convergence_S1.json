@@ -1,0 +1,112 @@
+{
+ "README": "G1 step 2: convergence breakdown per stack (series points and family devices), and whether failures depend on\nthickness (a selection-bias check for the secondary family test). Reads designs.json + sim_<case>.json.",
+ "case": "S1",
+ "series_points_by_stack": {
+  "series SnO2/MAPbI3/Spiro-OMeTAD": {
+   "skipped": 6
+  },
+  "series TiO2-c/MAPbI3/Spiro-OMeTAD": {
+   "failed nonconv": 25,
+   "failed timeout": 23,
+   "complete": 6
+  },
+  "series PEDOT:PSS/MAPbI3/PCBM-60": {
+   "skipped": 32
+  },
+  "series PCBM-60/MAPbI3/PEDOT:PSS": {
+   "skipped": 5
+  },
+  "series TiO2-c/PCBM-60/MAPbI3/Spiro-OMeTAD": {
+   "failed nonconv": 1,
+   "complete": 1,
+   "failed timeout": 7
+  },
+  "series TiO2-c/MAPbI3/PTAA": {
+   "complete": 4
+  },
+  "series PCBM-60/MAPbI3/Spiro-OMeTAD": {
+   "skipped": 4
+  },
+  "series C60/MAPbI3/Spiro-OMeTAD": {
+   "skipped": 4
+  }
+ },
+ "series_complete_point_counts": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  1,
+  1,
+  1,
+  1,
+  2,
+  4
+ ],
+ "families": [
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | SnO2-c",
+   "counts": {
+    "skipped": 75
+   },
+   "frac_complete": null,
+   "median_absorber_nm_complete": null,
+   "median_absorber_nm_not_complete": null
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | TiO2-c",
+   "counts": {
+    "complete": 55,
+    "failed timeout": 227,
+    "failed nonconv": 131,
+    "invalid": 7
+   },
+   "frac_complete": 0.13095238095238096,
+   "median_absorber_nm_complete": 300.0,
+   "median_absorber_nm_not_complete": 350.0
+  },
+  {
+   "family": "nip | MAPbI | Spiro-MeOTAD | TiO2-c | PCBM-60",
+   "counts": {
+    "failed timeout": 18,
+    "failed nonconv": 4,
+    "complete": 5
+   },
+   "frac_complete": 0.18518518518518517,
+   "median_absorber_nm_complete": 300.0,
+   "median_absorber_nm_not_complete": 300.0
+  },
+  {
+   "family": "pin | MAPbI | NiO-c | PCBM-60",
+   "counts": {
+    "skipped": 48
+   },
+   "frac_complete": null,
+   "median_absorber_nm_complete": null,
+   "median_absorber_nm_not_complete": null
+  },
+  {
+   "family": "pin | MAPbI | PEDOT:PSS | PCBM-60",
+   "counts": {
+    "skipped": 252
+   },
+   "frac_complete": null,
+   "median_absorber_nm_complete": null,
+   "median_absorber_nm_not_complete": null
+  }
+ ]
+}
