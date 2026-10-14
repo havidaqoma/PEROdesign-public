@@ -61,6 +61,7 @@ All results are model predictions. No device of these stacks was fabricated for 
 | `docs/P2_sensitivity_*.md`, `docs/G1_step2_preregistration.md` | analysis plan and results of the sensitivity analysis; the earlier analysis plan that defined the contact rule B2 |
 | `phase0/paperA/`, `phase0/paperB/` | stored runs (`runs/*.json`, one file per run with every call), result files (`result.json`), figures, post-hoc analyses (`posthoc*.json`), logs |
 | `phase0/sensitivity/` | global sensitivity analysis of the device model |
+| `phase0/g1s2/round2/` | validation record: simulated against measured current-voltage values of the one published thickness series that could be simulated (doi:10.1039/C6TA06718B); the measured values were taken from that paper. The search and screening that chose this series used a Perovskite Database extract that is not shipped. |
 | `paper/paperAB/numbers.json`, `numbers_si.json` | every number printed in the paper and SI, with the file and field it came from |
 | `paper/paperAB/assumption_support*.json` | every assumed input, the published quotation that supports it and the record of its check |
 | `paper/paperAB/refs.json`, `references.bib`, `references_verified.tsv` | the reference list and its DOI check |

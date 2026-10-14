@@ -1,5 +1,5 @@
 {
- "built_from_private_commit": "fb0213c",
+ "built_from_private_commit": "ea96d9d",
  "with_manuscript": false,
  "logs_trimmed": [
   "phase0/paperA/run.log",
@@ -95,6 +95,8 @@
   "perodesign/tea/__init__.py",
   "perodesign/tea/cost_library_v1.yaml",
   "perodesign/tea/provenance.py",
+  "phase0/g1s2/round2/result_main.json",
+  "phase0/g1s2/round2/sim_main.json",
   "phase0/grpo_smoke/grid_recheck.json",
   "phase0/paperA/figures/fig1_environment.png",
   "phase0/paperA/figures/fig2_hv_vs_calls.png",
@@ -351,6 +353,7 @@
   "scripts/paperB_si_verify.py",
   "scripts/paperB_sourcedata.py",
   "scripts/paperB_verify_runs.py",
+  "scripts/plan_terms.py",
   "scripts/prereg_provenance.py",
   "source_data/README.md",
   "source_data/SourceData_material_choice.xlsx",

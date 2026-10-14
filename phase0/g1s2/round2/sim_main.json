@@ -1,0 +1,6651 @@
+{
+"README": "G1 step 2 simulations (docs/G1_step2_preregistration.md + amendments B1, B2). Runs in WSL next to the SimSS binary.\nLibrary = production materials_v2.yaml + perodesign/library/g1s2_overlay.yaml, merged in memory (the production file is\nnot touched). Per device:\n  * back-metal optics from the database back contact (Au/Ag/Al, SimSS nk files, L_BE 101 nm = SimSS default);\n  * contacts (amendment B2): barrier-free band-edge work functions: cathode = E_c of the electron-side layer it\n    touches, anode = E_v of the hole-side layer it touches (n-i-p: left = cathode; p-i-n: left = anode).\nCase 'main' = sources verbatim; case 'S1' = TiO2-c doping flipped to N_D 9e22 / N_A 0 m^-3 (pre-declared sensitivity).\nMeasured values are NOT read or printed here.",
+"round": "2",
+"case": "main",
+"solver_variant": "b3",
+"solver_settings": {
+"NP": 500,
+"timeout_s": 120
+},
+"binary_sha256": "1d9072f5a8049d26bec59dd7101adb53fcc3290db76f2598d2a493e7ac4bae55",
+"overlay_sha256": "1cdbcdd1df5b40736291125d7d07f36398bdce6f56ad2f9a3545526de775fb8a",
+"status_counts": {
+"series:invalid": 114,
+"series:complete": 4,
+"family:invalid": 822
+},
+"results": [
+{
+"kind": "series",
+"i": 0,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 0,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 0,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 0,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 0,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 0,
+"j": 5,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 1,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 1,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 1,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 1,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 2,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 2,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 2,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 2,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 3,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 3,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 3,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 3,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 3,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 3,
+"j": 5,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 3,
+"j": 6,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 3,
+"j": 7,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 3,
+"j": 8,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 4,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 4,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 4,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 4,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 4,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 5,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 5,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 5,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 5,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 5,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 6,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 6,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 6,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 6,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 7,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 7,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 7,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 7,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 7,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 7,
+"j": 5,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 8,
+"j": 0,
+"status": "complete",
+"reason": null,
+"metrics": {
+"ff": 0.853,
+"jsc_mA_cm2": 19.02945,
+"mpp_W_m2": 186.7,
+"pce_pct": 18.669999999999998,
+"vmpp_V": 1.02,
+"voc_V": 1.15
+},
+"W_L_eV": 4.2,
+"W_R_eV": 5.4,
+"warnings": [],
+"seconds": 14.843,
+"design_hash": "ba3a804377ab0593963c075956ca6ceaa51e7316c61b9c4a2670227eff20d371"
+},
+{
+"kind": "series",
+"i": 8,
+"j": 1,
+"status": "complete",
+"reason": null,
+"metrics": {
+"ff": 0.847,
+"jsc_mA_cm2": 19.786459999999998,
+"mpp_W_m2": 192.7,
+"pce_pct": 19.27,
+"vmpp_V": 1.02,
+"voc_V": 1.15
+},
+"W_L_eV": 4.2,
+"W_R_eV": 5.4,
+"warnings": [],
+"seconds": 9.431,
+"design_hash": "50d42de7cc4aeddf079f4b2c98dc982984823d92ad8f4513b3f9ebd65c0c422c"
+},
+{
+"kind": "series",
+"i": 8,
+"j": 2,
+"status": "complete",
+"reason": null,
+"metrics": {
+"ff": 0.842,
+"jsc_mA_cm2": 20.49931,
+"mpp_W_m2": 198.4,
+"pce_pct": 19.84,
+"vmpp_V": 1.02,
+"voc_V": 1.149
+},
+"W_L_eV": 4.2,
+"W_R_eV": 5.4,
+"warnings": [],
+"seconds": 11.668,
+"design_hash": "8ea8094dfe53dad9c1b546619b14339102c10dc1df3425b4fdc4122b02b8c4aa"
+},
+{
+"kind": "series",
+"i": 8,
+"j": 3,
+"status": "complete",
+"reason": null,
+"metrics": {
+"ff": 0.828,
+"jsc_mA_cm2": 21.72249,
+"mpp_W_m2": 206.7,
+"pce_pct": 20.669999999999998,
+"vmpp_V": 1.01,
+"voc_V": 1.149
+},
+"W_L_eV": 4.2,
+"W_R_eV": 5.4,
+"warnings": [],
+"seconds": 11.827,
+"design_hash": "22d7322a11ccee85ee6c34f8c76d06e4c96da1af26b568848431d405e24d658f"
+},
+{
+"kind": "series",
+"i": 9,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 9,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 9,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 9,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 9,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 10,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 10,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 10,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 10,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 11,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 11,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 11,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 11,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 12,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 12,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 12,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 12,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 13,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 13,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 13,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 13,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 14,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 14,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 14,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 14,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 14,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 15,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 15,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 15,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 15,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 15,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 15,
+"j": 5,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 15,
+"j": 6,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 15,
+"j": 7,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 16,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 16,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 16,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 16,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 16,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 17,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 17,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 17,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 17,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 18,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 18,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 18,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 18,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 19,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 19,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 19,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 19,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 20,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 20,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 20,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 20,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 21,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 21,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 21,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 21,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 21,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 22,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 22,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 22,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 22,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 22,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 22,
+"j": 5,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "series",
+"i": 23,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 23,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 23,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 23,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "series",
+"i": 23,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 5,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 6,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 7,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 8,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 9,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 10,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 11,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 12,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 13,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 14,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 15,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 16,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 17,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 18,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 19,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 20,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 21,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 22,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 23,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 24,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 25,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 26,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 27,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 28,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 29,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 30,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 31,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 32,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 33,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 34,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 35,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 36,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 37,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 38,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 39,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 40,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 41,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 42,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 43,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 44,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 45,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 46,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 47,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 48,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 49,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 50,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 51,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 52,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 53,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 54,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 55,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 56,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 57,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 58,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 59,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 60,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 61,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 62,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 63,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 64,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 65,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 66,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 67,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 68,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 69,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 70,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 71,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 72,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 73,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 0,
+"j": 74,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 5,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 6,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 7,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 8,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 9,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 10,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 11,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 12,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 13,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 14,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 15,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 16,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 17,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 18,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 19,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 20,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 21,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 22,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 23,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 24,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 25,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 26,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 27,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 28,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 29,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 30,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 31,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 32,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 33,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 34,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 35,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 36,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 37,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 38,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 39,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 40,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 41,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 42,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 43,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 44,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 45,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 46,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 47,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 48,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 49,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 50,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 51,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 52,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 53,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 54,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 55,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 56,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 57,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 58,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 59,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 60,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 61,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 62,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 63,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 64,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 65,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 66,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 67,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 68,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 69,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 70,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 71,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 72,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 73,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 74,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 75,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 76,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 77,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 78,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 79,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 80,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 81,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 82,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 83,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 84,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 85,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 86,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 87,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 88,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 89,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 90,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 91,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 92,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 93,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 94,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 95,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 96,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 97,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 98,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 99,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 100,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 101,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 102,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 103,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 104,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 105,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 106,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 107,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 108,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 109,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 110,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 111,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 112,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 113,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 114,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 115,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 116,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 117,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 118,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 119,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 120,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 121,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 122,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 123,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 124,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 125,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 126,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 127,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 128,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 129,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 130,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 131,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 132,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 133,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 134,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 135,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 136,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 137,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 138,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 139,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 140,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 141,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 142,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 143,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 144,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 145,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 146,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 147,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 148,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 149,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 150,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 151,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 152,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 153,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 154,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 155,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 156,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 157,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 158,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 159,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 160,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 161,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 162,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 163,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 164,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 165,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 166,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 167,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 168,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 169,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 170,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 171,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 172,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 173,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 174,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 175,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 176,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 177,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 178,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 179,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 180,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 181,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 182,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 183,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 184,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 185,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 186,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 187,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 188,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 189,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 190,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 191,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 192,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 193,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 194,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 195,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 196,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 197,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 198,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 199,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 200,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 201,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 202,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 203,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 204,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 205,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 206,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 207,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 208,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 209,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 210,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 211,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 212,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 213,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 214,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 215,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 216,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 217,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 218,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 219,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 220,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 221,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 222,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 223,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 224,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 225,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 226,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 227,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 228,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 229,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 230,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 231,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 232,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 233,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 234,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 235,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 236,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 237,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 238,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 239,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 240,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 241,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 242,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 243,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 244,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 245,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 246,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 247,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 248,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 249,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 250,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 251,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 252,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 253,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 254,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 255,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 256,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 257,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 258,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 259,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 260,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 261,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 262,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 263,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 264,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 265,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 266,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 267,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 268,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 269,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 270,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 271,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 272,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 273,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 274,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 275,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 276,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 277,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 278,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 279,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 280,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 281,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 282,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 283,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 284,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 285,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 286,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 287,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 288,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 289,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 290,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 291,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 292,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 293,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 294,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 295,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 296,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 297,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 298,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 299,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 300,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 301,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 302,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 303,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 304,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 305,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 306,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 307,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 308,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 309,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 310,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 311,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 312,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 313,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 314,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 315,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 316,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 317,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 318,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 319,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 320,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 321,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 322,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 323,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 324,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 325,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 326,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 327,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 328,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 329,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 330,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 331,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 332,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 333,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 334,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 335,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 336,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 337,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 338,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 339,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 340,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 341,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 342,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 343,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 344,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 345,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 346,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 347,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 348,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 349,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 350,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 351,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 352,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 353,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 354,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 355,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 356,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 357,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 358,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 359,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 360,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 361,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 362,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 363,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 364,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 365,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 366,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 367,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 368,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 369,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 370,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 371,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 372,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 373,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 374,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 375,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 376,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 377,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 378,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 379,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 380,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 381,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 382,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 383,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 384,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 385,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 386,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 387,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 388,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 389,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 390,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 391,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 392,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 393,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 394,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 395,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 396,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 397,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 398,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 399,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 400,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 401,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 402,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 403,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 404,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 405,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 406,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 407,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 408,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 409,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 410,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 411,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 412,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 413,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 414,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 415,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 416,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 417,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 418,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 1,
+"j": 419,
+"status": "invalid",
+"reason": "not in step-2 library: ['Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 5,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 6,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 7,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 8,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 9,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 10,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 11,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 12,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 13,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 14,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 15,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 16,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 17,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 18,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 19,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 20,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 21,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 22,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 23,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 24,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 25,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 2,
+"j": 26,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'Spiro-OMeTAD']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 5,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 6,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 7,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 8,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 9,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 10,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 11,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 12,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 13,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 14,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 15,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 16,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 17,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 18,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 19,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 20,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 21,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 22,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 23,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 24,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 25,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 26,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 27,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 28,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 29,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 30,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 31,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 32,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 33,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 34,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 35,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 36,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 37,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 38,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 39,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 40,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 41,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 42,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 43,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 44,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 45,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 46,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 3,
+"j": 47,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 0,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 1,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 2,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 3,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 4,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 5,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 6,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 7,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 8,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 9,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 10,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 11,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 12,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 13,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 14,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 15,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 16,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 17,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 18,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 19,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 20,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 21,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 22,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 23,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 24,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 25,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 26,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 27,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 28,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 29,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 30,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 31,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 32,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 33,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 34,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 35,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 36,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 37,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 38,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 39,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 40,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 41,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 42,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 43,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 44,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 45,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 46,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 47,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 48,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 49,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 50,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 51,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 52,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 53,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 54,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 55,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 56,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 57,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 58,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 59,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 60,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 61,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 62,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 63,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 64,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 65,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 66,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 67,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 68,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 69,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 70,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 71,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 72,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 73,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 74,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 75,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 76,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 77,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 78,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 79,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 80,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 81,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 82,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 83,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 84,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 85,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 86,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 87,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 88,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 89,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 90,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 91,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 92,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 93,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 94,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 95,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 96,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 97,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 98,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 99,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 100,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 101,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 102,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 103,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 104,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 105,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 106,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 107,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 108,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 109,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 110,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 111,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 112,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 113,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 114,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 115,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 116,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 117,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 118,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 119,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 120,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 121,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 122,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 123,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 124,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 125,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 126,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 127,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 128,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 129,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 130,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 131,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 132,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 133,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 134,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 135,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 136,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 137,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 138,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 139,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 140,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 141,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 142,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 143,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 144,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 145,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 146,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 147,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 148,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 149,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 150,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 151,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 152,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 153,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 154,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 155,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 156,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 157,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 158,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 159,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 160,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 161,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 162,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 163,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 164,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 165,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 166,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 167,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 168,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 169,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 170,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 171,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 172,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 173,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 174,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 175,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 176,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 177,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 178,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 179,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 180,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 181,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 182,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 183,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 184,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 185,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 186,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 187,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 188,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 189,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 190,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 191,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 192,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 193,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 194,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 195,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 196,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 197,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 198,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 199,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 200,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 201,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 202,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 203,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 204,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 205,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 206,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 207,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 208,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 209,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 210,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 211,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 212,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 213,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 214,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 215,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 216,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 217,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 218,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 219,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 220,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 221,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 222,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 223,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 224,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 225,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 226,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 227,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 228,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 229,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 230,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 231,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 232,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 233,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 234,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 235,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 236,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 237,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 238,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 239,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 240,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 241,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 242,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 243,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 244,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 245,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 246,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 247,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 248,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 249,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 250,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+},
+{
+"kind": "family",
+"i": 4,
+"j": 251,
+"status": "invalid",
+"reason": "not in step-2 library: ['PCBM-60', 'PEDOT:PSS']"
+}
+]
+}
