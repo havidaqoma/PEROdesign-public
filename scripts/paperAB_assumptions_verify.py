@@ -18,6 +18,9 @@ import unicodedata
 import urllib.request
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import openalex_http as OA  # noqa: E402  keyed OpenAlex access
+
 REPO = Path(__file__).resolve().parents[1]
 P = REPO / "paper" / "paperAB"
 CACHE = Path(os.environ.get("PERODESIGN_FT_CACHE", Path(os.environ.get("TMPDIR", REPO / ".cache")) / "perodesign_fulltext"))
@@ -65,11 +68,9 @@ def text_of(data):
 
 def openalex_title(doi):
     url = f"https://api.openalex.org/works/https://doi.org/{doi}?mailto={MAIL}"
-    req = urllib.request.Request(url, headers={"User-Agent": f"PEROdesign/0.1 (mailto:{MAIL})"})
     for i in range(3):
         try:
-            with urllib.request.urlopen(req, timeout=40) as r:
-                w = json.loads(r.read().decode("utf-8"))
+            w = json.loads(OA.fetch(url, headers={"User-Agent": f"PEROdesign/0.1 (mailto:{MAIL})"}).decode("utf-8"))
             return w["title"], w["publication_year"]
         except Exception:  # noqa: BLE001
             time.sleep(2 * (i + 1))

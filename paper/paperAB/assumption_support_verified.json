@@ -26,7 +26,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "castriotta2025": {
   "cite": "nikbakht2025panels",
@@ -43,7 +43,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "gff2025": {
   "cite": "soto2025gff",
@@ -60,7 +60,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "lcoe2023": {
   "cite": "debastiani2023lcoe",
@@ -77,7 +77,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "intaniwet2012": {
   "cite": "intaniwet2012ptaa",
@@ -86,7 +86,7 @@
   "fulltext_url": "https://openresearch.surrey.ac.uk/view/pdfCoverPage?download=true&filePid=13140478800002346&instCode=44SUR_INST",
   "openalex_title": "Heavy metallic oxide nanoparticles for enhanced sensitivity in semiconducting polymer x-ray detectors",
   "openalex_year": 2012,
-  "sha256": "86597ce310a407de6dd3247e4625f00e2a33226ae19d85f8ee0eb41c92d48ef6",
+  "sha256": "508a8c5b631961439e317b2cdd2286ca8bf58b91d2e22c706139d6fb6506f5f1",
   "bytes": 1789831,
   "quotes": [
    {
@@ -94,7 +94,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "connell2018": {
   "cite": "connell2018htm",
@@ -111,7 +111,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "mathews2020": {
   "cite": "mathews2020growth",
@@ -119,16 +119,16 @@
   "url": null,
   "fulltext_url": "https://cora.ucc.ie/server/api/core/bitstreams/1a6a2c66-ba83-4a01-8cdb-4296a20bc925/content",
   "openalex_title": "Economically Sustainable Growth of Perovskite Photovoltaics Manufacturing",
-  "openalex_year": 2020,
-  "sha256": "c3a24fee5fe0a2213c96c036c3b90d9dbdb16aab57ca51e9c5a006530e7e3a81",
-  "bytes": 1873114,
+  "openalex_year": 2019,
+  "sha256": "42d36b0fe9959ab039d060f708356960e43d12a918810f651b65d7f832682067",
+  "bytes": 1873113,
   "quotes": [
    {
     "quote": "order-of-magnitude price increases observed for many materials",
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "chang2017pip": {
   "cite": "chang2017uncert",
@@ -137,8 +137,8 @@
   "fulltext_url": "https://unsworks.unsw.edu.au/bitstreams/a78d60f4-fa61-4fb3-8f5b-c47b9b7e53e8/download",
   "openalex_title": "A manufacturing cost estimation method with uncertainty analysis and its application to perovskite on glass photovoltaic modules",
   "openalex_year": 2017,
-  "sha256": "dfe3ef544126d7d0d730505cd0ae4c887e0043b6c9d62663908a10198b95ee9b",
-  "bytes": 2591987,
+  "sha256": "4bd6d54abcc7f13f3c1dbbffcb7961ae1f21c89ef06fd817c0a9cac580b5a0be",
+  "bytes": 2591989,
   "quotes": [
    {
     "quote": "with 40 % material utilization in the evaporator",
@@ -157,7 +157,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "wu2026": {
   "cite": "wu2026recycle",
@@ -178,7 +178,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "chang2017solmat": {
   "cite": "chang2017r2r",
@@ -187,15 +187,15 @@
   "fulltext_url": "https://unsworks.unsw.edu.au/bitstreams/39450074-f874-49d2-9497-593da5ceb680/download",
   "openalex_title": "Manufacturing cost and market potential analysis of demonstrated roll-to-roll perovskite photovoltaic cell processes",
   "openalex_year": 2017,
-  "sha256": "51799d34368ea022d17f4cc2ffc198309557301605b9df6c0842c20ad3c661aa",
-  "bytes": 1307495,
+  "sha256": "88bada8388a802026a7ddd0c781f3f508e8269d306c2e623a9037a553b0e8c34",
+  "bytes": 1307497,
   "quotes": [
    {
     "quote": "Building and Facility maintenance rate 4% of capex per year",
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "liu2025": {
   "cite": "liu2025cost",
@@ -216,7 +216,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "cai2017": {
   "cite": "cai2017cost",
@@ -237,7 +237,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "ono2020": {
   "cite": "ono2020defects",
@@ -254,7 +254,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "css2024": {
   "cite": "rodkey2024css",
@@ -271,7 +271,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "mobility2022": {
   "cite": "lim2022mobility",
@@ -292,7 +292,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "ionmonger2019": {
   "cite": "courtier2019ionmonger",
@@ -301,15 +301,15 @@
   "fulltext_url": "https://link.springer.com/article/10.1007/s10825-019-01396-2",
   "openalex_title": "IonMonger: a free and fast planar perovskite solar cell simulator with coupled ion vacancy and charge carrier dynamics",
   "openalex_year": 2019,
-  "sha256": "3c235666bb5dc7ac21a4fc679b4147aae220fd3ad9a63088757ca0506b7abba3",
-  "bytes": 440648,
+  "sha256": "d84b3d07b45517fede0ad2271722e7f88bbf61c5c804ec23ffd88457a01312bc",
+  "bytes": 440813,
   "quotes": [
    {
     "quote": "On the external boundary with the metal contact, we impose Ohmic boundary conditions",
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "simss_L2": {
   "cite": "simsalabim536",
@@ -328,7 +328,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "simss_setup": {
   "cite": "simsalabim536",
@@ -351,7 +351,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "islam2021": {
   "cite": "islam2021snx3",
@@ -372,7 +372,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "nist811": {
   "cite": "thompson2008sp811",
@@ -389,7 +389,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "nlr_am15": {
   "cite": "nlr_am15",
@@ -404,7 +404,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "dipta2022": {
   "cite": "dipta2022light",
@@ -421,7 +421,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "simss_L1": {
   "cite": "simsalabim536",
@@ -436,7 +436,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "simss_L3": {
   "cite": "simsalabim536",
@@ -451,7 +451,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "kajal2021": {
   "cite": "kajal2021carbon",
@@ -460,35 +460,35 @@
   "fulltext_url": null,
   "openalex_title": "Costing Analysis of Scalable Carbon‐Based Perovskite Modules Using Bottom Up Technique",
   "openalex_year": 2021,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "wb_pink": {
   "cite": "wb_pink2026",
   "doi": null,
   "url": null,
   "fulltext_url": null,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "wb_wdi": {
   "cite": "wb_wdi2026",
   "doi": null,
   "url": null,
   "fulltext_url": null,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "tnb": {
   "cite": "tnb_tariff2025",
   "doi": null,
   "url": null,
   "fulltext_url": null,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "dosm": {
   "cite": "dosm_wages2025",
   "doi": null,
   "url": null,
   "fulltext_url": null,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "irena2023": {
   "cite": "irena2023finance",
@@ -503,7 +503,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "steffen2020": {
   "cite": "steffen2020coc",
@@ -512,7 +512,7 @@
   "fulltext_url": null,
   "openalex_title": "Estimating the cost of capital for renewable energy projects",
   "openalex_year": 2020,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "iea2022": {
   "cite": "iea2022pvsupply",
@@ -547,7 +547,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "kwsp": {
   "cite": "kwsp2025epf",
@@ -566,15 +566,15 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "perkeso": {
   "cite": "perkeso2026",
   "doi": null,
   "url": "https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html",
   "fulltext_url": "https://www.perkeso.gov.my/en/our-services/employer-employee/contributions.html",
-  "sha256": "e18b2e0d93d51f7c5e02c96412df326d30b24cca2f90137fa787123a32b15d6e",
-  "bytes": 183751,
+  "sha256": "45c8ef1f6189f3aba8ae44d9fc6feed4a38ac70fc6b94a4cb4ac8e9f918fbbc7",
+  "bytes": 183040,
   "quotes": [
    {
     "quote": "The rate of contribution under this category comprises 1.75% of employer’s share",
@@ -585,15 +585,15 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "sst": {
   "cite": "customs2024sst",
   "doi": null,
   "url": "https://mysst.customs.gov.my/faq-business/",
   "fulltext_url": "https://mysst.customs.gov.my/faq-business/",
-  "sha256": "0330d67580e8ccb20eecb2df61d6d4e70e249ad96af2a787a2831d9a3f4fa429",
-  "bytes": 1068885,
+  "sha256": "f0f98e3c3c02ff4217241e12c603b79e8f1b3d28c63826acf8a7ab2cc8769bc9",
+  "bytes": 1068485,
   "quotes": [
    {
     "quote": "The provision of electricity to the commercial consumer is not subject to service tax.",
@@ -604,7 +604,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "geiser2013": {
   "cite": "geiser2013au",
@@ -613,7 +613,7 @@
   "fulltext_url": null,
   "openalex_title": "Cellular uptake and localization of inhaled gold nanoparticles in lungs of mice with chronic obstructive pulmonary disease",
   "openalex_year": 2013,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "thomas2018": {
   "cite": "thomas2018ag",
@@ -622,7 +622,7 @@
   "fulltext_url": null,
   "openalex_title": "ISD3: a particokinetic model for predicting the combined effects of particle sedimentation, diffusion and dissolution on cellular dosimetry for in vitro systems",
   "openalex_year": 2018,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "shahinuzzaman2022": {
   "cite": "shahinuzzaman2022htm",
@@ -631,7 +631,7 @@
   "fulltext_url": null,
   "openalex_title": "Roles of Inorganic Oxide Based HTMs towards Highly Efficient and Long-Term Stable PSC—A Review",
   "openalex_year": 2022,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "vivo2017": {
   "cite": "vivo2017htm",
@@ -640,14 +640,14 @@
   "fulltext_url": null,
   "openalex_title": "Hole-Transporting Materials for Printable Perovskite Solar Cells",
   "openalex_year": 2017,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "mof2024sst": {
   "cite": "mof2024sst",
   "doi": null,
   "url": "https://www.mof.gov.my/portal/en/news/press-citations/service-tax-increase-only-affects-discretionary-services-b2b-activities-mof",
   "fulltext_url": "https://www.mof.gov.my/portal/en/news/press-citations/service-tax-increase-only-affects-discretionary-services-b2b-activities-mof",
-  "sha256": "d5414f0f5f5f920d4e88879ca8f4a2391f5defcd638125e648e205251d2724fc",
+  "sha256": "f92caec45f364e3ed5bebc46f236a6a0e9a30c3d6ec139fc6a2ea42bdb28d95c",
   "bytes": 129666,
   "quotes": [
    {
@@ -659,7 +659,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "tian2020": {
   "cite": "tian2020lca",
@@ -668,7 +668,7 @@
   "fulltext_url": null,
   "openalex_title": "Life cycle energy use and environmental implications of high-performance perovskite tandem solar cells",
   "openalex_year": 2020,
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "li2026": {
   "cite": "li2026blade",
@@ -685,7 +685,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "xu2025": {
   "cite": "xu2025strain",
@@ -702,7 +702,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "usgs_mo": {
   "cite": "usgs2026mo",
@@ -721,7 +721,7 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  },
  "pubchem_moo3": {
   "cite": "pubchem_moo3",
@@ -736,6 +736,6 @@
     "found": true
    }
   ],
-  "checked": "2026-10-09"
+  "checked": "2026-10-14"
  }
 }

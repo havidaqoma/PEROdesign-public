@@ -1,5 +1,5 @@
 {
- "built_from_private_commit": "52082bc",
+ "built_from_private_commit": "e9bd731",
  "with_manuscript": false,
  "logs_trimmed": [
   "phase0/paperA/run.log",
@@ -330,6 +330,7 @@
   "requirements-wsl-dev.txt",
   "scripts/build_mcpeak_nk.py",
   "scripts/my_bottom_up.py",
+  "scripts/openalex_http.py",
   "scripts/p2_sensitivity.py",
   "scripts/paperAB_absorber_prices.py",
   "scripts/paperAB_assumptions_verify.py",
@@ -372,6 +373,7 @@
   "tests/fixtures/simss_pin_thin.meta.json",
   "tests/fixtures/simss_pin_thin.txt",
   "tests/test_library_v2.py",
+  "tests/test_openalex_http.py",
   "tests/test_p2_sensitivity.py",
   "tests/test_paperA.py",
   "tests/test_paperB.py",
