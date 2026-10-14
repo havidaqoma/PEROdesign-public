@@ -16,7 +16,7 @@ authors:
 repository-code: "https://github.com/havidaqoma/PEROdesign-public"
 license: MIT
 version: "1.0.0"
-date-released: "2026-10-04"
+date-released: "2026-10-14"
 keywords:
   - perovskite photovoltaics
   - drift-diffusion simulation
